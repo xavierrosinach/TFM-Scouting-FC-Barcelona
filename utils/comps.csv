@@ -1,65 +1,27 @@
-country;tournament;mc;ss;fb;us;fd;fm
-ARG;Liga Profesional;77fbbcd6;155;https://fbref.com/en/comps/21/history/Liga-Profesional-Argentina-Seasons;;;112
-AUS;Bundesliga Austria;c89a71d3;45;https://fbref.com/en/comps/56/history/Austrian-Bundesliga-Seasons;;;38
-AUS;A-League;f83b726c;136;https://fbref.com/en/comps/74/history/Bolivian-Primera-Division-Seasons;;;113
-BEL;First Division A;ad8ec6a9;38;https://fbref.com/en/comps/37/history/Belgian-Pro-League-Seasons;;B1;40
-BOL;Primera División;41c342e5;16736;https://fbref.com/en/comps/74/history/Bolivian-Primera-Division-Seasons;;;144
-BRA;Serie A Brazil;fcc02513;325;https://fbref.com/en/comps/24/history/Serie-A-Seasons;;;268
-BUL;Parva Liga;1c4fbcf5;247;https://fbref.com/en/comps/67/history/Bulgarian-First-League-Seasons;;;270
-CAN;Canadian Premier League;2c57ef86;13470;https://fbref.com/en/comps/211/history/Canadian-Premier-League-Seasons;;;9986
-CHI;Liga de Primera;3460fa9e;11653;https://fbref.com/en/comps/35/history/Chilean-Primera-Division-Seasons;;;273
-CHN;Chinese Super League;35a2e314;649;https://fbref.com/en/comps/62/history/Chinese-Super-League-Seasons;;;120
-COL;Primera A;e6960f88;11536;https://fbref.com/en/comps/41/history/Primera-A-Seasons;;;274
-CRO;HNL;96e0d365;579;https://fbref.com/en/comps/63/history/Hrvatska-NL-Seasons;;;252
-CZE;1 Liga;7e29d010;172;https://fbref.com/en/comps/74/history/Bolivian-Primera-Division-Seasons;;;122
-DEN;Superligaen;663d15ab;39;https://fbref.com/en/comps/50/history/Danish-Superliga-Seasons;;;46
-ECU;LigaPro Serie A;ac4ca93d;240;https://fbref.com/en/comps/58/history/Serie-A-Seasons;;;246
-ENG;Premier League;4122f12e;17;https://fbref.com/en/comps/9/history/Premier-League-Seasons;https://understat.com/league/EPL;E0;47
-ENG;Championship;7a05ecee;18;https://fbref.com/en/comps/10/history/Championship-Seasons;;E1;48
-ENG;FA Cup;23144dcf;19;https://fbref.com/en/comps/514/history/FA-Cup-Seasons;;;132
-ENG;EFL Cup;b5ca8a7a;21;https://fbref.com/en/comps/690/history/EFL-Cup-Seasons;;;133
-FIN;Veikkausliiga;2f987f81;41;https://fbref.com/en/comps/43/history/Veikkausliiga-Seasons;;;51
-FRA;Ligue 1;da68db23;34;https://fbref.com/en/comps/13/history/Ligue-1-Seasons;https://understat.com/league/Ligue_1;F1;53
-FRA;Ligue 2;c9c234d9;182;https://fbref.com/en/comps/60/history/Ligue-2-Seasons;;F2;110
-FRA;Coupe de France;5c5adc28;335;https://fbref.com/en/comps/518/history/Coupe-de-France-Seasons;;;134
-GER;Bundesliga;2e5d4448;35;https://fbref.com/en/comps/20/history/Bundesliga-Seasons;https://understat.com/league/Bundesliga;G1;54
-GER;Bundesliga 2;cf37c198;44;https://fbref.com/en/comps/33/history/2-Bundesliga-Seasons;;G2;146
-GER;DFB Pokal;e2b2a416;217;https://fbref.com/en/comps/521/history/DFB-Pokal-Seasons;;;209
-GRE;Super League 1;35825da3;185;https://fbref.com/en/comps/27/history/Super-League-Greece-Seasons;;;135
-HUN;Nemzeti Bajnokság I;4ed85750;187;https://fbref.com/en/comps/46/history/NB-I-Seasons;;;212
-IND;Indian Super League;3b142f14;1900;https://fbref.com/en/comps/82/history/Indian-Super-League-Seasons;;;9478
-INT;Champions League;10e23385;7;https://fbref.com/en/comps/8/history/Champions-League-Seasons;;;42
-INT;Europa League;2eeb9191;679;https://fbref.com/en/comps/19/history/Europa-League-Seasons;;;73
-INT;Conference League;8cf0271d;17015;https://fbref.com/en/comps/882/history/Conference-League-Seasons;;;10216
-INT;Copa Libertadores;9ce02325;16940;https://fbref.com/en/comps/14/history/Copa-Libertadores-Seasons;;;45
-INT;CONMEBOL Sudamericana;59ba37d1;480;https://fbref.com/en/comps/205/history/Copa-Sudamericana-Seasons;;;299
-IRL;Premier Division;9f97a5f9;192;https://fbref.com/en/comps/80/history/League-of-Ireland-Premier-Division-Seasons;;;126
-IRN;Persian Gulf;5b5caee1;915;https://fbref.com/en/comps/64/history/Persian-Gulf-Pro-League-Seasons;;;523
-ITA;Serie A;23491b7e;23;https://fbref.com/en/comps/11/history/Serie-A-Seasons;https://understat.com/league/Serie_A;I1;55
-ITA;Serie B;63c1de77;53;https://fbref.com/en/comps/18/history/Serie-B-Seasons;;I2;86
-ITA;Coppa Italia;68270098;328;https://fbref.com/en/comps/529/history/Coppa-Italia-Seasons;;;141
-JAP;J1 League;666135f4;196;https://fbref.com/en/comps/25/history/J1-League-Seasons;;;223
-KOR;K League 1;7f48c61c;410;https://fbref.com/en/comps/55/history/K-League-1-Seasons;;;9080
-KSA;Saudi Pro League;8cd978b1;955;https://fbref.com/en/comps/70/history/Saudi-Pro-League-Seasons;;;536
-MEX;Liga MX;42662bb4;11620;https://fbref.com/en/comps/31/history/Liga-MX-Seasons;;;230
-NED;Eredivise;24659238;37;https://fbref.com/en/comps/23/history/Eredivisie-Seasons;;N1;57
-NOR;Eliteserien;8c5f71b7;20;https://fbref.com/en/comps/28/history/Eliteserien-Seasons;;;59
-PAR;División Profesional;7a9a77b6;11541;https://fbref.com/en/comps/61/history/Primera-Division-Seasons;;;199
-PER;Liga 1;d3e6fcae;406;https://fbref.com/en/comps/44/history/Liga-1-Seasons;;;131
-POL;Ekstraklasa;1ff0fc2c;202;https://fbref.com/en/comps/36/history/Ekstraklasa-Seasons;;;196
-POR;Liga Portugal;f22aec7c;238;https://fbref.com/en/comps/32/history/Primeira-Liga-Seasons;;P1;61
-ROU;Liga I;b0598e1d;152;https://fbref.com/en/comps/47/history/Liga-I-Seasons;;;189
-RSA;South African Premier Division;2502278f;358;https://fbref.com/en/comps/52/history/South-African-Premiership-Seasons;;;537
-RUS;Russian Premier League;14f1f569;203;https://fbref.com/en/comps/30/history/Russian-Premier-League-Seasons;https://understat.com/league/RFPL;;63
-SCO;Premiership;7f044334;36;https://fbref.com/en/comps/40/history/Scottish-Premiership-Seasons;;SC1;64
-SPA;La Liga;4a9309d9;8;https://fbref.com/en/comps/12/history/La-Liga-Seasons;https://understat.com/league/La_liga;SP1;87
-SPA;La Liga 2;e790205d;54;https://fbref.com/en/comps/17/history/Segunda-Division-Seasons;;SP2;140
-SPA;Copa del Rey;7388d8ee;329;https://fbref.com/en/comps/569/history/Copa-del-Rey-Seasons;;;138
-SRB;Mozzart Bet SuperLiga;578bdda9;210;https://fbref.com/en/comps/54/history/Serbian-SuperLiga-Seasons;;;182
-SUI;Swiss Super League;7c5c946d;215;https://fbref.com/en/comps/57/history/Swiss-Super-League-Seasons;;;69
-SWE;Allsvenskan;2be5742e;40;https://fbref.com/en/comps/29/history/Allsvenskan-Seasons;;;67
-TUR;Süper Lig;4a7aa33a;52;https://fbref.com/en/comps/26/history/Super-Lig-Seasons;;T1;71
-UKR;Ukrainian Premier League;a834ce2e;218;https://fbref.com/en/comps/39/history/Ukrainian-Premier-League-Seasons;;;441
-URU;Liga AUF Uruguaya;cac0ee78;278;https://fbref.com/en/comps/45/history/Uruguayan-Primera-Division-Seasons;;;161
-USA;Major League Soccer;84b657ac;242;https://fbref.com/en/comps/22/history/Major-League-Soccer-Seasons;;;130
-VEN;Liga FUTVE;848cb949;231;https://fbref.com/en/comps/105/history/Venezuelan-Primera-Division-Seasons;;;339
+﻿id;country;tournament;priority;sofascore;fbref;understat;fotmob
+73;SPA;La Liga;3;8;https://fbref.com/en/comps/12/history/La-Liga-Seasons;https://understat.com/league/La_liga;87
+82;ENG;Premier League;3;17;https://fbref.com/en/comps/9/history/Premier-League-Seasons;https://understat.com/league/EPL;47
+75;GER;Bundesliga;3;35;https://fbref.com/en/comps/20/history/Bundesliga-Seasons;https://understat.com/league/Bundesliga;54
+41;ITA;Serie A;3;23;https://fbref.com/en/comps/11/history/Serie-A-Seasons;https://understat.com/league/Serie_A;55
+46;FRA;Ligue 1;3;34;https://fbref.com/en/comps/13/history/Ligue-1-Seasons;https://understat.com/league/Ligue_1;53
+14;INT;Champions League;3;7;https://fbref.com/en/comps/8/history/Champions-League-Seasons;;42
+72;INT;Europa League;3;679;https://fbref.com/en/comps/19/history/Europa-League-Seasons;;73
+11;SPA;Copa del Rey;2;329;https://fbref.com/en/comps/569/Copa-del-Rey-Stats;;138
+97;SPA;La Liga Hypermotion;2;54;https://fbref.com/en/comps/17/history/Segunda-Division-Seasons;;140
+56;ENG;Championship;2;18;https://fbref.com/en/comps/10/history/Championship-Seasons;;48
+65;NED;Eredivise;2;37;https://fbref.com/en/comps/23/history/Eredivisie-Seasons;;57
+64;POR;Liga Portugal;2;238;https://fbref.com/en/comps/32/history/Primeira-Liga-Seasons;;61
+98;INT;Conference League;2;17015;https://fbref.com/en/comps/882/history/Conference-League-Seasons;;10216
+54;INT;Copa Libertadores;2;16940;https://fbref.com/en/comps/14/history/Copa-Libertadores-Seasons;;45
+13;MEX;Liga MX;1;11620;https://fbref.com/en/comps/31/history/Liga-MX-Seasons;;230
+66;BRA;Serie A Brazil;1;325;https://fbref.com/en/comps/24/history/Serie-A-Seasons;;268
+36;ARG;Liga Profesional;1;155;https://fbref.com/en/comps/21/history/Liga-Profesional-Argentina-Seasons;;112
+45;BEL;First Division A;1;38;https://fbref.com/en/comps/37/history/Belgian-Pro-League-Seasons;;40
+43;USA;Major League Soccer;1;242;https://fbref.com/en/comps/22/history/Major-League-Soccer-Seasons;;130
+23;KSA;Saudi Pro League;1;955;https://fbref.com/en/comps/70/history/Saudi-Pro-League-Seasons;;536
+24;TUR;Süper Lig;1;52;https://fbref.com/en/comps/26/history/Super-Lig-Seasons;;71
+10;DEN;Superligaen;1;39;https://fbref.com/en/comps/50/history/Danish-Superliga-Seasons;;46
+19;SUI;Swiss Super League;1;215;https://fbref.com/en/comps/57/history/Swiss-Super-League-Seasons;;69
+44;SWE;Allvenskan;1;40;https://fbref.com/en/comps/29/history/Allsvenskan-Seasons;;67
+12;NOR;Eliteserien;1;20;https://fbref.com/en/comps/28/history/Eliteserien-Seasons;;59
+42;INT;CONMEBOL Sudamericana;1;480;https://fbref.com/en/comps/205/history/Copa-Sudamericana-Seasons;;299
