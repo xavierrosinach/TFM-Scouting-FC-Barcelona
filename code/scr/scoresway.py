@@ -12,9 +12,6 @@ cdir = os.getcwd()
 utils = os.path.join(os.path.abspath(os.path.join(cdir, '..', '..')), 'utils')
 comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';')
 
-# Links Scoresway
-sw_links = pd.read_csv(os.path.join(utils, 'sw_urls.csv'), sep=';')
-
 # JSON con temporadas deseadas
 with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
     desired_seasons = jsonlib.load(f)
@@ -66,9 +63,9 @@ def need_to_upload(path: str, total_days: int = 5) -> bool:                 # Si
 def season_matches(season: str, league_code: int, out_path: str) -> dict:
 
     # Entorno de carpetas output
-    out_league_path = os.path.join(out_path, str(league_code), season)
+    out_league_path = os.path.join(out_path, 'info')
     os.makedirs(out_league_path, exist_ok=True)
-    json_path = os.path.join(out_league_path, f'Matches{season}.json')
+    json_path = os.path.join(out_league_path, f'matches.json')
 
     # Si existe el fichero
     if os.path.exists(json_path) and not need_to_upload(json_path):
@@ -77,7 +74,8 @@ def season_matches(season: str, league_code: int, out_path: str) -> dict:
         return matches_json
 
     # Obtenemos el link y obtenemos la información
-    matches_url = sw_links[sw_links['id'] == league_code][f'match{season}'].iloc[0]
+    league_sw = comps[comps['id'] == league_code][f'scoresway{season}'].iloc[0]
+    matches_url = f'https://api.performfeeds.com/soccerdata/match/ft1tiv1inq7v1sk3y9tv12yh5/?_rt=c&tmcl={league_sw}&live=yes&_pgSz=400&_lcl=en&_fmt=jsonp&sps=widgets&_clbk=cb'
     matches_json = scrape_json(url=matches_url)
 
     if matches_json.get('match'):
@@ -91,9 +89,9 @@ def season_matches(season: str, league_code: int, out_path: str) -> dict:
 def season_standings(season: str, league_code: int, out_path: str) -> dict:
 
     # Entorno de carpetas output
-    out_league_path = os.path.join(out_path, str(league_code), season)
+    out_league_path = os.path.join(out_path, 'info')
     os.makedirs(out_league_path, exist_ok=True)
-    json_path = os.path.join(out_league_path, f'Standings{season}.json')
+    json_path = os.path.join(out_league_path, f'standings.json')
 
     # Si existe el fichero
     if os.path.exists(json_path) and not need_to_upload(json_path):
@@ -102,7 +100,8 @@ def season_standings(season: str, league_code: int, out_path: str) -> dict:
         return standings_json
 
     # Obtenemos el link y obtenemos la información
-    standings_url = sw_links[sw_links['id'] == league_code][f'standings{season}'].iloc[0]
+    league_sw = comps[comps['id'] == league_code][f'scoresway{season}'].iloc[0]
+    standings_url = f'https://api.performfeeds.com/soccerdata/standings/ft1tiv1inq7v1sk3y9tv12yh5/?_rt=c&tmcl={league_sw}&live=yes&_lcl=en&_fmt=jsonp&sps=widgets&_clbk=cb'
     standings_json = scrape_json(url=standings_url)
 
     if standings_json.get('stage'):
@@ -112,11 +111,37 @@ def season_standings(season: str, league_code: int, out_path: str) -> dict:
     
     return {}
 
+# Obtenemos las plantillas de la liga
+def season_squads(season: str, league_code: int, out_path: str) -> dict:
+
+    # Entorno de carpetas output
+    out_league_path = os.path.join(out_path, 'info')
+    os.makedirs(out_league_path, exist_ok=True)
+    json_path = os.path.join(out_league_path, f'squads.json')
+
+    # Si existe el fichero
+    if os.path.exists(json_path) and not need_to_upload(json_path):
+        with open(json_path, "r", encoding="utf-8") as f:
+            squads_json = jsonlib.load(f)
+        return squads_json
+
+    # Obtenemos el link y obtenemos la información
+    league_sw = comps[comps['id'] == league_code][f'scoresway{season}'].iloc[0]
+    squads_url = f'https://api.performfeeds.com/soccerdata/squads/ft1tiv1inq7v1sk3y9tv12yh5/?_rt=c&tmcl={league_sw}&_pgSz=200&_lcl=en&_fmt=jsonp&sps=widgets&_clbk=cb'
+    squads_json = scrape_json(url=squads_url)
+
+    if squads_json.get('squad'):
+        with open(json_path, "w", encoding="utf-8") as f:
+            jsonlib.dump(squads_json, f)
+        return squads_json
+    
+    return {}
+
 # Obtenemos la información de un partido
 def match_data(season: str, league_code: int, match_id: str, out_path: str) -> dict:
 
     # Entorno de carpetas output
-    out_league_path = os.path.join(out_path, str(league_code), season, 'matches_info')
+    out_league_path = os.path.join(out_path, 'matches')
     os.makedirs(out_league_path, exist_ok=True)
     json_path = os.path.join(out_league_path, f'{match_id}.json')
 
@@ -147,11 +172,24 @@ def match_data(season: str, league_code: int, match_id: str, out_path: str) -> d
 # Dado el codigo de una liga, scraping de toda la información
 def scrape_league_data(league_id: int, out_path: str, available_sw_seasons: list = ['2425', '2526']) -> None:
 
+    # Obtenemos el nombre de la liga
+    league_name = comps[comps['id'] == league_id]['tournament'].iloc[0]
+    league_slug = league_name.lower().replace(' ', '-')
+
+    # Path de la liga
+    out_league_path = os.path.join(out_path, league_slug)
+    os.makedirs(out_league_path, exist_ok=True)
+
     for season in available_sw_seasons:
 
+        # Path de la temporada
+        season_path = os.path.join(out_league_path, season)
+        os.makedirs(season_path, exist_ok=True)
+
         # Obtención de los partidos y la clasificación de la temporada
-        matches_json = season_matches(season=season, league_code=league_id, out_path=out_path)
-        standings_json = season_standings(season=season, league_code=league_id, out_path=out_path)
+        matches_json = season_matches(season=season, league_code=league_id, out_path=season_path)
+        standings_json = season_standings(season=season, league_code=league_id, out_path=season_path)
+        squads_json = season_squads(season=season, league_code=league_id, out_path=season_path)
 
         # Partidos jugados
         played_matches = {m.get('matchInfo', {}).get('id'): f"{m.get('matchInfo', {}).get('contestant', [{}])[0].get('name','')}-{m.get('matchInfo', {}).get('contestant', [{},{}])[1].get('name','')}".lower().replace(' ', '-')
@@ -159,4 +197,4 @@ def scrape_league_data(league_id: int, out_path: str, available_sw_seasons: list
         
         # Para cada partido
         for match_id in played_matches.keys():
-            match_json = match_data(season=season, league_code=league_id, match_id=match_id, out_path=out_path)
+            match_json = match_data(season=season, league_code=league_id, match_id=match_id, out_path=season_path)

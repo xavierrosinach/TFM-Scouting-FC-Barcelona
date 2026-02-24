@@ -4,6 +4,7 @@ import numpy as np
 import os
 import json as jsonlib
 import time
+from datetime import datetime, timedelta
 
 # Obtenemos el CSV con competiciones
 cdir = os.getcwd()
@@ -24,16 +25,21 @@ def url_to_json(url: str, sleep_time: int = 3, print_info: bool = True) -> dict:
     time.sleep(sleep_time)                           # Para garantir seguridad
     return out
 
+# Comprueva que el guardado de un fichero ha sucedido X días antes o no
+def need_to_upload(path: str, total_days: int = 5) -> bool:                 # Si a los cinco días no se ha actualizado, lo actualizamos
+
+    # Día de creación
+    creation_time = os.path.getctime(path)
+    return datetime.now() - datetime.fromtimestamp(creation_time) > timedelta(days = total_days)
+
 # Obtenemos un diccionario JSON con las temporadas disponibles en una liga
 def league_available_seasons(league_code: int, out_path: str) -> dict:
 
-    # Entorno de carpetas output
-    out_league_path = os.path.join(out_path, str(league_code))
-    os.makedirs(out_league_path, exist_ok=True)
-    json_path = os.path.join(out_league_path, 'AvailableSeasons.json')
+    # Rastreo del doc
+    json_path = os.path.join(out_path, 'available_seasons.json')
 
     # Si existe el fichero
-    if os.path.exists(json_path):
+    if os.path.exists(json_path) and not need_to_upload(json_path, total_days=200):
         with open(json_path, "r", encoding="utf-8") as f:
             available_seasons_json = jsonlib.load(f)
         return available_seasons_json
@@ -78,12 +84,12 @@ def league_available_seasons(league_code: int, out_path: str) -> dict:
 def season_data(seasons_dict: dict, season_key: str, league_code: int, out_path: str) -> dict:
 
     # Entorno de carpetas output
-    out_league_path = os.path.join(out_path, str(league_code))
-    os.makedirs(out_league_path, exist_ok=True)
-    json_path = os.path.join(out_league_path, f'Season{season_key}.json')
+    out_seasons_path = os.path.join(out_path, 'seasons')
+    os.makedirs(out_seasons_path, exist_ok=True)
+    json_path = os.path.join(out_seasons_path, f'{season_key}.json')
 
     # Si existe el fichero
-    if os.path.exists(json_path):
+    if os.path.exists(json_path) and not need_to_upload(json_path):
         with open(json_path, "r", encoding="utf-8") as f:
             season_json = jsonlib.load(f)
         return season_json
@@ -137,16 +143,26 @@ def scrape_league_data(league_id: int, out_path: str) -> None:
     # Obtenemos el codigo de fotmob
     fm_code = int(comps[comps['id'] == league_id]['fotmob'].iloc[0])
 
+    # Obtenemos el nombre de la liga
+    league_name = comps[comps['id'] == league_id]['tournament'].iloc[0]
+    league_slug = league_name.lower().replace(' ', '-')
+
+    # Path de la liga
+    out_league_path = os.path.join(out_path, league_slug)
+    os.makedirs(out_league_path, exist_ok=True)
+
     # Competiciones disponibles y diccionario para obtener los valores
-    available_seasons = league_available_seasons(league_code=fm_code, out_path=out_path)
+    available_seasons = league_available_seasons(league_code=fm_code, out_path=out_league_path)
     seasons_dict = {v['key']: v['link'] for v in available_seasons.get('allAvailableSeasons', {}).values()}
     seasons_dict = {k: v for k, v in seasons_dict.items() if k in desired_seasons}
     
     # Fichero de temporada a partir de la key
     for season in seasons_dict.keys():
-        season_json = season_data(seasons_dict=seasons_dict, season_key=str(season), league_code=fm_code, out_path=out_path)
+        season_json = season_data(seasons_dict=seasons_dict, season_key=str(season), league_code=fm_code, out_path=out_league_path)
 
     # Partidos y diccionario con los IDs
     matches = season_json.get('fixtures', {}).get('allMatches', {})
     dict_matches_urls = {match['id']: f'https://www.fotmob.com/api/matchDetails?matchId={match['id']}'
                         for match in matches if match.get('status', {}).get('finished', False)}
+    
+    # Match data no funciona -> fotmob ha restringido el acceso
