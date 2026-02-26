@@ -110,7 +110,7 @@ def league_processing(league_id: int, out_path: str, clean_out_path: str) -> Non
     seasons_df.to_csv(os.path.join(out_league_path, 'available_seasons.csv'), sep=';', index=False)
 
     # Para todas las temporadas
-    out_seasons_path = os.path.join(out_league_path, 'seasons')
+    out_seasons_path = os.path.join(out_league_path, 'standings')
     os.makedirs(out_seasons_path, exist_ok=True)
 
     for season_key in seasons_df['season'].tolist():

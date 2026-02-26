@@ -137,8 +137,8 @@ def season_squads(season: str, league_code: int, out_path: str) -> dict:
     
     return {}
 
-# Obtenemos la información de un partido
-def match_data(season: str, league_code: int, match_id: str, out_path: str) -> dict:
+# Obtenemos las stats de un partido
+def match_stats(match_id: str, out_path: str) -> dict:
 
     # Entorno de carpetas output
     out_league_path = os.path.join(out_path, 'matches')
@@ -159,13 +159,13 @@ def match_data(season: str, league_code: int, match_id: str, out_path: str) -> d
                 pass
     
     # URL y información del partido
-    match_url = f'https://api.performfeeds.com/soccerdata/match/ft1tiv1inq7v1sk3y9tv12yh5/{match_id}?_rt=c&live=yes&_lcl=en&_fmt=jsonp&sps=widgets&_clbk=cb'
-    match_json = scrape_json(match_url) or {}
+    stats_url = f'https://api.performfeeds.com/soccerdata/matchstats/ft1tiv1inq7v1sk3y9tv12yh5/{match_id}?_rt=c&_lcl=en&_fmt=jsonp&sps=widgets&_clbk=cb'
+    stats_json = scrape_json(stats_url) or {}
 
-    if isinstance(match_json, dict) and match_json.get('matchInfo'):
+    if isinstance(stats_json, dict) and stats_json.get('matchInfo'):
         with open(json_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(match_json, f, ensure_ascii=False)
-        return match_json
+            jsonlib.dump(stats_json, f, ensure_ascii=False)
+        return stats_json
     
     return {}
 
@@ -197,4 +197,4 @@ def scrape_league_data(league_id: int, out_path: str, available_sw_seasons: list
         
         # Para cada partido
         for match_id in played_matches.keys():
-            match_json = match_data(season=season, league_code=league_id, match_id=match_id, out_path=season_path)
+            stats_json = match_stats(match_id=match_id, out_path=season_path)
