@@ -1,0 +1,21 @@
+league;season;position;team;team_slug;promotion;points;matches;wins;losses;draws;scores_for;scores_against
+73;2526;1;Barcelona;barcelona;Champions League;36;12;12;0;0;37;5
+73;2526;2;Atlético Madrid;atletico-madrid;Champions League;34;13;11;1;1;30;10
+73;2526;3;Real Madrid;real-madrid;Champions League;33;12;11;1;0;29;8
+73;2526;4;Villarreal;villarreal;Champions League;31;13;10;2;1;29;11
+73;2526;5;Osasuna;osasuna;;24;12;7;2;3;22;14
+73;2526;6;Real Betis;real-betis;UEFA Europa League;23;12;7;3;2;23;13
+73;2526;7;Athletic Club;athletic-club;;23;13;7;4;2;17;15
+73;2526;8;Elche;elche;;21;13;5;2;6;20;13
+73;2526;9;Real Sociedad;real-sociedad;;21;13;6;4;3;24;20
+73;2526;10;Espanyol;espanyol;;20;13;6;5;2;16;18
+73;2526;11;Mallorca;mallorca;Relegation;19;12;5;3;4;19;16
+73;2526;12;Deportivo Alavés;deportivo-alaves;;19;13;5;4;4;16;15
+73;2526;13;Celta Vigo;celta-vigo;Conference League Qualification;17;13;4;4;5;19;15
+73;2526;14;Valencia;valencia;;17;12;4;3;5;15;13
+73;2526;15;Girona FC;girona-fc;;16;12;4;4;4;12;19
+73;2526;16;Rayo Vallecano;rayo-vallecano;;15;11;3;2;6;11;9
+73;2526;17;Sevilla;sevilla;;15;13;4;6;3;18;19
+73;2526;18;Getafe;getafe;;15;13;4;6;3;10;11
+73;2526;19;Real Oviedo;real-oviedo;Relegation;11;12;2;5;5;5;13
+73;2526;20;Levante UD;levante-ud;Relegation;7;12;1;7;4;11;23

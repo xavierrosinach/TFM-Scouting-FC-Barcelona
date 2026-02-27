@@ -1,0 +1,21 @@
+league;season;position;team;team_slug;promotion;points;matches;wins;losses;draws;scores_for;scores_against
+73;2526;1;Barcelona;barcelona;Champions League;61;25;20;4;1;67;25
+73;2526;2;Real Madrid;real-madrid;Champions League;60;25;19;3;3;54;21
+73;2526;3;Villarreal;villarreal;Champions League;51;25;16;6;3;47;27
+73;2526;4;Atlético Madrid;atletico-madrid;Champions League;48;25;14;5;6;42;23
+73;2526;5;Real Betis;real-betis;UEFA Europa League;42;25;11;5;9;40;30
+73;2526;6;Celta Vigo;celta-vigo;Conference League Qualification;37;25;9;6;10;34;27
+73;2526;7;Espanyol;espanyol;;35;25;10;10;5;31;37
+73;2526;8;Athletic Club;athletic-club;;34;25;10;11;4;29;35
+73;2526;9;Osasuna;osasuna;;33;25;9;10;6;30;29
+73;2526;10;Real Sociedad;real-sociedad;;32;25;8;9;8;37;38
+73;2526;11;Girona FC;girona-fc;;30;25;7;9;9;26;40
+73;2526;12;Sevilla;sevilla;;29;25;8;12;5;32;39
+73;2526;13;Getafe;getafe;;29;25;8;12;5;20;29
+73;2526;14;Deportivo Alavés;deportivo-alaves;;27;25;7;12;6;23;32
+73;2526;15;Rayo Vallecano;rayo-vallecano;;26;24;6;10;8;22;31
+73;2526;16;Valencia;valencia;;26;25;6;11;8;26;39
+73;2526;17;Elche;elche;;25;25;5;10;10;32;37
+73;2526;18;Mallorca;mallorca;Relegation;24;25;6;13;6;29;41
+73;2526;19;Levante UD;levante-ud;Relegation;18;25;4;15;6;26;44
+73;2526;20;Real Oviedo;real-oviedo;Relegation;17;24;3;13;8;16;39
