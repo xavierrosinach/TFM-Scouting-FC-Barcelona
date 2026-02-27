@@ -1,0 +1,102 @@
+{
+  "player": {
+    "name": "Ferran Torres",
+    "slug": "ferran-torres",
+    "shortName": "F. Torres",
+    "position": "F",
+    "jerseyNumber": "7",
+    "height": 185,
+    "userCount": 143769,
+    "gender": "M",
+    "sofascoreId": "FerranTorres",
+    "id": 855833,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 951782400,
+    "proposedMarketValueRaw": {
+      "value": 54000000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "فيرران توريس",
+        "bn": "ফেরান টরেস",
+        "hi": "फ़ेरैन टोरेस"
+      },
+      "shortNameTranslation": {
+        "ar": "ف. توريس",
+        "bn": "এফ. টরেস",
+        "hi": "एफ. टोरेस"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 4,
+    "accuratePass": 3,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 1,
+    "totalOwnHalfPasses": 1,
+    "accurateOppositionHalfPasses": 2,
+    "totalOppositionHalfPasses": 3,
+    "duelLost": 3,
+    "duelWon": 1,
+    "dispossessed": 1,
+    "totalContest": 2,
+    "wasFouled": 1,
+    "minutesPlayed": 23,
+    "touches": 9,
+    "rating": 6.5,
+    "possessionLostCtrl": 4,
+    "expectedAssists": 0.00897745,
+    "totalBallCarriesDistance": 34.310940233976,
+    "ballCarriesCount": 4,
+    "totalProgression": 22.613605906247,
+    "bestBallCarryProgression": 16.961479509199,
+    "totalProgressiveBallCarriesDistance": 18.108624492214,
+    "progressiveBallCarriesCount": 1,
+    "ratingVersions": {
+      "original": 6.5,
+      "alternative": 6.3
+    },
+    "totalShots": 0,
+    "passValueNormalized": 0.07,
+    "dribbleValueNormalized": 0.11,
+    "defensiveValueNormalized": 0,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "F",
+  "extra": null
+}

@@ -22,5 +22,4 @@ def main_scrape_league_data(league_id: int, out_path: str, do_ss: bool = False, 
         import fotmob as fm
         fm.scrape_league_data(league_id=league_id, out_path=os.path.join(out_path, 'fm'))
     
-
-main_scrape_league_data(league_id=73, out_path=out_path, do_sw=True)
+main_scrape_league_data(league_id=73, out_path=out_path, do_ss=True)

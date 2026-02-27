@@ -1,0 +1,628 @@
+{
+  "venues": [
+    {
+      "city": {
+        "name": "Barcelona"
+      },
+      "venueCoordinates": {
+        "latitude": 41.36472,
+        "longitude": 2.155645
+      },
+      "hidden": false,
+      "slug": "ol-mpic-llu-s-companys",
+      "name": "Olímpic Lluís Companys",
+      "capacity": 55926,
+      "id": 714,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أوليمبيك لويس كومبانيز",
+          "hi": "ओलंपिक लुईस कम्पनीज",
+          "bn": "অলিম্পিক লুইস কোম্পানিস"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Olímpic Lluís Companys",
+        "capacity": 55926
+      }
+    },
+    {
+      "city": {
+        "name": "Seville"
+      },
+      "venueCoordinates": {
+        "latitude": 37.384634,
+        "longitude": -5.971156
+      },
+      "hidden": false,
+      "slug": "ram-n-s-nchez-pizju-n",
+      "name": "Ramón Sánchez Pizjuán",
+      "capacity": 42714,
+      "id": 730,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "رامون سانشيز بيزخوان",
+          "hi": "रामोन सांचेज़ पिज़्ज़ुआन",
+          "bn": "রামন সানচেজ পিজজুয়ান"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Ramón Sánchez Pizjuán",
+        "capacity": 42714
+      }
+    },
+    {
+      "city": {
+        "name": "Bilbao"
+      },
+      "venueCoordinates": {
+        "latitude": 43.264204,
+        "longitude": -2.949391
+      },
+      "hidden": false,
+      "slug": "san-mam-s",
+      "name": "San Mamés",
+      "capacity": 53289,
+      "id": 751,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "سان ماميس",
+          "hi": "सैन मामेस",
+          "bn": "সান মামেস"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "San Mamés",
+        "capacity": 53289
+      }
+    },
+    {
+      "city": {
+        "name": "Girona"
+      },
+      "venueCoordinates": {
+        "latitude": 41.9611,
+        "longitude": 2.8278
+      },
+      "hidden": false,
+      "slug": "estadi-montilivi",
+      "name": "Estadi Montilivi",
+      "capacity": 14624,
+      "id": 11380,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ملعب مونتيلفي",
+          "hi": "एस्टेडी मोंटिलिवी",
+          "bn": "এস্তাদি মন্টিলিভি"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadi Montilivi",
+        "capacity": 14624
+      }
+    },
+    {
+      "city": {
+        "name": "Palma"
+      },
+      "venueCoordinates": {
+        "latitude": 39.589935,
+        "longitude": 2.630116
+      },
+      "hidden": false,
+      "slug": "estadi-de-son-moix",
+      "name": "Estadi de Son Moix",
+      "capacity": 26020,
+      "id": 760,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ملعب دي سون مويس",
+          "hi": "एस्ताडी डी सोन मोइक्स",
+          "bn": "এস্তাদি দে সন মোইক্স"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadi de Son Moix",
+        "capacity": 26020
+      }
+    },
+    {
+      "city": {
+        "name": "Madrid"
+      },
+      "venueCoordinates": {
+        "latitude": 40.436053,
+        "longitude": -3.599716
+      },
+      "hidden": false,
+      "slug": "c-vitas-metropolitano",
+      "name": "Riyadh Air Metropolitano",
+      "capacity": 70460,
+      "id": 18391,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "سيفيتاس ميتروبوليتانو",
+          "hi": "सिविटास मेट्रोपोलिटानो",
+          "bn": "সিভিটাস মেট্রোপলিটানো"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Riyadh Air Metropolitano",
+        "capacity": 70460
+      }
+    },
+    {
+      "city": {
+        "name": "Seville"
+      },
+      "venueCoordinates": {
+        "latitude": 37.417235,
+        "longitude": -6.004613
+      },
+      "hidden": false,
+      "slug": "estadio-de-la-cartuja",
+      "name": "Estadio de la Cartuja",
+      "capacity": 70000,
+      "id": 1078,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ملعب دي لا كارتوجا",
+          "hi": "एस्टेडियो डे ला कार्टुजा",
+          "bn": "এস্তাদিও দে লা কার্তুজা"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadio de la Cartuja",
+        "capacity": 70000
+      }
+    },
+    {
+      "city": {
+        "name": "Seville"
+      },
+      "venueCoordinates": {
+        "latitude": 37.356535,
+        "longitude": -5.981757
+      },
+      "hidden": false,
+      "slug": "benito-villamarin",
+      "name": "Benito Villamarin",
+      "capacity": 60721,
+      "id": 1045,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "بينيتو فيلامارين",
+          "hi": "बेनिटो विलामारिन",
+          "bn": "বেনিটো ভিলামারিন"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Benito Villamarin",
+        "capacity": 60721
+      }
+    },
+    {
+      "city": {
+        "name": "Valencia"
+      },
+      "venueCoordinates": {
+        "latitude": 39.474528,
+        "longitude": -0.358157
+      },
+      "hidden": false,
+      "slug": "mestalla",
+      "name": "Mestalla",
+      "capacity": 49430,
+      "id": 691,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ميستايا",
+          "hi": "मेस्टाला",
+          "bn": "মেস্তাল্লা"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Mestalla",
+        "capacity": 49430
+      }
+    },
+    {
+      "city": {
+        "name": "Barcelona"
+      },
+      "venueCoordinates": {
+        "latitude": 41.380881,
+        "longitude": 2.122818
+      },
+      "hidden": false,
+      "slug": "spotify-camp-nou",
+      "name": "Spotify Camp Nou",
+      "capacity": 99354,
+      "id": 709,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "سبوتيفاي كامب نو",
+          "hi": "स्पॉटिफ़ी कैंप नोउ",
+          "bn": "স্পটিফাই ক্যাম্প ন্যু"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Spotify Camp Nou",
+        "capacity": 99354
+      }
+    },
+    {
+      "city": {
+        "name": "Villarreal"
+      },
+      "venueCoordinates": {
+        "latitude": 39.944208,
+        "longitude": -0.103405
+      },
+      "hidden": false,
+      "slug": "estadio-de-la-ceramica",
+      "name": "Estadio de la Ceramica",
+      "capacity": 23500,
+      "id": 619,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ملعب دي لا سيراميكا",
+          "hi": "एस्टेडियो डे ला सेरेमिका",
+          "bn": "এস্তাদিও দে লা সিরামিকা"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadio de la Ceramica",
+        "capacity": 23500
+      }
+    },
+    {
+      "city": {
+        "name": "San Sebastian"
+      },
+      "venueCoordinates": {
+        "latitude": 43.301337,
+        "longitude": -1.973552
+      },
+      "hidden": false,
+      "slug": "reale-arena",
+      "name": "Reale Arena",
+      "capacity": 40000,
+      "id": 581,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ريالي أرينا",
+          "hi": "रीले एरिना",
+          "bn": "রিয়েল এরিনা"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Reale Arena",
+        "capacity": 40000
+      }
+    },
+    {
+      "city": {
+        "name": "Vigo"
+      },
+      "venueCoordinates": {
+        "latitude": 42.211122,
+        "longitude": -8.739231
+      },
+      "hidden": false,
+      "slug": "municipal-de-balaidos",
+      "name": "Estadio Abanca Balaídos",
+      "capacity": 24870,
+      "id": 697,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "بلدية بالايدوس",
+          "hi": "म्युनिसिपल डे बलाइदोस",
+          "bn": "মিউনিসিপ্যাল ​​ডি বালাইডোস"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadio Abanca Balaídos",
+        "capacity": 24870
+      }
+    },
+    {
+      "city": {
+        "name": "Madrid"
+      },
+      "venueCoordinates": {
+        "latitude": 40.3921,
+        "longitude": -3.6587
+      },
+      "hidden": false,
+      "slug": "estadio-de-vallecas",
+      "name": "Estadio de Vallecas",
+      "capacity": 14708,
+      "id": 2440,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ملعب فالكا",
+          "hi": "एस्टेडियो डे वैलेकास",
+          "bn": "এস্তাদিও ডি ভ্যালেকাস"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadio de Vallecas",
+        "capacity": 14708
+      }
+    },
+    {
+      "city": {
+        "name": "Cornella"
+      },
+      "venueCoordinates": {
+        "latitude": 41.347807,
+        "longitude": 2.074801
+      },
+      "hidden": false,
+      "slug": "rcde-stadium",
+      "name": "RCDE Stadium",
+      "capacity": 40000,
+      "id": 1307,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ملعب RCDE",
+          "hi": "आरसीडीई स्टेडियम",
+          "bn": "আরসিডিই স্টেডিয়াম"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "RCDE Stadium",
+        "capacity": 40000
+      }
+    },
+    {
+      "city": {
+        "name": "Leganes"
+      },
+      "venueCoordinates": {
+        "latitude": 40.340375,
+        "longitude": -3.760651
+      },
+      "hidden": false,
+      "slug": "estadio-municipal-de-butarque",
+      "name": "Estadio Municipal de Butarque",
+      "capacity": 12454,
+      "id": 14888,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "استاد بوتاركي البلدي",
+          "hi": "एस्टेडियो म्युनिसिपल डी बुटार्क",
+          "bn": "এস্তাদিও মিউনিসিপ্যাল ​​ডি বুটার্ক"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadio Municipal de Butarque",
+        "capacity": 12454
+      }
+    },
+    {
+      "city": {
+        "name": "Pamplona"
+      },
+      "venueCoordinates": {
+        "latitude": 42.796662,
+        "longitude": -1.637131
+      },
+      "hidden": false,
+      "slug": "estadio-el-sadar",
+      "name": "Estadio El Sadar",
+      "capacity": 23576,
+      "id": 739,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ملعب ال سادار",
+          "hi": "एस्टेडियो एल सदर",
+          "bn": "এস্তাদিও এল সদর"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadio El Sadar",
+        "capacity": 23576
+      }
+    },
+    {
+      "city": {
+        "name": "Valencia"
+      },
+      "venueCoordinates": {
+        "latitude": 39.4946,
+        "longitude": -0.3633
+      },
+      "hidden": false,
+      "slug": "ciudad-de-valencia",
+      "name": "Ciudad de Valencia",
+      "capacity": 26354,
+      "id": 607,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "مدينة فالنسيا",
+          "hi": "सियुदाद डे वेलेंसिया",
+          "bn": "সিউদাদ ডি ভ্যালেন্সিয়া"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Ciudad de Valencia",
+        "capacity": 26354
+      }
+    },
+    {
+      "city": {
+        "name": "Elche"
+      },
+      "venueCoordinates": {
+        "latitude": 38.267044,
+        "longitude": -0.663305
+      },
+      "hidden": false,
+      "slug": "estadio-mart-nez-valero",
+      "name": "Estadio Martínez Valero",
+      "capacity": 31388,
+      "id": 1042,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ملعب مارتينيز فاليرو",
+          "hi": "एस्टेडियो मार्टिनेज वलेरो",
+          "bn": "এস্তাদিও মার্টিনেজ ভ্যালেরো"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadio Martínez Valero",
+        "capacity": 31388
+      }
+    },
+    {
+      "city": {
+        "name": "Madrid"
+      },
+      "venueCoordinates": {
+        "latitude": 40.453,
+        "longitude": -3.6883
+      },
+      "hidden": false,
+      "slug": "santiago-bernab-u",
+      "name": "Bernabéu",
+      "capacity": 84744,
+      "id": 754,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "سانتياغو برنابيو",
+          "hi": "सैंटियागो बर्नबेउ",
+          "bn": "সান্তিয়াগো বার্নাব্যু"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Bernabéu",
+        "capacity": 84744
+      }
+    },
+    {
+      "city": {
+        "name": "Getafe"
+      },
+      "venueCoordinates": {
+        "latitude": 40.325725,
+        "longitude": -3.714933
+      },
+      "hidden": false,
+      "slug": "coliseum-alfonso-p-rez",
+      "name": "Coliseum Alfonso Pérez",
+      "capacity": 17393,
+      "id": 608,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كوليسيوم ألفونسو بيريز",
+          "hi": "कोलिज़ीयम अल्फोंसो पेरेज़",
+          "bn": "কলিজিয়াম আলফোনসো পেরেজ"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Coliseum Alfonso Pérez",
+        "capacity": 17393
+      }
+    },
+    {
+      "city": {
+        "name": "Oviedo"
+      },
+      "venueCoordinates": {
+        "latitude": 43.360872,
+        "longitude": -5.870332
+      },
+      "hidden": false,
+      "slug": "carlos-tartiere",
+      "name": "Carlos Tartiere",
+      "capacity": 30500,
+      "id": 2842,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كارلوس تارتيري",
+          "hi": "कार्लोस टार्टिएरे",
+          "bn": "কার্লোস টারটিয়ের"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Carlos Tartiere",
+        "capacity": 30500
+      }
+    },
+    {
+      "city": {
+        "name": "Barcelona"
+      },
+      "venueCoordinates": {
+        "latitude": 41.3742,
+        "longitude": 2.050553
+      },
+      "hidden": true,
+      "slug": "estadi-johan-cruyff",
+      "name": "Estadi Johan Cruyff",
+      "capacity": 6000,
+      "id": 26762,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ملعب يوهان كرويف",
+          "hi": "एस्टेडी जोहान क्रूफ़",
+          "bn": "ইস্তাদি জোহান ক্রুইফ"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadi Johan Cruyff",
+        "capacity": 6000
+      }
+    },
+    {
+      "city": {
+        "name": "Vitoria-Gasteiz"
+      },
+      "venueCoordinates": {
+        "latitude": 42.8371,
+        "longitude": -2.6882
+      },
+      "hidden": false,
+      "slug": "estadio-de-mendizorroza",
+      "name": "Estadio de Mendizorroza",
+      "capacity": 19840,
+      "id": 9311,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ملعب دي مينديزوروزا",
+          "hi": "एस्टेडियो डी मेंडिज़ोरोज़ा",
+          "bn": "মেন্ডিজোরোজা স্টেডিয়াম"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Estadio de Mendizorroza",
+        "capacity": 19840
+      }
+    }
+  ]
+}

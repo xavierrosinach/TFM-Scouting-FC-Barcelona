@@ -1,0 +1,106 @@
+{
+  "player": {
+    "name": "Pablo Marín",
+    "firstName": "Pablo Marín",
+    "slug": "pablo-marin",
+    "shortName": "P. Marín",
+    "position": "M",
+    "jerseyNumber": "15",
+    "height": 178,
+    "userCount": 497,
+    "gender": "M",
+    "id": 1139409,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 1057190400,
+    "proposedMarketValueRaw": {
+      "value": 8400000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "بابلو مارين",
+        "bn": "পাবলো মারিন",
+        "hi": "पाब्लो मारिन"
+      },
+      "shortNameTranslation": {
+        "ar": "ب. مارين",
+        "bn": "পি. মারিন",
+        "hi": "पी. मारिन"
+      }
+    }
+  },
+  "team": {
+    "name": "Real Sociedad",
+    "slug": "real-sociedad",
+    "shortName": "Real Sociedad",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 395722,
+    "nameCode": "RSO",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2824,
+    "teamColors": {
+      "primary": "#ffffff",
+      "secondary": "#0077c7",
+      "text": "#0077c7"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ريال سوسيداد",
+        "bn": "রিয়াল সোসিয়েদাদ",
+        "hi": "रियल सोसियदाद",
+        "ru": "Реал Сосьедад"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 11,
+    "accuratePass": 9,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 4,
+    "totalOwnHalfPasses": 4,
+    "accurateOppositionHalfPasses": 5,
+    "totalOppositionHalfPasses": 7,
+    "aerialLost": 1,
+    "duelLost": 7,
+    "duelWon": 3,
+    "dispossessed": 1,
+    "totalContest": 3,
+    "totalClearance": 1,
+    "interceptionWon": 3,
+    "ballRecovery": 2,
+    "unsuccessfulTouch": 5,
+    "wasFouled": 3,
+    "fouls": 2,
+    "totalOffside": 1,
+    "minutesPlayed": 90,
+    "touches": 35,
+    "rating": 6,
+    "possessionLostCtrl": 11,
+    "expectedAssists": 0.00373373,
+    "totalBallCarriesDistance": 44.899687621125,
+    "ballCarriesCount": 5,
+    "totalProgression": 9.7186030065921,
+    "ratingVersions": {
+      "original": 6,
+      "alternative": 6.4
+    },
+    "totalShots": 0,
+    "passValueNormalized": -0.18,
+    "dribbleValueNormalized": -0.12,
+    "defensiveValueNormalized": -0.05,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "M",
+  "extra": null
+}

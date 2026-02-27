@@ -1,0 +1,117 @@
+{
+  "player": {
+    "name": "Pau Cubarsí",
+    "firstName": "Pau Cubarsí",
+    "slug": "pau-cubarsi",
+    "shortName": "P. Cubarsí",
+    "position": "D",
+    "jerseyNumber": "5",
+    "height": 184,
+    "userCount": 155694,
+    "gender": "M",
+    "sofascoreId": "PauCubarsí",
+    "id": 1402913,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 1169424000,
+    "proposedMarketValueRaw": {
+      "value": 75000000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "باو كوبارسي",
+        "bn": "পাউ কিউবারসি",
+        "hi": "पाउ क्यूबार्सी"
+      },
+      "shortNameTranslation": {
+        "ar": "ب. كوبارسي",
+        "bn": "পি. কিউবারসি",
+        "hi": "पी. क्यूबार्सी"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 108,
+    "accuratePass": 100,
+    "totalLongBalls": 5,
+    "accurateLongBalls": 2,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 41,
+    "totalOwnHalfPasses": 45,
+    "accurateOppositionHalfPasses": 59,
+    "totalOppositionHalfPasses": 63,
+    "aerialLost": 3,
+    "aerialWon": 3,
+    "duelLost": 5,
+    "duelWon": 5,
+    "shotOffTarget": 1,
+    "onTargetScoringAttempt": 1,
+    "totalClearance": 4,
+    "outfielderBlock": 1,
+    "interceptionWon": 1,
+    "ballRecovery": 3,
+    "totalTackle": 1,
+    "unsuccessfulTouch": 1,
+    "wasFouled": 1,
+    "fouls": 3,
+    "minutesPlayed": 90,
+    "touches": 123,
+    "rating": 7.5,
+    "possessionLostCtrl": 9,
+    "expectedGoals": 0.1603,
+    "expectedGoalsOnTarget": 0.2686,
+    "expectedAssists": 0.0375234,
+    "totalBallCarriesDistance": 380.77664404194,
+    "ballCarriesCount": 45,
+    "totalProgression": 194.51222309749,
+    "bestBallCarryProgression": 14.277942470262,
+    "totalProgressiveBallCarriesDistance": 60.522346449281,
+    "progressiveBallCarriesCount": 3,
+    "ratingVersions": {
+      "original": 7.5,
+      "alternative": 7.6
+    },
+    "totalShots": 2,
+    "shotValueNormalized": -0.09,
+    "passValueNormalized": 0.35,
+    "dribbleValueNormalized": 0.3,
+    "defensiveValueNormalized": 0.24,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "D",
+  "extra": null
+}

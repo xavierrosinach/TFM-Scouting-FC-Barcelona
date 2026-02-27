@@ -1,0 +1,21 @@
+league;season;rank;team;venue_name;min_attendance;max_attendance;total_attendance;avg_attendance;capacity;percent_sold
+73;2425;1;Real Madrid CF;Estadio Bernabéu;60753;78192;1381324;72701;85454;85
+73;2425;2;Club Atlético de Madrid;Riyadh Air Metropolitano;49410;70112;1156780;60883;70460;86
+73;2425;3;Real Betis Balompié;Estadio Benito Villamarín;46458;58538;979298;51542;60721;85
+73;2425;4;Athletic Club;Estadio de San Mamés;46713;51364;919976;48420;53289;91
+73;2425;5;FC Barcelona;Estadi Olímpic Lluís Companys;39523;50319;873098;45953;55926;82
+73;2425;6;Valencia CF;Estadio de Mestalla;37586;46673;817792;43042;55000;78
+73;2425;7;Sevilla FC;Estadio Ramón Sánchez Pizjuán;31536;42571;676765;35619;48649;73
+73;2425;8;Real Sociedad de Fútbol;Estadio Municipal de Anoeta;20855;37370;567662;29877;40000;75
+73;2425;9;Reial Club Deportiu Espanyol de Barcelona;RCDE Stadium;18122;34283;487160;25640;40423;63
+73;2425;10;UD Las Palmas;Estadio de Gran Canaria;11279;31192;437195;23010;32392;71
+73;2425;11;Real Club Celta de Vigo;Estadio Abanca-Balaídos;17326;24573;408581;21504;24791;87
+73;2425;12;CA Osasuna;Estadio El Sadar;18220;22390;389050;20476;23576;87
+73;2425;13;Real Valladolid CF;Estadio Municipal José Zorrilla;12230;26025;376413;19811;27618;72
+73;2425;14;Real Club Deportivo Mallorca;Estadi Mallorca Son Moix;15378;23010;351547;18502;26020;71
+73;2425;15;Villarreal CF;Estadio de la Cerámica;14000;22048;347057;18266;24500;75
+73;2425;16;Deportivo Alavés;Estadio de Mendizorroza;13612;19468;329043;17318;19840;87
+73;2425;17;Rayo Vallecano de Madrid;Estadio de Vallecas;11308;14168;245256;12908;15500;83
+73;2425;18;Girona FC;Estadi Municipal de Montilivi;7721;13891;221487;11657;14500;80
+73;2425;19;Getafe CF;Estadio Coliseum;7559;15184;217902;11469;17393;66
+73;2425;20;CD Leganés;Estadio Ontime Butarque;8304;12530;211563;11135;13089;85

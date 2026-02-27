@@ -1,0 +1,307 @@
+{
+  "team": {
+    "name": "Real Oviedo",
+    "slug": "real-oviedo",
+    "shortName": "Real Oviedo",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "category": {
+      "name": "Spain",
+      "slug": "spain",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 32,
+      "flag": "spain",
+      "alpha2": "ES",
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "إسبانيا",
+          "hi": "स्पेन",
+          "bn": "স্পেন",
+          "ru": "Испания"
+        },
+        "shortNameTranslation": {}
+      },
+      "transferPeriod": [
+        {
+          "activeFrom": "06-01 00:00",
+          "activeTo": "09-18 00:00"
+        },
+        {
+          "activeFrom": "12-30 00:00",
+          "activeTo": "02-16 00:00"
+        }
+      ]
+    },
+    "tournament": {
+      "name": "LaLiga 2",
+      "slug": "laliga-2",
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        },
+        "transferPeriod": [
+          {
+            "activeFrom": "06-01 00:00",
+            "activeTo": "09-18 00:00"
+          },
+          {
+            "activeFrom": "12-30 00:00",
+            "activeTo": "02-16 00:00"
+          }
+        ]
+      },
+      "uniqueTournament": {
+        "name": "LaLiga 2",
+        "slug": "laliga-2",
+        "primaryColorHex": "#2f4a89",
+        "secondaryColorHex": "#e89823",
+        "category": {
+          "name": "Spain",
+          "slug": "spain",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "country": {
+            "alpha2": "ES",
+            "alpha3": "ESP",
+            "name": "Spain",
+            "slug": "spain"
+          },
+          "id": 32,
+          "flag": "spain",
+          "alpha2": "ES",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إسبانيا",
+              "hi": "स्पेन",
+              "bn": "স্পেন",
+              "ru": "Испания"
+            },
+            "shortNameTranslation": {}
+          },
+          "transferPeriod": [
+            {
+              "activeFrom": "06-01 00:00",
+              "activeTo": "09-18 00:00"
+            },
+            {
+              "activeFrom": "12-30 00:00",
+              "activeTo": "02-16 00:00"
+            }
+          ]
+        },
+        "userCount": 49820,
+        "hasPerformanceGraphFeature": true,
+        "country": {},
+        "id": 54,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الدوري الإسباني الدرجة الثانية",
+            "bn": "লা লিগা 2",
+            "hi": "लालीगा 2"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "priority": 353,
+      "isLive": false,
+      "id": 37,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "الدوري الإسباني الدرجة الثانية",
+          "bn": "লা লিগা 2",
+          "hi": "लालीगा 2"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "primaryUniqueTournament": {
+      "name": "LaLiga",
+      "slug": "laliga",
+      "primaryColorHex": "#2f4a89",
+      "secondaryColorHex": "#f4a32e",
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        },
+        "transferPeriod": [
+          {
+            "activeFrom": "06-01 00:00",
+            "activeTo": "09-18 00:00"
+          },
+          {
+            "activeFrom": "12-30 00:00",
+            "activeTo": "02-16 00:00"
+          }
+        ]
+      },
+      "userCount": 812409,
+      "hasPerformanceGraphFeature": true,
+      "country": {},
+      "id": 8,
+      "displayInverseHomeAwayTeams": false,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "الدوري الإسباني",
+          "hi": "ला लिगा",
+          "bn": "লা লীগা"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "userCount": 86153,
+    "manager": {
+      "name": "Guillermo Almada",
+      "slug": "guillermo-almada",
+      "shortName": "G. Almada",
+      "country": {
+        "alpha2": "UY",
+        "alpha3": "URY",
+        "name": "Uruguay",
+        "slug": "uruguay"
+      },
+      "id": 150321,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "غيليرمو ألمادا"
+        },
+        "shortNameTranslation": {
+          "ar": "غ. ألمادا"
+        }
+      }
+    },
+    "venue": {
+      "city": {
+        "name": "Oviedo"
+      },
+      "venueCoordinates": {
+        "latitude": 43.360872,
+        "longitude": -5.870332
+      },
+      "hidden": false,
+      "slug": "carlos-tartiere",
+      "name": "Carlos Tartiere",
+      "capacity": 30500,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2842,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "كارلوس تارتيري",
+          "hi": "कार्लोस टार्टिएरे",
+          "bn": "কার্লোস টারটিয়ের"
+        },
+        "shortNameTranslation": {}
+      },
+      "stadium": {
+        "name": "Carlos Tartiere",
+        "capacity": 30500
+      }
+    },
+    "nameCode": "OVI",
+    "class": 0,
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "country": {
+      "alpha2": "ES",
+      "alpha3": "ESP",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 2851,
+    "fullName": "Real Oviedo",
+    "teamColors": {
+      "primary": "#3300ff",
+      "secondary": "#ffffff",
+      "text": "#ffffff"
+    },
+    "foundationDateTimestamp": -1381276800,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ريال اوفيدو",
+        "hi": "रियल ओविएडो",
+        "ru": "Реал Овьедо"
+      },
+      "shortNameTranslation": {}
+    },
+    "timeActive": []
+  },
+  "pregameForm": {
+    "avgRating": "6.73",
+    "position": 20,
+    "value": "17",
+    "form": [
+      "L",
+      "L",
+      "W",
+      "L",
+      "D"
+    ]
+  }
+}

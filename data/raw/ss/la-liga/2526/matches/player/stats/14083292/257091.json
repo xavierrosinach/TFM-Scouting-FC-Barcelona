@@ -1,0 +1,106 @@
+{
+  "player": {
+    "name": "Duje Ćaleta-Car",
+    "slug": "duje-caleta-car",
+    "shortName": "D. Ćaleta-Car",
+    "position": "D",
+    "jerseyNumber": "16",
+    "height": 192,
+    "userCount": 2916,
+    "gender": "M",
+    "id": 257091,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 842918400,
+    "proposedMarketValueRaw": {
+      "value": 3100000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "دويه كاليتا-كار",
+        "bn": "দুই শ্যালেটা-কার",
+        "hi": "दूजे कालता-कार"
+      },
+      "shortNameTranslation": {
+        "ar": "د. كاليتا-كار",
+        "bn": "ডি. শ্যালেটা-কার",
+        "hi": "डी. कालता-कार"
+      }
+    }
+  },
+  "team": {
+    "name": "Real Sociedad",
+    "slug": "real-sociedad",
+    "shortName": "Real Sociedad",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 395722,
+    "nameCode": "RSO",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2824,
+    "teamColors": {
+      "primary": "#ffffff",
+      "secondary": "#0077c7",
+      "text": "#0077c7"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ريال سوسيداد",
+        "bn": "রিয়াল সোসিয়েদাদ",
+        "hi": "रियल सोसियदाद",
+        "ru": "Реал Сосьедад"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 21,
+    "accuratePass": 16,
+    "totalLongBalls": 1,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 14,
+    "totalOwnHalfPasses": 18,
+    "accurateOppositionHalfPasses": 2,
+    "totalOppositionHalfPasses": 3,
+    "aerialLost": 2,
+    "aerialWon": 9,
+    "duelLost": 4,
+    "duelWon": 10,
+    "challengeLost": 1,
+    "totalClearance": 3,
+    "outfielderBlock": 1,
+    "interceptionWon": 3,
+    "ballRecovery": 2,
+    "totalTackle": 1,
+    "wonTackle": 1,
+    "fouls": 1,
+    "minutesPlayed": 90,
+    "touches": 33,
+    "rating": 7,
+    "possessionLostCtrl": 5,
+    "expectedAssists": 0.00083757,
+    "totalBallCarriesDistance": 12.105026898967,
+    "ballCarriesCount": 2,
+    "totalProgression": -3.2866413300194,
+    "ratingVersions": {
+      "original": 7,
+      "alternative": 7
+    },
+    "totalShots": 0,
+    "passValueNormalized": -0.07,
+    "dribbleValueNormalized": 0.02,
+    "defensiveValueNormalized": -0.02,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "D",
+  "extra": null
+}

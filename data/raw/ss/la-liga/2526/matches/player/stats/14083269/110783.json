@@ -1,0 +1,105 @@
+{
+  "player": {
+    "name": "Sergi Darder",
+    "slug": "sergi-darder",
+    "shortName": "S. Darder",
+    "position": "M",
+    "jerseyNumber": "10",
+    "height": 180,
+    "userCount": 993,
+    "gender": "M",
+    "id": 110783,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 756518400,
+    "proposedMarketValueRaw": {
+      "value": 3300000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "سيرجي داردر",
+        "bn": "সের্গি ডার্ডার",
+        "hi": "सर्जी डार्डर"
+      },
+      "shortNameTranslation": {
+        "ar": "س. داردر",
+        "bn": "এস. ডার্ডার",
+        "hi": "एस. डार्डर"
+      }
+    }
+  },
+  "team": {
+    "name": "Mallorca",
+    "slug": "mallorca",
+    "shortName": "Mallorca",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 177809,
+    "nameCode": "MLL",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2826,
+    "teamColors": {
+      "primary": "#cc0000",
+      "secondary": "#000000",
+      "text": "#000000"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "مايوركا",
+        "bn": "ম্যালোর্কা",
+        "hi": "मल्लोर्का",
+        "ru": "Мальорка"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 9,
+    "accuratePass": 8,
+    "totalLongBalls": 3,
+    "accurateLongBalls": 2,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 2,
+    "totalOwnHalfPasses": 2,
+    "accurateOppositionHalfPasses": 6,
+    "totalOppositionHalfPasses": 7,
+    "totalCross": 1,
+    "accurateCross": 1,
+    "duelLost": 4,
+    "challengeLost": 1,
+    "totalContest": 1,
+    "outfielderBlock": 1,
+    "ballRecovery": 1,
+    "unsuccessfulTouch": 1,
+    "fouls": 2,
+    "minutesPlayed": 28,
+    "touches": 13,
+    "rating": 6.4,
+    "possessionLostCtrl": 3,
+    "expectedAssists": 0.143923,
+    "totalBallCarriesDistance": 26.040357156802,
+    "ballCarriesCount": 5,
+    "totalProgression": 3.3074527339363,
+    "keyPass": 1,
+    "ratingVersions": {
+      "original": 6.4,
+      "alternative": 6.6
+    },
+    "totalShots": 0,
+    "passValueNormalized": 0.11,
+    "dribbleValueNormalized": 0,
+    "defensiveValueNormalized": -0.07,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "M",
+  "extra": null
+}

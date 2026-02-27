@@ -1,0 +1,105 @@
+{
+  "player": {
+    "name": "Gonçalo Guedes",
+    "slug": "goncalo-guedes",
+    "shortName": "G. Guedes",
+    "position": "F",
+    "jerseyNumber": "11",
+    "height": 179,
+    "userCount": 3640,
+    "gender": "M",
+    "id": 280979,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 849225600,
+    "proposedMarketValueRaw": {
+      "value": 5700000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "غونسالو غيديش",
+        "bn": "গনসালো গুয়েদেস",
+        "hi": "गोन्सालो गुएडेस"
+      },
+      "shortNameTranslation": {
+        "ar": "غ. غيديش",
+        "bn": "জি. গুয়েদেস",
+        "hi": "जी. गुएडेस"
+      }
+    }
+  },
+  "team": {
+    "name": "Real Sociedad",
+    "slug": "real-sociedad",
+    "shortName": "Real Sociedad",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 395722,
+    "nameCode": "RSO",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2824,
+    "teamColors": {
+      "primary": "#ffffff",
+      "secondary": "#0077c7",
+      "text": "#0077c7"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ريال سوسيداد",
+        "bn": "রিয়াল সোসিয়েদাদ",
+        "hi": "रियल सोसियदाद",
+        "ru": "Реал Сосьедад"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 16,
+    "accuratePass": 11,
+    "totalLongBalls": 1,
+    "accurateLongBalls": 1,
+    "goalAssist": 1,
+    "accurateOwnHalfPasses": 6,
+    "totalOwnHalfPasses": 8,
+    "accurateOppositionHalfPasses": 5,
+    "totalOppositionHalfPasses": 8,
+    "totalCross": 3,
+    "aerialLost": 2,
+    "duelLost": 3,
+    "ballRecovery": 3,
+    "fouls": 1,
+    "totalOffside": 1,
+    "minutesPlayed": 65,
+    "touches": 22,
+    "rating": 6.5,
+    "possessionLostCtrl": 9,
+    "expectedAssists": 0.0682301,
+    "totalBallCarriesDistance": 66.650062940788,
+    "ballCarriesCount": 8,
+    "totalProgression": 32.012857639443,
+    "bestBallCarryProgression": 12.534965507693,
+    "totalProgressiveBallCarriesDistance": 31.695391591446,
+    "progressiveBallCarriesCount": 2,
+    "keyPass": 1,
+    "ratingVersions": {
+      "original": 6.5,
+      "alternative": 6.8
+    },
+    "totalShots": 0,
+    "passValueNormalized": 0.11,
+    "dribbleValueNormalized": 0.15,
+    "defensiveValueNormalized": -0.07,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "M",
+  "extra": null
+}

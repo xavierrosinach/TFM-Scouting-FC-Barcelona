@@ -1,0 +1,45 @@
+{
+  "venue": {
+    "city": {
+      "name": "Barcelona"
+    },
+    "venueCoordinates": {
+      "latitude": 41.36472,
+      "longitude": 2.155645
+    },
+    "hidden": false,
+    "slug": "ol-mpic-llu-s-companys",
+    "name": "Olímpic Lluís Companys",
+    "capacity": 55926,
+    "mainTeams": [],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 714,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "أوليمبيك لويس كومبانيز",
+        "hi": "ओलंपिक लुईस कम्पनीज",
+        "bn": "অলিম্পিক লুইস কোম্পানিস"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Olímpic Lluís Companys",
+      "capacity": 55926
+    },
+    "openedAtTimestamp": -1281830400
+  },
+  "statistics": {
+    "totalMatches": 57,
+    "homeTeamGoalsScored": 155,
+    "awayTeamGoalsScored": 66,
+    "avgRedCardsPerGame": 0.14035087719298,
+    "avgCornerKicksPerGame": 21.19298245614,
+    "homeTeamWinsPercentage": 75.438596491228,
+    "awayTeamWinsPercentage": 15.789473684211,
+    "drawsPercentage": 8.7719298245614
+  }
+}

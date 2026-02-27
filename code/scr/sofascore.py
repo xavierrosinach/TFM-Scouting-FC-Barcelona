@@ -329,11 +329,7 @@ def image_downloader(type: str, id: int, out_path: str, sleep_time: int = 3, rsc
         time.sleep(sleep_time)
 
 # Obtener información sobre un jugador, equipo, manager o estadio
-def obtain_information(type: str, id: int, season_key: str, league_code: int, out_path: str) -> dict:
-
-    # Acceso a la carpeta de output
-    out_season_path = os.path.join(out_path, str(league_code), season_key)
-    os.makedirs(out_season_path, exist_ok=True)
+def obtain_information(type: str, id: int, season_key: str, league_code: int, out_season_path: str) -> dict:
 
     # Según el tipo, el URL y el output será diferente
     if type == 'player':
@@ -406,7 +402,7 @@ def scrape_league_data(league_id: int, out_path: str) -> None:
         dict_matches = {match['id']: match['slug'] for events in season_data_list for match in events.get('events', []) if match.get('status', {}).get('description') == 'Ended'}
         dict_players = {player['playerId']: player['playerName'].lower().replace(' ', '-') for player in season_info['player']['players']}
         dict_teams = {team['id']: team['slug'] for team in season_info['team']['teams']}
-        dict_venues = {venue['id']: venue['slug'] for venue in season_info['Venues']['venues']}
+        dict_venues = {venue['id']: venue['slug'] for venue in season_info['venue']['venues']}
 
         # Para cada partido
         for match_id in dict_matches.keys():
@@ -431,18 +427,18 @@ def scrape_league_data(league_id: int, out_path: str) -> None:
 
             # Para manager en el partido, obtener información de los managers y fotografias
             for manager in managers_ids.keys():
-                manager_info = obtain_information(type='manager', id=manager, season_key=season_key, league_code=ss_code, out_path=out_season_path)
-                image_downloader(type='manager', id=manager, out_path=out_path)
+                manager_info = obtain_information(type='manager', id=manager, season_key=season_key, league_code=ss_code, out_season_path=out_season_path)
+                # image_downloader(type='manager', id=manager, out_path=out_path)
 
         # Para cada jugador de todos los disponibles, obtenemos información y fotografías, al igual que con equipos y venues
         for player in dict_players.keys():
-            player_info = obtain_information(type='player', id=player, season_key=season_key, league_code=ss_code, out_path=out_season_path)
+            player_info = obtain_information(type='player', id=player, season_key=season_key, league_code=ss_code, out_season_path=out_season_path)
             # image_downloader(type='player', id=player, out_path=out_season_path)
 
         for team in dict_teams.keys():
-            team_info = obtain_information(type='team', id=team, season_key=season_key, league_code=ss_code, out_path=out_season_path)
+            team_info = obtain_information(type='team', id=team, season_key=season_key, league_code=ss_code, out_season_path=out_season_path)
             # image_downloader(type='team', id=team, out_path=out_season_path)
 
         for venue in dict_venues.keys():
-            venue_info = obtain_information(type='venue', id=venue, season_key=season_key, league_code=ss_code, out_path=out_season_path)
+            venue_info = obtain_information(type='venue', id=venue, season_key=season_key, league_code=ss_code, out_season_path=out_season_path)
             # image_downloader(type='venue', id=venue, out_path=out_season_path)

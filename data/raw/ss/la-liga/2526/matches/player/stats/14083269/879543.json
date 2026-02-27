@@ -1,0 +1,103 @@
+{
+  "player": {
+    "name": "Mateu Morey",
+    "firstName": "",
+    "lastName": "",
+    "slug": "mateu-morey",
+    "shortName": "M. Morey",
+    "position": "D",
+    "jerseyNumber": "2",
+    "height": 171,
+    "userCount": 599,
+    "gender": "M",
+    "id": 879543,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 951955200,
+    "proposedMarketValueRaw": {
+      "value": 1500000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ماتيو موري",
+        "bn": "মাতু মোরে",
+        "hi": "माटेउ मोरे"
+      },
+      "shortNameTranslation": {
+        "ar": "م. موري",
+        "bn": "এম. মোরি",
+        "hi": "एम. मोरे"
+      }
+    }
+  },
+  "team": {
+    "name": "Mallorca",
+    "slug": "mallorca",
+    "shortName": "Mallorca",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 177809,
+    "nameCode": "MLL",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2826,
+    "teamColors": {
+      "primary": "#cc0000",
+      "secondary": "#000000",
+      "text": "#000000"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "مايوركا",
+        "bn": "ম্যালোর্কা",
+        "hi": "मल्लोर्का",
+        "ru": "Мальорка"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 9,
+    "accuratePass": 5,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 2,
+    "totalOwnHalfPasses": 2,
+    "accurateOppositionHalfPasses": 3,
+    "totalOppositionHalfPasses": 7,
+    "duelLost": 1,
+    "duelWon": 2,
+    "challengeLost": 1,
+    "totalClearance": 7,
+    "outfielderBlock": 1,
+    "totalTackle": 2,
+    "unsuccessfulTouch": 2,
+    "totalOffside": 1,
+    "minutesPlayed": 62,
+    "touches": 24,
+    "rating": 6.6,
+    "possessionLostCtrl": 8,
+    "expectedAssists": 0.0142252,
+    "totalBallCarriesDistance": 22.255895012019,
+    "ballCarriesCount": 3,
+    "totalProgression": 19.211599809268,
+    "ratingVersions": {
+      "original": 6.6,
+      "alternative": 6.6
+    },
+    "totalShots": 0,
+    "passValueNormalized": -0.17,
+    "dribbleValueNormalized": 0.06,
+    "defensiveValueNormalized": -0.02,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "M",
+  "extra": null
+}

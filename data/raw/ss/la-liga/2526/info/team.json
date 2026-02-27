@@ -1,0 +1,1297 @@
+{
+  "teams": [
+    {
+      "name": "Real Madrid",
+      "slug": "real-madrid",
+      "shortName": "Real Madrid",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 6783154,
+      "nameCode": "RMA",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2829,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#004996",
+        "text": "#004996"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ريال مدريد",
+          "bn": "রিয়াল মাদ্রিদ",
+          "hi": "रियल मैड्रिड",
+          "ru": "Реал Мадрид"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Real Oviedo",
+      "slug": "real-oviedo",
+      "shortName": "Real Oviedo",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 86153,
+      "nameCode": "OVI",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2851,
+      "teamColors": {
+        "primary": "#3300ff",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ريال اوفيدو",
+          "hi": "रियल ओविएडो",
+          "ru": "Реал Овьедо"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Deportivo Alavés",
+      "slug": "deportivo-alaves",
+      "shortName": "Alavés",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 135411,
+      "nameCode": "ALA",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2885,
+      "teamColors": {
+        "primary": "#0232a0",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ديبورتيفو ألافيس",
+          "ru": "Алавес"
+        },
+        "shortNameTranslation": {
+          "ar": "ألافيس",
+          "bn": "আলাভেস",
+          "hi": "अलावेस"
+        }
+      }
+    },
+    {
+      "name": "Celta Vigo",
+      "slug": "celta-vigo",
+      "shortName": "Celta",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 228173,
+      "nameCode": "CEL",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2821,
+      "teamColors": {
+        "primary": "#6cace4",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "سيلتا فيغو",
+          "bn": "সেলটা ভিগো",
+          "ru": "Сельта"
+        },
+        "shortNameTranslation": {
+          "ar": "سيلتا",
+          "hi": "सेल्टा"
+        }
+      }
+    },
+    {
+      "name": "Real Betis",
+      "slug": "real-betis",
+      "shortName": "Real Betis",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 558696,
+      "nameCode": "BET",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2816,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#006633",
+        "text": "#006633"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ريال بيتيس",
+          "ru": "Реал Бетис"
+        },
+        "shortNameTranslation": {
+          "ar": "ريال بيتيس",
+          "bn": "বেটিস",
+          "hi": "बेटिस"
+        }
+      }
+    },
+    {
+      "name": "Espanyol",
+      "slug": "espanyol",
+      "shortName": "Espanyol",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 162457,
+      "nameCode": "ESP",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2814,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#1369d2",
+        "text": "#1369d2"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "اسبانيول",
+          "bn": "এসপানিওল",
+          "hi": "एस्पेनयोल",
+          "ru": "Эспаньол"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Getafe",
+      "slug": "getafe",
+      "shortName": "Getafe",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 174960,
+      "nameCode": "GET",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2859,
+      "teamColors": {
+        "primary": "#00369e",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "خيتافي",
+          "bn": "গেটাফে",
+          "hi": "गेटाफे",
+          "ru": "Хетафе"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Valencia",
+      "slug": "valencia",
+      "shortName": "Valencia",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 274224,
+      "nameCode": "VAL",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2828,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#000000",
+        "text": "#000000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "فالنسيا",
+          "bn": "ভ্যালেন্সিয়া",
+          "hi": "वेलेंसिया",
+          "ru": "Валенсия"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Atlético Madrid",
+      "slug": "atletico-madrid",
+      "shortName": "Atl. Madrid",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 2180233,
+      "nameCode": "ATM",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2836,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#c40000",
+        "text": "#c40000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أتلتيكو مدريد",
+          "hi": "एटलेटिको मैड्रिड",
+          "ru": "Атлетико Мадрид"
+        },
+        "shortNameTranslation": {
+          "ar": "أتل. مدريد",
+          "bn": "এটিএল. মাদ্রিদ"
+        }
+      }
+    },
+    {
+      "name": "Girona FC",
+      "slug": "girona-fc",
+      "shortName": "Girona",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 350129,
+      "nameCode": "GIR",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 24264,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#ff0000",
+        "text": "#ff0000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "جيرونا إف سي",
+          "hi": "जिरोना",
+          "ru": "Жирона"
+        },
+        "shortNameTranslation": {
+          "ar": "جيرونا",
+          "bn": "জিরোনা",
+          "hi": "गिरोना"
+        }
+      }
+    },
+    {
+      "name": "Rayo Vallecano",
+      "slug": "rayo-vallecano",
+      "shortName": "Rayo Vallecano",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 186314,
+      "nameCode": "RAY",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2818,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "رايو فاليكانو",
+          "bn": "রায়ো ভ্যালেকানো",
+          "hi": "रेयो वैलेकैनो",
+          "ru": "Райо Вальекано"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Real Sociedad",
+      "slug": "real-sociedad",
+      "shortName": "Real Sociedad",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 395722,
+      "nameCode": "RSO",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2824,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#0077c7",
+        "text": "#0077c7"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ريال سوسيداد",
+          "bn": "রিয়াল সোসিয়েদাদ",
+          "hi": "रियल सोसियदाद",
+          "ru": "Реал Сосьедад"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Osasuna",
+      "slug": "osasuna",
+      "shortName": "Osasuna",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 185000,
+      "nameCode": "OSA",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2820,
+      "teamColors": {
+        "primary": "#cc0000",
+        "secondary": "#14213d",
+        "text": "#14213d"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "أوساسونا",
+          "bn": "ওসাসুনা",
+          "hi": "ओसासुना",
+          "ru": "Осасуна"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Elche",
+      "slug": "elche",
+      "shortName": "Elche",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 99089,
+      "nameCode": "ELC",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2846,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#336600",
+        "text": "#336600"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "إلتشي",
+          "bn": "এলচে",
+          "hi": "एल्चे",
+          "ru": "Эльче"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Levante UD",
+      "slug": "levante-ud",
+      "shortName": "Levante",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 100769,
+      "nameCode": "LEV",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2849,
+      "teamColors": {
+        "primary": "#0e3b68",
+        "secondary": "#d70000",
+        "text": "#d70000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "ليفانتي يو دي",
+          "hi": "लेवांटे यूडी",
+          "ru": "Леванте"
+        },
+        "shortNameTranslation": {
+          "ar": "ليفانتي",
+          "bn": "লেভান্তে",
+          "hi": "लेवांते"
+        }
+      }
+    },
+    {
+      "name": "Villarreal",
+      "slug": "villarreal",
+      "shortName": "Villarreal",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 439182,
+      "nameCode": "VIL",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2819,
+      "teamColors": {
+        "primary": "#ffff00",
+        "secondary": "#013765",
+        "text": "#013765"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "فياريال",
+          "bn": "ভিলারিয়াল",
+          "hi": "विल्लारियल",
+          "ru": "Вильярреал"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Barcelona",
+      "slug": "barcelona",
+      "shortName": "Barcelona",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 6438008,
+      "nameCode": "BAR",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2817,
+      "teamColors": {
+        "primary": "#154284",
+        "secondary": "#9d1009",
+        "text": "#9d1009"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "برشلونة",
+          "bn": "বার্সেলোনা",
+          "hi": "बार्सिलोना",
+          "ru": "Барселона"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Mallorca",
+      "slug": "mallorca",
+      "shortName": "Mallorca",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 177809,
+      "nameCode": "MLL",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2826,
+      "teamColors": {
+        "primary": "#cc0000",
+        "secondary": "#000000",
+        "text": "#000000"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "مايوركا",
+          "bn": "ম্যালোর্কা",
+          "hi": "मल्लोर्का",
+          "ru": "Мальорка"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Sevilla",
+      "slug": "sevilla",
+      "shortName": "Sevilla",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 373021,
+      "nameCode": "SEV",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2833,
+      "teamColors": {
+        "primary": "#ffffff",
+        "secondary": "#cc1020",
+        "text": "#cc1020"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "إشبيلية",
+          "bn": "সেভিলা",
+          "hi": "सेविला",
+          "ru": "Cевилья"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    {
+      "name": "Athletic Club",
+      "slug": "athletic-club",
+      "shortName": "Athletic Club",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 508345,
+      "nameCode": "ATH",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "id": 2825,
+      "teamColors": {
+        "primary": "#aa0000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "نادي أتليتيك",
+          "bn": "অ্যাথলেটিক ক্লাব",
+          "hi": "एथलेटिक क्लब",
+          "ru": "Атлетик Бильбао"
+        },
+        "shortNameTranslation": {}
+      }
+    }
+  ]
+}

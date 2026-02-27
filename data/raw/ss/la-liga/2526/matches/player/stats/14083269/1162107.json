@@ -1,0 +1,93 @@
+{
+  "player": {
+    "name": "Roony Bardghji",
+    "slug": "roony-bardghji",
+    "shortName": "R. Bardghji",
+    "position": "F",
+    "jerseyNumber": "28",
+    "height": 173,
+    "userCount": 98042,
+    "gender": "M",
+    "id": 1162107,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 1132012800,
+    "proposedMarketValueRaw": {
+      "value": 10300000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "روني باردغجي",
+        "bn": "রুনি বর্ধজী",
+        "hi": "रूनी बार्डघजी"
+      },
+      "shortNameTranslation": {
+        "ar": "ر. باردغجي",
+        "bn": "আর. বর্ধজী",
+        "hi": "आर. बार्डघजी"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 13,
+    "accuratePass": 12,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 9,
+    "totalOwnHalfPasses": 10,
+    "accurateOppositionHalfPasses": 3,
+    "totalOppositionHalfPasses": 3,
+    "minutesPlayed": 12,
+    "touches": 13,
+    "rating": 6.5,
+    "possessionLostCtrl": 1,
+    "expectedAssists": 0.00515818,
+    "totalBallCarriesDistance": 51.435554060219,
+    "ballCarriesCount": 6,
+    "totalProgression": 23.270422196311,
+    "ratingVersions": {
+      "original": 6.5,
+      "alternative": 6.5
+    },
+    "totalShots": 0,
+    "passValueNormalized": -0.07,
+    "dribbleValueNormalized": -0.05,
+    "defensiveValueNormalized": 0,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "F",
+  "extra": null
+}

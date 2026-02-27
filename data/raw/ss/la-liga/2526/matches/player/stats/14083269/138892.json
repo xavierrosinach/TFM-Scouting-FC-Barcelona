@@ -1,0 +1,97 @@
+{
+  "player": {
+    "name": "João Cancelo",
+    "slug": "joao-cancelo",
+    "shortName": "J. Cancelo",
+    "position": "D",
+    "jerseyNumber": "2",
+    "height": 182,
+    "userCount": 90724,
+    "gender": "M",
+    "sofascoreId": "JCancelo",
+    "id": 138892,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 769996800,
+    "proposedMarketValueRaw": {
+      "value": 10700000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "جواو كانسيلو",
+        "bn": "জোয়াও ক্যানসেলো",
+        "hi": "जोआओ केन्सेलो"
+      },
+      "shortNameTranslation": {
+        "ar": "ج. كانسيلو",
+        "bn": "জে. ক্যানসেলো",
+        "hi": "जे. केन्सेलो"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 13,
+    "accuratePass": 12,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 8,
+    "totalOwnHalfPasses": 8,
+    "accurateOppositionHalfPasses": 4,
+    "totalOppositionHalfPasses": 5,
+    "minutesPlayed": 12,
+    "touches": 13,
+    "rating": 6.6,
+    "possessionLostCtrl": 1,
+    "expectedAssists": 0.00427772,
+    "totalBallCarriesDistance": 44.411282206869,
+    "ballCarriesCount": 3,
+    "totalProgression": 25.674390332317,
+    "bestBallCarryProgression": 21.984854398686,
+    "totalProgressiveBallCarriesDistance": 22.648313402989,
+    "progressiveBallCarriesCount": 1,
+    "ratingVersions": {
+      "original": 6.6,
+      "alternative": 6.6
+    },
+    "totalShots": 0,
+    "passValueNormalized": -0.14,
+    "dribbleValueNormalized": 0.12,
+    "defensiveValueNormalized": 0,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "D",
+  "extra": null
+}

@@ -1,0 +1,44 @@
+{
+  "manager": {
+    "name": "Jagoba Arrasate",
+    "slug": "jagoba-arrasate",
+    "shortName": "J. Arrasate",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "teams": [],
+    "preferredFormation": "4-2-3-1",
+    "deceased": false,
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain"
+    },
+    "id": 785589,
+    "nationality": "ESP",
+    "nationalityISO2": "ES",
+    "performance": {
+      "total": 531,
+      "wins": 197,
+      "draws": 146,
+      "losses": 188,
+      "goalsScored": 644,
+      "goalsConceded": 662,
+      "totalPoints": 737
+    },
+    "dateOfBirthTimestamp": 262051200,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "جاغوبا أراساتي",
+        "bn": "জাগোবা অ্যারেসেট",
+        "hi": "जगोबा अरासाते"
+      },
+      "shortNameTranslation": {
+        "ar": "ج. أراساتي",
+        "bn": "জে. অ্যারেসেট",
+        "hi": "जे. अरासाते"
+      }
+    }
+  }
+}

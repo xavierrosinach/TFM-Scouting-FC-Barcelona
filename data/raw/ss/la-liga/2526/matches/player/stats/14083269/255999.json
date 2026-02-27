@@ -1,0 +1,108 @@
+{
+  "player": {
+    "name": "Omar Mascarell",
+    "slug": "omar-mascarell",
+    "shortName": "O. Mascarell",
+    "position": "M",
+    "jerseyNumber": "5",
+    "height": 181,
+    "userCount": 549,
+    "gender": "M",
+    "id": 255999,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 728611200,
+    "proposedMarketValueRaw": {
+      "value": 835000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "عمر ماسكاريل",
+        "bn": "ওমর মাসকারেল",
+        "hi": "उमर मास्करेल"
+      },
+      "shortNameTranslation": {
+        "ar": "ع. ماسكاريل",
+        "bn": "ও. মাসকারেল",
+        "hi": "ओ. मास्करेल"
+      }
+    }
+  },
+  "team": {
+    "name": "Mallorca",
+    "slug": "mallorca",
+    "shortName": "Mallorca",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 177809,
+    "nameCode": "MLL",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2826,
+    "teamColors": {
+      "primary": "#cc0000",
+      "secondary": "#000000",
+      "text": "#000000"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "مايوركا",
+        "bn": "ম্যালোর্কা",
+        "hi": "मल्लोर्का",
+        "ru": "Мальорка"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 24,
+    "accuratePass": 20,
+    "totalLongBalls": 4,
+    "accurateLongBalls": 4,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 13,
+    "totalOwnHalfPasses": 15,
+    "accurateOppositionHalfPasses": 7,
+    "totalOppositionHalfPasses": 9,
+    "aerialLost": 1,
+    "aerialWon": 2,
+    "duelLost": 4,
+    "duelWon": 6,
+    "totalClearance": 2,
+    "outfielderBlock": 1,
+    "interceptionWon": 2,
+    "ballRecovery": 2,
+    "totalTackle": 3,
+    "wonTackle": 3,
+    "unsuccessfulTouch": 1,
+    "wasFouled": 1,
+    "fouls": 3,
+    "minutesPlayed": 90,
+    "touches": 35,
+    "rating": 7,
+    "possessionLostCtrl": 5,
+    "expectedAssists": 0.00278668,
+    "totalBallCarriesDistance": 60.201963346159,
+    "ballCarriesCount": 8,
+    "totalProgression": -3.2411980902834,
+    "ratingVersions": {
+      "original": 7,
+      "alternative": 6.9
+    },
+    "totalShots": 0,
+    "passValueNormalized": -0.01,
+    "dribbleValueNormalized": 0.02,
+    "defensiveValueNormalized": 0.3,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "M",
+  "extra": null
+}

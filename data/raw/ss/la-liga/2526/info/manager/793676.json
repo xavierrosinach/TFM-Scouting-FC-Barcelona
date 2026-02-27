@@ -1,0 +1,456 @@
+{
+  "manager": {
+    "name": "Hans-Dieter Flick",
+    "slug": "hans-dieter-flick",
+    "shortName": "H. Flick",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "teams": [
+      {
+        "name": "Barcelona",
+        "slug": "barcelona",
+        "shortName": "Barcelona",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "Spain",
+          "slug": "spain",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 32,
+          "flag": "spain",
+          "alpha2": "ES",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إسبانيا",
+              "hi": "स्पेन",
+              "bn": "স্পেন",
+              "ru": "Испания"
+            },
+            "shortNameTranslation": {}
+          },
+          "transferPeriod": [
+            {
+              "activeFrom": "06-01 00:00",
+              "activeTo": "09-18 00:00"
+            },
+            {
+              "activeFrom": "12-30 00:00",
+              "activeTo": "02-16 00:00"
+            }
+          ]
+        },
+        "tournament": {
+          "name": "LaLiga",
+          "slug": "laliga",
+          "category": {
+            "name": "Spain",
+            "slug": "spain",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 32,
+            "flag": "spain",
+            "alpha2": "ES",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إسبانيا",
+                "hi": "स्पेन",
+                "bn": "স্পেন",
+                "ru": "Испания"
+              },
+              "shortNameTranslation": {}
+            },
+            "transferPeriod": [
+              {
+                "activeFrom": "06-01 00:00",
+                "activeTo": "09-18 00:00"
+              },
+              {
+                "activeFrom": "12-30 00:00",
+                "activeTo": "02-16 00:00"
+              }
+            ]
+          },
+          "uniqueTournament": {
+            "name": "LaLiga",
+            "slug": "laliga",
+            "primaryColorHex": "#2f4a89",
+            "secondaryColorHex": "#f4a32e",
+            "category": {
+              "name": "Spain",
+              "slug": "spain",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "id": 32,
+              "flag": "spain",
+              "alpha2": "ES",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "إسبانيا",
+                  "hi": "स्पेन",
+                  "bn": "স্পেন",
+                  "ru": "Испания"
+                },
+                "shortNameTranslation": {}
+              },
+              "transferPeriod": [
+                {
+                  "activeFrom": "06-01 00:00",
+                  "activeTo": "09-18 00:00"
+                },
+                {
+                  "activeFrom": "12-30 00:00",
+                  "activeTo": "02-16 00:00"
+                }
+              ]
+            },
+            "userCount": 812409,
+            "hasPerformanceGraphFeature": true,
+            "id": 8,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "الدوري الإسباني",
+                "hi": "ला लिगा",
+                "bn": "লা লীগা"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "priority": 697,
+          "isLive": false,
+          "id": 36,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "hi": "ला लीगा",
+              "ar": "الدوري الإسباني",
+              "bn": "লা লীগা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "primaryUniqueTournament": {
+          "name": "LaLiga",
+          "slug": "laliga",
+          "primaryColorHex": "#2f4a89",
+          "secondaryColorHex": "#f4a32e",
+          "category": {
+            "name": "Spain",
+            "slug": "spain",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 32,
+            "flag": "spain",
+            "alpha2": "ES",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إسبانيا",
+                "hi": "स्पेन",
+                "bn": "স্পেন",
+                "ru": "Испания"
+              },
+              "shortNameTranslation": {}
+            },
+            "transferPeriod": [
+              {
+                "activeFrom": "06-01 00:00",
+                "activeTo": "09-18 00:00"
+              },
+              {
+                "activeFrom": "12-30 00:00",
+                "activeTo": "02-16 00:00"
+              }
+            ]
+          },
+          "userCount": 812409,
+          "hasPerformanceGraphFeature": true,
+          "id": 8,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوري الإسباني",
+              "hi": "ला लिगा",
+              "bn": "লা লীগা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 6438008,
+        "nameCode": "BAR",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2817,
+        "fullName": "Barcelona",
+        "teamColors": {
+          "primary": "#154284",
+          "secondary": "#9d1009",
+          "text": "#9d1009"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "برشلونة",
+            "bn": "বার্সেলোনা",
+            "hi": "बार्सिलोना",
+            "ru": "Барселона"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ],
+    "preferredFormation": "4-2-3-1",
+    "deceased": false,
+    "country": {
+      "alpha2": "DE",
+      "name": "Germany"
+    },
+    "id": 793676,
+    "team": {
+      "name": "Barcelona",
+      "slug": "barcelona",
+      "shortName": "Barcelona",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        },
+        "transferPeriod": [
+          {
+            "activeFrom": "06-01 00:00",
+            "activeTo": "09-18 00:00"
+          },
+          {
+            "activeFrom": "12-30 00:00",
+            "activeTo": "02-16 00:00"
+          }
+        ]
+      },
+      "tournament": {
+        "name": "LaLiga",
+        "slug": "laliga",
+        "category": {
+          "name": "Spain",
+          "slug": "spain",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 32,
+          "flag": "spain",
+          "alpha2": "ES",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إسبانيا",
+              "hi": "स्पेन",
+              "bn": "স্পেন",
+              "ru": "Испания"
+            },
+            "shortNameTranslation": {}
+          },
+          "transferPeriod": [
+            {
+              "activeFrom": "06-01 00:00",
+              "activeTo": "09-18 00:00"
+            },
+            {
+              "activeFrom": "12-30 00:00",
+              "activeTo": "02-16 00:00"
+            }
+          ]
+        },
+        "uniqueTournament": {
+          "name": "LaLiga",
+          "slug": "laliga",
+          "primaryColorHex": "#2f4a89",
+          "secondaryColorHex": "#f4a32e",
+          "category": {
+            "name": "Spain",
+            "slug": "spain",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 32,
+            "flag": "spain",
+            "alpha2": "ES",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إسبانيا",
+                "hi": "स्पेन",
+                "bn": "স্পেন",
+                "ru": "Испания"
+              },
+              "shortNameTranslation": {}
+            },
+            "transferPeriod": [
+              {
+                "activeFrom": "06-01 00:00",
+                "activeTo": "09-18 00:00"
+              },
+              {
+                "activeFrom": "12-30 00:00",
+                "activeTo": "02-16 00:00"
+              }
+            ]
+          },
+          "userCount": 812409,
+          "hasPerformanceGraphFeature": true,
+          "id": 8,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوري الإسباني",
+              "hi": "ला लिगा",
+              "bn": "লা লীগা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 697,
+        "isLive": false,
+        "id": 36,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "hi": "ला लीगा",
+            "ar": "الدوري الإسباني",
+            "bn": "লা লীগা"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "primaryUniqueTournament": {
+        "name": "LaLiga",
+        "slug": "laliga",
+        "primaryColorHex": "#2f4a89",
+        "secondaryColorHex": "#f4a32e",
+        "category": {
+          "name": "Spain",
+          "slug": "spain",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 32,
+          "flag": "spain",
+          "alpha2": "ES",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إسبانيا",
+              "hi": "स्पेन",
+              "bn": "স্পেন",
+              "ru": "Испания"
+            },
+            "shortNameTranslation": {}
+          },
+          "transferPeriod": [
+            {
+              "activeFrom": "06-01 00:00",
+              "activeTo": "09-18 00:00"
+            },
+            {
+              "activeFrom": "12-30 00:00",
+              "activeTo": "02-16 00:00"
+            }
+          ]
+        },
+        "userCount": 812409,
+        "hasPerformanceGraphFeature": true,
+        "id": 8,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الدوري الإسباني",
+            "hi": "ला लिगा",
+            "bn": "লা লীগা"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 6438008,
+      "nameCode": "BAR",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2817,
+      "fullName": "Barcelona",
+      "teamColors": {
+        "primary": "#154284",
+        "secondary": "#9d1009",
+        "text": "#9d1009"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "برشلونة",
+          "bn": "বার্সেলোনা",
+          "hi": "बार्सिलोना",
+          "ru": "Барселона"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "formerPlayerId": 2323870,
+    "nationality": "DEU",
+    "nationalityISO2": "DE",
+    "performance": {
+      "total": 405,
+      "wins": 244,
+      "draws": 70,
+      "losses": 91,
+      "goalsScored": 941,
+      "goalsConceded": 500,
+      "totalPoints": 802
+    },
+    "dateOfBirthTimestamp": -153100800,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "هانس-ديتر فليك"
+      },
+      "shortNameTranslation": {
+        "ar": "ه. فليك"
+      }
+    }
+  }
+}

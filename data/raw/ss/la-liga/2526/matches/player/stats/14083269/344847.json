@@ -1,0 +1,104 @@
+{
+  "player": {
+    "name": "Johan Mojica",
+    "slug": "johan-mojica",
+    "shortName": "J. Mojica",
+    "position": "D",
+    "jerseyNumber": "22",
+    "height": 185,
+    "userCount": 3918,
+    "gender": "M",
+    "id": 344847,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 714355200,
+    "proposedMarketValueRaw": {
+      "value": 1700000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "يوهان موجيكا",
+        "bn": "জোহান মোজিকা",
+        "hi": "जोहान मोजिका"
+      },
+      "shortNameTranslation": {
+        "ar": "ي. موجيكا",
+        "bn": "জে. মোজিকা",
+        "hi": "जे. मोजिका"
+      }
+    }
+  },
+  "team": {
+    "name": "Mallorca",
+    "slug": "mallorca",
+    "shortName": "Mallorca",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 177809,
+    "nameCode": "MLL",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2826,
+    "teamColors": {
+      "primary": "#cc0000",
+      "secondary": "#000000",
+      "text": "#000000"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "مايوركا",
+        "bn": "ম্যালোর্কা",
+        "hi": "मल्लोर्का",
+        "ru": "Мальорка"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 21,
+    "accuratePass": 13,
+    "totalLongBalls": 7,
+    "accurateLongBalls": 1,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 7,
+    "totalOwnHalfPasses": 9,
+    "accurateOppositionHalfPasses": 6,
+    "totalOppositionHalfPasses": 12,
+    "totalCross": 1,
+    "accurateCross": 1,
+    "duelLost": 1,
+    "duelWon": 1,
+    "dispossessed": 1,
+    "totalClearance": 4,
+    "ballRecovery": 2,
+    "totalTackle": 1,
+    "unsuccessfulTouch": 3,
+    "minutesPlayed": 90,
+    "touches": 41,
+    "rating": 5.9,
+    "possessionLostCtrl": 12,
+    "expectedAssists": 0.0151019,
+    "totalBallCarriesDistance": 68.79956584927,
+    "ballCarriesCount": 9,
+    "totalProgression": 15.465042733016,
+    "ratingVersions": {
+      "original": 5.9,
+      "alternative": 6
+    },
+    "totalShots": 0,
+    "passValueNormalized": -0.01,
+    "dribbleValueNormalized": 0.08,
+    "defensiveValueNormalized": -0.49,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "D",
+  "extra": null
+}

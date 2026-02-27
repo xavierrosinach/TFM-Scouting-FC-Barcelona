@@ -1,0 +1,106 @@
+{
+  "player": {
+    "name": "Igor Zubeldia",
+    "slug": "igor-zubeldia",
+    "shortName": "I. Zubeldia",
+    "position": "D",
+    "jerseyNumber": "5",
+    "height": 180,
+    "userCount": 894,
+    "gender": "M",
+    "id": 838159,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 859680000,
+    "proposedMarketValueRaw": {
+      "value": 9500000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "إيغور زوبيلديا",
+        "bn": "ইগর জুবেলদিয়া",
+        "hi": "इगोर ज़ुबेल्डिया"
+      },
+      "shortNameTranslation": {
+        "ar": "إ. زوبيلديا",
+        "bn": "আই. জুবেলদিয়া",
+        "hi": "आई. ज़ुबेल्डिया"
+      }
+    }
+  },
+  "team": {
+    "name": "Real Sociedad",
+    "slug": "real-sociedad",
+    "shortName": "Real Sociedad",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 395722,
+    "nameCode": "RSO",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2824,
+    "teamColors": {
+      "primary": "#ffffff",
+      "secondary": "#0077c7",
+      "text": "#0077c7"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ريال سوسيداد",
+        "bn": "রিয়াল সোসিয়েদাদ",
+        "hi": "रियल सोसियदाद",
+        "ru": "Реал Сосьедад"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 37,
+    "accuratePass": 31,
+    "totalLongBalls": 9,
+    "accurateLongBalls": 3,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 21,
+    "totalOwnHalfPasses": 22,
+    "accurateOppositionHalfPasses": 10,
+    "totalOppositionHalfPasses": 15,
+    "aerialLost": 4,
+    "aerialWon": 5,
+    "duelLost": 8,
+    "duelWon": 8,
+    "totalClearance": 3,
+    "interceptionWon": 2,
+    "ballRecovery": 4,
+    "totalTackle": 2,
+    "wonTackle": 1,
+    "wasFouled": 1,
+    "fouls": 4,
+    "minutesPlayed": 90,
+    "touches": 50,
+    "rating": 6.7,
+    "possessionLostCtrl": 6,
+    "expectedAssists": 0.0042883,
+    "totalBallCarriesDistance": 78.455728871134,
+    "ballCarriesCount": 10,
+    "totalProgression": 40.570145365952,
+    "ratingVersions": {
+      "original": 6.7,
+      "alternative": 6.8
+    },
+    "totalShots": 0,
+    "passValueNormalized": 0.08,
+    "dribbleValueNormalized": 0.09,
+    "defensiveValueNormalized": -0.04,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "D",
+  "extra": null
+}

@@ -1,0 +1,112 @@
+{
+  "player": {
+    "name": "Eric García",
+    "slug": "eric-garcia",
+    "shortName": "E. García",
+    "position": "D",
+    "jerseyNumber": "24",
+    "height": 182,
+    "userCount": 57125,
+    "gender": "M",
+    "sofascoreId": "ericgm3",
+    "id": 876214,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 978998400,
+    "proposedMarketValueRaw": {
+      "value": 29000000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "إيريك غارسيا",
+        "bn": "এরিক গার্সিয়া",
+        "hi": "एरिक गार्सिया"
+      },
+      "shortNameTranslation": {
+        "ar": "إ. غارسيا",
+        "bn": "ই. গার্সিয়া",
+        "hi": "ई. गार्सिया"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 104,
+    "accuratePass": 98,
+    "totalLongBalls": 5,
+    "accurateLongBalls": 3,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 44,
+    "totalOwnHalfPasses": 46,
+    "accurateOppositionHalfPasses": 54,
+    "totalOppositionHalfPasses": 58,
+    "aerialLost": 2,
+    "aerialWon": 5,
+    "duelLost": 3,
+    "duelWon": 9,
+    "dispossessed": 1,
+    "bigChanceMissed": 1,
+    "totalClearance": 5,
+    "interceptionWon": 1,
+    "ballRecovery": 6,
+    "totalTackle": 4,
+    "wonTackle": 1,
+    "unsuccessfulTouch": 1,
+    "minutesPlayed": 90,
+    "touches": 120,
+    "rating": 8.1,
+    "possessionLostCtrl": 8,
+    "expectedAssists": 0.04651,
+    "totalBallCarriesDistance": 241.66923204837,
+    "ballCarriesCount": 31,
+    "totalProgression": 133.16513484716,
+    "bestBallCarryProgression": 17.118598633577,
+    "totalProgressiveBallCarriesDistance": 24.358864526082,
+    "progressiveBallCarriesCount": 1,
+    "keyPass": 2,
+    "ratingVersions": {
+      "original": 8.1,
+      "alternative": 7.8
+    },
+    "totalShots": 0,
+    "passValueNormalized": 0.51,
+    "dribbleValueNormalized": 0.21,
+    "defensiveValueNormalized": 0.23,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "D",
+  "extra": null
+}

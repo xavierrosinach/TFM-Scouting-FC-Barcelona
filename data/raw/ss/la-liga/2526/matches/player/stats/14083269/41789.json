@@ -1,0 +1,114 @@
+{
+  "player": {
+    "name": "Robert Lewandowski",
+    "slug": "robert-lewandowski",
+    "shortName": "R. Lewandowski",
+    "position": "F",
+    "jerseyNumber": "9",
+    "height": 186,
+    "userCount": 575824,
+    "gender": "M",
+    "sofascoreId": "Lewa",
+    "id": 41789,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 588124800,
+    "proposedMarketValueRaw": {
+      "value": 8400000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "روبرت ليفاندوفسكي",
+        "bn": "রবার্ট লেভান্ডোস্কি",
+        "hi": "रॉबर्ट लेवानडॉस्की"
+      },
+      "shortNameTranslation": {
+        "ar": "ر. ليفاندوفسكي",
+        "bn": "আর. লেভান্ডোস্কি",
+        "hi": "आर. लेवानडॉस्की"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 16,
+    "accuratePass": 13,
+    "totalLongBalls": 1,
+    "accurateLongBalls": 1,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 4,
+    "totalOwnHalfPasses": 5,
+    "accurateOppositionHalfPasses": 9,
+    "totalOppositionHalfPasses": 11,
+    "aerialLost": 1,
+    "aerialWon": 2,
+    "duelLost": 3,
+    "duelWon": 4,
+    "dispossessed": 1,
+    "totalContest": 1,
+    "wonContest": 1,
+    "onTargetScoringAttempt": 1,
+    "blockedScoringAttempt": 1,
+    "goals": 1,
+    "totalClearance": 2,
+    "ballRecovery": 1,
+    "unsuccessfulTouch": 4,
+    "wasFouled": 1,
+    "fouls": 1,
+    "minutesPlayed": 78,
+    "touches": 27,
+    "rating": 7.8,
+    "possessionLostCtrl": 8,
+    "expectedGoals": 0.7695,
+    "expectedGoalsOnTarget": 0.915,
+    "expectedAssists": 0.0179495,
+    "totalBallCarriesDistance": 46.277488755073,
+    "ballCarriesCount": 7,
+    "totalProgression": -29.632915253743,
+    "ratingVersions": {
+      "original": 7.8,
+      "alternative": 7.5
+    },
+    "totalShots": 2,
+    "shotValueNormalized": 0.52,
+    "passValueNormalized": -0.09,
+    "dribbleValueNormalized": 0.31,
+    "defensiveValueNormalized": 0.18,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "F",
+  "extra": null
+}

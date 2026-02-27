@@ -1,0 +1,103 @@
+{
+  "player": {
+    "name": "Leo Román",
+    "firstName": "",
+    "lastName": "",
+    "slug": "leo-roman",
+    "shortName": "L. Román",
+    "position": "G",
+    "jerseyNumber": "1",
+    "height": 189,
+    "userCount": 1565,
+    "gender": "M",
+    "id": 1131909,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 962841600,
+    "proposedMarketValueRaw": {
+      "value": 4900000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ليو روماني",
+        "bn": "লিও রোমান",
+        "hi": "लियो रोमान"
+      },
+      "shortNameTranslation": {
+        "ar": "ل. روماني",
+        "bn": "এল. রোমান",
+        "hi": "एल. रोमान"
+      }
+    }
+  },
+  "team": {
+    "name": "Mallorca",
+    "slug": "mallorca",
+    "shortName": "Mallorca",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 177809,
+    "nameCode": "MLL",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2826,
+    "teamColors": {
+      "primary": "#cc0000",
+      "secondary": "#000000",
+      "text": "#000000"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "مايوركا",
+        "bn": "ম্যালোর্কা",
+        "hi": "मल्लोर्का",
+        "ru": "Мальорка"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 24,
+    "accuratePass": 10,
+    "totalLongBalls": 18,
+    "accurateLongBalls": 5,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 5,
+    "totalOwnHalfPasses": 8,
+    "accurateOppositionHalfPasses": 5,
+    "totalOppositionHalfPasses": 16,
+    "ballRecovery": 9,
+    "savedShotsFromInsideTheBox": 2,
+    "saves": 4,
+    "minutesPlayed": 90,
+    "touches": 33,
+    "rating": 6.7,
+    "possessionLostCtrl": 14,
+    "expectedAssists": 0.00105015,
+    "totalBallCarriesDistance": 44.55007558762,
+    "ballCarriesCount": 6,
+    "totalProgression": 12.040671615594,
+    "keeperSaveValue": 0.6563,
+    "ratingVersions": {
+      "original": 6.7,
+      "alternative": 6.6
+    },
+    "totalShots": 0,
+    "goalsPrevented": -0.5052,
+    "passValueNormalized": 0.01,
+    "dribbleValueNormalized": -0.02,
+    "defensiveValueNormalized": -0.24,
+    "goalkeeperValueNormalized": 0.29,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "G",
+  "extra": null
+}

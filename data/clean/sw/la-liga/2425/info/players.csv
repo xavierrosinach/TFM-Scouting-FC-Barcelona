@@ -1,0 +1,790 @@
+league;season;id;name;short_name;match_name;first_name;last_name;team;nationality;position;shirt_number
+73;2425;1tctbwsidibct7wphjgv8mdm2;Julen Agirrezabala Astúlez;Julen Agirrezabala;Julen Agirrezabala;Julen;Agirrezabala Astúlez;Athletic Club;Spain;Goalkeeper;13
+73;2425;1xsrdgt40nb6p9qvt6mf272fo;Alejandro Rego Mora;Alejandro Rego;Alejandro Rego;Alejandro;Rego Mora;Athletic Club;Spain;Midfielder;35
+73;2425;23d0t7gqlra3jkskn18bh752i;Álvaro Djaló Dias-Fernandes;Álvaro Djaló Dias-Fernandes;Álvaro Djaló;Álvaro;Djaló Dias-Fernandes;Athletic Club;Guinea-Bissau;Attacker;11
+73;2425;26wj6flfqi59vgz6vwjgur2ay;Nicolás Serrano Galdeano;Nico Serrano;Nico Serrano;Nicolás;Serrano Galdeano;Athletic Club;Spain;Attacker;22
+73;2425;2blue4kkn5uryu76u55b3wp3o;Malcom Abdulai Ares Djaló;Malcom Abdulai Ares Djaló;Adu Ares;Malcom Abdulai;Ares Djaló;Athletic Club;Spain;Attacker;23
+73;2425;352ywlfcjt329s7etjn4rkui2;Beñat Prados Díaz;Beñat Prados;Beñat Prados;Beñat;Prados Díaz;Athletic Club;Spain;Midfielder;24
+73;2425;3hep7726yy75p4gj3o122tqms;Endika Buján de Rueda;Endika Bujan;Endika Buján;Endika;Buján de Rueda;Athletic Club;Spain;Attacker;43
+73;2425;3tzvbdszdrj1tayik9igbve8l;Gorka Guruzeta Rodríguez;Gorka Guruzeta;Gorka Guruzeta;Gorka;Guruzeta Rodríguez;Athletic Club;Spain;Attacker;12
+73;2425;43g9qpb7gic5w7v38259ykt1w;Beñat Gerenabarrena Zendoia;Beñat Gerenabarrena;Beñat Gerenabarrena;Beñat;Gerenabarrena Zendoia;Athletic Club;Spain;Midfielder;29
+73;2425;4vlurpsi44g09g159t61u83bp;Unai Simón Mendibil;Unai Simón;Unai Simón;Unai;Simón Mendibil;Athletic Club;Spain;Goalkeeper;1
+73;2425;5ayo0fp6wod7cqg71e38zdz4k;Adama Boiro Boiro;Adama Boiro;Adama Boiro;Adama;Boiro Boiro;Athletic Club;Spain;Defender;32
+73;2425;5kd57453a90zahgdxwkghr816;Aitor Paredes Casamichana;Aitor Paredes;Aitor Paredes;Aitor;Paredes Casamichana;Athletic Club;Spain;Defender;4
+73;2425;66jotyvbhtz5cjvhbby6luelm;Nicholas Williams Arthuer;Nico Williams;Nico Williams;Nicholas;Williams Arthuer;Athletic Club;Spain;Attacker;10
+73;2425;7ubtan6a51o79w469zawrqqqd;Íñigo Ruíz de Galarreta Etxeberria;Íñigo Ruíz de Galarreta;Íñigo Ruíz de Galarreta;Íñigo;Ruíz de Galarreta Etxeberria;Athletic Club;Spain;Midfielder;16
+73;2425;83n1qv6ypl625aolzjeqifv11;Mikel Vesga Arruti;Mikel Vesga;Mikel Vesga;Mikel;Vesga Arruti;Athletic Club;Spain;Midfielder;6
+73;2425;8hm6d6395johhjsoe8jz6dcyd;Yuri Berchiche Izeta;Yuri Berchiche;Yuri;Yuri;Berchiche Izeta;Athletic Club;Spain;Defender;17
+73;2425;9d5h5wxf44qu4fw3jk2pgis16;Daniel Vivian Moreno;Dani Vivian;Dani Vivian;Daniel;Vivian Moreno;Athletic Club;Spain;Defender;3
+73;2425;9punjo6472xks9fivsfxprrsa;Javier Martón Ansó;Javi Martón;Javi Martón;Javier;Martón Ansó;Athletic Club;Spain;Attacker;19
+73;2425;ajmyaj6fk8lpirlqndw75i42c;Unai Egiluz Arroyo;Unai Egiluz;Unai Egiluz;Unai;Egiluz Arroyo;Athletic Club;Spain;Defender;27
+73;2425;b2rqgjegzeyq6wy6qu63zz2fo;Unai Gómez Etxebarria;Unai Gómez;Unai Gómez;Unai;Gómez Etxebarria;Athletic Club;Spain;Midfielder;20
+73;2425;b91n9sdabth8oocdawayybdud;Andoni Gorosabel Espinosa;Andoni Gorosabel;Andoni Gorosabel;Andoni;Gorosabel Espinosa;Athletic Club;Spain;Defender;2
+73;2425;b9q69u0q11bjpu0393sdy50;Alejandro Padilla Pérez;Álex Padilla;Á. Padilla;Alejandro;Padilla Pérez;Athletic Club;Mexico;Goalkeeper;26
+73;2425;bpnlnx054awr5rddousptr2fo;Aingeru Olabarrieta Capelo;Aingeru Olabarrieta;Aingeru Olabarrieta;Aingeru;Olabarrieta Capelo;Athletic Club;Spain;Attacker;33
+73;2425;bqfeayiqmxo59u0ixrzkeikgk;Oier Gastesi Serrano;Oier Gastesi;Oier Gastesi;Oier;Gastesi Serrano;Athletic Club;Spain;Goalkeeper;34
+73;2425;bsvv2m0znk5uauzdhrhwc5hxw;Ekain Azkune Astarloza;Ekain Azkune;Ekain Azkune;Ekain;Azkune Astarloza;Athletic Club;Spain;Attacker;36
+73;2425;by8xbw0rb239l1x4b0t33tpn8;Maroan Sannadi Harrouch;Maroan Sannadi;M. Sannadi;Maroan;Sannadi Harrouch;Athletic Club;Morocco;Attacker;21
+73;2425;ccokndnkkyllbp5vb8nwnhdlg;Peio Canales Urtasun;Peio Canales;Peio Canales;Peio;Canales Urtasun;Athletic Club;Spain;Midfielder;28
+73;2425;ck7lu09geq8mi6vkf2llyi5ii;Mikel Jauregizar Alboniga;Mikel Jauregizar;Mikel Jauregizar;Mikel;Jauregizar Alboniga;Athletic Club;Spain;Midfielder;23
+73;2425;cr9kf7olyasz3pnvox96xpslw;Aimar Duñabeitia Madariaga;Aimar Duñabeitia;Aimar Duñabeitia;Aimar;Duñabeitia Madariaga;Athletic Club;Spain;Defender;30
+73;2425;d1a1ck4cicsr9kax1bh895v6c;Iker Varela Parra;Iker Varela;Iker Varela;Iker;Varela Parra;Athletic Club;Spain;Attacker;39
+73;2425;d4nmja5rd6kxmxel6jchbu5g4;Ander Izagirre Cestona;Ander Izagirre;Ander Izagirre;Ander;Izagirre Cestona;Athletic Club;Spain;Defender;46
+73;2425;ddvvwqxpsqqboupi3gx1ijhed;Iñaki Williams Arthuer;Iñaki Williams;I. Williams;Iñaki;Williams Arthuer;Athletic Club;Ghana;Attacker;9
+73;2425;dfcbvsb7o18lavmonbp5ucwoa;Oihan Sancet Tirapu;Oihan Sancet;Oihan Sancet;Oihan;Sancet Tirapu;Athletic Club;Spain;Midfielder;8
+73;2425;do5tibysnhbnbw18nwdo39kut;Alejandro Berenguer Remiro;Alex Berenguer;Alex Berenguer;Alejandro;Berenguer Remiro;Athletic Club;Spain;Attacker;7
+73;2425;e40eqhxzzid2chfyxph37tuxh;Ander Herrera Agüera;Ander Herrera;Ander Herrera;Ander;Herrera Agüera;Athletic Club;Spain;Midfielder;21
+73;2425;e8s9ssopq5nmp51zymvqp8jbp;Unai Núñez Gestoso;Unai Núñez;Unai Núñez;Unai;Núñez Gestoso;Athletic Club;Spain;Defender;14
+73;2425;e9wu8g45hq2c1vp07jktx0set;Óscar de Marcos Arana;Óscar De Marcos;De Marcos;Óscar;de Marcos Arana;Athletic Club;Spain;Defender;18
+73;2425;uzzq2p3s1qnb3wv1pee3mcph;Yeray Álvarez López;Yeray Álvarez;Yeray;Yeray;Álvarez López;Athletic Club;Spain;Defender;5
+73;2425;v7isqpxiursyjhj5rmhyhjv9;Íñigo Lekue Martínez;Íñigo Lekue;Íñigo Lekue;Íñigo;Lekue Martínez;Athletic Club;Spain;Defender;15
+73;2425;15no5m0njma23gf0ygu9agt05;Aitor Fernández Abarisketa;Aitor Fernández;Aitor Fernández;Aitor;Fernández Abarisketa;CA Osasuna;Spain;Goalkeeper;13
+73;2425;1icwcbtq3tj982a4pa7hcy9sk;Carlos Lumbreras Solano;Carlos Lumbreras;Carlos Lumbreras;Carlos;Lumbreras Solano;CA Osasuna;Spain;Attacker;33
+73;2425;1ox1j4inota1w7xkzzn7w46j8;Rafael Fernández Rodríguez;Rafael Fernández Rodríguez;Rafa Fernández;Rafael;Fernández Rodríguez;CA Osasuna;Spain;Goalkeeper;42
+73;2425;1vupjbihmf0b4gzjskmrmptqt;Rubén Peña Jiménez;Rubén Peña;Rubén Peña;Rubén;Peña Jiménez;CA Osasuna;Spain;Defender;15
+73;2425;1wezo3pjdktc0iqaxze3uh2sq;Iker Muñoz Cameros;Iker Muñoz;Iker Muñoz;Iker;Muñoz Cameros;CA Osasuna;Spain;Midfielder;18
+73;2425;2zcha0sd7axiu2s2c0bccz2s5;Enrique Barja Alfonso;Kike Barja;Kike Barja;Enrique;Barja Alfonso;CA Osasuna;Spain;Attacker;11
+73;2425;58i2hjymxpqbymprh7c48t1qs;Diego Espejo de la Concepción;Diego Espejo;Diego Espejo;Diego;Espejo de la Concepción;CA Osasuna;Spain;Defender;30
+73;2425;5b9awsil5bgqrsc13xsoj35nu;Jorge Herrando Oroz;Jorge Herrando;Jorge Herrando;Jorge;Herrando Oroz;CA Osasuna;Spain;Defender;5
+73;2425;5t2ngljfiapcn98qlnbifg53p;Moisés Gómez Bordonado;Moi Gómez;Moi Gómez;Moisés;Gómez Bordonado;CA Osasuna;Spain;Attacker;16
+73;2425;5tiol5jc7h11oic9vvyu83fqi;Flavien Enzo Thiedort Boyomo;Enzo Boyomo;E. Boyomo;Flavien Enzo Thiedort;Boyomo;CA Osasuna;Cameroon;Defender;22
+73;2425;5xthw4pr86vwld0r2bz0b2v2t;José Manuel Arnáiz Díaz;José Arnáiz;José Arnáiz;José Manuel;Arnáiz Díaz;CA Osasuna;Spain;Attacker;20
+73;2425;609aarpl34780k5mkkwluvjf8;Íñigo Arguibide Goñi;Iñigo Arguibide;Íñigo Arguibide;Íñigo;Arguibide Goñi;CA Osasuna;Spain;Defender;41
+73;2425;6nq6p1kfoejfmnzpckquv4tn8;Iker Benito Sánchez;Iker Benito;Iker Benito;Iker;Benito Sánchez;CA Osasuna;Spain;Attacker;27
+73;2425;7ms6l8qho3p4jm1soleldqvv9;Unai García Lugea;Unai García;Unai García;Unai;García Lugea;CA Osasuna;Spain;Defender;4
+73;2425;7r7wgbcu7vmlj19m9jpjhu1yi;Jesús Areso Blanco;Jesús Areso;Jesús Areso;Jesús;Areso Blanco;CA Osasuna;Spain;Defender;12
+73;2425;8ij122duxc65thlj8flk2xdjp;Juan Cruz Álvaro Armada;Juan Cruz Álvaro Armada;Juan Cruz;Juan Cruz;Álvaro Armada;CA Osasuna;Spain;Defender;3
+73;2425;946z96r5q70ryslp3hlhafnx1;Ante Budimir;Ante Budimir;A. Budimir;Ante;Budimir;CA Osasuna;Croatia;Attacker;17
+73;2425;9fdp10ya29ml4t3f2h132cr56;Pablo Valencia García;Pablo Valencia;Pablo Valencia;Pablo;Valencia García;CA Osasuna;Spain;Goalkeeper;31
+73;2425;9kfdxq7o0jf81h09gduxn5ogk;Nzubechi Sixtus Ogbuehi;Sixtus Ogbuehi;S. Ogbuehi;Nzubechi Sixtus;Ogbuehi;CA Osasuna;Nigeria;Attacker;36
+73;2425;9xbo6c8uq29ueuyinngjjiaj9;Rubén García Santos;Rubén García;Rubén García;Rubén;García Santos;CA Osasuna;Spain;Midfielder;14
+73;2425;akjusy9dt1qd2fjhttviek6ol;Ignacio Vidal Miralles;Nacho Vidal;Nacho Vidal;Ignacio;Vidal Miralles;CA Osasuna;Spain;Defender;2
+73;2425;amjegysk3et638l4od103c7o5;Sergio Herrera Pirón;Sergio Herrera;Sergio Herrera;Sergio;Herrera Pirón;CA Osasuna;Spain;Goalkeeper;1
+73;2425;b5muwvixv0nq4uylgzxz7302c;Asier Osambela Larraya;Asier Osambela;Asier Osambela;Asier;Osambela Larraya;CA Osasuna;Spain;Midfielder;29
+73;2425;bi8nrmyaxsgbhixw921fzvm5l;Alejandro Catena Marugán;Alejandro Catena;Alejandro Catena;Alejandro;Catena Marugán;CA Osasuna;Spain;Defender;24
+73;2425;bpf2fcb73l96fwspo72shmkiy;Aimar Oroz Huarte;Aimar Oroz;Aimar Oroz;Aimar;Oroz Huarte;CA Osasuna;Spain;Midfielder;10
+73;2425;bvs3rixmobb9gje6kfvhgb52i;Abel Bretones Cruz;Abel Bretones;Abel Bretones;Abel;Bretones Cruz;CA Osasuna;Spain;Defender;23
+73;2425;bvugj4shhvjqfhzyobkbup34k;Ismael Sierra Arnal;Ismael Sierra;Isma Sierra;Ismael;Sierra Arnal;CA Osasuna;Spain;Defender;34
+73;2425;bzv32rpgvs111w8e2gch452xg;Bryan Zaragoza Martínez;Bryan Zaragoza;Bryan Zaragoza;Bryan;Zaragoza Martínez;CA Osasuna;Spain;Attacker;19
+73;2425;cy3c0cj6yy1mokaj0mlk4k9re;Raúl García de Haro;Raúl García;Raúl García;Raúl;García de Haro;CA Osasuna;Spain;Attacker;9
+73;2425;d3pdr28q2n295ldry2lc1uklx;Lucas Torró Marset;Lucas Torró;Lucas Torró;Lucas;Torró Marset;CA Osasuna;Spain;Midfielder;6
+73;2425;eqw6fu3no9qxejk17tqgeey5m;Pablo Ibáñez Lumbreras;Pablo Ibáñez;Pablo Ibáñez;Pablo;Ibáñez Lumbreras;CA Osasuna;Spain;Midfielder;8
+73;2425;erxux52uzol4p4fqqz929zuhg;Jon García Fuentes;Jon García;Jon García;Jon;García Fuentes;CA Osasuna;Spain;Midfielder;37
+73;2425;f38syop4mrz23n5vdcugcuxgp;Javier Martínez Calvo;Javi Martínez;Javi Martínez;Javier;Martínez Calvo;CA Osasuna;Spain;Midfielder;21
+73;2425;f4gpe0pxov8sea9e0fs24h8q2;Jon Moncayola Tollar;Jon Moncayola;Jon Moncayola;Jon;Moncayola Tollar;CA Osasuna;Spain;Midfielder;7
+73;2425;nvnqfn0xoddn4rem857xjz84;Dimitrios Stamatakis Vailakakis;Dimitrios Stamatakis;D. Stamatakis;Dimitrios;Stamatakis Vailakakis;CA Osasuna;Greece;Goalkeeper;32
+73;2425;1fypjwixici9u6z9ttpso5ejt;Julián Antonio Chicco;Julián Chicco;J. Chicco;Julián Antonio;Chicco;CD Leganés;Argentina;Midfielder;24
+73;2425;3ex56ma2xf94ex429ay35gusp;Valentin André Henri Rosier;Valentin Rosier;V. Rosier;Valentin André Henri;Rosier;CD Leganés;France;Defender;12
+73;2425;3o41frgi9jxrms6rvc6ml1plh;Darko Brašanac;Darko Brasanac;D. Brašanac;Darko;Brašanac;CD Leganés;Serbia;Midfielder;14
+73;2425;3t777wlfc7hoepgiwwkuhoqok;Carlos Guirao Mora;Carlos Guirao;Carlos Guirao;Carlos;Guirao Mora;CD Leganés;Spain;Midfielder;32
+73;2425;3xxwjf3ymu1j9825xjuwuknah;Javier Hernández Carrera;Javi Hernández;Javi Hernández;Javier;Hernández Carrera;CD Leganés;Spain;Defender;20
+73;2425;48ctbksxfm5hrdmwphb4eril1;Jorge Sáenz de Miera Colmeiro;Jorge Sáenz;Jorge Sáenz;Jorge;Sáenz de Miera Colmeiro;CD Leganés;Spain;Defender;3
+73;2425;4jjk6jqgz3w4uvm3bvhl9t016;Juan Cruz Díaz Espósito;Juan Cruz;Juan Cruz;Juan Cruz;Díaz Espósito;CD Leganés;Spain;Midfielder;11
+73;2425;4tujew5zht6o0fpen3gwf2xp0;Fernando Rodríguez Rufo;Fer Rodríguez;Fer Rodríguez;Fernando;Rodríguez Rufo;CD Leganés;Spain;Midfielder;33
+73;2425;5eitbbkwvek11agzyzxyjz5nu;Guillermo Ruiz Ortiz;Guillermo Ruiz;Guillermo Ruiz;Guillermo;Ruiz Ortiz;CD Leganés;Spain;Goalkeeper;37
+73;2425;5x99wj4qzefvptzv5ptbyfuhg;Suleiman El Haddadi Mohamed;Suleiman El Haddadi Mohamed;Suleiman;Suleiman;El Haddadi Mohamed;CD Leganés;Morocco;Attacker;29
+73;2425;6393aj09nl7hfqvwwgey5nuac;Daniel Ballesteros Fernández;Daniel Ballesteros Fernández;Piri;Daniel;Ballesteros Fernández;CD Leganés;Spain;Attacker;40
+73;2425;6772p87u8cf9g6qyk5x414h61;Yvan Latour Neyou Noupa;Yvan Neyou;Y. Neyou;Yvan;Latour Neyou Noupa;CD Leganés;Cameroon;Midfielder;17
+73;2425;78htbj3e77yo792tn2o2ekciy;Iker Bachiller Vega;Iker Bachiller;Iker Bachiller;Iker;Bachiller Vega;CD Leganés;Spain;Defender;28
+73;2425;7qy3e0pry4wdkimrffnus4zu2;Diego García Campos;Diego García;Diego García;Diego;García Campos;CD Leganés;Spain;Attacker;19
+73;2425;87gvtfqgn555sywr78abximsp;Jackson Gabriel Porozo Vernaza;Jackson Porozo;J. Porozo;Jackson Gabriel;Porozo Vernaza;CD Leganés;Ecuador;Defender;4
+73;2425;8bue3x0liiq5tiky0s63dr40k;Gonzalo Aguilar López;Lalo Aguilar;Lalo Aguilar;Gonzalo;Aguilar López;CD Leganés;Spain;Defender;33
+73;2425;8e6qzf8dp3c9lch7tu5r03qqc;Yan Diomande;Yan Diomande;Y. Diomande;Yan;Diomande;CD Leganés;Côte d'Ivoire;Attacker;30
+73;2425;9g4devlvymukexrvfgkipd6tx;Renato Fabrizio Tapia Cortijo;Renato Tapia;R. Tapia;Renato Fabrizio;Tapia Cortijo;CD Leganés;Peru;Midfielder;5
+73;2425;9p0s52zpe6b792fyh3vmj5ka1;Aritz Arambarri Murua;Aritz Arambarri;Aritz Arambarri;Aritz;Arambarri Murua;CD Leganés;Spain;Defender;22
+73;2425;9p87liko3b1jjpjmi19135y0a;Adrià Altimira Reynaldos;Adrià Alti;Adrià Alti;Adrià;Altimira Reynaldos;CD Leganés;Spain;Defender;2
+73;2425;a233iunrs5zqk5q62xv0oogdl;Miguel de la Fuente Escudero;Miguel de la Fuente;Miguel de la Fuente;Miguel;de la Fuente Escudero;CD Leganés;Spain;Attacker;9
+73;2425;ah3hc9wz2ngaj8hz6iyqcw8b8;João Andrés Urbáez Gómez;João Urbáez;J. Urbáez;João Andrés;Urbáez Gómez;CD Leganés;Dominican Republic;Defender;34
+73;2425;bahph7009sc73jl6s2bramn6d;Marko Dmitrović;Marko Dmitrovic;M. Dmitrović;Marko;Dmitrović;CD Leganés;Serbia;Goalkeeper;13
+73;2425;bethzk88p2iyffko49s3znje1;Enric Franquesa Dolz;Enric Franquesa;Enric Franquesa;Enric;Franquesa Dolz;CD Leganés;Spain;Defender;15
+73;2425;bkehljspqbj6tz0peqjivkvai;Luís Henriques de Barros Lopes;Luís Henriques de Barros Lopes;Duk;Luís;Henriques de Barros Lopes;CD Leganés;Cabo Verde;Attacker;18
+73;2425;bxzhhmig5if9pznqa0fgxlyei;Seydouba Cissé;Seydouba Cissé;S. Cissé;Seydouba;Cissé;CD Leganés;Guinea;Midfielder;8
+73;2425;c756iuzmvsnw0fepg61hurbpw;Hugo Solozábal Granados;Hugo Solozabal;Hugo Solozábal;Hugo;Solozábal Granados;CD Leganés;Spain;Midfielder;32
+73;2425;cdnnjwfwzhsre2xkb37ykpbhm;Roberto López Alcaide;Roberto López;Roberto López;Roberto;López Alcaide;CD Leganés;Spain;Midfielder;21
+73;2425;cq1t2x6upek3y2anx6kwn02z8;Alejandro Gil Gómez;Álex Gil;Álex Gil;Alejandro;Gil Gómez;CD Leganés;Spain;Midfielder;26
+73;2425;cxjs3j5yv91235wqc2hb4ueqc;Álvaro Abajas Martín;Alvin Abajas;Alvin;Álvaro;Abajas Martín;CD Leganés;Spain;Goalkeeper;36
+73;2425;cy0lv5u16obr2ne4xiins43x1;Sébastien Romain Teddy Haller;Sébastien Haller;S. Haller;Sébastien Romain Teddy;Haller;CD Leganés;Côte d'Ivoire;Attacker;18
+73;2425;dtuwn06lnvxugaj637i553r2t;Matija Nastasić;Matija Nastasic;M. Nastasić;Matija;Nastasić;CD Leganés;Serbia;Defender;22
+73;2425;duvi9g1bu4djua8e7t7tgoo9h;Juan Soriano Oropesa;Juan Soriano;Juan Soriano;Juan;Soriano Oropesa;CD Leganés;Spain;Goalkeeper;1
+73;2425;dvyl5rfgfkoplnwrs73rkidhx;Sergio González Poirrier;Sergio González;Sergio González;Sergio;González Poirrier;CD Leganés;Spain;Defender;6
+73;2425;ea5xlslcii56ycrlmyo6uiimt;Óscar Rodríguez Arnaiz;Óscar Rodríguez;Óscar Rodríguez;Óscar;Rodríguez Arnaiz;CD Leganés;Spain;Midfielder;7
+73;2425;ehj0z1y90uxmn8gdvaoldk1cl;Borna Barišić;Borna Barisic;B. Barišić;Borna;Barišić;CD Leganés;Croatia;Defender;4
+73;2425;entqiwoor6dhwqcg5s82krfth;Munir El Haddadi Mohamed;Munir El Haddadi;M. El Haddadi;Munir;El Haddadi Mohamed;CD Leganés;Morocco;Attacker;23
+73;2425;f3g9hf83rfyb08e5bwk22702c;Naim García García;Naim García;Naim García;Naim;García García;CD Leganés;Spain;Attacker;27
+73;2425;pr0nfcph8mlm3plq9b69o8a1;Daniel Raba Antolín;Dani Raba;Dani Raba;Daniel;Raba Antolín;CD Leganés;Spain;Attacker;10
+73;2425;2afut2l48etvxg93rokm75dgq;Aitor Gismera Monge;Aitor Gismera;Aitor Gismera;Aitor;Gismera Monge;Club Atlético de Madrid;Spain;Midfielder;28
+73;2425;2hgczqjd0r748ye3zmqm0am1g;Alejandro Monserrate Pueyo;Jano Monserrate;Jano Monserrate;Alejandro;Monserrate Pueyo;Club Atlético de Madrid;Spain;Midfielder;37
+73;2425;2i7l7343hvxwlzytr57th52sq;Alejandro Iturbe Encabo;Alejandro Iturbe;Alejandro Iturbe;Alejandro;Iturbe Encabo;Club Atlético de Madrid;Spain;Goalkeeper;33
+73;2425;2yt9oajv9dkbju8tgy1g2nmqd;Jan Oblak;Jan Oblak;J. Oblak;Jan;Oblak;Club Atlético de Madrid;Slovenia;Goalkeeper;13
+73;2425;3ga7qj3h3dbmqucxmaxhmrjdh;Rodrigo Javier De Paul;Rodrigo De Paul;R. De Paul;Rodrigo Javier;De Paul;Club Atlético de Madrid;Argentina;Midfielder;5
+73;2425;3gsprcdyogabeb8lr2y0bmytx;Clément Nicolas Laurent Lenglet;Clément Lenglet;C. Lenglet;Clément Nicolas Laurent;Lenglet;Club Atlético de Madrid;France;Defender;15
+73;2425;3r18no51ujgvp939ws3fvo9re;Ilias Kostis;Ilias Kostis;I. Kostis;Ilias;Kostis;Club Atlético de Madrid;Greece;Defender;27
+73;2425;3x2l5xtyq8267u15ii0qxcg7o;Carlos Giménez Bachiller;Carlos Giménez;Carlos Giménez;Carlos;Giménez Bachiller;Club Atlético de Madrid;Spain;Defender;41
+73;2425;40gxfsz7bgrkdudqewlpxzyzt;Javier Galán Gil;Javi Galán;Javi Galán;Javier;Galán Gil;Club Atlético de Madrid;Spain;Defender;21
+73;2425;4925210zy04qv4cliok72f578;Omar Janneh Susso;Omar Janneh;Omar Janneh;Omar;Janneh Susso;Club Atlético de Madrid;Spain;Attacker;47
+73;2425;51qvkjhgmbxersyfxzb8en1n8;Daniel Martínez Moreno;Dani Martinez;Dani Martínez;Daniel;Martínez Moreno;Club Atlético de Madrid;Spain;Defender;34
+73;2425;548jzfl9higq44w9bgqvcjh05;José María Giménez de Vargas;José María Giménez;J. Giménez;José María;Giménez de Vargas;Club Atlético de Madrid;Uruguay;Defender;2
+73;2425;58ne1a4dg1awsoh5ybmjrlhey;Horațiu Alexandru Moldovan;Horatiu Moldovan;H. Moldovan;Horațiu Alexandru;Moldovan;Club Atlético de Madrid;Romania;Goalkeeper;1
+73;2425;59234as8h70fejyfm7492np3p;Axel Laurent Angel Lambert Witsel;Axel Witsel;A. Witsel;Axel Laurent Angel;Lambert Witsel;Club Atlético de Madrid;Belgium;Defender;20
+73;2425;5es43b4a7fv0lkmp63dj439ey;Giuliano Simeone Baldini;Giuliano Simeone;G. Simeone;Giuliano;Simeone Baldini;Club Atlético de Madrid;Argentina;Attacker;22
+73;2425;64flekuniyeairahxlhifokr8;Gerónimo Spina;Gerónimo Spina;G. Spina;Gerónimo;Spina;Club Atlético de Madrid;Argentina;Defender;43
+73;2425;6akzpi6rd6qq0ke07ojnhpoet;Alexander Sørloth;Alexander Sørloth;A. Sørloth;Alexander;Sørloth;Club Atlético de Madrid;Norway;Attacker;9
+73;2425;6dswrjvnakdr8gwun530inwgk;Rayane Belaid Khellil;Rayane Belaid;Rayane Belaid;Rayane;Belaid Khellil;Club Atlético de Madrid;Spain;Attacker;40
+73;2425;6fdvv4zs5pl6qj7pp6tsp5iad;Ángel Martín Correa Martínez;Ángel Correa;Á. Correa;Ángel Martín;Correa Martínez;Club Atlético de Madrid;Argentina;Attacker;10
+73;2425;6xulax65kp4aid70nk7g5jr2t;Robin Aimé Robert Le Normand Mainfray;Robin Le Normand;Robin Le Normand;Robin Aimé Robert;Le Normand Mainfray;Club Atlético de Madrid;Spain;Defender;24
+73;2425;716n1970vi9rvw5b4w9qmjfth;Antoine Griezmann;Antoine Griezmann;A. Griezmann;Antoine;Griezmann;Club Atlético de Madrid;France;Attacker;7
+73;2425;7drgir9lcwfst8vxz07jboe6t;Juan Agustín Musso;Juan Musso;J. Musso;Juan Agustín;Musso;Club Atlético de Madrid;Argentina;Goalkeeper;1
+73;2425;7yngrviue4iji7w0f9ql07j6x;Samuel Dias Lino;Samuel Dias Lino;Samuel Lino;Samuel;Dias Lino;Club Atlético de Madrid;Brazil;Midfielder;12
+73;2425;9e7ybe0nsu3byq2tteey3zuy2;Pablo Barrios Rivas;Pablo Barrios;Pablo Barrios;Pablo;Barrios Rivas;Club Atlético de Madrid;Spain;Midfielder;8
+73;2425;9i0zcx8u1isqf9q0iy4m3p27e;Javier Serrano Martínez;Javi Serrano;Javi Serrano;Javier;Serrano Martínez;Club Atlético de Madrid;Spain;Midfielder;29
+73;2425;9ikkuxd19avliz1khcrm82gyy;Julián Alvarez;Julián Alvarez;J. Alvarez;Julián;Alvarez;Club Atlético de Madrid;Argentina;Attacker;19
+73;2425;a7ip51ik4rkqcvgdsh64ln09g;Arthur Denis Vermeeren;Arthur Vermeeren;A. Vermeeren;Arthur Denis;Vermeeren;Club Atlético de Madrid;Belgium;Midfielder;18
+73;2425;amxunh6enoc99r07cp7qt621h;Marcos Llorente Moreno;Marcos Llorente;Marcos Llorente;Marcos;Llorente Moreno;Club Atlético de Madrid;Spain;Midfielder;14
+73;2425;b9kfek16otvdorssn0wzkb36d;Jorge Resurrección Merodio;Jorge Resurrección Merodio;Koke;Jorge;Resurrección Merodio;Club Atlético de Madrid;Spain;Midfielder;6
+73;2425;bqmhsb2bsuuuijw2ci39l01k9;Rodrigo Riquelme Reche;Rodrigo Riquelme;Rodrigo Riquelme;Rodrigo;Riquelme Reche;Club Atlético de Madrid;Spain;Midfielder;17
+73;2425;bvw1jgmhfyc896gfi6uj0skwl;César Azpilicueta Tanco;César Azpilicueta;César Azpilicueta;César;Azpilicueta Tanco;Club Atlético de Madrid;Spain;Defender;3
+73;2425;c83h08n0vnjvfgglyefy03h0p;Conor John Gallagher;Conor Gallagher;C. Gallagher;Conor John;Gallagher;Club Atlético de Madrid;England;Midfielder;4
+73;2425;c90gk99jn34wxtlad784hpnv8;Carlos Martín Domínguez;Carlos Martín;Carlos Martín;Carlos;Martín Domínguez;Club Atlético de Madrid;Spain;Attacker;15
+73;2425;cj3dik1dqyo2nf1jgmyn471sl;Reinildo Isnard Mandava;Reinildo Isnard Mandava;Reinildo Mandava;Reinildo Isnard;Mandava;Club Atlético de Madrid;Mozambique;Defender;23
+73;2425;d0di86falsvqnl1c4ev98my5m;Antonio Gomís Alemañ;Antonio Gomís;Antonio Gomís;Antonio;Gomís Alemañ;Club Atlético de Madrid;Spain;Goalkeeper;31
+73;2425;ejcyvgclry4g5pc2rtptifphx;Thomas Benoît Lemar;Thomas Lemar;T. Lemar;Thomas Benoît;Lemar;Club Atlético de Madrid;France;Midfielder;11
+73;2425;ieu0x9fy8hpqyztdjg8bgpnt;Nahuel Molina Lucero;Nahuel Molina;N. Molina;Nahuel;Molina Lucero;Club Atlético de Madrid;Argentina;Defender;16
+73;2425;nyirn5d30yz5jwo74a3pyj8;Adrián Niño Heredia;Adrián Niño;Adrián Niño;Adrián;Niño Heredia;Club Atlético de Madrid;Spain;Attacker;32
+73;2425;119jg0tkn5d9rfj233wd1uzv8;Egoitz Muñoz Larrea;Egoitz Muñoz;Egoitz Muñoz;Egoitz;Muñoz Larrea;Deportivo Alavés;Spain;Defender;27
+73;2425;16mj3l623plqx1hm9zvpvn5yh;Carlos Nahuel Benavídez Protesoni;Carlos Protesoni;C. Protesoni;Carlos Nahuel;Benavídez Protesoni;Deportivo Alavés;Uruguay;Midfielder;23
+73;2425;1m5ng39pgvlwgo6dci8gtwphw;Joaquín Panichelli;Joaquín Panichelli;J. Panichelli;Joaquín;Panichelli;Deportivo Alavés;Argentina;Attacker;29
+73;2425;1nd8l0ofw9x779c0ufwbbo4ph;Antonio Martínez López;Toni Martínez;Toni Martínez;Antonio;Martínez López;Deportivo Alavés;Spain;Attacker;11
+73;2425;1ttc96b92xjfx1ta3vdwya0dm;Abderrahmane Rebbach;Abde Rebbach;A. Rebbach;Abderrahmane;Rebbach;Deportivo Alavés;Algeria;Attacker;21
+73;2425;4l2rgx65vzgrrxorbc1edq8yd;Enrique García Martínez;Kike García;Kike García;Enrique;García Martínez;Deportivo Alavés;Spain;Attacker;17
+73;2425;4n4qce5syii7vnus0jhy38k16;Alejandro Fidel Jay Agustín;Alejandro Jay;Alejandro Jay;Alejandro Fidel;Jay Agustín;Deportivo Alavés;Spain;Defender;35
+73;2425;4yl8kuibtpbw3hzewc9a6a1n9;Nikola Maraš;Nikola Maras;N. Maraš;Nikola;Maraš;Deportivo Alavés;Serbia;Defender;2
+73;2425;4zve4017u2i3zvxlnjruv25t5;Antonio Blanco Conde;Antonio Blanco;Antonio Blanco;Antonio;Blanco Conde;Deportivo Alavés;Spain;Midfielder;8
+73;2425;50jwcgj12pw9tkguxwqtm115g;Eneko Ortiz Díaz;Eneko Ortiz;Eneko Ortiz;Eneko;Ortiz Díaz;Deportivo Alavés;Spain;Defender;34
+73;2425;5a3c6m63r709u5p8izg3qupxx;Juan Diego Molina Martínez;Juan Diego Molina Martínez;Stoichkov;Juan Diego;Molina Martínez;Deportivo Alavés;Spain;Attacker;19
+73;2425;658ed5dqfrdd5fe7ayo9eo1rd;Facundo Tomás Garcés;Facundo Garcés;F. Garcés;Facundo Tomás;Garcés;Deportivo Alavés;Malaysia;Defender;2
+73;2425;6eb3jpi6t6z2ergmgzcpckdpm;Luka Romero Bezzana;Luka Romero;L. Romero;Luka;Romero Bezzana;Deportivo Alavés;Argentina;Attacker;20
+73;2425;6kc8ieszwg6u00e3sa554y7yt;Luis Jesús Rioja González;Luis Rioja;Luis Rioja;Luis Jesús;Rioja González;Deportivo Alavés;Spain;Attacker;11
+73;2425;6qlpnu6rv60qui02axtaii8lw;Pau Cabanes de la Torre;Pau Cabanes;Pau Cabanes;Pau;Cabanes de la Torre;Deportivo Alavés;Spain;Attacker;19
+73;2425;8poaxfdmx8m9z40934bowyj9w;Tomás Alage Mendes Mendes;Tomás Mendes;Tomás Mendes;Tomás Alage;Mendes Mendes;Deportivo Alavés;Spain;Midfielder;30
+73;2425;8ycvfctf7c3yljnbtltsogkph;Joan Jordán Moreno;Joan Jordán;Joan Jordán;Joan;Jordán Moreno;Deportivo Alavés;Spain;Midfielder;24
+73;2425;8zmj7mo9zxsoo5trhmmgmgb56;Hugo Novoa Ramos;Hugo Novoa;Hugo Novoa;Hugo;Novoa Ramos;Deportivo Alavés;Spain;Attacker;16
+73;2425;9lzyhlz2mc7uwvv9nfcvl2tey;Adrián Rodríguez Giménez;Adrián Rodríguez;A. Rodríguez;Adrián;Rodríguez Giménez;Deportivo Alavés;Argentina;Goalkeeper;31
+73;2425;9n5niffrts6ymz63uxdvwm39w;Daouda Doumbia;Daouda Doumbia;D. Doumbia;Daouda;Doumbia;Deportivo Alavés;Mali;Midfielder;32
+73;2425;9tw6rz3lfmn06fzsabtx9ei95;Facundo Nahuel Tenaglia;Nahuel Tenaglia;N. Tenaglia;Facundo Nahuel;Tenaglia;Deportivo Alavés;Argentina;Defender;14
+73;2425;9zlwozqtwwiza53nhkr9fnpxw;Álvaro García Blanes;Álvaro García;Álvaro García;Álvaro;García Blanes;Deportivo Alavés;Spain;Defender;47
+73;2425;albt55j4oir1veynmos532psk;Álvaro Santiago Mouriño González;Santiago Mouriño;S. Mouriño;Álvaro Santiago;Mouriño González;Deportivo Alavés;Uruguay;Defender;12
+73;2425;an5bw8oxg9ig8mj9pbn8qjthw;Lander Pinillos Wilson;Lander Pinillos;Lander Pinillos;Lander;Pinillos Wilson;Deportivo Alavés;Spain;Midfielder;28
+73;2425;bb2v7p23g1w8kb3nhuuwnil4a;Carlos Vicente Robles;Carlos Vicente;Carlos Vicente;Carlos;Vicente Robles;Deportivo Alavés;Spain;Attacker;7
+73;2425;bccp1nvtoc3n1q4g4sw1p7ro5;Jon Guridi Aldalur;Jon Guridi;Jon Guridi;Jon;Guridi Aldalur;Deportivo Alavés;Spain;Midfielder;18
+73;2425;br4wylyaeqyxoss5of7r51boq;Abdelkabir Abqar;Abdel Abqar;A. Abqar;Abdelkabir;Abqar;Deportivo Alavés;Morocco;Defender;5
+73;2425;c44zop1hvob3cmgu2grj8m0yy;Moussa Diarra;Moussa Diarra;M. Diarra;Moussa;Diarra;Deportivo Alavés;Mali;Defender;22
+73;2425;c7i0lduij4vsnluxisdnaxsk5;Antonio Sivera Salvá;Antonio Sivera;Antonio Sivera;Antonio;Sivera Salvá;Deportivo Alavés;Spain;Goalkeeper;1
+73;2425;c90gk99jn34wxtlad784hpnv8;Carlos Martín Domínguez;Carlos Martín;Carlos Martín;Carlos;Martín Domínguez;Deportivo Alavés;Spain;Attacker;15
+73;2425;cme92rbmqszu51sjm99ho8a21;Ander Guevara Lajo;Ander Guevara;Ander Guevara;Ander;Guevara Lajo;Deportivo Alavés;Spain;Midfielder;6
+73;2425;d34tmogp5h4rwuo3pcxtwp0fe;Manuel Sánchez de la Peña;Manu Sánchez;Manu Sánchez;Manuel;Sánchez de la Peña;Deportivo Alavés;Spain;Defender;3
+73;2425;d6vfmln3oxuel34y15hnp8bft;Tomás José Conechny;Tomás Conechny;T. Conechny;Tomás José;Conechny;Deportivo Alavés;Argentina;Attacker;10
+73;2425;dciy15k4pg63xcki2i5m5ow7o;Julen Lartitegi Ugarte;Julen Lartitegi;Julen Lartitegi;Julen;Lartitegi Ugarte;Deportivo Alavés;Spain;Attacker;37
+73;2425;drrhh40iph6dozowkv50abtw4;Grégoire Jean Stanislas Świderski;Grégoire Swiderski;G. Świderski;Grégoire Jean Stanislas;Świderski;Deportivo Alavés;Canada;Goalkeeper;41
+73;2425;duq3fr3o6fcddxihn6mgq1tlg;Adrián Hernández Hernández;Adrián Hernández Hernández;Adrián Pica;Adrián;Hernández Hernández;Deportivo Alavés;Spain;Defender;36
+73;2425;ed3bp9uiwa7h03wddi028xdgq;Jesús Lázaro Owono Ngua Akeng;Jesús Owono;Jesús Owono;Jesús Lázaro;Owono Ngua Akeng;Deportivo Alavés;Equatorial Guinea;Goalkeeper;13
+73;2425;egt3tl6hu2bfi16pqyxwv4onp;Asier Villalibre Molina;Asier Villalibre;Asier Villalibre;Asier;Villalibre Molina;Deportivo Alavés;Spain;Attacker;9
+73;2425;ehrpztadwk9gg1943c4ahj105;Aleksandar Sedlar;Aleksandar Sedlar;A. Sedlar;Aleksandar;Sedlar;Deportivo Alavés;Serbia;Defender;4
+73;2425;eiqt71z69beq7akuhot0foset;Carles Aleña Castillo;Carles Aleñá;Carles Aleñá;Carles;Aleña Castillo;Deportivo Alavés;Spain;Midfielder;21
+73;2425;1av9mmv19jwvc4xdr0p9owyxh;Andreas Bødtker Christensen;Andreas Christensen;A. Christensen;Andreas;Bødtker Christensen;FC Barcelona;Denmark;Defender;15
+73;2425;2e55g4q93y382cg7h0yk5rtud;Marc-André ter Stegen;Marc-André ter Stegen;M. ter Stegen;Marc-André;ter Stegen;FC Barcelona;Germany;Goalkeeper;1
+73;2425;2szgrzcosfeifh664tgt3mfvt;Ferran Torres García;Ferran Torres;Ferran Torres;Ferran;Torres García;FC Barcelona;Spain;Attacker;7
+73;2425;2wl6h1rlrfnn2mr65vuo3t815;Raphael Dias Belloli;Raphael Dias Belloli;Raphinha;Raphael;Dias Belloli;FC Barcelona;Brazil;Attacker;11
+73;2425;308krssmz6irpfntht1ka78tm;Anssumane Fati Vieira;Ansu Fati;Ansu Fati;Anssumane;Fati Vieira;FC Barcelona;Spain;Attacker;10
+73;2425;3gsprcdyogabeb8lr2y0bmytx;Clément Nicolas Laurent Lenglet;Clément Lenglet;C. Lenglet;Clément Nicolas Laurent;Lenglet;FC Barcelona;France;Defender;25
+73;2425;3hht0os2uzu234yq550i3fbe2;Marc Casadó Torras;Marc Casadó;Marc Casadó;Marc;Casadó Torras;FC Barcelona;Spain;Midfielder;17
+73;2425;45twlfkhlvgcnzxp63nlvyluc;Áron Yaakobishvili;Áron Yaakobishvili;Áron Yaakobishvili;Áron;Yaakobishvili;FC Barcelona;Hungary;Goalkeeper;40
+73;2425;4et6r42e7q2ojgaumwnua2kgk;Marc Bernal Casas;Marc Bernal;Marc Bernal;Marc;Bernal Casas;FC Barcelona;Spain;Midfielder;28
+73;2425;4ftlhtels58lyzfluwofzwxuy;Pedro González López;Pedro González López;Pedri;Pedro;González López;FC Barcelona;Spain;Midfielder;8
+73;2425;4ggz7e009bq3yltc9o6mifbah;Eric García Martret;Eric García;Eric García;Eric;García Martret;FC Barcelona;Spain;Defender;24
+73;2425;4gq1u1mqg0qzekh1u5djleeax;Daniel Olmo Carvajal;Dani Olmo;Dani Olmo;Daniel;Olmo Carvajal;FC Barcelona;Spain;Midfielder;20
+73;2425;4jpwo30o4qp53k59oxvuj90k4;Sergi Domínguez Viloria;Sergi Domínguez;Sergi Domínguez;Sergi;Domínguez Viloria;FC Barcelona;Spain;Defender;36
+73;2425;4mxx1oxkiexm0ha34utcmb17t;Ignacio Peña Sotorres;Iñaki Peña;Iñaki Peña;Ignacio;Peña Sotorres;FC Barcelona;Spain;Goalkeeper;13
+73;2425;54foi544tygbd4sfx62t7wno;Álex Valle Gómez;Álex Valle;Álex Valle;Álex;Valle Gómez;FC Barcelona;Spain;Defender;29
+73;2425;5kodjbsarkql4vhs126p2vhwq;Pablo Torre Carral;Pablo Torre;Pablo Torre;Pablo;Torre Carral;FC Barcelona;Spain;Midfielder;14
+73;2425;6l1y87tlepsvr83d8y2qifeqy;Gerard Martín Langreo;Gerard Martín;Gerard Martín;Gerard;Martín Langreo;FC Barcelona;Spain;Defender;35
+73;2425;6ofu6yc2qwp5ii9cerdq1tk9h;Wojciech Tomasz Szczęsny;Wojciech Szczesny;W. Szczęsny;Wojciech Tomasz;Szczęsny;FC Barcelona;Poland;Goalkeeper;25
+73;2425;7h9rf5bjvnsj65rky23jgp2qc;Noah Yanis Darvich;Noah Darvich;N. Darvich;Noah Yanis;Darvich;FC Barcelona;Germany;Midfielder;34
+73;2425;7p8e6lrg50niibeabywbqcgt0;Daniel Rodríguez Crespo;Dani Rodríguez;Dani Rodríguez;Daniel;Rodríguez Crespo;FC Barcelona;Spain;Attacker;46
+73;2425;84ifgcsn9xuvyw4m4lrcf57v8;Álvaro Cortés Moyano;Álvaro Cortés;Álvaro Cortés;Álvaro;Cortés Moyano;FC Barcelona;Spain;Defender;43
+73;2425;8lztstifz0n0zx4ho11vbt1xw;Andrés Cuenca Cejudo;Andrés Cuenca;Andrés Cuenca;Andrés;Cuenca Cejudo;FC Barcelona;Spain;Defender;39
+73;2425;8xjdsfk5u7wph4o7h1w45dses;Héctor Fort García;Héctor Fort;Héctor Fort;Héctor;Fort García;FC Barcelona;Spain;Defender;32
+73;2425;9f0jk3wgmlnnmnqrdkh4gnpt6;Pau Víctor Delgado;Pau Víctor;Pau Víctor;Pau;Víctor Delgado;FC Barcelona;Spain;Attacker;18
+73;2425;9s5uadkz3qy2nke745778dfys;Diego Kochen;Diego Kochen;D. Kochen;Diego;Kochen;FC Barcelona;USA;Goalkeeper;31
+73;2425;9sanzxzkj52vz1mqj1d7g08b8;Antonio Fernández Casino;Toni Fernández;Toni Fernández;Antonio;Fernández Casino;FC Barcelona;Spain;Attacker;42
+73;2425;9wbf00lybk9fqablaqwg5cn2t;İlkay Gündoğan;Ilkay Gündogan;İ. Gündoğan;İlkay;Gündoğan;FC Barcelona;Germany;Midfielder;22
+73;2425;abr79wsl0folgkyvl821ggs2c;Lamine Yamal Nasraoui Ebana;Lamine Yamal Nasraoui Ebana;Lamine Yamal;Lamine Yamal;Nasraoui Ebana;FC Barcelona;Spain;Attacker;19
+73;2425;afxjicw89683nlpms9yy5x51x;Robert Lewandowski;Robert Lewandowski;R. Lewandowski;Robert;Lewandowski;FC Barcelona;Poland;Attacker;9
+73;2425;awsod0zmnrukk21d4882ji7e1;Ronald Federico Araujo da Silva;Ronald Araujo;R. Araujo;Ronald Federico;Araujo da Silva;FC Barcelona;Uruguay;Defender;4
+73;2425;b0ebh3wi3lwieb1z04ajxjz84;Guillermo Fernández Casino;Guille Fernández;Guille Fernández;Guillermo;Fernández Casino;FC Barcelona;Spain;Midfielder;41
+73;2425;bkwxem45cf48k14euwqe7rs44;Pau Cubarsí Paredes;Pau Cubarsí;Pau Cubarsí;Pau;Cubarsí Paredes;FC Barcelona;Spain;Defender;2
+73;2425;bzgh5psb1janz9y3btpswngbu;Alejandro Balde Martínez;Alejandro Balde;Alejandro Balde;Alejandro;Balde Martínez;FC Barcelona;Spain;Defender;3
+73;2425;c6jh8o2ktcplfl3x5t3fqsmc4;Landry Céphas Farré Miró;Landry Farré;Landry Farré;Landry Céphas;Farré Miró;FC Barcelona;Spain;Defender;44
+73;2425;cd5napttmwk5o9gxw3cbb4ted;Iñigo Martínez Berridi;Iñigo Martínez;Iñigo Martínez;Iñigo;Martínez Berridi;FC Barcelona;Spain;Defender;5
+73;2425;cjll1xrw3xulnl23c9tlf6rys;Fermín López Marín;Fermín López;Fermín López;Fermín;López Marín;FC Barcelona;Spain;Midfielder;16
+73;2425;cscn06kwqfzo09h0dc5ybt1pl;Jules Olivier Koundé;Jules Koundé;J. Koundé;Jules Olivier;Koundé;FC Barcelona;France;Defender;23
+73;2425;eb3ci3a120om80v80mobsus8a;Pablo Páez Gavira;Pablo Páez Gavira;Gavi;Pablo;Páez Gavira;FC Barcelona;Spain;Midfielder;6
+73;2425;ewg00yicw9bw96wppupu36gwk;Alexis Olmedo Vila;Alexis Olmedo;Alexis Olmedo;Alexis;Olmedo Vila;FC Barcelona;Spain;Defender;38
+73;2425;ezviixcyaaj162saxs2yl27s9;Frenkie de Jong;Frenkie de Jong;F. de Jong;Frenkie;de Jong;FC Barcelona;Netherlands;Midfielder;21
+73;2425;yhipl27kpzoq85sizfyzmvx0;Ander Astralaga Aranguren;Ander Astralaga;Ander Astralaga;Ander;Astralaga Aranguren;FC Barcelona;Spain;Goalkeeper;26
+73;2425;1pim2m8qrj4gqjovepl1dlmhg;Gorka Rivera Alonso;Gorka Rivera;Gorka Rivera;Gorka;Rivera Alonso;Getafe CF;Spain;Defender;30
+73;2425;20ebw399jhbq0i5x2eacrrs6i;Ramon Terrats Espacio;Ramon Terrats;Ramon Terrats;Ramon;Terrats Espacio;Getafe CF;Spain;Midfielder;11
+73;2425;2o3bka7gokfjkej1f600ovbo5;Omar Federico Alderete Fernández;Omar Alderete;O. Alderete;Omar Federico;Alderete Fernández;Getafe CF;Paraguay;Defender;15
+73;2425;2or4vs22b27w14kgudoawh9ii;Abdoulaye Keita Keita;Abdoulaye Keita;Keita;Abdoulaye;Keita Keita;Getafe CF;Spain;Attacker;36
+73;2425;2zgcbp9g85uxudxadiw3twmvp;Fabrizio Germán Angileri;Fabrizio Angileri;F. Angileri;Fabrizio Germán;Angileri;Getafe CF;Argentina;Defender;3
+73;2425;3wugl0avw03pp0t9063l2y8lw;Diego Ferrer Martínez;Diego Ferrer;Diego Ferrer;Diego;Ferrer Martínez;Getafe CF;Spain;Goalkeeper;40
+73;2425;4fkiuj6nsn5vcrym13d3bmzv8;Djordjije Medenica;Djordjije Medenica;D. Medenica;Djordjije;Medenica;Getafe CF;Czechia;Goalkeeper;35
+73;2425;52e2ogoex674bz6pcwluapdxx;Borja Mayoral Moya;Borja Mayoral;Borja Mayoral;Borja;Mayoral Moya;Getafe CF;Spain;Attacker;9
+73;2425;54w62kh31qyyu7tipmjlt95g5;Juan Bernat Velasco;Juan Bernat;Juan Bernat;Juan;Bernat Velasco;Getafe CF;Spain;Defender;14
+73;2425;5gorfhj7uwpomrhlso1krxrkl;Mauro Wilney Arambarri Rosa;Mauro Arambarri;M. Arambarri;Mauro Wilney;Arambarri Rosa;Getafe CF;Uruguay;Midfielder;8
+73;2425;5lzbyj5i0cotpry4gneap8c89;Juan Antonio Iglesias Sánchez;Juan Iglesias;Juan Iglesias;Juan Antonio;Iglesias Sánchez;Getafe CF;Spain;Defender;21
+73;2425;5oto675vo4ugk7nm22q4vkhsk;Ismael Bekhoucha Lemlal;Ismael Bekhoucha;I. Bekhoucha;Ismael;Bekhoucha Lemlal;Getafe CF;Morocco;Defender;28
+73;2425;64h0x8sur55l07oaiuog4v2z9;Carles Pérez Sayol;Carles Pérez;Carles Pérez;Carles;Pérez Sayol;Getafe CF;Spain;Attacker;17
+73;2425;6bdn7qrzqxuurt39t5j6mooo9;Jiří Letáček;Jirí Letácek;J. Letáček;Jiří;Letáček;Getafe CF;Czechia;Goalkeeper;1
+73;2425;6j8k3j0qp5zy19mwpmgx0l990;Alberto Risco Alcántara;Alberto Risco;Alberto Risco;Alberto;Risco Alcántara;Getafe CF;Spain;Midfielder;26
+73;2425;6lz4bncnjfcm7wrtuiovguv2t;Allan-Roméo Nyom;Allan Nyom;A. Nyom;Allan-Roméo;Nyom;Getafe CF;Cameroon;Defender;12
+73;2425;7kser55g81n3lqj9rjd2mwftg;Christantus Ugonna Uche;Christantus Uche;C. Uche;Christantus Ugonna;Uche;Getafe CF;Nigeria;Midfielder;6
+73;2425;8v8idj3x9d1poghaoql8gxk9h;Jonathan Cristian Silva;Jonathan Silva;J. Silva;Jonathan Cristian;Silva;Getafe CF;Argentina;Defender;14
+73;2425;94brewn7q4rvrm8gk3ekuepec;Luca Lohr;Luca Löhr;Luca Lohr;Luca;Lohr;Getafe CF;Spain;Defender;37
+73;2425;9see13i1f0n1ju4uhs8sijutx;Djené Dakonam Ortega;Djené Dakonam;D. Dakonam;Djené;Dakonam Ortega;Getafe CF;Togo;Defender;2
+73;2425;act3hzza95bskb12nq86y0ro4;Guillem Trilla Cortiñas;Guillem Trilla;Guillem Trilla;Guillem;Trilla Cortiñas;Getafe CF;Spain;Defender;33
+73;2425;ad5kavddxekx6eckgq4y3v4a2;David Argüelles Álvarez;David Argüelles;David Argüelles;David;Argüelles Álvarez;Getafe CF;Spain;Defender;34
+73;2425;autqs49rcwgi0l7faajf2h5w4;Nabil Aberdin;Nabil Aberdin;N. Aberdin;Nabil;Aberdin;Getafe CF;Morocco;Defender;27
+73;2425;bdaxbuz59551ktjj7g31slfc9;Juan Berrocal González;Juan Berrocal;Juan Berrocal;Juan;Berrocal González;Getafe CF;Spain;Defender;4
+73;2425;behulpgu74ljrh3jg1g8qwdg4;Martín Cuéllar Pérez;Martín Cuéllar;Martín Cuéllar;Martín;Cuéllar Pérez;Getafe CF;Spain;Attacker;38
+73;2425;c4je25rkbg2n45xs5iurevhlh;Juan Miguel Jiménez López;Juan Miguel Jiménez López;Juanmi;Juan Miguel;Jiménez López;Getafe CF;Spain;Attacker;24
+73;2425;ch1lxxbn01at4jmkafy4uevh1;Luis Milla Manzanares;Luis Milla;Luis Milla;Luis;Milla Manzanares;Getafe CF;Spain;Midfielder;5
+73;2425;cue88fm1v1ysfuwhql68czydx;Domingos de Sousa Coutinho Meneses Duarte;Domingos de Sousa Coutinho Meneses Duarte;Domingos Duarte;Domingos;de Sousa Coutinho Meneses Duarte;Getafe CF;Portugal;Defender;22
+73;2425;czo50ep8l8ubnp8ifn6bx87pw;Coba Gomes da Costa;Coba da Costa;Coba da Costa;Coba;Gomes da Costa;Getafe CF;Spain;Attacker;29
+73;2425;dkt9892ixwnz1bkmgileo71sl;Diego Rico Salguero;Diego Rico;Diego Rico;Diego;Rico Salguero;Getafe CF;Spain;Defender;16
+73;2425;e5er1rgo8lluy6qjk4mcew6c4;Jesús Santiago Pérez;Jesús Santiago Pérez;Yellu Santiago;Jesús;Santiago Pérez;Getafe CF;Spain;Midfielder;20
+73;2425;e8t77ifx5ddju8ihbgu5iy8lw;John Joe Patrick Finn Benoa;John Patrick;J. Patrick;John Joe Patrick;Finn Benoa;Getafe CF;Republic of Ireland;Midfielder;31
+73;2425;ejrke7z9ve17jhj7x4glh206i;Peter Federico González Carmona;Peter Federico González Carmona;P. González;Peter Federico;González Carmona;Getafe CF;Dominican Republic;Attacker;19
+73;2425;eucew4k6eswqr6emzsdg4if3d;Alejandro Sola López-Ocaña;Álex Sola;Álex Sola;Alejandro;Sola López-Ocaña;Getafe CF;Spain;Attacker;7
+73;2425;k23exoxg1u76w0qaxc9gdpm;Bertuğ Özgür Yıldırım;Bertug Yildirim;B. Yıldırım;Bertuğ Özgür;Yıldırım;Getafe CF;Türkiye;Attacker;10
+73;2425;ocsr6ccykkxm6g6wozim1pn8;Jorge Benito de Valle Martín;Jorge Benito;Jorge Benito;Jorge;Benito de Valle Martín;Getafe CF;Spain;Goalkeeper;42
+73;2425;osme4gegtnhlldt4lsqf56ac;Álvaro Daniel Rodríguez Muñoz;Álvaro Rodríguez;Á. Rodríguez;Álvaro Daniel;Rodríguez Muñoz;Getafe CF;Uruguay;Attacker;18
+73;2425;vota9gwygxp3wc998tl7ldxx;David Soria Solís;David Soria;David Soria;David;Soria Solís;Getafe CF;Spain;Goalkeeper;13
+73;2425;1abvcjwaxlhc22zoxdqu0t7th;Arthur Henrique Ramos de Oliveira Melo;Arthur Henrique Ramos de Oliveira Melo;Arthur;Arthur Henrique;Ramos de Oliveira Melo;Girona FC;Brazil;Midfielder;12
+73;2425;1rhh9hzqzsp331scjcefanvo4;Yáser Esnéider Asprilla Martínez;Yáser Asprilla;Y. Asprilla;Yáser Esnéider;Asprilla Martínez;Girona FC;Colombia;Attacker;10
+73;2425;20vijl524ehlpukk3g5kyr28k;Antonino Jastin García Lopéz;Antonino Jastin Garcia López;Jastin García;Antonino Jastin;García Lopéz;Girona FC;Portugal;Attacker;31
+73;2425;25h51j4zz5m180na6sy5ybbpw;Joel Roca Casals;Joel Roca;Joel Roca;Joel;Roca Casals;Girona FC;Spain;Midfielder;33
+73;2425;2f1s166mgypfd94gce3k2cnx0;Jhon Élmer Solís Romero;Jhon Solís;J. Solís;Jhon Élmer;Solís Romero;Girona FC;Colombia;Midfielder;22
+73;2425;2nq5nzq35tfwc7po29dtwqp78;Arnau Martínez López;Arnau Martínez;Arnau Martínez;Arnau;Martínez López;Girona FC;Spain;Defender;4
+73;2425;3auwtiburdxrp2i5me2d97f11;Viktor Tsygankov;Viktor Tsygankov;V. Tsygankov;Viktor;Tsygankov;Girona FC;Ukraine;Attacker;8
+73;2425;3kx4mltrob4yta5g6kr2u8ic5;Daley Blind;Daley Blind;D. Blind;Daley;Blind;Girona FC;Netherlands;Defender;17
+73;2425;3vp8awfs73xgrh2krs24w6up5;Ladislav Krejčí;Ladislav Krejcí;L. Krejčí;Ladislav;Krejčí;Girona FC;Czechia;Defender;18
+73;2425;4ly2hj750l30406nqefwg5atw;Raul Martínez Moreno;Raúl Martínez;Raul Martínez;Raul;Martínez Moreno;Girona FC;Spain;Midfielder;37
+73;2425;4o0ei8wawffrg2hvnbmcxipxx;David López Silva;David López;David López;David;López Silva;Girona FC;Spain;Defender;5
+73;2425;4rktv6j9sioe0gmu7jt77fsh5;Arnaut Danjuma Adam Groeneveld;Arnaut Danjuma;A. Danjuma;Arnaut;Danjuma Adam Groeneveld;Girona FC;Netherlands;Attacker;11
+73;2425;4wbwcfbeokv5j4nuudbxgaw2d;Juan Carlos Martín Corral;Juan Carlos Martín Corral;Juan Carlos;Juan Carlos;Martín Corral;Girona FC;Spain;Goalkeeper;1
+73;2425;4ydaw14cc5uj77o8uafvt3578;Dawda Camara Sankharé;Dawda Camara;D. Camara;Dawda;Camara Sankharé;Girona FC;Mauritania;Attacker;46
+73;2425;5l6e9nd0defapk1w2ucndowr9;Cristian Portugués Manzanera;Cristian Portugués Manzanera;Portu;Cristian;Portugués Manzanera;Girona FC;Spain;Attacker;24
+73;2425;5ykwmft0pr13p2uzhk7f2g3ys;Juan Fernando Arango Tortolero;Juan Arango;J. Arango;Juan Fernando;Arango Tortolero;Girona FC;Venezuela;Attacker;34
+73;2425;66m3ju7fxgufujxfxgxgu6gb8;Jordi Bilali Danso;Jordi Danso;J. Danso;Jordi;Bilali Danso;Girona FC;Gambia;Goalkeeper;40
+73;2425;6gruusc463fdln5uz1uzhne8l;Donny van de Beek;Donny van de Beek;D. van de Beek;Donny;van de Beek;Girona FC;Netherlands;Midfielder;6
+73;2425;6navc0x6p4yqy76zyo3zocwr9;Cristhian Ricardo Stuani Curbelo;Cristhian Stuani;C. Stuani;Cristhian Ricardo;Stuani Curbelo;Girona FC;Uruguay;Attacker;7
+73;2425;78868pxa0scv5z2pck9h76wpg;Lucas García Madrigal;Lucas García Madrigal;Lucas García;Lucas;García Madrigal;Girona FC;Spain;Goalkeeper;42
+73;2425;85cayos3h77yqz43s4puym1g;Oriol Comas Feixas;Oriol Comas;Oriol Comas;Oriol;Comas Feixas;Girona FC;Spain;Defender;26
+73;2425;8cpd4je0ku8wjumqeh3ruv10p;Bojan Miovski;Bojan Miovski;B. Miovski;Bojan;Miovski;Girona FC;North Macedonia;Attacker;19
+73;2425;8nxr373i7g1m2ch2lk6k03ckq;Alejandro Francés Torrijo;Alejandro Francés;Alejandro Francés;Alejandro;Francés Torrijo;Girona FC;Spain;Defender;16
+73;2425;8rsd0givrxlfsa3w68jrdl89g;Pau Funallet Garcia;Pau García;Pau Funallet;Pau;Funallet Garcia;Girona FC;Spain;Goalkeeper;41
+73;2425;8xd59g0c36012q6mg5f2fl239;Juan Pedro Ramírez López;Juan Pedro Ramírez López;Juanpe;Juan Pedro;Ramírez López;Girona FC;Spain;Defender;15
+73;2425;9jhm9qxoeqad7lm5i2nemgwes;Vladyslav Krapyvtsov;Vladyslav Krapyvtsov;V. Krapyvtsov;Vladyslav;Krapyvtsov;Girona FC;Ukraine;Goalkeeper;25
+73;2425;9qxgspfaax37laql6wxa4jdas;Ferrán Ruiz Martí;Ferrán Ruiz Martí;Ferrán Ruiz;Ferrán;Ruiz Martí;Girona FC;Spain;Defender;45
+73;2425;9um7x9zd0e000zt57l3yearqh;Iván Martín Núñez;Iván Martín;Iván Martín;Iván;Martín Núñez;Girona FC;Spain;Midfielder;23
+73;2425;9xoaugptta7yql4xoqikbu32s;Antal Yaakobishvili;Antal Yaakobishvili;Antal Yaakobishvili;Antal;Yaakobishvili;Girona FC;Hungary;Defender;35
+73;2425;aujdbt11w20ipr8wtxw4of9jo;Marc Aznar Baides;Marc Aznar;Marc Aznar;Marc;Aznar Baides;Girona FC;Spain;Defender;33
+73;2425;c320492cbp1otejfp1i1oane1;Yangel Clemente Herrera Ravelo;Yangel Herrera;Y. Herrera;Yangel Clemente;Herrera Ravelo;Girona FC;Venezuela;Midfielder;21
+73;2425;c88vxqe8zvvzzmhtszvy6ygic;Aleksandar Metodiev Andreev;Aleksandar Andreev;A. Andreev;Aleksandar;Metodiev Andreev;Girona FC;Bulgaria;Goalkeeper;43
+73;2425;cjd62gwj9ptwrrtu6y6xnpeui;Bryan Gil Salvatierra;Bryan Gil;Bryan Gil;Bryan;Gil Salvatierra;Girona FC;Spain;Attacker;20
+73;2425;cuqawmfekh86mgo758udxw7v9;Oriol Romeu Vidal;Oriol Romeu;Oriol Romeu;Oriol;Romeu Vidal;Girona FC;Spain;Midfielder;14
+73;2425;cvl7blnqat2mcdlakkphlo1ec;Min-Su Kim;Min-Su Kim;Kim Min-Su;Min-Su;Kim;Girona FC;Korea Republic;Attacker;29
+73;2425;d0cbkiqifj7t3hzg3svm38844;Enric García Hurtado;Enric García;Enric García;Enric;García Hurtado;Girona FC;Spain;Midfielder;30
+73;2425;d332hr4gbtsvsh1ab1bydrx90;Iker Almena Horcajo;Iker Almena;Iker Almena;Iker;Almena Horcajo;Girona FC;Spain;Attacker;30
+73;2425;d7pzcnoztn30xoj5b2sr9slt6;Miguel Gutiérrez Ortega;Miguel Gutiérrez;Miguel Gutiérrez;Miguel;Gutiérrez Ortega;Girona FC;Spain;Defender;3
+73;2425;dlgqk5qe96gaxeq8vu4dozyms;Gabriel Osei Misehouy;Gabriel Misehouy;G. Misehouy;Gabriel;Osei Misehouy;Girona FC;Netherlands;Midfielder;27
+73;2425;dp54axygcdwqyv5rfeeinlmvo;Silvi Clua Oya;Selvi Clua;Selvi Clua;Silvi;Clua Oya;Girona FC;Spain;Midfielder;28
+73;2425;dp6wja5f4zl30alplt3sf5kic;Papa Dame Ba;Papa Dame Ba;P. Ba;Papa Dame;Ba;Girona FC;Senegal;Attacker;44
+73;2425;e5xv1rmy69kwuxjxin653ojqh;Abel Ruiz Ortega;Abel Ruiz;Abel Ruiz;Abel;Ruiz Ortega;Girona FC;Spain;Attacker;9
+73;2425;eavhyxb9dfjh0jp5yzg8p8udx;Paulo Dino Gazzaniga Farias;Paulo Gazzaniga;P. Gazzaniga;Paulo Dino;Gazzaniga Farias;Girona FC;Argentina;Goalkeeper;13
+73;2425;eonkaqrhhxzaa3nt0iena4us;Ricard Artero Ruiz;Ricard Artero;Ricard Artero;Ricard;Artero Ruiz;Girona FC;Spain;Midfielder;36
+73;2425;1bdnkqbxm2u5ror7ipig5m73e;Sergio Camello Pérez;Sergio Camello;Sergio Camello;Sergio;Camello Pérez;Rayo Vallecano de Madrid;Spain;Attacker;14
+73;2425;1ho7koiegfhsuevuum2meibu2;Pathé Ismaël Ciss;Pathé Ciss;P. Ciss;Pathé Ismaël;Ciss;Rayo Vallecano de Madrid;Senegal;Midfielder;6
+73;2425;1jffh172t15s6ws7nou0fc251;Sergio Guardiola Navarro;Sergi Guardiola;Sergi Guardiola;Sergio;Guardiola Navarro;Rayo Vallecano de Madrid;Spain;Attacker;12
+73;2425;2qauzcv74cd8uqfv2ibl52ymt;Luis Alfonso Espino García;Luis Alfonso Espino García;P. Espino;Luis Alfonso;Espino García;Rayo Vallecano de Madrid;Uruguay;Defender;22
+73;2425;38dhmhce7deuqgqmc3p7nhai2;Andrei Florin Rațiu;Andrei Ratiu;A. Rațiu;Andrei Florin;Rațiu;Rayo Vallecano de Madrid;Romania;Defender;2
+73;2425;3ca7tqrdasmeop6ud9zot0wdl;Isaac Palazón Camacho;Isi Palazón;Isi Palazón;Isaac;Palazón Camacho;Rayo Vallecano de Madrid;Spain;Midfielder;7
+73;2425;533095rnz0k8mxqe6gzn0mfo5;Florian Grégoire Claude Lejeune;Florian Lejeune;F. Lejeune;Florian Grégoire Claude;Lejeune;Rayo Vallecano de Madrid;France;Defender;24
+73;2425;63yktdky9m0aus8ebkaqzdhhx;Adrián Embarba Blázquez;Adri Embarba;Adri Embarba;Adrián;Embarba Blázquez;Rayo Vallecano de Madrid;Spain;Attacker;21
+73;2425;676ehh6cwla4o9igey7qr1uqd;Óscar Guido Trejo;Óscar Trejo;Ó. Trejo;Óscar Guido;Trejo;Rayo Vallecano de Madrid;Argentina;Midfielder;8
+73;2425;6xohxbkjdcqw7zc7c272i1qfo;Diego Méndez Molero;Diego Méndez;Diego Méndez;Diego;Méndez Molero;Rayo Vallecano de Madrid;Spain;Midfielder;29
+73;2425;7m4ago0en2dqqctiydc48pjbo;Adrián Molina Colorado;Adrián Molina;Adrián Molina;Adrián;Molina Colorado;Rayo Vallecano de Madrid;Spain;Goalkeeper;35
+73;2425;7vb4xrwk7sbgpxzgiwwbt4s89;Pedro Díaz Fanjul;Pedro Díaz;Pedro Díaz;Pedro;Díaz Fanjul;Rayo Vallecano de Madrid;Spain;Midfielder;4
+73;2425;8eh38t4oyyt728co362f6uqqd;Álvaro García Rivera;Álvaro García;Álvaro García;Álvaro;García Rivera;Rayo Vallecano de Madrid;Spain;Midfielder;18
+73;2425;8onruhr4es313aq52xsl7nxlh;Óscar Valentín Martín Luengo;Óscar Valentín;Óscar Valentín;Óscar;Valentín Martín Luengo;Rayo Vallecano de Madrid;Spain;Midfielder;23
+73;2425;94jrxsnf1ta2u65ommyge7bo5;Aridane Hernández Umpiérrez;Aridane Hernández;Aridane Hernández;Aridane;Hernández Umpiérrez;Rayo Vallecano de Madrid;Spain;Defender;5
+73;2425;9h6xf4ac4rpsjpummcdx26z9;Augusto Martín Batalla Barga;Augusto Batalla;A. Batalla;Augusto Martín;Batalla Barga;Rayo Vallecano de Madrid;Argentina;Goalkeeper;13
+73;2425;9xhbpn45z9wvjidbmparzkdm1;Daniel Cárdenas Lindez;Dani Cárdenas;Dani Cárdenas;Daniel;Cárdenas Lindez;Rayo Vallecano de Madrid;Spain;Goalkeeper;1
+73;2425;a045sz2acqbfgyq9puwsu8sx6;Randy Nteka;Randy Nteka;Randy Nteka;Randy;Nteka;Rayo Vallecano de Madrid;Angola;Midfielder;11
+73;2425;a8g1nr2nrtkbm34v91bhz44d0;Pelayo Fernández Balboa;Pelayo Fernández;Pelayo Fernández;Pelayo;Fernández Balboa;Rayo Vallecano de Madrid;Spain;Defender;27
+73;2425;amt4voyjzhnvr55t08hzlw50q;Josep María Chavarría Pérez;Pep Chavarría;Pep Chavarría;Josep María;Chavarría Pérez;Rayo Vallecano de Madrid;Spain;Defender;3
+73;2425;av3b3g13pg0bx7u7dss4jq044;Sergio José Lozano Martínez;Sergio Lozano;Sergio Lozano;Sergio José;Lozano Martínez;Rayo Vallecano de Madrid;Spain;Defender;31
+73;2425;bpfp895223p7w0px2ui3nb2l1;Iván Balliu Campeny;Iván Balliu;I. Balliu;Iván;Balliu Campeny;Rayo Vallecano de Madrid;Albania;Defender;20
+73;2425;byaovvyzh22vsvs0iitqeciy1;Jonathan Montiel Caballero;Joni Montiel;Joni Montiel;Jonathan;Montiel Caballero;Rayo Vallecano de Madrid;Spain;Midfielder;25
+73;2425;c157xhi78x9cykn7xz816bjd;Jorge de Frutos Sebastián;Jorge de Frutos;Jorge de Frutos;Jorge;de Frutos Sebastián;Rayo Vallecano de Madrid;Spain;Attacker;19
+73;2425;cfmzb93gnr836gxzkraj1n14a;Juan Pedro Gil Bueno;Juan Pedro Gil Bueno;Juanpe Gil;Juan Pedro;Gil Bueno;Rayo Vallecano de Madrid;Spain;Goalkeeper;30
+73;2425;cjjo9piy65xdij746y97pyl79;James David Rodríguez Rubio;James Rodríguez;J. Rodríguez;James David;Rodríguez Rubio;Rayo Vallecano de Madrid;Colombia;Midfielder;10
+73;2425;diixuwl5rn7f8vjleqfqy4st1;Raúl de Tomás Gómez;Raúl de Tomás;Raúl de Tomás;Raúl;de Tomás Gómez;Rayo Vallecano de Madrid;Spain;Attacker;9
+73;2425;dkv4v1sclhniph9v7g8zzi1as;Miguel Benedi Fabián;Miguel Benedi;Miguel Benedi;Miguel;Benedi Fabián;Rayo Vallecano de Madrid;Spain;Goalkeeper;40
+73;2425;dwz2500ghb76s57kjjfrvsi6s;Etienne Eto'o Pineda;Etienne Eto'o Pineda;E. Eto'o;Etienne;Eto'o Pineda;Rayo Vallecano de Madrid;Cameroon;Attacker;28
+73;2425;ed0t2uo6kac1nd9203f3rzdhw;Marco de las Sías López;Marco de Las Sias;Marco de las Sías;Marco;de las Sías López;Rayo Vallecano de Madrid;Spain;Defender;26
+73;2425;f0a2qk3jzxercn67bben5eled;Gerard Gumbau Garriga;Gerard Gumbau;Gerard Gumbau;Gerard;Gumbau Garriga;Rayo Vallecano de Madrid;Spain;Midfielder;15
+73;2425;lp63o37czdwete0smmu62k89;Khalid Abdul Mumin Suleman;Abdul Mumin;A. Mumin;Khalid Abdul;Mumin Suleman;Rayo Vallecano de Madrid;Ghana;Defender;16
+73;2425;u04ao1ldrjjesgqq52o7ghqt;Unai López Cabrera;Unai López;Unai López;Unai;López Cabrera;Rayo Vallecano de Madrid;Spain;Midfielder;17
+73;2425;10f06nit2xupshuz4lmazrvth;William Silva de Carvalho;William Silva de Carvalho;William Carvalho;William;Silva de Carvalho;Real Betis Balompié;Portugal;Midfielder;14
+73;2425;13uxs8820y7mi31fsw1i0qxw4;Assane Diao Diaoune;Assane Diao;Assane Diao;Assane;Diao Diaoune;Real Betis Balompié;Senegal;Attacker;38
+73;2425;1he0x583esqw1ka0ybc2nlz9x;Nabil Fekir;Nabil Fekir;N. Fekir;Nabil;Fekir;Real Betis Balompié;France;Attacker;8
+73;2425;2b7ankpb026wngkg3hgppev6y;Francisco Barbosa Vieites;Francisco Barbosa Vieites;Fran Vieites;Francisco;Barbosa Vieites;Real Betis Balompié;Spain;Goalkeeper;25
+73;2425;2r4450bqkmpcf1ogmcfhvczmy;Natan Bernardo de Souza;Natan Bernardo de Souza;Natan;Natan Bernardo;de Souza;Real Betis Balompié;Brazil;Defender;6
+73;2425;2r4ox2h5r7doo3ys9ynm2nbo5;Adrián San Miguel del Castillo;Adrián San Miguel del Castillo;Adrián;Adrián;San Miguel del Castillo;Real Betis Balompié;Spain;Goalkeeper;13
+73;2425;2ri663cf9ev3wiyuk73e83zf8;Rudy Seimao Erolde Kohon;Rudy Kohon;R. Kohon;Rudy Seimao Erolde;Kohon;Real Betis Balompié;France;Defender;45
+73;2425;30ed2aojjzmqigq6vkcrzc8pg;Jesús Rodríguez Caraballo;Jesús Rodríguez;Jesús Rodríguez;Jesús;Rodríguez Caraballo;Real Betis Balompié;Spain;Attacker;36
+73;2425;38igxi5sn8v00xtciwhqb44fe;Iker Losada Aragunde;Iker Losada;Iker Losada;Iker;Losada Aragunde;Real Betis Balompié;Spain;Attacker;19
+73;2425;3e8mxxfs5q7gt4lg2beqpkwyd;Héctor Bellerín Moruno;Héctor Bellerín;Héctor Bellerín;Héctor;Bellerín Moruno;Real Betis Balompié;Spain;Defender;2
+73;2425;3t777wlfc7hoepgiwwkuhoqok;Carlos Guirao Mora;Carlos Guirao;Carlos Guirao;Carlos;Guirao Mora;Real Betis Balompié;Spain;Midfielder;34
+73;2425;3ub05nnpt9o7s387z6oj8vf56;João Lucas de Souza Cardoso;Johnny Cardoso;J. Cardoso;João Lucas;de Souza Cardoso;Real Betis Balompié;USA;Midfielder;4
+73;2425;45s1v9805id09m5zkcylueod1;Francisco Román Alarcón Suárez;Francisco Román Alarcón Suárez;Isco;Francisco Román;Alarcón Suárez;Real Betis Balompié;Spain;Midfielder;22
+73;2425;49su8lzq2a7g0ufuwx7v199n8;Guilherme Sousa Carvalho Fernandes;Guilherme Sousa Carvalho Fernandes;Guilherme Fernandes;Guilherme;Sousa Carvalho Fernandes;Real Betis Balompié;Portugal;Goalkeeper;31
+73;2425;4egqrl50kuc2mh20lwiz4f1n8;Lucas Alcázar Moreno;Lucas Alcázar;Lucas Alcázar;Lucas;Alcázar Moreno;Real Betis Balompié;Spain;Defender;43
+73;2425;4r6jcuotjs6rz8iwu20996z85;Marc Roca Junqué;Marc Roca;Marc Roca;Marc;Roca Junqué;Real Betis Balompié;Spain;Midfielder;21
+73;2425;5di559c44era51ux5cpucpwr8;Carlos Reina Luengo;Carlos Reina;Carlos Reina;Carlos;Reina Luengo;Real Betis Balompié;Spain;Midfielder;47
+73;2425;5lsx1d5uu8hu6x6a2eocqhvys;Pablo García Fernández;Pablo García;Pablo García;Pablo;García Fernández;Real Betis Balompié;Spain;Attacker;52
+73;2425;5o07mnpidavbe0hqoqzwgom50;Sergi Altimira Clavell;Sergi Altimira;Sergi Altimira;Sergi;Altimira Clavell;Real Betis Balompié;Spain;Midfielder;16
+73;2425;65kdmxquwdxrllbn3syynhf6c;Xavier Pleguezuelo Selva;Xavier Pleguezuelo;Xavi Pleguezuelo;Xavier;Pleguezuelo Selva;Real Betis Balompié;Spain;Defender;33
+73;2425;67qku7vyvbw76086eu05nowd1;Romain Paul Jean-Michel Perraud;Romain Perraud;R. Perraud;Romain Paul Jean-Michel;Perraud;Real Betis Balompié;France;Defender;15
+73;2425;6aix9yu384pv1caanqiol231l;Pablo Fornals Malla;Pablo Fornals;Pablo Fornals;Pablo;Fornals Malla;Real Betis Balompié;Spain;Midfielder;18
+73;2425;74z66mnnh5ipu13ihlqtun40k;Vitor Hugo Roque Ferreira;Vitor Hugo Roque Ferreira;Vitor Roque;Vitor Hugo;Roque Ferreira;Real Betis Balompié;Brazil;Attacker;8
+73;2425;7x4eg9m0ikbokn9x4nzyt2jv8;Mateo Flores Lozano;Mateo Flores;Mateo Flores;Mateo;Flores Lozano;Real Betis Balompié;Spain;Midfielder;46
+73;2425;8aao79b1g77c5jhp1n0w60xrd;Juan Camilo Hernández Suárez;Cucho Hernández;C. Hernández;Juan Camilo;Hernández Suárez;Real Betis Balompié;Colombia;Attacker;19
+73;2425;9226xt1t1m3fy4ob9l2r16609;Aitor Ruibal García;Aitor Ruibal;Aitor Ruibal;Aitor;Ruibal García;Real Betis Balompié;Spain;Attacker;24
+73;2425;96cbv23es0gucmd2v0qvk3iwa;Abdessamad Ezzalzouli;Abde Ezzalzouli;A. Ezzalzouli;Abdessamad;Ezzalzouli;Real Betis Balompié;Morocco;Attacker;10
+73;2425;9ak3zczupeken1itsmkherbh1;Ricardo Iván Rodríguez Araya;Ricardo Rodríguez;R. Rodríguez;Ricardo Iván;Rodríguez Araya;Real Betis Balompié;Switzerland;Defender;12
+73;2425;9ao7l82r1xd2rjnvv5u6plcr9;Diego Javier Llorente Ríos;Diego Llorente;Diego Llorente;Diego Javier;Llorente Ríos;Real Betis Balompié;Spain;Defender;3
+73;2425;9jxofpmrfh2lil77f9xj22kiy;Rodrigo Sánchez Rodríguez;Rodrigo Sánchez Rodríguez;Rodri;Rodrigo;Sánchez Rodríguez;Real Betis Balompié;Spain;Attacker;17
+73;2425;a24dxruwjscj8tkodcucmpt78;Pablo Busto González;Pablo Busto;Pablo Busto;Pablo;Busto González;Real Betis Balompié;Spain;Defender;42
+73;2425;a68fosxpgtyxj64ex9f6nget;Cédric Bakambu;Cédric Bakambu;C. Bakambu;Cédric;Bakambu;Real Betis Balompié;Congo DR;Attacker;11
+73;2425;bdbqu8d13otbx5jt3lsv3qq6s;Daniel Pérez Guerrero;Dani Pérez;Dani Pérez;Daniel;Pérez Guerrero;Real Betis Balompié;Spain;Midfielder;37
+73;2425;c4je25rkbg2n45xs5iurevhlh;Juan Miguel Jiménez López;Juan Miguel Jiménez López;Juanmi;Juan Miguel;Jiménez López;Real Betis Balompié;Spain;Attacker;7
+73;2425;c4wx7risg0lyltx52as4tuihg;Sergio Arribas Prieto;Sergio Arribas;Sergio Arribas;Sergio;Arribas Prieto;Real Betis Balompié;Spain;Defender;57
+73;2425;cd0w7dewgwkiiqkg0jty8ae50;Ángel Ortiz Monterrey;Ángel Ortiz;Ángel Ortiz;Ángel;Ortiz Monterrey;Real Betis Balompié;Spain;Defender;40
+73;2425;cdsidpd0i3ub2tvw47qt813x0;Nobel Mendy;Nobel Mendy;N. Mendy;Nobel;Mendy;Real Betis Balompié;Senegal;Defender;32
+73;2425;cuxm7t8cql3v06hqf18wvcul1;Luis Ezequiel Ávila;Chimy Ávila;C. Ávila;Luis Ezequiel;Ávila;Real Betis Balompié;Argentina;Attacker;9
+73;2425;dh2wmerftfg5e3tydgykp4dg4;Germán García Fernández;Germán García;Germán García;Germán;García Fernández;Real Betis Balompié;Spain;Goalkeeper;30
+73;2425;dhtb9gizk25k1u3h0b7xgy4tl;Giovani Lo Celso;Giovani Lo Celso;G. Lo Celso;Giovani;Lo Celso;Real Betis Balompié;Argentina;Midfielder;20
+73;2425;dy5c8qikqptm7cdjqmiodvqqc;Marcos Fernández Sánchez;Marcos Fernández;Marcos Fernández;Marcos;Fernández Sánchez;Real Betis Balompié;Spain;Attacker;44
+73;2425;e3unbekvmnrnv6g6mmm46eu50;Manuel González Pallarés;Manu González;Manu González;Manuel;González Pallarés;Real Betis Balompié;Spain;Goalkeeper;41
+73;2425;euy1s0xo19019kegzcpp1gez9;Youssouf Sabaly;Youssouf Sabaly;Y. Sabaly;Youssouf;Sabaly;Real Betis Balompié;Senegal;Defender;23
+73;2425;evpjdko94awbqbbl5wl9hto7p;Marc Bartra Aregall;Marc Bartra;Marc Bartra;Marc;Bartra Aregall;Real Betis Balompié;Spain;Defender;5
+73;2425;s96k2x2cts0vo6y6aaeui5zp;Rui Tiago Dantas da Silva;Rui Tiago Dantas da Silva;Rui Silva;Rui Tiago;Dantas da Silva;Real Betis Balompié;Portugal;Goalkeeper;1
+73;2425;v22q59d00b5v78rgx7v8z3vu;Antony Matheus dos Santos;Antony Matheus dos Santos;Antony;Antony Matheus;dos Santos;Real Betis Balompié;Brazil;Attacker;7
+73;2425;18mddnpa54ygoaefaj0c5obf9;Mihailo Ristić;Mihailo Ristic;M. Ristić;Mihailo;Ristić;Real Club Celta de Vigo;Serbia;Defender;21
+73;2425;1lym8zscp7l8icay2cya7cauh;Lucas Daniel de la Torre;Luca de la Torre;L. de la Torre;Lucas Daniel;de la Torre;Real Club Celta de Vigo;USA;Midfielder;14
+73;2425;1p0xp2onnys7jlru55vfgf1pm;Anastasios Douvikas;Tasos Douvikas;T. Douvikas;Anastasios;Douvikas;Real Club Celta de Vigo;Greece;Attacker;9
+73;2425;23oysjfutg5xy1f3o9bapnmxh;Javier Manquillo Gaitán;Javier Manquillo;Javier Manquillo;Javier;Manquillo Gaitán;Real Club Celta de Vigo;Spain;Defender;22
+73;2425;38igxi5sn8v00xtciwhqb44fe;Iker Losada Aragunde;Iker Losada;Iker Losada;Iker;Losada Aragunde;Real Club Celta de Vigo;Spain;Attacker;14
+73;2425;3qrk8nw6nc8o96n7jr1az21ux;Joseph Aidoo;Joseph Aidoo;J. Aidoo;Joseph;Aidoo;Real Club Celta de Vigo;Ghana;Defender;15
+73;2425;3sy16pz110zmyq073ao24l1ck;Carlos Domínguez Cáceres;Carlos Domínguez;Carlos Domínguez;Carlos;Domínguez Cáceres;Real Club Celta de Vigo;Spain;Defender;24
+73;2425;4bgaa4ylewedh4roya90y39qs;Martín Conde Gómez;Tincho Conde;Tincho Conde;Martín;Conde Gómez;Real Club Celta de Vigo;Spain;Defender;36
+73;2425;530jf9kq6s7dqggz6how0lt04;Jones El Abdellaoui;Jones El Abdellaoui;J. El Abdellaoui;Jones;El Abdellaoui;Real Club Celta de Vigo;Morocco;Attacker;39
+73;2425;59ndqnsvggsoek170rdqyd1w5;Iván Villar Martínez;Iván Villar;Iván Villar;Iván;Villar Martínez;Real Club Celta de Vigo;Spain;Goalkeeper;1
+73;2425;5ez2huoeh2g3ijpgr7m15lg5;Franco Emanuel Cervi;Franco Cervi;F. Cervi;Franco Emanuel;Cervi;Real Club Celta de Vigo;Argentina;Midfielder;11
+73;2425;5tc1y5n3h4ties7gbc3zd9j6y;Sergio Carreira Vilariño;Sergio Carreira;Sergio Carreira;Sergio;Carreira Vilariño;Real Club Celta de Vigo;Spain;Defender;5
+73;2425;64ctdbd0w5ikj0fkcuu9jdbhm;Moriba Kourouma Kourouma;Moriba Kourouma Kourouma;I. Moriba;Moriba;Kourouma Kourouma;Real Club Celta de Vigo;Guinea;Midfielder;6
+73;2425;6frk0m671zx9l84m2gy1iu6i2;César Fernández González;César Fernández;César Fernández;César;Fernández González;Real Club Celta de Vigo;Spain;Goalkeeper;27
+73;2425;6mgwcjden6vbuyrcexaxu9ogk;Tadeo Allende;Tadeo Allende;T. Allende;Tadeo;Allende;Real Club Celta de Vigo;Argentina;Attacker;23
+73;2425;6q341ss6es4r2m1o5s5e80nbo;Yoel Lago Amil;Yoel Lago;Yoel Lago;Yoel;Lago Amil;Real Club Celta de Vigo;Spain;Defender;29
+73;2425;722mplfqv94e5tvektbvbclwp;Jailson Marques Siqueira;Jailson Marques Siqueira;Jailson;Jailson;Marques Siqueira;Real Club Celta de Vigo;Brazil;Midfielder;16
+73;2425;79n0dyjagmleor1fpwl25qql0;Javier Rodríguez Galiano;Javi Rodríguez;Javi Rodríguez;Javier;Rodríguez Galiano;Real Club Celta de Vigo;Spain;Defender;32
+73;2425;7lo14fnq32yyyqql6jws5w3xl;Alfonso González Martínez;Alfon González;Alfon González;Alfonso;González Martínez;Real Club Celta de Vigo;Spain;Attacker;12
+73;2425;81fw03v34t2u3xnwq5gpdbpck;Damián Rodríguez Sousa;Damián Rodríguez;Damián Rodríguez;Damián;Rodríguez Sousa;Real Club Celta de Vigo;Spain;Midfielder;25
+73;2425;8k88isvd2hwr5e4gn9oxzr2t;Vicente Guaita Panadero;Vicente Guaita;Vicente Guaita;Vicente;Guaita Panadero;Real Club Celta de Vigo;Spain;Goalkeeper;13
+73;2425;9g4ojrys88awchyj6zgmd6oes;Fernando López González;Fer López;Fer López;Fernando;López González;Real Club Celta de Vigo;Spain;Midfielder;28
+73;2425;9i7lb16qty1t21bnc5h7skclx;Marcos Alonso Mendoza;Marcos Alonso;Marcos Alonso;Marcos;Alonso Mendoza;Real Club Celta de Vigo;Spain;Defender;20
+73;2425;9ksvo095xi2t4q4pvgxa836z8;Pablo Durán Fernández;Pablo Durán;Pablo Durán;Pablo;Durán Fernández;Real Club Celta de Vigo;Spain;Attacker;18
+73;2425;a35r6fa79ipqqktiff3uhz6j9;Jonathan Fousseni Bamba;Jonathan Bamba;J. Bamba;Jonathan Fousseni;Bamba;Real Club Celta de Vigo;Côte d'Ivoire;Attacker;17
+73;2425;a39ntr1ek9aavke18yucd0r2s;Miguel Román González;Miguel Román;Miguel Román;Miguel;Román González;Real Club Celta de Vigo;Spain;Midfielder;34
+73;2425;b9gvtejjtt3vqukvdeuuo1eqx;Marc Vicente Vidal Girona;Marc Vidal;Marc Vidal;Marc Vicente;Vidal Girona;Real Club Celta de Vigo;Spain;Goalkeeper;26
+73;2425;bmcz7nkdpxopn3g89dekqa8a2;Jorge Carrillo Balea;Coke Carrillo;Coke Carrillo;Jorge;Carrillo Balea;Real Club Celta de Vigo;Spain;Goalkeeper;35
+73;2425;c3sl9ajm4q424r4u37iath3hl;Óscar Mingueza García;Óscar Mingueza;Óscar Mingueza;Óscar;Mingueza García;Real Club Celta de Vigo;Spain;Defender;3
+73;2425;c60m17adgxbewkrzizwtzd91w;Hugo Sotelo Gómez;Hugo Sotelo;Hugo Sotelo;Hugo;Sotelo Gómez;Real Club Celta de Vigo;Spain;Midfielder;4
+73;2425;cksi669gcnskpytzh70a43it;Carl Anders Theodor Starfelt;Carl Starfelt;C. Starfelt;Carl Anders Theodor;Starfelt;Real Club Celta de Vigo;Sweden;Defender;2
+73;2425;cs2yx3hiqjsb4i5ul2r5kmdat;Iago Aspas Juncal;Iago Aspas;Iago Aspas;Iago;Aspas Juncal;Real Club Celta de Vigo;Spain;Attacker;10
+73;2425;d12m2oz1lomkc1qxmpht38lat;Borja Iglesias Quintás;Borja Iglesias;Borja Iglesias;Borja;Iglesias Quintás;Real Club Celta de Vigo;Spain;Attacker;7
+73;2425;daid84a2zbh8rasleahdp8nis;Hugo Álvarez Antúnez;Hugo Álvarez;Hugo Álvarez;Hugo;Álvarez Antúnez;Real Club Celta de Vigo;Spain;Midfielder;23
+73;2425;e3czx0nsuw10acnftbr8ud0bt;Francisco José Beltrán Peinado;Fran Beltrán;Fran Beltrán;Francisco José;Beltrán Peinado;Real Club Celta de Vigo;Spain;Midfielder;8
+73;2425;e91yegwfliqhfy9yyk19otafo;Williot Theo Swedberg;Williot Swedberg;W. Swedberg;Williot Theo;Swedberg;Real Club Celta de Vigo;Sweden;Midfielder;19
+73;2425;12qc3dkodeb8ykg6pc0kqf2l1;Manuel Morlanes Ariño;Manu Morlanes;Manu Morlanes;Manuel;Morlanes Ariño;Real Club Deportivo Mallorca;Spain;Midfielder;8
+73;2425;1i1xcco82x0ppbac6j5z59x49;Siebe Van der Heyden;Siebe Van der Heyden;S. Van der Heyden;Siebe;Van der Heyden;Real Club Deportivo Mallorca;Belgium;Defender;4
+73;2425;1km9nvqz03yoj9cxpv127id7u;Samuel de Almeida Costa;Samuel de Almeida Costa;Samú Costa;Samuel;de Almeida Costa;Real Club Deportivo Mallorca;Portugal;Midfielder;12
+73;2425;22dchchxwrsty67ultrs61qz9;Pablo Carmine Maffeo Becerra;Pablo Maffeo;Pablo Maffeo;Pablo Carmine;Maffeo Becerra;Real Club Deportivo Mallorca;Argentina;Defender;23
+73;2425;2bzdn7cqqonejqmlq85w8z6qd;Takuma Asano;Takuma Asano;T. Asano;Takuma;Asano;Real Club Deportivo Mallorca;Japan;Attacker;11
+73;2425;2lazx19wotf1b8jqx9mqeg4tm;Francisco Jorge Tavares Oliveira;Francisco Jorge Tavares Oliveira;Chiquinho;Francisco Jorge;Tavares Oliveira;Real Club Deportivo Mallorca;Portugal;Attacker;20
+73;2425;2td3iejdken4orcduqrdutrhm;Antonio Sánchez Navarro;Antonio Sánchez;Antonio Sánchez;Antonio;Sánchez Navarro;Real Club Deportivo Mallorca;Spain;Midfielder;18
+73;2425;2wdjbfzaiokiawrbn5wzsx61h;Abdón Roger Prats Bastidas;Abdón Prats;Abdón Prats;Abdón Roger;Prats Bastidas;Real Club Deportivo Mallorca;Spain;Attacker;9
+73;2425;3n66mcws9belxbv3pu5uwhfu2;José Manuel Arias Copete;José Manuel Arias Copete;Copete;José Manuel;Arias Copete;Real Club Deportivo Mallorca;Spain;Defender;6
+73;2425;3pwr7lqvo4o08c4nvzqpuue39;Vedat Muriqi;Vedat Muriqi;V. Muriqi;Vedat;Muriqi;Real Club Deportivo Mallorca;Kosovo;Attacker;7
+73;2425;3rrges782prcprsn207dk4zit;Cyle Christopher Larin;Cyle Larin;C. Larin;Cyle Christopher;Larin;Real Club Deportivo Mallorca;Canada;Attacker;17
+73;2425;3v254jhofauiadp9vzb7rb21g;David López Guijarro;David López;David López;David;López Guijarro;Real Club Deportivo Mallorca;Spain;Defender;32
+73;2425;4m1hsbfpts9xz2luy52gnf09g;Daniel Andrés Luna García;Daniel Luna;D. Luna;Daniel Andrés;Luna García;Real Club Deportivo Mallorca;Colombia;Midfielder;33
+73;2425;4rcsvuxnotyjoo72f8okudh5g;Javier Llabrés Exposito;Javi Llabrés;Javi Llabrés;Javier;Llabrés Exposito;Real Club Deportivo Mallorca;Spain;Attacker;19
+73;2425;4sz26vstr6b7b110eri7f42jt;Dominik Greif;Dominik Greif;D. Greif;Dominik;Greif;Real Club Deportivo Mallorca;Slovakia;Goalkeeper;1
+73;2425;5e8sf5791x5g5m9vmct6s3itw;Marc Hidalgo Domenech González;Marc Domenech;Marc Domenech;Marc;Hidalgo Domenech González;Real Club Deportivo Mallorca;Spain;Attacker;30
+73;2425;5m4b1z00qouaalj2veqmunfv8;Pau Mascaró Ruiz;Pau Mascaró;Pau Mascaró;Pau;Mascaró Ruiz;Real Club Deportivo Mallorca;Spain;Attacker;34
+73;2425;5qh2kdatvb03o8oiqvkaaxje2;Leonardo Román Riquelme;Leo Román;Leo Román;Leonardo;Román Riquelme;Real Club Deportivo Mallorca;Spain;Goalkeeper;13
+73;2425;5tsp2m5z3xie07ax0wq1qqsix;Mateu Jaume Morey Bauzà;Mateu Morey;Mateu Morey;Mateu Jaume;Morey Bauzà;Real Club Deportivo Mallorca;Spain;Defender;2
+73;2425;7aoe0u87gxgv9tvgrotcfue7e;Roberto Navarro Muñoz;Robert Navarro;Robert Navarro;Roberto;Navarro Muñoz;Real Club Deportivo Mallorca;Spain;Midfielder;27
+73;2425;7xmaybxu4zd5k338bi3drkxcl;Sergi Darder Moll;Sergi Darder;Sergi Darder;Sergi;Darder Moll;Real Club Deportivo Mallorca;Spain;Midfielder;10
+73;2425;8tnz3pqkqdhbr08p96i9w8i96;Valery Fernández Estrada;Valery Fernández;Valery;Valery;Fernández Estrada;Real Club Deportivo Mallorca;Spain;Defender;16
+73;2425;9dewnn65ylruq567thg7ebqhh;Antonio José Raíllo Arenas;Antonio Raíllo;Antonio Raíllo;Antonio José;Raíllo Arenas;Real Club Deportivo Mallorca;Spain;Defender;21
+73;2425;9e7b5cm66oxf26fmp33yuppsl;Daniel José Rodríguez Vázquez;Dani Rodríguez;Dani Rodríguez;Daniel José;Rodríguez Vázquez;Real Club Deportivo Mallorca;Spain;Midfielder;14
+73;2425;9n447dc5s8na89g3ovx9zvbv9;Giovanni Alessandro González Apud;Giovanni González;G. González;Giovanni Alessandro;González Apud;Real Club Deportivo Mallorca;Uruguay;Defender;20
+73;2425;9t88fceutc2x108ga0qkzkafp;Martin Valjent;Martin Valjent;M. Valjent;Martin;Valjent;Real Club Deportivo Mallorca;Slovakia;Defender;24
+73;2425;9wwzjoc2bl80vct0meb6v5yqc;Miquel Jan Salas Franch;Jan Salas;Miquel Salas;Miquel Jan;Salas Franch;Real Club Deportivo Mallorca;Spain;Midfielder;28
+73;2425;b5510rs3vfp2i783y1bjggaok;Sebastian John Wade Gardiner;Sebas Wade;Sebastian Wade;Sebastian John;Wade Gardiner;Real Club Deportivo Mallorca;Spain;Defender;39
+73;2425;bkvvapojagxvj17nzk3oy8ct1;Omar Mascarell González;Omar Mascarell;Omar Mascarell;Omar;Mascarell González;Real Club Deportivo Mallorca;Equatorial Guinea;Midfielder;5
+73;2425;da4isu80fnw6rmv53gbjv8qcq;Pere Joan García Bauzà;Pere García;Pere García;Pere Joan;García Bauzà;Real Club Deportivo Mallorca;Spain;Goalkeeper;31
+73;2425;dfjph36vcwfj5cevut4x3vf11;Johan Andrés Mojica Palacio;Johan Mojica;J. Mojica;Johan Andrés;Mojica Palacio;Real Club Deportivo Mallorca;Colombia;Defender;22
+73;2425;e1izszvhlcdpmnjzzd73cnidx;Iván Cuéllar Sacristán;Iván Cuéllar Sacristán;Pichu;Iván;Cuéllar Sacristán;Real Club Deportivo Mallorca;Spain;Goalkeeper;25
+73;2425;f1e3gi3dx3er2vz7loriw6e39;Antonio Latorre Grueso;Antonio Latorre Grueso;Toni Lato;Antonio;Latorre Grueso;Real Club Deportivo Mallorca;Spain;Defender;3
+73;2425;vsigd9eh67xy32ffofkh06lm;Miguel Martín García;Miguel Martín García;Miguel Martín;Miguel;Martín García;Real Club Deportivo Mallorca;Spain;Midfielder;29
+73;2425;14qv8npo5alwnb5dud8x82ln8;Endrick Felipe Moreira de Sousa;Endrick Felipe Moreira de Sousa;Endrick;Endrick Felipe;Moreira de Sousa;Real Madrid CF;Brazil;Attacker;16
+73;2425;1i9wi65k2foqwudeqiyih87hl;Federico Santiago Valverde Dipetta;Federico Valverde;F. Valverde;Federico Santiago;Valverde Dipetta;Real Madrid CF;Uruguay;Midfielder;8
+73;2425;1riebanoqbl7brs1bm3lkgxlg;Mario Martín Rielves;Mario Martín;Mario Martín;Mario;Martín Rielves;Real Madrid CF;Spain;Midfielder;28
+73;2425;2b1aq7e51fjbukd3muxfthd78;Jacobo Ramón Naveros;Jacobo Ramón;Jacobo Ramón;Jacobo;Ramón Naveros;Real Madrid CF;Spain;Defender;31
+73;2425;2i7mscwsjthry9530usbtbklw;Hugo de Llanos García;Hugo de Llanos;Hugo de Llanos;Hugo;de Llanos García;Real Madrid CF;Spain;Midfielder;40
+73;2425;2ww626a9v31b072prdx0xf1g4;Youssef Enríquez Lekhedim;Youssef Enríquez;Y. Enríquez;Youssef;Enríquez Lekhedim;Real Madrid CF;Morocco;Defender;29
+73;2425;38bp85766w04a0nuulq5fiig9;Andrii Lunin;Andrii Lunin;A. Lunin;Andrii;Lunin;Real Madrid CF;Ukraine;Goalkeeper;13
+73;2425;39c5g6782qlrtw55fsre7exnt;Francisco José García Torres;Fran García;Fran García;Francisco José;García Torres;Real Madrid CF;Spain;Defender;20
+73;2425;39gif4xfy8xddarasbsad56ok;Arda Güler;Arda Güler;A. Güler;Arda;Güler;Real Madrid CF;Türkiye;Midfielder;15
+73;2425;3jln1gzc0859ymphvq83i0mp5;Brahim Abdelkader Díaz;Brahim Díaz;Brahim Díaz;Brahim;Abdelkader Díaz;Real Madrid CF;Morocco;Midfielder;21
+73;2425;3krfyio6dlb6gkoggsmqwkj6c;Sergio Mestre Sánchez;Sergio Mestre;Sergio Mestre;Sergio;Mestre Sánchez;Real Madrid CF;Spain;Goalkeeper;34
+73;2425;3pxte13sf3ybzb3cgvim1tqtw;Víctor Valdepeñas Talavera;Víctor Valdepeñas Talavera;Valde;Víctor;Valdepeñas Talavera;Real Madrid CF;Spain;Defender;45
+73;2425;3r4r3w44ski0d4175zfe1iy38;César Palacios Pérez;César Palacios;César Palacios;César;Palacios Pérez;Real Madrid CF;Spain;Midfielder;30
+73;2425;3r8kqt2bz34yw8e2h4jdp96hg;Daniel Yáñez Barla;Daniel Yáñez;Daniel Yáñez;Daniel;Yáñez Barla;Real Madrid CF;Spain;Attacker;42
+73;2425;42mke5h9m4g7idv9q6ltuhkwk;Francisco Javier González Pérez;Fran González;Fran González;Francisco Javier;González Pérez;Real Madrid CF;Spain;Goalkeeper;26
+73;2425;4aihdtm9m5evl5ohlx54ccs9g;Joan Martínez Lozano;Joan Martínez;Joan Martínez;Joan;Martínez Lozano;Real Madrid CF;Spain;Defender;37
+73;2425;4kob1sqi695a8rwn3r3d2a6ms;Lorenzo Aguado Herrera;Lorenzo Aguado Herrera;Lorenzo Aguado;Lorenzo;Aguado Herrera;Real Madrid CF;Spain;Defender;39
+73;2425;4luj0v1ttpt61sniftg4bxrtg;Diego Aguado Facio;Diego Aguado;Diego Aguado;Diego;Aguado Facio;Real Madrid CF;Spain;Defender;43
+73;2425;4o9d3hpjlicgce9gtbewyzhn8;Gonzalo García Torres;Gonzalo García;Gonzalo García;Gonzalo;García Torres;Real Madrid CF;Spain;Attacker;30
+73;2425;5e9ilgrz3tzg9kd1gk3yvrahh;Kylian Mbappé Lottin;Kylian Mbappé;K. Mbappé;Kylian;Mbappé Lottin;Real Madrid CF;France;Attacker;9
+73;2425;6crmq7vzqts58wg196q48sc7p;Thibaut Nicolas Marc Courtois;Thibaut Courtois;T. Courtois;Thibaut Nicolas Marc;Courtois;Real Madrid CF;Belgium;Goalkeeper;1
+73;2425;6fzbp94hf19ysotdassrqdc5x;Antonio Rüdiger;Antonio Rüdiger;A. Rüdiger;Antonio;Rüdiger;Real Madrid CF;Germany;Defender;22
+73;2425;6q69l3ppqfqbryjubcrujfi6t;Ferland Sinna Mendy;Ferland Mendy;F. Mendy;Ferland Sinna;Mendy;Real Madrid CF;France;Defender;23
+73;2425;6w5wyari2p4bh2zzy2x2f6hg5;David Olatukunbo Alaba;David Alaba;D. Alaba;David;Olatukunbo Alaba;Real Madrid CF;Austria;Defender;4
+73;2425;7oykphzczagr975xsqt70s89h;Daniel Carvajal Ramos;Dani Carvajal;Dani Carvajal;Daniel;Carvajal Ramos;Real Madrid CF;Spain;Defender;2
+73;2425;8wvkrrbqqthuwda8twg03yuax;Éder Gabriel Militão Pinheiro;Éder Gabriel Militão Pinheiro;Éder Militão;Éder Gabriel;Militão Pinheiro;Real Madrid CF;Brazil;Defender;3
+73;2425;9650u1owvf264fwnuzc0zlfro;David Jiménez Corredor;David Jiménez;David Jiménez;David;Jiménez Corredor;Real Madrid CF;Spain;Defender;38
+73;2425;974pgl5fo69ks8qsv1oorx8us;Mario Rivas Lago;Mario Rivas;Mario Rivas;Mario;Rivas Lago;Real Madrid CF;Spain;Defender;48
+73;2425;aipyotc87m5bdvmvizd5n69k9;Aurélien Djani Tchouaméni;Aurélien Tchouaméni;A. Tchouaméni;Aurélien Djani;Tchouaméni;Real Madrid CF;France;Midfielder;14
+73;2425;atj6u4qul0o2ca57etbmes07o;Raúl Asencio del Rosario;Raúl Asencio;Raúl Asencio;Raúl;Asencio del Rosario;Real Madrid CF;Spain;Defender;35
+73;2425;b4witgokm49tidm1a83qcvbop;Vinícius José Paixão de Oliveira Júnior;Vinícius José Paixão de Oliveira Júnior;Vinícius Júnior;Vinícius José;Paixão de Oliveira Júnior;Real Madrid CF;Brazil;Attacker;7
+73;2425;bf2pf3hs8gcvub4ivlve12ymt;Lucas Vázquez Iglesias;Lucas Vázquez;Lucas Vázquez;Lucas;Vázquez Iglesias;Real Madrid CF;Spain;Defender;17
+73;2425;broq8imimhtlejtffissquy5m;Rodrygo Silva de Goes;Rodrygo Silva de Goes;Rodrygo;Rodrygo;Silva de Goes;Real Madrid CF;Brazil;Attacker;11
+73;2425;d358ce00vstqg3ilinhcc10r8;Víctor Muñoz Villanueva;Víctor Muñoz;Víctor Muñoz;Víctor;Muñoz Villanueva;Real Madrid CF;Spain;Attacker;44
+73;2425;diod1hv5hv7v7z7mfleev1txx;Luka Modrić;Luka Modric;L. Modrić;Luka;Modrić;Real Madrid CF;Croatia;Midfielder;10
+73;2425;diwvhwul9fvsmpdwosvy8nwus;Pol Fortuny Aubareda;Pol Fortuny;Pol Fortuny;Pol;Fortuny Aubareda;Real Madrid CF;Spain;Midfielder;47
+73;2425;e30x514qvzadcryj2zhoss26s;José María Andrés Baixauli;José María Andres Baixauli;Chema Andrés;José María;Andrés Baixauli;Real Madrid CF;Spain;Midfielder;36
+73;2425;e83ula4wockmc2xid7185kcq2;Jude Victor William Bellingham;Jude Bellingham;J. Bellingham;Jude Victor William;Bellingham;Real Madrid CF;England;Midfielder;5
+73;2425;eihwzqtt27l2l8iu990h68edx;Jesús Vallejo Lázaro;Jesús Vallejo;Jesús Vallejo;Jesús;Vallejo Lázaro;Real Madrid CF;Spain;Defender;18
+73;2425;en2c7z1raqmcwee78297pbnu2;Eduardo Celmi Camavinga;Eduardo Camavinga;E. Camavinga;Eduardo Celmi;Camavinga;Real Madrid CF;France;Midfielder;6
+73;2425;i48mf81fxn2af1xxjzfi8gr9;Daniel Ceballos Fernández;Dani Ceballos;Dani Ceballos;Daniel;Ceballos Fernández;Real Madrid CF;Spain;Midfielder;19
+73;2425;1bcd2ijk9xkf7mmoqmsfpxzbo;Alex Marchal García;Alex Marchal;Alex Marchal;Alex;Marchal García;Real Sociedad de Fútbol;Spain;Attacker;41
+73;2425;1g921gazgv8kqrdfjkjmvqolw;Jon Magunazelaia Argoitia;Jon Magunazelaia;Jon Magunazelaia;Jon;Magunazelaia Argoitia;Real Sociedad de Fútbol;Spain;Midfielder;25
+73;2425;1qkep5ck252k1g3oqza5ygh61;Takefusa Kubo;Takefusa Kubo;T. Kubo;Takefusa;Kubo;Real Sociedad de Fútbol;Japan;Attacker;14
+73;2425;21vx56lpd276xqbu11ubkf78q;Ander Barrenetxea Muguruza;Ander Barrenetxea;Ander Barrenetxea;Ander;Barrenetxea Muguruza;Real Sociedad de Fútbol;Spain;Attacker;7
+73;2425;29cp6coiba854vwntnzj5x1ck;Aitor Fraga Torres;Aitor Fraga;Aitor Fraga;Aitor;Fraga Torres;Real Sociedad de Fútbol;Spain;Goalkeeper;32
+73;2425;2hqyw29ta24b0fk146a4mlf6c;Daniel Díaz Gándara;Daniel Díaz;Dani Díaz;Daniel;Díaz Gándara;Real Sociedad de Fútbol;Spain;Attacker;43
+73;2425;3av6j2r9parigl6tqfva00ydw;Ekain Orobengoa Arbelaiz;Ekain Orobengoa;Ekain Orobengoa;Ekain;Orobengoa Arbelaiz;Real Sociedad de Fútbol;Spain;Attacker;45
+73;2425;3eksuqblpadcgroqkg5ynldec;Iñaki Rupérez Urtasun;Iñaki Rupérez;Iñaki Rupérez;Iñaki;Rupérez Urtasun;Real Sociedad de Fútbol;Spain;Defender;34
+73;2425;3o0zpl9cnmna2hyk595ja0xrd;Nayef Aguerd;Nayef Aguerd;N. Aguerd;Nayef;Aguerd;Real Sociedad de Fútbol;Morocco;Defender;21
+73;2425;48gjuou5eashpj8wbwd18iju1;Igor Zubeldia Elorza;Igor Zubeldia;Igor Zubeldia;Igor;Zubeldia Elorza;Real Sociedad de Fútbol;Spain;Defender;5
+73;2425;5nluxvc0wi0u1d5zcy7be5rkl;Álvaro Odriozola Arzallus;Álvaro Odriozola;Álvaro Odriozola;Álvaro;Odriozola Arzallus;Real Sociedad de Fútbol;Spain;Defender;2
+73;2425;66l9n4gqc4aau3bpc0qtpta8k;Arkaitz Mariezkurrena Etxezarreta;Arkaitz Mariezkurrena;Arkaitz Mariezkurrena;Arkaitz;Mariezkurrena Etxezarreta;Real Sociedad de Fútbol;Spain;Attacker;40
+73;2425;6e4d1o09sl2ovlyyvhyd5xboq;Arsen Zakharyan;Arsen Zakharyan;A. Zakharyan;Arsen;Zakharyan;Real Sociedad de Fútbol;Russia;Midfielder;8
+73;2425;6lnttemmflhxp700fr069ty0a;Jon Ander Olasagasti Imizcoz;Jon Olasagasti;Jon Olasagasti;Jon Ander;Olasagasti Imizcoz;Real Sociedad de Fútbol;Spain;Midfielder;16
+73;2425;6p8xl2smgf1ta7txpcj7cabu2;Javier López Carballo;Javi López;Javi López;Javier;López Carballo;Real Sociedad de Fútbol;Spain;Defender;12
+73;2425;7bs0ph4yksf6lvkg91u9nqzqi;Jon Pacheco Dozagarat;Jon Pacheco;Jon Pacheco;Jon;Pacheco Dozagarat;Real Sociedad de Fútbol;Spain;Defender;20
+73;2425;7hut2rdil0my1vysn56mrfk0k;Jon Balda Zubiri;Jon Balda;Jon Balda;Jon;Balda Zubiri;Real Sociedad de Fútbol;Spain;Defender;33
+73;2425;7y8ns61qioqu7kfsqzkvkwhuy;Urko González de Zárate Quirós;Urko González de Zárate Quirós;Urko González de Zárate;Urko;González de Zárate Quirós;Real Sociedad de Fútbol;Spain;Midfielder;15
+73;2425;80aqmv4ht6rs1812qrr5j8kix;Martín Zubimendi Ibáñez;Martín Zubimendi;Martín Zubimendi;Martín;Zubimendi Ibáñez;Real Sociedad de Fútbol;Spain;Midfielder;4
+73;2425;8bu8ivrdbh6lc4cpdaki5l9wq;Egoitz Arana Aizpurua;Egoitz Arana;Egoitz Arana;Egoitz;Arana Aizpurua;Real Sociedad de Fútbol;Spain;Goalkeeper;35
+73;2425;8krgbfnydbtyongkwnsaj43kk;Jon Martín Vicente;Jon Martín;Jon Martín;Jon;Martín Vicente;Real Sociedad de Fútbol;Spain;Defender;31
+73;2425;8lmuo5xl3y15zb8xl3xhrs7x0;Mikel Rodríguez Ulacia;Mikel Rodriguez;Mikel Rodríguez;Mikel;Rodríguez Ulacia;Real Sociedad de Fútbol;Spain;Midfielder;44
+73;2425;8qs8s7c173w8i1dfu06ub5zis;Luken Beitia Aguirregomezcorta;Luken Beitia;Luken Beitia;Luken;Beitia Aguirregomezcorta;Real Sociedad de Fútbol;Spain;Defender;37
+73;2425;9x5uo2wkxp9fk1arygbkl6u0a;Luka Sučić;Luka Sucic;L. Sučić;Luka;Sučić;Real Sociedad de Fútbol;Croatia;Midfielder;24
+73;2425;aka2yqxmqpioxc1qzkl62ejv8;Pablo Marín Tejada;Pablo Marín;Pablo Marín;Pablo;Marín Tejada;Real Sociedad de Fútbol;Spain;Midfielder;28
+73;2425;b2xlrg9xvucrut2fhmvsgjuqy;Unai Marrero Larrañaga;Unai Marrero;Unai Marrero;Unai;Marrero Larrañaga;Real Sociedad de Fútbol;Spain;Goalkeeper;13
+73;2425;b45ryclny991bm7qosieyg1cl;Mikel Oyarzabal Ugarte;Mikel Oyarzabal;Mikel Oyarzabal;Mikel;Oyarzabal Ugarte;Real Sociedad de Fútbol;Spain;Attacker;10
+73;2425;bj929w5yi7lnz36jxsi5qnq7e;Aihen Muñoz Capellán;Aihen Muñoz;Aihen Muñoz;Aihen;Muñoz Capellán;Real Sociedad de Fútbol;Spain;Defender;3
+73;2425;cywgibmici8hwp1ad1nhk3ufp;Sheraldo Rudi Salomo Willem Becker;Sheraldo Becker;S. Becker;Sheraldo Rudi Salomo Willem;Becker;Real Sociedad de Fútbol;Suriname;Attacker;11
+73;2425;d4tdx2ctadv6kc3tbq4as8bmx;Sergio Gómez Martín;Sergio Gómez;Sergio Gómez;Sergio;Gómez Martín;Real Sociedad de Fútbol;Spain;Attacker;17
+73;2425;dci5jbkxxr0wddazufgbysxec;Mikel Goti López;Mikel Goti;Mikel Goti;Mikel;Goti López;Real Sociedad de Fútbol;Spain;Midfielder;30
+73;2425;dvrk8qmt9ta4c3kvjgsad7t91;Brais Méndez Portela;Brais Méndez;Brais Méndez;Brais;Méndez Portela;Real Sociedad de Fútbol;Spain;Midfielder;23
+73;2425;e35v2pspdgl7t769d57e67ob9;Aritz Elustondo Irribaria;Aritz Elustondo;Aritz Elustondo;Aritz;Elustondo Irribaria;Real Sociedad de Fútbol;Spain;Defender;6
+73;2425;et849xmcdgsy5itb8i4w7qkq2;Beñat Turrientes Imaz;Beñat Turrientes;Beñat Turrientes;Beñat;Turrientes Imaz;Real Sociedad de Fútbol;Spain;Midfielder;22
+73;2425;euur9yvhgrieu4kl0vdkh244q;Orri Steinn Óskarsson;Orri Óskarsson;O. Óskarsson;Orri Steinn;Óskarsson;Real Sociedad de Fútbol;Iceland;Attacker;9
+73;2425;ezbplvktzcvzh5kwur32110mi;Jon Mikel Aramburu Mejías;Jon Aramburu;J. Aramburu;Jon Mikel;Aramburu Mejías;Real Sociedad de Fútbol;Venezuela;Defender;19
+73;2425;w503zyr8ipyobglth281uklx;Alejandro Remiro Gargallo;Álex Remiro;Álex Remiro;Alejandro;Remiro Gargallo;Real Sociedad de Fútbol;Spain;Goalkeeper;1
+73;2425;xrh2szvp5808no7zm1et2zf9;Hamari Traoré;Hamari Traoré;H. Traoré;Hamari;Traoré;Real Sociedad de Fútbol;Mali;Defender;18
+73;2425;1ekkj2b713kjnugsk4dz50q1h;Florian Grillitsch;Florian Grillitsch;F. Grillitsch;Florian;Grillitsch;Real Valladolid CF;Austria;Midfielder;8
+73;2425;1htx8ub2kxvq0vnzarbrynyt;César de la Hoz López;César de la Hoz;César de la Hoz;César;de la Hoz López;Real Valladolid CF;Spain;Midfielder;16
+73;2425;1jz6a0l9q2v38adtntoe30t1;Robert Kenedy Nunes do Nascimento;Robert Kenedy Nunes do Nascimento;Kenedy;Robert Kenedy;Nunes do Nascimento;Real Valladolid CF;Brazil;Midfielder;24
+73;2425;1mjn7ui3dan4oi6t94pzuxbhm;Mario Maroto Argüello;Mario Maroto;Mario Maroto;Mario;Maroto Argüello;Real Valladolid CF;Spain;Midfielder;34
+73;2425;1pg0b32xb9230zit0ndyd79ih;Selim Amallah;Selim Amallah;S. Amallah;Selim;Amallah;Real Valladolid CF;Morocco;Midfielder;21
+73;2425;1riebanoqbl7brs1bm3lkgxlg;Mario Martín Rielves;Mario Martín;Mario Martín;Mario;Martín Rielves;Real Valladolid CF;Spain;Midfielder;12
+73;2425;2tvulwf5xk3fobnqsg158ydqs;Raúl Chasco Ruiz;Raúl Chasco;Raúl Chasco;Raúl;Chasco Ruiz;Real Valladolid CF;Spain;Defender;30
+73;2425;38o2o01j5qfnsnl1xp2busrv8;Iago Parente Novoa;Iago Parente;Iago Parente;Iago;Parente Novoa;Real Valladolid CF;Spain;Defender;33
+73;2425;3ia67tz2wkwnl35dszw841xxw;Iván San José Cantalejo;Iván San José Cantalejo;Chuki;Iván;San José Cantalejo;Real Valladolid CF;Spain;Midfielder;28
+73;2425;3j66drshfcoje5wb7gjybi9qt;Amath Ndiaye Diedhiou;Amath Ndiaye;A. Ndiaye;Amath;Ndiaye Diedhiou;Real Valladolid CF;Senegal;Attacker;19
+73;2425;3ohckge5om916l32s2ys6ivis;Abdulai Juma Bah;Juma Bah;J. Bah;Abdulai Juma;Bah;Real Valladolid CF;Sierra Leone;Defender;35
+73;2425;3qrk8nw6nc8o96n7jr1az21ux;Joseph Aidoo;Joseph Aidoo;J. Aidoo;Joseph;Aidoo;Real Valladolid CF;Ghana;Defender;16
+73;2425;46gpq48n4d5bntwa8v2t78hcl;Iván Sánchez Aguayo;Iván Sánchez Aguayo;Iván Sánchez;Iván;Sánchez Aguayo;Real Valladolid CF;Spain;Midfielder;10
+73;2425;5d5rk4932npxxjadnlh696yok;Arnau Rafús Aulet;Arnau Rafús;Arnau Rafús;Arnau;Rafús Aulet;Real Valladolid CF;Spain;Goalkeeper;26
+73;2425;5uig03vbbv71f0q31cp3vfbv9;Eray Ervin Cömert;Eray Cömert;E. Cömert;Eray Ervin;Cömert;Real Valladolid CF;Switzerland;Defender;15
+73;2425;66t7zm54jgmcjtiizl9g0rkkp;Enrique Pérez Muñoz;Enrique Pérez Muñoz;Kike Pérez;Enrique;Pérez Muñoz;Real Valladolid CF;Spain;Midfielder;8
+73;2425;6km3r9cspyz7g6343o9mri63u;Raúl Moro Prescoli;Raúl Moro;Raúl Moro;Raúl;Moro Prescoli;Real Valladolid CF;Spain;Attacker;11
+73;2425;6sj650wwmo08r10xzz2l9xkut;Anuar Mohamed Tuhami;Anuar Tuhami;A. Tuhami;Anuar Mohamed;Tuhami;Real Valladolid CF;Morocco;Midfielder;23
+73;2425;6y9rteak9yak8cjsnuwqt1xqs;Adrián Rodríguez Sojo;Adrián Rodríguez Sojo;Adrián Verde;Adrián;Rodríguez Sojo;Real Valladolid CF;Spain;Midfielder;27
+73;2425;8f0vs1vyfrbctdt7lahtdeelm;Víctor Andrés Meseguer Cavas;Víctor Meseguer;Víctor Meseguer;Víctor Andrés;Meseguer Cavas;Real Valladolid CF;Spain;Midfielder;4
+73;2425;8lg4tqh5bepeexbhghyr7pze2;Juan Miguel Latasa Fernández Layos;Juanmi Latasa;Juanmi Latasa;Juan Miguel;Latasa Fernández Layos;Real Valladolid CF;Spain;Attacker;14
+73;2425;8rcole4a6y4fkamv87q3hqk0l;Henrique Silva Milagres;Henrique Silva Milagres;Henrique;Henrique;Silva Milagres;Real Valladolid CF;Brazil;Defender;17
+73;2425;8sh9iw9qs8y8056r5zmcpvemt;Darwin Daniel Machís Marcano;Darwin Machís;D. Machís;Darwin Daniel;Machís Marcano;Real Valladolid CF;Venezuela;Attacker;18
+73;2425;92573hn6oedcw6a0gj44xy8kp;Antonio Candela;Antonio Candela;A. Candela;Antonio;Candela;Real Valladolid CF;Italy;Defender;22
+73;2425;9ezcgbcuxughgkd4ns8c7mqdw;Ibrahim Akitunde Alani;Ibrahim Alani;I. Alani;Ibrahim Akitunde;Alani;Real Valladolid CF;Nigeria;Midfielder;38
+73;2425;9f83clp1v95kvlxdb376tgbth;Javier Sánchez de Felipe;Javi Sánchez;Javi Sánchez;Javier;Sánchez de Felipe;Real Valladolid CF;Spain;Defender;5
+73;2425;9t3izbitey4hs1x6shog91kb8;Jorge Iglesias González;Koke Iglesias;Koke Iglesias;Jorge;Iglesias González;Real Valladolid CF;Spain;Defender;32
+73;2425;9wpkjal85qxddca606t65d6uh;Stanko Jurić;Stanko Juric;S. Jurić;Stanko;Jurić;Real Valladolid CF;Croatia;Midfielder;20
+73;2425;a4rbrzom0u87sk3uc15sxndg5;André Filipe Magalhães Ribeiro Ferreira;André Filipe Magalhães Ribeiro Ferreira;André Ferreira;André Filipe;Magalhães Ribeiro Ferreira;Real Valladolid CF;Portugal;Goalkeeper;1
+73;2425;ahbogqtodqaszg7kr1qnamgut;Mamadou Sylla Diallo;Mamadou Sylla;M. Sylla;Mamadou;Sylla Diallo;Real Valladolid CF;Senegal;Attacker;7
+73;2425;b0l4lfplx1we1xo5usm0h2ec4;Adam Aznou Ben Cheikh;Adam Aznou;A. Aznou;Adam;Aznou Ben Cheikh;Real Valladolid CF;Morocco;Defender;39
+73;2425;b64ooee68x644gdibifgssrh0;David Torres Ortiz;David Torres;David Torres;David;Torres Ortiz;Real Valladolid CF;Spain;Defender;3
+73;2425;cd6l176fmei1qgylqbf0btg8a;Tamás Nikitscher;Tamás Nikitscher;T. Nikitscher;Tamás;Nikitscher;Real Valladolid CF;Hungary;Midfielder;4
+73;2425;cdij2rxwju0plugsmmg18dhjo;Xavier Moreno Hernández;Xavi Moreno;Xavi Moreno;Xavier;Moreno Hernández;Real Valladolid CF;Spain;Attacker;41
+73;2425;csqsdjsa4leo6z86qphjuectm;Cenk Özkacar;Cenk Özkacar;C. Özkacar;Cenk;Özkacar;Real Valladolid CF;Türkiye;Defender;6
+73;2425;d8om2m3knmfqt17u5emlapi50;Álvaro Aceves Catalina;Álvaro Aceves;Álvaro Aceves;Álvaro;Aceves Catalina;Real Valladolid CF;Spain;Goalkeeper;36
+73;2425;d8v7fh30bn0rbhj0lgn1j17th;Luis Jesús Pérez Maqueda;Luis Pérez;Luis Pérez;Luis Jesús;Pérez Maqueda;Real Valladolid CF;Spain;Defender;2
+73;2425;e36lcgg2vegiecbez2j15fl9m;Karl Jakob Hein;Karl Hein;K. Hein;Karl Jakob;Hein;Real Valladolid CF;Estonia;Goalkeeper;13
+73;2425;eiz5j566h4fq4wro1t9lfuw2x;Marcos André de Sousa Mendonça;Marcos André de Sousa Mendonça;Marcos André;Marcos André;de Sousa Mendonça;Real Valladolid CF;Brazil;Attacker;9
+73;2425;en57yvdqgz5hb9686psafw7pw;Adrián Arnuncio Baquerín;Adrián Arnu;Adrián Arnu;Adrián;Arnuncio Baquerín;Real Valladolid CF;Spain;Attacker;29
+73;2425;eoxsyfrsq1x9xa2zxvw8ui0ru;Stipe Biuk;Stipe Biuk;S. Biuk;Stipe;Biuk;Real Valladolid CF;Croatia;Attacker;17
+73;2425;owks0ikdpyl09lu6cmrkizv8;Eugene Adjei Frimpong;Eugene Frimpong;E. Frimpong;Eugene Adjei;Frimpong;Real Valladolid CF;Ghana;Midfielder;37
+73;2425;1am59svvwz5idpdjq307dd5hw;Antoniu Roca Vives;Antoniu Roca;Antoniu Roca;Antoniu;Roca Vives;Reial Club Deportiu Espanyol de Barcelona;Spain;Attacker;31
+73;2425;1n7r6g12dtew48nfb4d1xual0;Omar Sadik;Omar Sadik;O. Sadik;Omar;Sadik;Reial Club Deportiu Espanyol de Barcelona;Morocco;Attacker;32
+73;2425;1o4lfwkyx28j63ara4ye4wjdg;Alejo Véliz;Alejo Veliz;A. Véliz;Alejo;Véliz;Reial Club Deportiu Espanyol de Barcelona;Argentina;Attacker;9
+73;2425;1ore4ght7ls393tcpbmah9dcl;Pere Milla Peña;Pere Milla;Pere Milla;Pere;Milla Peña;Reial Club Deportiu Espanyol de Barcelona;Spain;Midfielder;11
+73;2425;1whtyw1adggpz4j1xp7sjbeg9;Álvaro Aguado Méndez;Álvaro Aguado;Álvaro Aguado;Álvaro;Aguado Méndez;Reial Club Deportiu Espanyol de Barcelona;Spain;Midfielder;18
+73;2425;1wylybleussatoxg8u6reao2y;Ángel Fortuño Viñas;Ángel Fortuño;Ángel Fortuño;Ángel;Fortuño Viñas;Reial Club Deportiu Espanyol de Barcelona;Spain;Goalkeeper;33
+73;2425;2qgfw5qgtjyhy5pg11f0l8yl0;Alex Almansa López;Alex Almansa;Alex Almansa;Alex;Almansa López;Reial Club Deportiu Espanyol de Barcelona;Spain;Attacker;39
+73;2425;2rqxh5mex336ci45jaw428y5l;Fernando Calero Villa;Fernando Calero;Fernando Calero;Fernando;Calero Villa;Reial Club Deportiu Espanyol de Barcelona;Spain;Defender;5
+73;2425;32fnehcyqzc55h6auev06odwq;José Gragera Amado;José Gragera;José Gragera;José;Gragera Amado;Reial Club Deportiu Espanyol de Barcelona;Spain;Midfielder;15
+73;2425;3nchjse4ej0qhilo395td7u1h;Brian Oliván Herrero;Brian Oliván;Brian Oliván;Brian;Oliván Herrero;Reial Club Deportiu Espanyol de Barcelona;Spain;Defender;14
+73;2425;3qdlqw5d6ra7th109n0g3rnfu;Pol Tristán Jiménez;Pol Tristán;Pol Tristán;Pol;Tristán Jiménez;Reial Club Deportiu Espanyol de Barcelona;Spain;Goalkeeper;38
+73;2425;59u1gn30f6bg5lr06zsglykq2;Jofre Carreras Pagès;Jofre Carreras;Jofre Carreras;Jofre;Carreras Pagès;Reial Club Deportiu Espanyol de Barcelona;Spain;Attacker;17
+73;2425;5djkwcoflvxcv5oida6txfyp6;Carlos Romero Serrano;Carlos Romero;Carlos Romero;Carlos;Romero Serrano;Reial Club Deportiu Espanyol de Barcelona;Spain;Defender;22
+73;2425;5f8kjgsaabn2li5r7bvpebbsa;Joan García Pons;Joan García;Joan García;Joan;García Pons;Reial Club Deportiu Espanyol de Barcelona;Spain;Goalkeeper;1
+73;2425;5fqvl0m1rkzhj9tmafrcxur6c;Roberto Fernández Jaén;Roberto Fernández;Roberto Fernández;Roberto;Fernández Jaén;Reial Club Deportiu Espanyol de Barcelona;Spain;Attacker;2
+73;2425;6810qbng9pfg1bztczv11grmd;Leandro Daniel Cabrera Sasía;Leandro Cabrera;L. Cabrera;Leandro Daniel;Cabrera Sasía;Reial Club Deportiu Espanyol de Barcelona;Uruguay;Defender;6
+73;2425;6peka1v0xt2ctv0qtoaw9cslx;Álvaro Tejero Sacristán;Álvaro Tejero;Álvaro Tejero;Álvaro;Tejero Sacristán;Reial Club Deportiu Espanyol de Barcelona;Spain;Defender;12
+73;2425;6vc06i2jjg3uz0bvluy7yr310;Justin Smith;Justin Smith;J. Smith;Justin;Smith;Reial Club Deportiu Espanyol de Barcelona;Canada;Midfielder;40
+73;2425;74wjzeja92l4q8fpy1bkmcsfd;Pol Lozano Vizuete;Pol Lozano;Pol Lozano;Pol;Lozano Vizuete;Reial Club Deportiu Espanyol de Barcelona;Spain;Midfielder;10
+73;2425;7h0b81yjiiu356rycsakgd0yc;Omar El Hilali Khayat;Omar El Hilali;O. El Hilali;Omar;El Hilali Khayat;Reial Club Deportiu Espanyol de Barcelona;Morocco;Defender;23
+73;2425;7y8ns61qioqu7kfsqzkvkwhuy;Urko González de Zárate Quirós;Urko González de Zárate Quirós;Urko González de Zárate;Urko;González de Zárate Quirós;Reial Club Deportiu Espanyol de Barcelona;Spain;Midfielder;19
+73;2425;8qvqdjw1d58mw7420lpmk7bah;Eduardo Expósito Jaén;Edu Expósito;Edu Expósito;Eduardo;Expósito Jaén;Reial Club Deportiu Espanyol de Barcelona;Spain;Midfielder;8
+73;2425;91x4l2dib1ys8n9h4ujze6tqs;José Ángel López Gálvez;José Ángel López Gálvez;José Ángel;José Ángel;López Gálvez;Reial Club Deportiu Espanyol de Barcelona;Spain;Defender;41
+73;2425;9hclph5nwm1w2k4xj24i1yxas;Llorenç Serred Martínez;Llorenç Serred Martínez;Llorenç Serred;Llorenç;Serred Martínez;Reial Club Deportiu Espanyol de Barcelona;Spain;Goalkeeper;34
+73;2425;9taxidttdt94nmvc3mqhqq0ut;Alex Král;Alex Král;A. Král;Alex;Král;Reial Club Deportiu Espanyol de Barcelona;Czechia;Midfielder;20
+73;2425;a185wef6iz1nun1wry40jcgoa;Naci Ünüvar;Naci Ünüvar;N. Ünüvar;Naci;Ünüvar;Reial Club Deportiu Espanyol de Barcelona;Türkiye;Attacker;37
+73;2425;anvi2mtr32u5z2bqmz8tn0e3u;Pablo Ramón Parra;Pablo Ramón;Pablo Ramón;Pablo;Ramón Parra;Reial Club Deportiu Espanyol de Barcelona;Spain;Defender;24
+73;2425;b6zycgb0d4ciuefbnc7ftrdhw;Ian Forns Montes;Ian Forns;Ian Forns;Ian;Forns Montes;Reial Club Deportiu Espanyol de Barcelona;Spain;Defender;38
+73;2425;b7bcouznm395r2z5g33ehiiac;Rafel Bauzà Sureda;Rafel Bauzà;Rafel Bauzà;Rafel;Bauzà Sureda;Reial Club Deportiu Espanyol de Barcelona;Spain;Midfielder;35
+73;2425;bglk6tokkpgjltpzljp1p345x;Fernando Pacheco Flores;Fernando Pacheco;Fernando Pacheco;Fernando;Pacheco Flores;Reial Club Deportiu Espanyol de Barcelona;Spain;Goalkeeper;13
+73;2425;c23q56z612clw2oxpordhrwiy;Walid Cheddira;Walid Cheddira;W. Cheddira;Walid;Cheddira;Reial Club Deportiu Espanyol de Barcelona;Morocco;Attacker;16
+73;2425;cddggachzf198p1yhq9owtofd;Marash Kumbulla;Marash Kumbulla;M. Kumbulla;Marash;Kumbulla;Reial Club Deportiu Espanyol de Barcelona;Albania;Defender;4
+73;2425;ch1bilea3jhwexlcdin0llyc4;Roger Hinojo Estrada;Roger Hinojo;Roger Hinojo;Roger;Hinojo Estrada;Reial Club Deportiu Espanyol de Barcelona;Spain;Defender;42
+73;2425;dxow37ez195xgsjdc005e83kk;José Luis Català Vázquez;José Luis Català Vázquez;José Luis Català;José Luis;Català Vázquez;Reial Club Deportiu Espanyol de Barcelona;Spain;Defender;27
+73;2425;e5qp6dh1prc55llew51zpy1gp;Javier Puado Díaz;Javi Puado;Javi Puado;Javier;Puado Díaz;Reial Club Deportiu Espanyol de Barcelona;Spain;Attacker;7
+73;2425;eyhvr45vc1n690dxobcthmndh;Sergi Gómez Solà;Sergi Gómez;Sergi Gómez;Sergi;Gómez Solà;Reial Club Deportiu Espanyol de Barcelona;Spain;Defender;3
+73;2425;1au9xpmimbyr1jceidcy6v7kk;Valentín Barco;Valentín Barco;V. Barco;Valentín;Barco;Sevilla FC;Argentina;Midfielder;19
+73;2425;1ghrcpi1cl0koh36puwblbfmd;Marcos do Nascimento Teixeira;Marcos do Nascimento Teixeira;Marcão;Marcos;do Nascimento Teixeira;Sevilla FC;Brazil;Defender;23
+73;2425;1y74tse0vpdxanxf152cc8jjd;Gonzalo Ariel Montiel;Gonzalo Montiel;G. Montiel;Gonzalo Ariel;Montiel;Sevilla FC;Argentina;Defender;15
+73;2425;2lwjtphx3bkjty9sds520l1ey;Tanguy-Austin Nianzou Kouassi;Tanguy Nianzou;T. Nianzou;Tanguy-Austin;Nianzou Kouassi;Sevilla FC;France;Defender;24
+73;2425;2mg2n8e1d83gbeykfwzz0fumt;Jesús Navas González;Jesús Navas;Jesús Navas;Jesús;Navas González;Sevilla FC;Spain;Defender;16
+73;2425;33hleud9o8i63qq8nq9qy6k9g;Álvaro Miguel García Pascual;Álvaro García Pascual;Álvaro García Pascual;Álvaro Miguel;García Pascual;Sevilla FC;Spain;Attacker;42
+73;2425;35i9zcb2szve0ydjga9qnj384;Manuel Bueno Sebastián;Manu Bueno;Manu Bueno;Manuel;Bueno Sebastián;Sevilla FC;Spain;Midfielder;28
+73;2425;370bp4zp3mxe27rtx3gwhcems;Stanis Idumbo Muzambo;Stanis Idumbo;S. Idumbo;Stanis;Idumbo Muzambo;Sevilla FC;Belgium;Midfielder;27
+73;2425;375gnysvjk9bvq02ex1lkmynd;Albert-Mboyo Sambi Lokonga;Albert Sambi Lokonga;A. Sambi Lokonga;Albert-Mboyo;Sambi Lokonga;Sevilla FC;Belgium;Midfielder;12
+73;2425;3g0vql9hm4no7sz5ofl3u43ro;Israel Domínguez Velasco;Israel Domínguez;Isra Domínguez;Israel;Domínguez Velasco;Sevilla FC;Spain;Attacker;41
+73;2425;3noti1swv9wrvtpkm63rzcbv8;Rafael Romero Morilla;Rafael Romero;Rafa Romero;Rafael;Romero Morilla;Sevilla FC;Spain;Goalkeeper;43
+73;2425;40h47dhimsmeiury61w1ourx1;Saúl Ñíguez Esclapez;Saúl Ñíguez Esclapez;Saúl;Saúl;Ñíguez Esclapez;Sevilla FC;Spain;Midfielder;17
+73;2425;40ziepwp1q7543uo2hxr30e1g;Diego Hormigo Iturralde;Diego Hormigo;Diego Hormigo;Diego;Hormigo Iturralde;Sevilla FC;Spain;Defender;38
+73;2425;42laa1qwbzlcruyrmlg5o1fu2;Gerard Fernández Castellano;Gerard Fernández Castellano;Peque Fernández;Gerard;Fernández Castellano;Sevilla FC;Spain;Attacker;14
+73;2425;45rxt159xjefvxlfgeykclw8a;Isaac Romero Bernal;Isaac Romero;Isaac Romero;Isaac;Romero Bernal;Sevilla FC;Spain;Attacker;7
+73;2425;4b6a6kfczcu6k6u16qpplbx90;Matías Árbol González;Matías Árbol;Matías Árbol;Matías;Árbol González;Sevilla FC;Spain;Goalkeeper;33
+73;2425;4evku5yvmfcenoe3o7x2lzs44;Alberto Collado López;Alberto Collado;Alberto Collado;Alberto;Collado López;Sevilla FC;Spain;Midfielder;30
+73;2425;4kgjbmlzo6ygdccbue3zvjm96;Ramón Martínez Gil;Ramón Martínez;Ramón Martínez;Ramón;Martínez Gil;Sevilla FC;Spain;Defender;35
+73;2425;4zrut521fzw9fddqt74pnl756;Rubén Estephan Vargas Martínez;Rubén Vargas;R. Vargas;Rubén Estephan;Vargas Martínez;Sevilla FC;Switzerland;Midfielder;5
+73;2425;51xwrb0qit04oz9x01p2gghjp;Kelechi Promise Ịheanachọ;Kelechi Iheanacho;K. Ịheanachọ;Kelechi Promise;Ịheanachọ;Sevilla FC;Nigeria;Attacker;9
+73;2425;5c4ku1hmhy6l9dq8a5jp1qf9x;Jesús Joaquín Fernández Sáenz de la Torre;Jesús Joaquín Fernández Sáenz de la Torre;Suso;Jesús Joaquín;Fernández Sáenz de la Torre;Sevilla FC;Spain;Midfielder;10
+73;2425;5cw4n6kdaa7imeyaiuo2pnq39;Dodi Lukébakio Ngandoli;Dodi Lukébakio;D. Lukébakio;Dodi;Lukébakio Ngandoli;Sevilla FC;Belgium;Attacker;11
+73;2425;6bj5k49arillmrgqk04bxvx1w;Joaquín Martínez Gauna;Joaquín Martínez Gauna;Oso;Joaquín;Martínez Gauna;Sevilla FC;Spain;Defender;36
+73;2425;6jq376l673aizjxxhhos2j52i;José Ángel Carmona Navarro;José Ángel Carmona;José Ángel Carmona;José Ángel;Carmona Navarro;Sevilla FC;Spain;Defender;2
+73;2425;6mf11pv0pfvyl9vom1i1pi0yy;Akor Jerome Adams;Akor Adams;A. Adams;Akor Jerome;Adams;Sevilla FC;Nigeria;Attacker;15
+73;2425;6ufkq71qh9wrfyaez5yi94e09;Chidera Ejuke;Chidera Ejuke;C. Ejuke;Chidera;Ejuke;Sevilla FC;Nigeria;Attacker;21
+73;2425;6vvwhgic29fekmmj2cg62ytp1;Nemanja Gudelj;Nemanja Gudelj;N. Gudelj;Nemanja;Gudelj;Sevilla FC;Serbia;Midfielder;6
+73;2425;7cdiijsvnfc7tafy0zkf4uz9;Mohameth Djibril Ibrahima Sow;Djibril Sow;D. Sow;Mohameth Djibril Ibrahima;Sow;Sevilla FC;Switzerland;Midfielder;20
+73;2425;7j2h7bq14b9n6xephp8vchfu2;Juan Luis Sánchez Velasco;Juanlu Sánchez;Juanlu Sánchez;Juan Luis;Sánchez Velasco;Sevilla FC;Spain;Midfielder;26
+73;2425;8rprxly1blrhq9cwhfqoheeax;Adrià Giner Pedrosa;Adrià Pedrosa;Adrià Pedrosa;Adrià;Giner Pedrosa;Sevilla FC;Spain;Defender;3
+73;2425;8ty68f4i1lwjdktycd2oy5a6t;Lucas Ariel Ocampos Lain;Lucas Ocampos;L. Ocampos;Lucas Ariel;Ocampos Lain;Sevilla FC;Argentina;Midfielder;5
+73;2425;8wdyqsl5dnnt24md5doitlfdg;Darío Benavides Fuentes;Darío Benavides;Darío Benavides;Darío;Benavides Fuentes;Sevilla FC;Spain;Defender;29
+73;2425;944mc5icxdleh4kvaamvpa9zo;Alberto Flores López;Alberto Flores;Alberto Flores;Alberto;Flores López;Sevilla FC;Spain;Goalkeeper;31
+73;2425;9nwkxgbl8t933pzu60ye4xxxw;Enrique Jesús Salas Valiente;Kike Salas;Kike Salas;Enrique Jesús;Salas Valiente;Sevilla FC;Spain;Defender;4
+73;2425;agd2nhvdhp18dg1weape5olpl;Álvaro Fernández Llorente;Álvaro Fernández;Álvaro Fernández;Álvaro;Fernández Llorente;Sevilla FC;Spain;Goalkeeper;1
+73;2425;alz3emnuh5bnaa64oia9pgsq2;Pedro Ortiz Bernat;Pedro Ortiz;Pedro Ortiz;Pedro;Ortiz Bernat;Sevilla FC;Spain;Midfielder;8
+73;2425;b9bz5r34tmt9ji5306z5a7koa;Leandro Antonetti López;Leandro Antonetti;L. Antonetti;Leandro;Antonetti López;Sevilla FC;Puerto Rico;Attacker;44
+73;2425;bclc7xnuptj4b7ml4fkipvms4;Pablo Rivera Cruz;Pablo Rivera;Pablo Rivera;Pablo;Rivera Cruz;Sevilla FC;Spain;Midfielder;37
+73;2425;bofeh3blk8nn3ml0pjwuig4r8;Andrés López Gallo;Andrés Castrín;Andrés Castrín;Andrés;López Gallo;Sevilla FC;Spain;Defender;40
+73;2425;c83tbzx08nyq35zi0wut9hi0a;José Mateo Mejía Piedrahita;Mateo Mejía;M. Mejía;José Mateo;Mejía Piedrahita;Sevilla FC;Colombia;Attacker;34
+73;2425;c8mp2wwwyvy930vfjnivg2hre;Lucien Jefferson Agoumé;Lucien Agoumé;L. Agoumé;Lucien Jefferson;Agoumé;Sevilla FC;France;Midfielder;18
+73;2425;cfc7fqq748bz3nklfam2a2fp;Ørjan Håskjold Nyland;Ørjan Nyland;Ø. Nyland;Ørjan;Håskjold Nyland;Sevilla FC;Norway;Goalkeeper;13
+73;2425;djal5dsafpnhip4lu0ait94np;Marcos Javier Acuña;Marcos Acuña;M. Acuña;Marcos Javier;Acuña;Sevilla FC;Argentina;Defender;19
+73;2425;e9jl3vqporw6ykd05561tzhuc;Luis Dasilva Rodríguez;Lulo Dasilva;Lulo Dasilva;Luis;Dasilva Rodríguez;Sevilla FC;Spain;Midfielder;45
+73;2425;rlgrvvibryod2g92hqc97ii2;Loïc Séri Badé;Loïc Badé;L. Badé;Loïc Séri;Badé;Sevilla FC;France;Defender;22
+73;2425;10w6r9b4oc0jlupiwvnwes7e2;José Alejandro Suárez Suárez;Álex Suárez;Álex Suárez;José Alejandro;Suárez Suárez;UD Las Palmas;Spain;Defender;4
+73;2425;11eldn28ow0ssu4lvzqcswg7o;Sergio Ruiz González;Sergio Ruiz;Sergio Ruiz;Sergio;Ruiz González;UD Las Palmas;Spain;Midfielder;41
+73;2425;12cgiy0t282ywdbr5j78hrxsl;Scott Fraser McKenna;Scott McKenna;S. McKenna;Scott Fraser;McKenna;UD Las Palmas;Scotland;Defender;15
+73;2425;1g8xr073jl9jwmh5yrco855d6;Dário Cassia Luís Essugo;Dário Cassia Luís Essugo;Dário Essugo;Dário;Cassia Luís Essugo;UD Las Palmas;Portugal;Midfielder;29
+73;2425;1qkneebzln8byl9td2aswznmy;Alberto Moleiro González;Alberto Moleiro;Alberto Moleiro;Alberto;Moleiro González;UD Las Palmas;Spain;Midfielder;10
+73;2425;2487qvex3inpsonaaeunqtxqs;Aboubacar Bassinga;Aboubacar Bassinga;A. Bassinga;Aboubacar;Bassinga;UD Las Palmas;Côte d'Ivoire;Midfielder;26
+73;2425;2hav6qz0c5vf51catfe7kcrh0;Israel Mora de León;Israel Mora;Israel Mora;Israel;Mora de León;UD Las Palmas;Spain;Goalkeeper;35
+73;2425;2s5dh0qcw0yoieh79rzoyebpx;Benito Ramírez del Toro;Benito Ramírez;Benito Ramírez;Benito;Ramírez del Toro;UD Las Palmas;Spain;Midfielder;11
+73;2425;391oekz9hqryaacwbzn7mtl62;Manuel Fuster Lázaro;Manu Fuster;Manu Fuster;Manuel;Fuster Lázaro;UD Las Palmas;Spain;Midfielder;14
+73;2425;3o3qwjiz4z4wdztli6fleb2ay;Marvin Olawale Akinlabi Park;Marvin Park;Marvin Park;Marvin;Olawale Akinlabi Park;UD Las Palmas;Spain;Defender;2
+73;2425;3v0y6rgj4u0ozwiorzboiuket;José Ángel Gómez Campaña;José Campaña;José Campaña;José Ángel;Gómez Campaña;UD Las Palmas;Spain;Midfielder;8
+73;2425;4eldz5cisovzeygwkvn53aj2s;Elías Romero Martinez;Elías Romero;Elías Romero;Elías;Romero Martinez;UD Las Palmas;Spain;Attacker;40
+73;2425;4idl833s8molswna940epgoru;Iván Gil Calero;Iván Gil;Iván Gil;Iván;Gil Calero;UD Las Palmas;Spain;Midfielder;21
+73;2425;6q6xdzahdcbjnrl9gx3v50gt0;Diego Martín Pérez;Diego Martín Pérez;Diego Martín;Diego;Martín Pérez;UD Las Palmas;Spain;Attacker;34
+73;2425;7atmb373dynu9s9gnl613ox5h;Adnan Januzaj;Adnan Januzaj;A. Januzaj;Adnan;Januzaj;UD Las Palmas;Belgium;Midfielder;24
+73;2425;7bwn8rvlrc1gts7iofdao6qc;Juan Manuel Herzog González;Juan Herzog;Juanma Herzog;Juan Manuel;Herzog González;UD Las Palmas;Spain;Defender;28
+73;2425;7gugowjvo7hflw8pym8xs9qzt;Marc Cardona Rovira;Marc Cardona;Marc Cardona;Marc;Cardona Rovira;UD Las Palmas;Spain;Attacker;9
+73;2425;7i2sz4me46ln3vgho0qijop9l;Andy Joseph Pelmard;Andy Pelmard;A. Pelmard;Andy Joseph;Pelmard;UD Las Palmas;Madagascar;Defender;6
+73;2425;7ny9arfv615wmcc6irc1xdvkk;Víctor Puig Iglesias;Víctor Puig;Víctor Puig;Víctor;Puig Iglesias;UD Las Palmas;Spain;Goalkeeper;31
+73;2425;7snt4uu7f2d0g7utjm2xfis8a;Fábio Daniel Soares Silva;Fábio Daniel Soares Silva;Fábio Silva;Fábio Daniel;Soares Silva;UD Las Palmas;Portugal;Attacker;37
+73;2425;7xsiqumlovt1sfsjvkmw1sn2t;Alejandro José Muñoz Miguel;Álex Muñoz;Álex Muñoz;Alejandro José;Muñoz Miguel;UD Las Palmas;Spain;Defender;23
+73;2425;8ndsjumd9xg06mwged8d0oqnd;Dinko Horkaš;Dinko Horkas;D. Horkaš;Dinko;Horkaš;UD Las Palmas;Croatia;Goalkeeper;13
+73;2425;908iy5e7dn1um6054jrowexre;Mika Mármol Medina;Mika Mármol;Mika Mármol;Mika;Mármol Medina;UD Las Palmas;Spain;Defender;3
+73;2425;978d3hz86tjgwojfdn44zcx78;Ignacio Nicolau Benlloch;Ignacio Nicolau Benlloch;Nacho Nicolau;Ignacio;Nicolau Benlloch;UD Las Palmas;Spain;Goalkeeper;43
+73;2425;9aubbwhoof6vepmemhqz17xii;Fabio González Estupiñán;Fabio González;Fabio González;Fabio;González Estupiñán;UD Las Palmas;Spain;Midfielder;6
+73;2425;9f73lmbhd8z5urjldgty2fcb8;Saliou Mandiang;Saliou Mandiang;Saliou;Saliou;Mandiang;UD Las Palmas;Senegal;Defender;7
+73;2425;9mj4hy93jtxr65ldnhj684ktm;Enzo Lilian Marin Loiodice;Enzo Loiodice;E. Loiodice;Enzo Lilian Marin;Loiodice;UD Las Palmas;France;Midfielder;12
+73;2425;9y1qntr9sn5shpry2e7ewp39x;Sandro Ramírez Castillo;Sandro Ramírez;Sandro Ramírez;Sandro;Ramírez Castillo;UD Las Palmas;Spain;Attacker;19
+73;2425;ajgu1ennx0zjl8qoc2byar4oa;Kirian Rodríguez Concepción;Kirian Rodríguez;Kirian Rodríguez;Kirian;Rodríguez Concepción;UD Las Palmas;Spain;Midfielder;20
+73;2425;alkcbccyfsjddm897cgz7wel1;Jasper Cillessen;Jasper Cillessen;J. Cillessen;Jasper;Cillessen;UD Las Palmas;Netherlands;Goalkeeper;1
+73;2425;aohmwqhdb8hlp5lvqboh0t5g5;Javier Muñoz Jiménez;Javi Muñoz;Javi Muñoz;Javier;Muñoz Jiménez;UD Las Palmas;Spain;Midfielder;5
+73;2425;aqjq5mpg6qgnaf1exel9usjys;Stefan Bajčetić Maquieira;Stefan Bajcetic;Stefan Bajčetić;Stefan;Bajčetić Maquieira;UD Las Palmas;Spain;Midfielder;21
+73;2425;as8k3c0k3kzktn56l1yvcz3tg;Arturo Rodríguez Cosano;Arturo Rodríguez;Arturo Rodríguez;Arturo;Rodríguez Cosano;UD Las Palmas;Spain;Attacker;36
+73;2425;awqlm82xjp3vh5wj1fexizysp;Víctor Álvarez Rozada;Viti Rozada;Viti Rozada;Víctor;Álvarez Rozada;UD Las Palmas;Spain;Midfielder;18
+73;2425;aze5i6ssy55jrc8k9vhrs8o9h;Daley Sinkgraven;Daley Sinkgraven;D. Sinkgraven;Daley;Sinkgraven;UD Las Palmas;Netherlands;Defender;22
+73;2425;b259zuv3yvgc7me5hdjag17v8;Sergio Viera García;Sergio Viera;Sergio Viera;Sergio;Viera García;UD Las Palmas;Spain;Midfielder;33
+73;2425;bwkwrq6ouyuj82gtevcq7zf2s;Valentín Alejandro Pezzolesi;Valentín Pezzolesi;Valentín Pezzolesi;Valentín Alejandro;Pezzolesi;UD Las Palmas;Spain;Defender;27
+73;2425;ckne0j1fs5cxufyicjbygdi39;Jaime Mata Arnaiz;Jaime Mata;Jaime Mata;Jaime;Mata Arnaiz;UD Las Palmas;Spain;Attacker;17
+73;2425;d3hg7lo01o84dsvzud3b6vsnp;Oliver Robert McBurnie;Oliver McBurnie;O. McBurnie;Oliver Robert;McBurnie;UD Las Palmas;Scotland;Attacker;16
+73;2425;ehddfj63onkq8vffr6sb116vo;Valentino Raca Álvarez;Valentino Raca;Valentino;Valentino;Raca Álvarez;UD Las Palmas;Spain;Defender;32
+73;2425;elmtceyjrf6eexwdxfgxlht04;Álvaro Killane Giardini;Álvaro Killane;Álvaro Killane;Álvaro;Killane Giardini;UD Las Palmas;Argentina;Goalkeeper;30
+73;2425;eltpcg01bhrp09e8zi3d3xn8;José Carlo González Sánchez;José Carlos González;Josito;José Carlo;González Sánchez;UD Las Palmas;Venezuela;Midfielder;38
+73;2425;routhh0ialijcg3egagouig9;Álvaro Valles Rosa;Álvaro Valles;Álvaro Valles;Álvaro;Valles Rosa;UD Las Palmas;Spain;Goalkeeper;25
+73;2425;10ajc7czhwojjz22cxokqkvf8;Mario Domínguez Franco;Mario Domínguez;Mario Domínguez;Mario;Domínguez Franco;Valencia CF;Spain;Attacker;36
+73;2425;1szyw3ypwrwuzsv9svqjdz6s4;Rodrigo Abajas Martín;Ro Abajas;Rodrigo Abajas;Rodrigo;Abajas Martín;Valencia CF;Spain;Defender;39
+73;2425;20o2dr1mdk18xhxmkujzgak89;Giorgi Mamardashvili;Giorgi Mamardashvili;G. Mamardashvili;Giorgi;Mamardashvili;Valencia CF;Georgia;Goalkeeper;25
+73;2425;235eh9alse9ej0wo8qcmwsis4;Raúl Jiménez Latorre;Raúl Jiménez;Raúl Jiménez;Raúl;Jiménez Latorre;Valencia CF;Spain;Goalkeeper;34
+73;2425;2dh7daj5fs09snik6jrcyz7fu;Pedro Alemañ Serna;Pedro Alemañ;Pedro Alemañ;Pedro;Alemañ Serna;Valencia CF;Spain;Midfielder;46
+73;2425;2jd5whsw00zkz6cxca1m8idqs;Álex Serradell Garralaga;Álex Serradell Garralaga;Álex Serra;Álex;Serradell Garralaga;Valencia CF;Spain;Defender;29
+73;2425;2u8bekuidiwqz1gvb4vd3uhg;César Tárrega Requeni;César Tárrega;César Tárrega;César;Tárrega Requeni;Valencia CF;Spain;Defender;15
+73;2425;3702btkgwxf6tq92ouekd7ro5;José Luis García Vayá;José Luis García Vayá;Pepelu;José Luis;García Vayá;Valencia CF;Spain;Midfielder;18
+73;2425;3xu6rpdncvtd2adn94xaqavze;Hugo González Sotos;Hugo González;Hugo González;Hugo;González Sotos;Valencia CF;Spain;Attacker;30
+73;2425;4gr7ac6q7olqgfrx2dm0m4nis;Lucas Núñez Ramírez;Lucas Núñez;Lucas Núñez;Lucas;Núñez Ramírez;Valencia CF;Spain;Midfielder;47
+73;2425;4j3u6v01emo9nsel7uw00qsfe;Diego López Noguerol;Diego López;Diego López;Diego;López Noguerol;Valencia CF;Spain;Attacker;16
+73;2425;4sojot9t32l4a6fm3e39xkcfd;Rafael Mir Vicente;Rafa Mir;Rafa Mir;Rafael;Mir Vicente;Valencia CF;Spain;Attacker;11
+73;2425;5b1q9bpe23j98eoy4fwi7ld5h;José Luis Gayà Peña;José Gayà;José Gayà;José Luis;Gayà Peña;Valencia CF;Spain;Defender;14
+73;2425;5dfvefxvwj8kixbajluw25mtx;Stole Dimitrievski;Stole Dimitrievski;S. Dimitrievski;Stole;Dimitrievski;Valencia CF;North Macedonia;Goalkeeper;13
+73;2425;5f5e6wufz0x041bvqzor10k16;Enzo Alan Tomás Barrenechea;Enzo Barrenechea;E. Barrenechea;Enzo Alan Tomás;Barrenechea;Valencia CF;Argentina;Midfielder;5
+73;2425;5mgmcero3ui4a24v1w1upx3sa;Germán Valera Karabinaite;Germán Valera;Germán Valera;Germán;Valera Karabinaite;Valencia CF;Spain;Attacker;30
+73;2425;601i52yv3de26dnzbd8p8gjfu;Alberto Marí Sánchez;Alberto Marí;Alberto Marí;Alberto;Marí Sánchez;Valencia CF;Spain;Attacker;19
+73;2425;66fshzi5f86wt1lwa4kdhiooa;Francisco Pérez Martínez;Fran Pérez;Fran Pérez;Francisco;Pérez Martínez;Valencia CF;Spain;Midfielder;23
+73;2425;6euu7oztc1jkxcgef0g75cq95;Maximiliano Caufriez;Maximiliano Caufriez;M. Caufriez;Maximiliano;Caufriez;Valencia CF;Belgium;Defender;2
+73;2425;6kc8ieszwg6u00e3sa554y7yt;Luis Jesús Rioja González;Luis Rioja;Luis Rioja;Luis Jesús;Rioja González;Valencia CF;Spain;Attacker;22
+73;2425;6o76owze8y78ue9sb49g8kyz8;Cristhian Andrey Mosquera Ibargüen;Cristhian Mosquera;Cristhian Mosquera;Cristhian Andrey;Mosquera Ibargüen;Valencia CF;Spain;Defender;3
+73;2425;70ursnnskhuf7zkltyrudquax;Maximillian James Aarons;Max Aarons;M. Aarons;Maximillian James;Aarons;Valencia CF;England;Defender;19
+73;2425;7yieh5r0uzk6d6x9o060c2bfu;Hugo Duro Perales;Hugo Duro;Hugo Duro;Hugo;Duro Perales;Valencia CF;Spain;Attacker;9
+73;2425;8iiowapklgy791tcwowpqddqt;Jaume Domènech Sánchez;Jaume Domènech;Jaume Doménech;Jaume;Domènech Sánchez;Valencia CF;Spain;Goalkeeper;1
+73;2425;9dc4qkvh0vk5kwymibji00kp;Domingos André Ribeiro Almeida;Domingos André Ribeiro Almeida;André Almeida;Domingos André;Ribeiro Almeida;Valencia CF;Portugal;Midfielder;10
+73;2425;9g3to6kcpmla26k0dbwuizspg;Iker Córdoba Sánchez;Iker Córdoba;Iker Córdoba;Iker;Córdoba Sánchez;Valencia CF;Spain;Defender;38
+73;2425;9nd1b0hfbdzthfrwh9fj7nw9g;Vicent Abril Sanz;Vicent Abril;Vicent Abril;Vicent;Abril Sanz;Valencia CF;Spain;Goalkeeper;35
+73;2425;apzhdhppa1q2w7gaho7suketw;Warren Steven Madrigal Molina;Warren Madrigal;W. Madrigal;Warren Steven;Madrigal Molina;Valencia CF;Costa Rica;Attacker;42
+73;2425;aqqd7tq7z6bj3wn3u3sz3uuqc;Javier Guerra Moreno;Javi Guerra;Javi Guerra;Javier;Guerra Moreno;Valencia CF;Spain;Midfielder;8
+73;2425;arpoe2kjx9pbacgpuv17yl33d;Iván Jaime Pajuelo;Iván Jaime;Iván Jaime;Iván;Jaime Pajuelo;Valencia CF;Spain;Midfielder;17
+73;2425;b4k7aa5fph5t3usotjsw8ygyy;Rubén Iranzo Lendínez;Rubén Iranzo;Rubén Iranzo;Rubén;Iranzo Lendínez;Valencia CF;Spain;Defender;31
+73;2425;bda9fmdum05xtmj2d8k5dfnkk;David Otorbi Ejedewawe;David Otorbi;David Otorbi;David;Otorbi Ejedewawe;Valencia CF;Spain;Attacker;27
+73;2425;cmdeqxibr6holfqg17ap9uihg;Yarek Gąsiorowski Hernandis;Yarek Gasiorowski;Yarek Gąsiorowski;Yarek;Gąsiorowski Hernandis;Valencia CF;Spain;Defender;24
+73;2425;csqsdjsa4leo6z86qphjuectm;Cenk Özkacar;Cenk Özkacar;C. Özkacar;Cenk;Özkacar;Valencia CF;Türkiye;Defender;5
+73;2425;d0rkybarcfm1og9fejiz2347o;Martín Tejón Fauli;Martín Tejón;Martín Tejón;Martín;Tejón Fauli;Valencia CF;Spain;Midfielder;32
+73;2425;d6kzekcwqw0q8fq6wt6rmyusq;Jesús Vázquez Alcalde;Jesús Vázquez;Jesús Vázquez;Jesús;Vázquez Alcalde;Valencia CF;Spain;Defender;21
+73;2425;dtvmsnqlzn5672xb54zj8u7dh;Umar Sadiq Mesbah;Umar Sadiq;U. Sadiq;Umar;Sadiq Mesbah;Valencia CF;Nigeria;Attacker;12
+73;2425;e7del0ovpcpntqdgh8idxok4p;Hugo Guillamón Sanmartín;Hugo Guillamón;Hugo Guillamón;Hugo;Guillamón Sanmartín;Valencia CF;Spain;Midfielder;6
+73;2425;efmny1f7zzlxe9u2xoia43tw4;Ali Fadal;Ali Fadal;A. Fadal;Ali;Fadal;Valencia CF;Ghana;Midfielder;28
+73;2425;eg2jk0f0l2l1gurwwn2au6nyt;Sergi Canós Tenés;Sergi Canós;Sergi Canós;Sergi;Canós Tenés;Valencia CF;Spain;Attacker;7
+73;2425;eucssbf7wamb41y1gixfodivp;Mouctar Diakhaby;Mouctar Diakhaby;M. Diakhaby;Mouctar;Diakhaby;Valencia CF;Guinea;Defender;4
+73;2425;ey6rgpbpfvb64nrswwh2x9dlg;Pablo López Gómez;Pablo López;Pablo López;Pablo;López Gómez;Valencia CF;Spain;Attacker;45
+73;2425;f591z8u22nx2zqy76hh4p321g;Ismael Santana Vera;Isma Santana;Isma Santana;Ismael;Santana Vera;Valencia CF;Spain;Attacker;44
+73;2425;rhytcbx86fdgilka2g06n6dw;Hamza Bellari;Hamza Bellari;Hamza Bellari;Hamza;Bellari;Valencia CF;Morocco;Attacker;40
+73;2425;wlqj34ev5mucxtfx6j4tr9at;Dimitri Christophe Foulquier;Dimitri Foulquier;D. Foulquier;Dimitri Christophe;Foulquier;Valencia CF;Guadeloupe;Defender;20
+73;2425;1wileoy8mxtd2t1b106uhwzro;Thierno Mamadou Barry;Thierno Barry;T. Barry;Thierno Mamadou;Barry;Villarreal CF;France;Attacker;15
+73;2425;20ebw399jhbq0i5x2eacrrs6i;Ramon Terrats Espacio;Ramon Terrats;Ramon Terrats;Ramon;Terrats Espacio;Villarreal CF;Spain;Midfielder;20
+73;2425;28psc296gj3umo59qqha8jil1;Denis Suárez Fernández;Denis Suárez;Denis Suárez;Denis;Suárez Fernández;Villarreal CF;Spain;Midfielder;6
+73;2425;2biwwlvzgsu5kmyw5w1adpmtx;Gerard Moreno Balagueró;Gerard Moreno;Gerard Moreno;Gerard;Moreno Balagueró;Villarreal CF;Spain;Attacker;7
+73;2425;32uxh37qc6ebx1z4h8qvuvdnt;Iker Álvarez de Eulate Molné;Iker Álvarez;Iker Álvarez;Iker;Álvarez de Eulate Molné;Villarreal CF;Andorra;Goalkeeper;31
+73;2425;3n9jnuteyjx6w6dxviuead0b9;Nicolas Pépé;Nicolas Pépé;N. Pépé;Nicolas;Pépé;Villarreal CF;Côte d'Ivoire;Attacker;19
+73;2425;4eezya3lwcwur6c8s6rl0rzvu;Yéremy Jesús Pino Santos;Yéremy Pino;Yeremy Pino;Yéremy Jesús;Pino Santos;Villarreal CF;Spain;Midfielder;21
+73;2425;4rktv6j9sioe0gmu7jt77fsh5;Arnaut Danjuma Adam Groeneveld;Arnaut Danjuma;A. Danjuma;Arnaut;Danjuma Adam Groeneveld;Villarreal CF;Netherlands;Attacker;9
+73;2425;4x854vpovag131b2kdutv4qju;Sergi Cardona Bermúdez;Sergi Cardona;Sergi Cardona;Sergi;Cardona Bermúdez;Villarreal CF;Spain;Defender;23
+73;2425;59knsm910b1ruk024rkksla3u;Logan Evans Costa;Logan Evans Costa;Logan Costa;Logan;Evans Costa;Villarreal CF;Cabo Verde;Defender;2
+73;2425;5j6v5fqvmhuwq5u8mamm2sv10;Daniel Requena Sánchez;Dani Requena;Dani Requena;Daniel;Requena Sánchez;Villarreal CF;Spain;Midfielder;30
+73;2425;5mj2vxkh3pmkbwj139mp93n4l;Diego José Conde Alcolado;Diego Conde;Diego Conde;Diego José;Conde Alcolado;Villarreal CF;Spain;Goalkeeper;13
+73;2425;5soi8e2hlk77rlsbsl76hg3xl;Juan Marcos Foyth;Juan Foyth;J. Foyth;Juan Marcos;Foyth;Villarreal CF;Argentina;Defender;8
+73;2425;5zoz3mjooujpv0wdcphyrztd6;Alejandro Baena Rodríguez;Álex Baena;Álex Baena;Alejandro;Baena Rodríguez;Villarreal CF;Spain;Midfielder;16
+73;2425;6ddxujeb3873j5evwiz8n4wt0;Luíz Lúcio Reis Júnior;Luiz Lúcio Reis Júnior;Luíz Júnior;Luíz Lúcio;Reis Júnior;Villarreal CF;Brazil;Goalkeeper;1
+73;2425;6o2xd34n2xu96bqbkq4zj21d6;Arnau Solà Mateu;Arnau Solà;Arnau Solà;Arnau;Solà Mateu;Villarreal CF;Spain;Defender;27
+73;2425;6qlpnu6rv60qui02axtaii8lw;Pau Cabanes de la Torre;Pau Cabanes;Pau Cabanes;Pau;Cabanes de la Torre;Villarreal CF;Spain;Attacker;33
+73;2425;6wpnjdlg2p8f19y3gjpz1su6t;Francisco Femenía Far;Kiko Femenía;Kiko Femenía;Francisco;Femenía Far;Villarreal CF;Spain;Defender;17
+73;2425;73jvx4opw9wvawwpg0bnt8ay2;Ilias Akhomach Chakkour;Ilias Akhomach;I. Akhomach;Ilias;Akhomach Chakkour;Villarreal CF;Morocco;Attacker;11
+73;2425;93bls5zj5sz232nbcc246hams;Rubén Gómez Peris;Rubén Gómez;Rubén Gómez;Rubén;Gómez Peris;Villarreal CF;Spain;Goalkeeper;55
+73;2425;9jw0h4escxh3eqz8oh860r3yt;Eric Bertrand Bailly;Eric Bailly;E. Bailly;Eric Bertrand;Bailly;Villarreal CF;Côte d'Ivoire;Defender;4
+73;2425;9rtfwu0z7qtk1kglenp2vm13o;Pau Navarro Badenes;Pau Navarro;Pau Navarro;Pau;Navarro Badenes;Villarreal CF;Spain;Defender;26
+73;2425;9wgavu943u5yn0qu6go17bk7o;Daniel Budesca López;Daniel Budesca;Daniel Budesca;Daniel;Budesca López;Villarreal CF;Spain;Defender;44
+73;2425;a8pnwy8wy8ytwek1ovtxkaivo;Alassane Diatta;Alassane Diatta;A. Diatta;Alassane;Diatta;Villarreal CF;Senegal;Midfielder;32
+73;2425;acx78ftnm61hm01wpmme77hbe;Tajon Trevor Buchanan;Tajon Buchanan;T. Buchanan;Tajon Trevor;Buchanan;Villarreal CF;Canada;Attacker;9
+73;2425;ainfqtp7r2yhe2k4esfegrthw;Antonio Espigares Morillas;Antonio Espigares;Espigares;Antonio;Espigares Morillas;Villarreal CF;Spain;Defender;28
+73;2425;b5rea5r4h8bclpenau2au142x;Santiago Comesaña Veiga;Santi Comesaña;Santi Comesaña;Santiago;Comesaña Veiga;Villarreal CF;Spain;Midfielder;14
+73;2425;bl3o0pt262qax5cwv4jeu82s4;Karl Edouard Blaise Etta Eyong;Karl Etta Eyong;K. Etta Eyong;Karl Edouard Blaise;Etta Eyong;Villarreal CF;Cameroon;Attacker;36
+73;2425;bxp1wr68i1mykrkj3083mvml0;Willy Kambwala Ndengushi;Willy Kambwala;W. Kambwala;Willy;Kambwala Ndengushi;Villarreal CF;France;Defender;5
+73;2425;c07vv5md2hwkfj3l415bxiu50;Thiago Ezequiel Ojeda;Thiago Ojeda;T. Ojeda;Thiago Ezequiel;Ojeda;Villarreal CF;Argentina;Midfielder;38
+73;2425;c29mprqv2ulztd22b6uckczx1;Daniel Parejo Muñoz;Dani Parejo;Dani Parejo;Daniel;Parejo Muñoz;Villarreal CF;Spain;Midfielder;10
+73;2425;drwacyyicuhy3heg4j0ipqj85;Ayoze Pérez Gutiérrez;Ayoze Pérez;Ayoze Pérez;Ayoze;Pérez Gutiérrez;Villarreal CF;Spain;Attacker;22
+73;2425;e615cmv1tfzu84f0z8mwi5711;Raúl Albiol Tortajada;Raúl Albiol;Raúl Albiol;Raúl;Albiol Tortajada;Villarreal CF;Spain;Defender;3
+73;2425;e86pm8pa6for3jd40u0q6b0no;Jean Yves Valou;Jean Valou;J. Valou;Jean Yves;Valou;Villarreal CF;Côte d'Ivoire;Defender;37
+73;2425;eh70fwampgdyfv3hu25o2qx;Alfonso Pedraza Sag;Alfonso Pedraza;Alfonso Pedraza;Alfonso;Pedraza Sag;Villarreal CF;Spain;Defender;24
+73;2425;ekm47qd8w1x0456lm1tmf5re1;Pape Alassane Gueye;Pape Gueye;P. Gueye;Pape Alassane;Gueye;Villarreal CF;Senegal;Midfielder;18

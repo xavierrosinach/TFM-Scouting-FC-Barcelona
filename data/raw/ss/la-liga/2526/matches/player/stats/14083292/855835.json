@@ -1,0 +1,116 @@
+{
+  "player": {
+    "name": "Sergio Gómez",
+    "slug": "sergio-gomez",
+    "shortName": "S. Gómez",
+    "position": "M",
+    "jerseyNumber": "17",
+    "height": 171,
+    "userCount": 4414,
+    "gender": "M",
+    "sofascoreId": "sergiogm_10",
+    "id": 855835,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 968025600,
+    "proposedMarketValueRaw": {
+      "value": 14600000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "سيرجيو غوميز",
+        "bn": "সার্জিও গোমেজ",
+        "hi": "सर्जियो गोमेज़"
+      },
+      "shortNameTranslation": {
+        "ar": "س. غوميز",
+        "bn": "এস. গোমেজ",
+        "hi": "एस. गोमेज़"
+      }
+    }
+  },
+  "team": {
+    "name": "Real Sociedad",
+    "slug": "real-sociedad",
+    "shortName": "Real Sociedad",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 395722,
+    "nameCode": "RSO",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2824,
+    "teamColors": {
+      "primary": "#ffffff",
+      "secondary": "#0077c7",
+      "text": "#0077c7"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ريال سوسيداد",
+        "bn": "রিয়াল সোসিয়েদাদ",
+        "hi": "रियल सोसियदाद",
+        "ru": "Реал Сосьедад"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 26,
+    "accuratePass": 21,
+    "totalLongBalls": 2,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 8,
+    "totalOwnHalfPasses": 10,
+    "accurateOppositionHalfPasses": 13,
+    "totalOppositionHalfPasses": 16,
+    "totalCross": 3,
+    "accurateCross": 1,
+    "aerialLost": 1,
+    "aerialWon": 1,
+    "duelLost": 5,
+    "duelWon": 4,
+    "challengeLost": 1,
+    "totalContest": 2,
+    "wonContest": 1,
+    "shotOffTarget": 1,
+    "blockedScoringAttempt": 1,
+    "totalClearance": 3,
+    "ballRecovery": 5,
+    "totalTackle": 2,
+    "wonTackle": 2,
+    "fouls": 2,
+    "minutesPlayed": 90,
+    "touches": 49,
+    "rating": 6.5,
+    "possessionLostCtrl": 9,
+    "expectedGoals": 0.0946,
+    "expectedAssists": 0.0502554,
+    "totalBallCarriesDistance": 153.34261923955,
+    "ballCarriesCount": 13,
+    "totalProgression": 98.211114407625,
+    "bestBallCarryProgression": 36.708790442287,
+    "totalProgressiveBallCarriesDistance": 76.380360642768,
+    "progressiveBallCarriesCount": 3,
+    "ratingVersions": {
+      "original": 6.5,
+      "alternative": 6.7
+    },
+    "totalShots": 2,
+    "shotValueNormalized": -0.51,
+    "passValueNormalized": 0.01,
+    "dribbleValueNormalized": 0.31,
+    "defensiveValueNormalized": -0.07,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "D",
+  "extra": null
+}

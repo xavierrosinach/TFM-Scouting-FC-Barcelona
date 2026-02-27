@@ -1,0 +1,101 @@
+{
+  "player": {
+    "name": "Martin Valjent",
+    "slug": "martin-valjent",
+    "shortName": "M. Valjent",
+    "position": "D",
+    "jerseyNumber": "24",
+    "height": 187,
+    "userCount": 749,
+    "gender": "M",
+    "id": 300522,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 818640000,
+    "proposedMarketValueRaw": {
+      "value": 4700000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "مارتين فالينت",
+        "bn": "মার্টিন ভালজেন্ট",
+        "hi": "मार्टिन वलजेंट"
+      },
+      "shortNameTranslation": {
+        "ar": "م. فالينت",
+        "bn": "এম. ভালজেন্ট",
+        "hi": "एम. वलजेंट"
+      }
+    }
+  },
+  "team": {
+    "name": "Mallorca",
+    "slug": "mallorca",
+    "shortName": "Mallorca",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 177809,
+    "nameCode": "MLL",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2826,
+    "teamColors": {
+      "primary": "#cc0000",
+      "secondary": "#000000",
+      "text": "#000000"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "مايوركا",
+        "bn": "ম্যালোর্কা",
+        "hi": "मल्लोर्का",
+        "ru": "Мальорка"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 21,
+    "accuratePass": 19,
+    "totalLongBalls": 3,
+    "accurateLongBalls": 2,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 16,
+    "totalOwnHalfPasses": 16,
+    "accurateOppositionHalfPasses": 3,
+    "totalOppositionHalfPasses": 5,
+    "duelLost": 2,
+    "challengeLost": 2,
+    "totalClearance": 8,
+    "interceptionWon": 1,
+    "ballRecovery": 2,
+    "unsuccessfulTouch": 1,
+    "minutesPlayed": 90,
+    "touches": 33,
+    "rating": 5.9,
+    "possessionLostCtrl": 3,
+    "expectedAssists": 0.00228199,
+    "totalBallCarriesDistance": 46.6922260992,
+    "ballCarriesCount": 5,
+    "totalProgression": 32.399847112288,
+    "ratingVersions": {
+      "original": 5.9,
+      "alternative": 6.1
+    },
+    "totalShots": 0,
+    "passValueNormalized": 0.05,
+    "dribbleValueNormalized": 0.01,
+    "defensiveValueNormalized": -0.48,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "D",
+  "extra": null
+}

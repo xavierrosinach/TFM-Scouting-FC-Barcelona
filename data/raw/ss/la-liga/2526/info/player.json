@@ -1,0 +1,3875 @@
+{
+  "players": [
+    {
+      "playerId": 826643,
+      "playerName": "Kylian Mbappé",
+      "position": "F",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 1402912,
+      "playerName": "Lamine Yamal",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 868812,
+      "playerName": "Vinícius Júnior",
+      "position": "F",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 991011,
+      "playerName": "Jude Bellingham",
+      "position": "M",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 831005,
+      "playerName": "Raphinha",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 910536,
+      "playerName": "Rodrygo",
+      "position": "F",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 992587,
+      "playerName": "Pedri",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 41789,
+      "playerName": "Robert Lewandowski",
+      "position": "F",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 1174937,
+      "playerName": "Endrick",
+      "position": "F",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 1091116,
+      "playerName": "Arda Güler",
+      "position": "M",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 831808,
+      "playerName": "Federico Valverde",
+      "position": "M",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 814590,
+      "playerName": "Marcus Rashford",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 1103693,
+      "playerName": "Pablo Gavi",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 835485,
+      "playerName": "Brahim Díaz",
+      "position": "M",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 944656,
+      "playerName": "Julián Alvarez",
+      "position": "F",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 958380,
+      "playerName": "Antony",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 795064,
+      "playerName": "Trent Alexander-Arnold",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 70988,
+      "playerName": "Thibaut Courtois",
+      "position": "G",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 795222,
+      "playerName": "Frenkie de Jong",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 142622,
+      "playerName": "Antonio Rüdiger",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 789071,
+      "playerName": "Dani Olmo",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 973887,
+      "playerName": "Eduardo Camavinga",
+      "position": "M",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 1403559,
+      "playerName": "Franco Mastantuono",
+      "position": "M",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 1153270,
+      "playerName": "Fermín López",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 1176744,
+      "playerName": "Dean Huijsen",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 1402913,
+      "playerName": "Pau Cubarsí",
+      "position": "D",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 138572,
+      "playerName": "Daniel Carvajal",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 827212,
+      "playerName": "Jules Koundé",
+      "position": "D",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 859025,
+      "playerName": "Aurélien Tchouaméni",
+      "position": "M",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 855833,
+      "playerName": "Ferran Torres",
+      "position": "F",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 822519,
+      "playerName": "Éder Militão",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 925097,
+      "playerName": "Ronald Araújo",
+      "position": "D",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 997035,
+      "playerName": "Alejandro Balde",
+      "position": "D",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 88625,
+      "playerName": "Marc-André Ter Stegen",
+      "position": "G",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 1156645,
+      "playerName": "Raúl Asencio",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 930267,
+      "playerName": "Joan García",
+      "position": "G",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 1402716,
+      "playerName": "Gonzalo García",
+      "position": "F",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 85859,
+      "playerName": "Antoine Griezmann",
+      "position": "F",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1162107,
+      "playerName": "Roony Bardghji",
+      "position": "F",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 50490,
+      "playerName": "Wojciech Szczęsny",
+      "position": "G",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 66492,
+      "playerName": "David Alaba",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 138892,
+      "playerName": "João Cancelo",
+      "position": "D",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 824200,
+      "playerName": "Ademola Lookman",
+      "position": "F",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1085400,
+      "playerName": "Nico Williams",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1085081,
+      "playerName": "Álvaro Carreras",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 1926085,
+      "playerName": "Dro Fernández",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 792073,
+      "playerName": "Ferland Mendy",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 547838,
+      "playerName": "Dani Ceballos",
+      "position": "M",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 851271,
+      "playerName": "Fran García",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 1000483,
+      "playerName": "Marc Casadó",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 186795,
+      "playerName": "Andreas Christensen",
+      "position": "D",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 1526618,
+      "playerName": "Marc Bernal",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 876214,
+      "playerName": "Eric García",
+      "position": "D",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 115665,
+      "playerName": "Cédric Bakambu",
+      "position": "F",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 1402908,
+      "playerName": "Hector Fort",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 794949,
+      "playerName": "Iñaki Peña",
+      "position": "G",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 1011375,
+      "playerName": "Abdessamad Ezzalzouli",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 1094827,
+      "playerName": "Gerard Martín",
+      "position": "D",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 316148,
+      "playerName": "Thomas Partey",
+      "position": "M",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1482424,
+      "playerName": "Claudio Echeverri",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 1082981,
+      "playerName": "Pablo Torre",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 879694,
+      "playerName": "Pape Gueye",
+      "position": "M",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 991421,
+      "playerName": "Azzedine Ounahi",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 34120,
+      "playerName": "Alexis Sánchez",
+      "position": "F",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1590761,
+      "playerName": "Toni Fernández",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 944660,
+      "playerName": "Thiago Almada",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 359272,
+      "playerName": "Sofyan Amrabat",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 103417,
+      "playerName": "Isco",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 946381,
+      "playerName": "Akor Adams",
+      "position": "F",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 880218,
+      "playerName": "Takefusa Kubo",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 783374,
+      "playerName": "Iñaki Williams",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 309078,
+      "playerName": "Alexander Sørloth",
+      "position": "F",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1393673,
+      "playerName": "Etta Eyong",
+      "position": "F",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 901325,
+      "playerName": "Nicolás González",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1901143,
+      "playerName": "Víctor Valdepeñas",
+      "position": "D",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 904970,
+      "playerName": "Conor Gallagher",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1154549,
+      "playerName": "Mario Martín",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1099352,
+      "playerName": "Giuliano Simeone",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1089108,
+      "playerName": "Ilias Akhomach",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1142689,
+      "playerName": "David Jiménez",
+      "position": "M",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 798835,
+      "playerName": "Giovani Lo Celso",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 1154587,
+      "playerName": "Álvaro Rodriguez",
+      "position": "F",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 831799,
+      "playerName": "Nahuel Molina",
+      "position": "D",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1009372,
+      "playerName": "Georges Mikautadze",
+      "position": "F",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 35532,
+      "playerName": "Salomón Rondón",
+      "position": "F",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1485300,
+      "playerName": "Vitor Reis",
+      "position": "D",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 593526,
+      "playerName": "Nicolas Pépé",
+      "position": "F",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 69768,
+      "playerName": "Jan Oblak",
+      "position": "G",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 823622,
+      "playerName": "Mikel Oyarzabal",
+      "position": "F",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 758664,
+      "playerName": "Charles Pickel",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 1087359,
+      "playerName": "Renato Veiga",
+      "position": "D",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1587196,
+      "playerName": "Jofre Torrents ",
+      "position": "D",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 1145642,
+      "playerName": "Victor Muñoz",
+      "position": "F",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 17651,
+      "playerName": "Santi Cazorla",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1211632,
+      "playerName": "Wesley",
+      "position": "F",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 1939137,
+      "playerName": "Tomás Marqués",
+      "position": "M",
+      "teamId": 2817,
+      "teamName": "Barcelona"
+    },
+    {
+      "playerId": 149734,
+      "playerName": "Aymeric Laporte",
+      "position": "D",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1403364,
+      "playerName": "Youssef Enriquez Lekhedim",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 1092769,
+      "playerName": "Yáser Asprilla",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 35612,
+      "playerName": "Axel Witsel",
+      "position": "D",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 910031,
+      "playerName": "Alejandro Baena",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 353138,
+      "playerName": "Marcos Llorente",
+      "position": "D",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 887055,
+      "playerName": "Cucho Hernández",
+      "position": "F",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 37318,
+      "playerName": "Ante Budimir",
+      "position": "F",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 965031,
+      "playerName": "Andrei Rațiu",
+      "position": "D",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 865651,
+      "playerName": "Giacomo Raspadori",
+      "position": "F",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1590121,
+      "playerName": "Jorge Cestero",
+      "position": "M",
+      "teamId": 2829,
+      "teamName": "Real Madrid"
+    },
+    {
+      "playerId": 580550,
+      "playerName": "Clément Lenglet",
+      "position": "D",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 361790,
+      "playerName": "Donny van de Beek",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 69408,
+      "playerName": "Marcos Alonso",
+      "position": "D",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 973290,
+      "playerName": "Tajon Buchanan",
+      "position": "M",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 797291,
+      "playerName": "Unai Simón",
+      "position": "G",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1142588,
+      "playerName": "Pablo Barrios",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1064026,
+      "playerName": "Omar El Hilali",
+      "position": "D",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 1116388,
+      "playerName": "Jon Aramburu",
+      "position": "D",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 962890,
+      "playerName": "Ilaix Moriba",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 787751,
+      "playerName": "Robin Le Normand",
+      "position": "D",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1126447,
+      "playerName": "Lucas Cepeda",
+      "position": "M",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 873189,
+      "playerName": "Juan Foyth",
+      "position": "D",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1939173,
+      "playerName": "Jan Virgili",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 949156,
+      "playerName": "Luka Sučić",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 984624,
+      "playerName": "Yéremy Pino",
+      "position": "M",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 310874,
+      "playerName": "Vedat Muriqi",
+      "position": "F",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 191182,
+      "playerName": "Thomas Lemar",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 325355,
+      "playerName": "José María Giménez",
+      "position": "D",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 84539,
+      "playerName": "Koke",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 263651,
+      "playerName": "Juan Musso",
+      "position": "G",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 190159,
+      "playerName": "André Silva",
+      "position": "F",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 942836,
+      "playerName": "Haissem Hassan",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1000150,
+      "playerName": "Zito Luvumbo",
+      "position": "F",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 862223,
+      "playerName": "Manor Solomon",
+      "position": "M",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 990169,
+      "playerName": "Johnny Cardoso",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1084730,
+      "playerName": "Bryan Zaragoza",
+      "position": "F",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 319735,
+      "playerName": "Viktor Tsygankov",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 1520799,
+      "playerName": "Maroan Sannadi",
+      "position": "F",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 19356,
+      "playerName": "Iago Aspas",
+      "position": "F",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 908714,
+      "playerName": "Arnau Tenas",
+      "position": "G",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 823631,
+      "playerName": "Dodi Lukebakio",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 807771,
+      "playerName": "Dávid Hancko",
+      "position": "D",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 913679,
+      "playerName": "Pathé Ismaël Ciss",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1119345,
+      "playerName": "Obed Vargas",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 989113,
+      "playerName": "Rodrigo Riquelme",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 1129401,
+      "playerName": "Nelson Deossa",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 21555,
+      "playerName": "César Azpilicueta",
+      "position": "D",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1066045,
+      "playerName": "Arsen Zakharyan",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 905639,
+      "playerName": "Kwasi Sibo",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1117026,
+      "playerName": "Federico Redondo",
+      "position": "M",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 855835,
+      "playerName": "Sergio Gómez",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 1458073,
+      "playerName": "Nobel Mendy",
+      "position": "D",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1884145,
+      "playerName": "Christantus Uche",
+      "position": "F",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 839585,
+      "playerName": "Yangel Herrera",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 606346,
+      "playerName": "Eric Bailly",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1126779,
+      "playerName": "Williot Swedberg",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 785989,
+      "playerName": "Borja Iglesias",
+      "position": "F",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 1101232,
+      "playerName": "Abqar, Abdelkabir",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 838629,
+      "playerName": "Álvaro Fidalgo",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 146866,
+      "playerName": "Gerard Moreno",
+      "position": "F",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 818986,
+      "playerName": "Gabriel Suazo",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 797306,
+      "playerName": "Mouctar Diakhaby",
+      "position": "D",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 175753,
+      "playerName": "Mariano Díaz",
+      "position": "F",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 1120504,
+      "playerName": "Abdel Rahim",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 344847,
+      "playerName": "Johan Mojica",
+      "position": "D",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 609752,
+      "playerName": "Guido Rodríguez",
+      "position": "M",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 188365,
+      "playerName": "Héctor Bellerín",
+      "position": "D",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 859773,
+      "playerName": "Óscar Mingueza",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 962029,
+      "playerName": "Lucas Beltrán",
+      "position": "M",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 345195,
+      "playerName": "Ayoze Pérez",
+      "position": "F",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 832427,
+      "playerName": "Carlos Soler",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 815202,
+      "playerName": "Ionuț Radu",
+      "position": "G",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 949962,
+      "playerName": "Ferran Jutglà",
+      "position": "F",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 1012444,
+      "playerName": "Alberto Moleiro",
+      "position": "M",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 280979,
+      "playerName": "Gonçalo Guedes",
+      "position": "F",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 910026,
+      "playerName": "Bryan Gil",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 827064,
+      "playerName": "Arnaut Danjuma",
+      "position": "F",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 966801,
+      "playerName": "Oihan Sancet",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1015287,
+      "playerName": "Natan",
+      "position": "D",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 996903,
+      "playerName": "Lucas Bergström",
+      "position": "G",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 875890,
+      "playerName": "Chidera Ejuke",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 910978,
+      "playerName": "Daniel Vivian",
+      "position": "D",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 754710,
+      "playerName": "Umar Sadiq",
+      "position": "F",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 1391752,
+      "playerName": "Rodrigo Mendoza",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 257091,
+      "playerName": "Duje Ćaleta-Car",
+      "position": "D",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 138149,
+      "playerName": "Odysseas Vlachodimos",
+      "position": "G",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 976374,
+      "playerName": "Vladyslav Vanat",
+      "position": "F",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 1094106,
+      "playerName": "Marc Pubill",
+      "position": "D",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 909119,
+      "playerName": "Hugo Duro",
+      "position": "F",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 848512,
+      "playerName": "Grady Diangana",
+      "position": "M",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 44864,
+      "playerName": "Daley Blind",
+      "position": "D",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 791773,
+      "playerName": "Álex Remiro",
+      "position": "G",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 816763,
+      "playerName": "Fornals, Pablo",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 1026015,
+      "playerName": "Orri Steinn Óskarsson",
+      "position": "F",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 872919,
+      "playerName": "Ruben Vargas",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1008037,
+      "playerName": "Ilyas Chaira",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 605672,
+      "playerName": "Gorka Guruzeta",
+      "position": "F",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1468046,
+      "playerName": "Santiago Mouriño",
+      "position": "D",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 965011,
+      "playerName": "Matteo Ruggeri",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 1172477,
+      "playerName": "Tani Oluwaseyi",
+      "position": "F",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 307702,
+      "playerName": "Djené",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 353250,
+      "playerName": "Álvaro Odriozola",
+      "position": "D",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 604954,
+      "playerName": "Borja Mayoral",
+      "position": "F",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1067582,
+      "playerName": "Boyomo, Flavien",
+      "position": "D",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 825133,
+      "playerName": "Javi Galán",
+      "position": "D",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 1010656,
+      "playerName": "Carlos Álvarez",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1066603,
+      "playerName": "Luiz Júnior",
+      "position": "G",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 268903,
+      "playerName": "Neal Maupay",
+      "position": "F",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1083832,
+      "playerName": "Kervin Arriaga",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 984623,
+      "playerName": "Rafa Marín",
+      "position": "D",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1893910,
+      "playerName": "Pablo García",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 914835,
+      "playerName": "Junior Firpo",
+      "position": "D",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 892235,
+      "playerName": "David Carmo",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 973536,
+      "playerName": "Martín Satriano",
+      "position": "F",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 899982,
+      "playerName": "Isi Palazón",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 357598,
+      "playerName": "Josip Brekalo",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 788216,
+      "playerName": "Pablo Maffeo",
+      "position": "D",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 1186010,
+      "playerName": "Valentín Gómez",
+      "position": "D",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 789381,
+      "playerName": "Chimy Ávila",
+      "position": "F",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 856250,
+      "playerName": "Ladislav Krejčí",
+      "position": "D",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 960006,
+      "playerName": "Lucien Agoumé",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1392592,
+      "playerName": "Roberto Fernández",
+      "position": "F",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 309546,
+      "playerName": "Takuma Asano",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 825754,
+      "playerName": "Rafa Mir",
+      "position": "F",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 879875,
+      "playerName": "Facundo Garcés",
+      "position": "D",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 845385,
+      "playerName": "Brais Méndez",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 39182,
+      "playerName": "Dani Parejo",
+      "position": "M",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1084399,
+      "playerName": "Carlos Vicente",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 799054,
+      "playerName": "Djibril Sow",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 164343,
+      "playerName": "Paulo Gazzaniga",
+      "position": "G",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 877037,
+      "playerName": "Cyril Ngonge",
+      "position": "F",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 1398511,
+      "playerName": "Adama Boiro",
+      "position": "D",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 592012,
+      "playerName": "Álex Berenguer",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 900003,
+      "playerName": "Jorge de Frutos",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 99519,
+      "playerName": "Marc Bartra",
+      "position": "D",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 32048,
+      "playerName": "Cristhian Stuani",
+      "position": "F",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 826948,
+      "playerName": "Pepelu",
+      "position": "M",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 344129,
+      "playerName": "José Luis Morales",
+      "position": "F",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1173575,
+      "playerName": "Jones El-Abdellaoui",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 1122610,
+      "playerName": "Javier Guerra",
+      "position": "M",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 1495844,
+      "playerName": "Mikel Jauregizar",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 67769,
+      "playerName": "Ricardo Rodríguez",
+      "position": "D",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 227922,
+      "playerName": "José Luis Gayà",
+      "position": "D",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 974713,
+      "playerName": "Luis Vázquez",
+      "position": "F",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 68332,
+      "playerName": "Nemanja Gudelj",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1084081,
+      "playerName": "Arnau Martínez",
+      "position": "D",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 855832,
+      "playerName": "Antonio Blanco",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 190405,
+      "playerName": "Leander Dendoncker",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 909966,
+      "playerName": "Largie Ramazani",
+      "position": "M",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 966862,
+      "playerName": "Ander Barrenetxea",
+      "position": "F",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 1106573,
+      "playerName": "Jhon Solís",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 328145,
+      "playerName": "Adnan Januzaj",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 794937,
+      "playerName": "Carles Aleñá",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 980383,
+      "playerName": "Raúl Moro",
+      "position": "M",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 1216282,
+      "playerName": "Luca Koleosho",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 893642,
+      "playerName": "Marash Kumbulla",
+      "position": "D",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 1131909,
+      "playerName": "Leo Román",
+      "position": "G",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 811629,
+      "playerName": "Luis Milla",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 134029,
+      "playerName": "Mathew Ryan",
+      "position": "G",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 831510,
+      "playerName": "Veljko Birmančević",
+      "position": "F",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 847128,
+      "playerName": "Marc Roca",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 352544,
+      "playerName": "Sheraldo Becker",
+      "position": "F",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 358910,
+      "playerName": "Augusto Batalla",
+      "position": "G",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 158615,
+      "playerName": "Matías Vecino",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 385888,
+      "playerName": "Mauro Arambarri",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 138383,
+      "playerName": "Denis Suárez",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 1018190,
+      "playerName": "Romero, Isaac",
+      "position": "F",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 826013,
+      "playerName": "Abel Ruíz",
+      "position": "F",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 988351,
+      "playerName": "Samú Costa",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 814385,
+      "playerName": "Lucas Boyé",
+      "position": "F",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 1014042,
+      "playerName": "Iván Romero",
+      "position": "F",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 998950,
+      "playerName": "Diego López",
+      "position": "M",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 1518971,
+      "playerName": "Adam Boayar",
+      "position": "F",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 831253,
+      "playerName": "Toni Martínez",
+      "position": "F",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 1177401,
+      "playerName": "Matturro, Alan",
+      "position": "D",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 891511,
+      "playerName": "Javi Puado",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 945768,
+      "playerName": "Bojan Miovski",
+      "position": "F",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 1082968,
+      "playerName": "Abderrahman Rebbach",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 976104,
+      "playerName": "Federico Viñas",
+      "position": "F",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1466116,
+      "playerName": "Jon Martin",
+      "position": "D",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 859021,
+      "playerName": "Batista Mendy",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 985329,
+      "playerName": "Aimar Oroz",
+      "position": "M",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 981604,
+      "playerName": "Alemão",
+      "position": "F",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 548848,
+      "playerName": "Pau López",
+      "position": "G",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 1003007,
+      "playerName": "Tanguy Nianzou",
+      "position": "D",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1131581,
+      "playerName": "Carlos Martín",
+      "position": "F",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1170693,
+      "playerName": "Mateo Joseph",
+      "position": "F",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 294593,
+      "playerName": "Álex Moreno",
+      "position": "D",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 891505,
+      "playerName": "Goduine Koyalipou",
+      "position": "F",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 94527,
+      "playerName": "Marko Dmitrović",
+      "position": "G",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 845693,
+      "playerName": "André Almeida",
+      "position": "M",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 305278,
+      "playerName": "Diego Llorente",
+      "position": "D",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 84531,
+      "playerName": "Yuri Berchiche",
+      "position": "D",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 345111,
+      "playerName": "Álvaro García",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 959872,
+      "playerName": "Aitor Paredes",
+      "position": "D",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1201412,
+      "playerName": "Thiago Fernández",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1010655,
+      "playerName": "Juanlu Sánchez",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1496360,
+      "playerName": "Matias Moreno",
+      "position": "D",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 986245,
+      "playerName": "Sergi Cardona",
+      "position": "D",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 988672,
+      "playerName": "David Affengruber",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 260031,
+      "playerName": "Rubén García",
+      "position": "M",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 1014412,
+      "playerName": "Julen Agirrezabala",
+      "position": "G",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 1396048,
+      "playerName": "Carlos Romero",
+      "position": "D",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 885664,
+      "playerName": "Luka Ilić",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 286167,
+      "playerName": "Aleix Febas",
+      "position": "M",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 843678,
+      "playerName": "Santi Comesaña",
+      "position": "M",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 88528,
+      "playerName": "Florian Lejeune",
+      "position": "D",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1526628,
+      "playerName": "Fer López",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 840951,
+      "playerName": "Marcão",
+      "position": "D",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1515554,
+      "playerName": "Adrian Liso",
+      "position": "F",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1137814,
+      "playerName": "Sergi Altimira",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 1895964,
+      "playerName": "Bekhoucha, Ismael",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 850035,
+      "playerName": "Luiz Felipe",
+      "position": "D",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 896073,
+      "playerName": "Nahuel Tenaglia",
+      "position": "D",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 294377,
+      "playerName": "Sergio Herrera",
+      "position": "G",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 914765,
+      "playerName": "Gonzalo Villar",
+      "position": "M",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 22209,
+      "playerName": "Ørjan Nyland",
+      "position": "G",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 368922,
+      "playerName": "Aarón Escandell",
+      "position": "G",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1392092,
+      "playerName": "Sebastián Boselli",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1015240,
+      "playerName": "José Ángel Carmona",
+      "position": "D",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 84972,
+      "playerName": "Kike García",
+      "position": "F",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 910024,
+      "playerName": "Sergio Camello",
+      "position": "F",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 110783,
+      "playerName": "Sergi Darder",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 877262,
+      "playerName": "Edu Expósito",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 873947,
+      "playerName": "Dani Raba",
+      "position": "F",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 96365,
+      "playerName": "Iñigo Ruiz de Galarreta",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 964983,
+      "playerName": "Álvaro Valles",
+      "position": "G",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 869931,
+      "playerName": "Yvan Neyou",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 944165,
+      "playerName": "Robert Navarro",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 900792,
+      "playerName": "Alejandro Catena",
+      "position": "D",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 932764,
+      "playerName": "Randy Nteka",
+      "position": "F",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1097719,
+      "playerName": "Kike Salas",
+      "position": "D",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1542721,
+      "playerName": "Buba Sangare",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 973699,
+      "playerName": "Iván Martín",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 838159,
+      "playerName": "Igor Zubeldia",
+      "position": "D",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 893062,
+      "playerName": "Aitor Ruibal",
+      "position": "D",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 997280,
+      "playerName": "Raúl García de Haro",
+      "position": "F",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 997033,
+      "playerName": "Peque Fernández",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 835484,
+      "playerName": "Fran Beltrán",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 218616,
+      "playerName": "Portu",
+      "position": "F",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 1149152,
+      "playerName": "Stanis Idumbo Muzambo",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 796320,
+      "playerName": "Joseph Aidoo",
+      "position": "D",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 900433,
+      "playerName": "Luis Rioja",
+      "position": "M",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 175185,
+      "playerName": "Pere Milla",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 962710,
+      "playerName": "Germán Valera",
+      "position": "M",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 1100646,
+      "playerName": "Neto, Martim",
+      "position": "M",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 97951,
+      "playerName": "Stole Dimitrievski",
+      "position": "G",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 996928,
+      "playerName": "César Tárrega",
+      "position": "D",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 81992,
+      "playerName": "Leandro Cabrera",
+      "position": "D",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 928672,
+      "playerName": "Adrià Pedrosa",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 985262,
+      "playerName": "Diarra, Moussa",
+      "position": "D",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 1108450,
+      "playerName": "Zaid Romero",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 842419,
+      "playerName": "Valentin Rosier",
+      "position": "D",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 1391375,
+      "playerName": "Unai Gómez",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1018547,
+      "playerName": "Thiago Borbas",
+      "position": "F",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1860172,
+      "playerName": "Lass Kourouma",
+      "position": "M",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 851282,
+      "playerName": "Thierry Correia",
+      "position": "D",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 350560,
+      "playerName": "Diego Rico",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 807116,
+      "playerName": "Antonio Raíllo",
+      "position": "D",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 980410,
+      "playerName": "Beñat Turrientes",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 1516812,
+      "playerName": "Ali Houary",
+      "position": "F",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 128637,
+      "playerName": "Allan Nyom",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 360718,
+      "playerName": "Carl Starfelt",
+      "position": "D",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 1111081,
+      "playerName": "Job Ochieng",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 892521,
+      "playerName": "Unai Núñez",
+      "position": "D",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 300522,
+      "playerName": "Martin Valjent",
+      "position": "D",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 591750,
+      "playerName": "Joan Jordán",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1398524,
+      "playerName": "Pablo Durán",
+      "position": "F",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 976141,
+      "playerName": "Jon Moncayola",
+      "position": "M",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 187313,
+      "playerName": "Lucas Torró",
+      "position": "M",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 1184541,
+      "playerName": "Alexander Freeman",
+      "position": "D",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1063015,
+      "playerName": "Tyrhys Dolan",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 1154935,
+      "playerName": "Hugo Álvarez",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 576276,
+      "playerName": "Domingos Duarte",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 152446,
+      "playerName": "Iván Balliu",
+      "position": "D",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1482463,
+      "playerName": "Juan Arango",
+      "position": "F",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 857482,
+      "playerName": "Filip Ugrinić",
+      "position": "M",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 604258,
+      "playerName": "David Soria",
+      "position": "G",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 941464,
+      "playerName": "Federico Gattoni",
+      "position": "D",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 984789,
+      "playerName": "Manuel Sánchez",
+      "position": "D",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 542634,
+      "playerName": "Alfonso Espino",
+      "position": "D",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 910267,
+      "playerName": "Jesús Areso",
+      "position": "D",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1391616,
+      "playerName": "Joel Roca",
+      "position": "F",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 1216309,
+      "playerName": "Jon Gorrotxategi",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 1046796,
+      "playerName": "Calebe Gonçalves",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 556884,
+      "playerName": "Matías Dituro",
+      "position": "G",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 96369,
+      "playerName": "Juanmi",
+      "position": "F",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1010421,
+      "playerName": "Josep Chavarría",
+      "position": "D",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1120669,
+      "playerName": "Hugo Sotelo",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 149370,
+      "playerName": "Moi Gómez",
+      "position": "M",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 822379,
+      "playerName": "Santiago Colombatto",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 855831,
+      "playerName": "Víctor Chust",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 1468090,
+      "playerName": "Alfon González",
+      "position": "F",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1521733,
+      "playerName": "Vladyslav Krapyvtsov",
+      "position": "G",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 1012409,
+      "playerName": "Beñat Prados",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1526627,
+      "playerName": "Javi Rodríguez",
+      "position": "D",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 797290,
+      "playerName": "Alfonso Pedraza",
+      "position": "D",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1010891,
+      "playerName": "Mourad El Ghezouani",
+      "position": "F",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 879543,
+      "playerName": "Mateu Morey",
+      "position": "D",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 363774,
+      "playerName": "Mihailo Ristić",
+      "position": "D",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 1160250,
+      "playerName": "Tai Abed",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 944629,
+      "playerName": "Nicolas Fonseca",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1002347,
+      "playerName": "Alejandro Francés",
+      "position": "D",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 235648,
+      "playerName": "Jonny Otto",
+      "position": "D",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 900669,
+      "playerName": "Pedro Díaz",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 369004,
+      "playerName": "Antonio Sivera",
+      "position": "G",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 934383,
+      "playerName": "Jon Pacheco",
+      "position": "D",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 255999,
+      "playerName": "Omar Mascarell",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 21949,
+      "playerName": "Óscar Trejo",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 135116,
+      "playerName": "David López",
+      "position": "D",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 2110897,
+      "playerName": "Alejandro Rego",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 949707,
+      "playerName": "Juan Iglesias",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 866810,
+      "playerName": "Andoni Gorosabel",
+      "position": "D",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 826010,
+      "playerName": "Pol Lozano",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 1088565,
+      "playerName": "Ramón Terrats",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 1151851,
+      "playerName": "Dawda Camara",
+      "position": "F",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 814023,
+      "playerName": "Eray Cömert",
+      "position": "D",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 359742,
+      "playerName": "Mikel Vesga",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 349526,
+      "playerName": "Dani Rodríguez",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 588566,
+      "playerName": "Unai López",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 252815,
+      "playerName": "Fábio Cardoso",
+      "position": "D",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1012410,
+      "playerName": "Alvaro Núñez",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 1139409,
+      "playerName": "Pablo Marín",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 966637,
+      "playerName": "Fran Pérez",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1152139,
+      "playerName": "Angel Ortiz",
+      "position": "D",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 1002764,
+      "playerName": "Sergio Carreira",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 1019318,
+      "playerName": "Nico Serrano",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 344751,
+      "playerName": "Baptiste Santamaria",
+      "position": "M",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 1087476,
+      "playerName": "Kamara, Abu",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1064009,
+      "playerName": "Urko González",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 53739,
+      "playerName": "Kiko Femenía",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 997244,
+      "playerName": "Adrián de la Fuente",
+      "position": "D",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 900008,
+      "playerName": "Óscar Valentín",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 151138,
+      "playerName": "Dimitri Foulquier",
+      "position": "D",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 859769,
+      "playerName": "Oriol Rey",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1953923,
+      "playerName": "Selton Sanchez",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 826004,
+      "playerName": "Manu Morlanes",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 605374,
+      "playerName": "Tete Morente",
+      "position": "F",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 992331,
+      "playerName": "Iker Losada",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 913695,
+      "playerName": "José Copete",
+      "position": "D",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 966441,
+      "playerName": "Aihen Muñoz",
+      "position": "D",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 1010165,
+      "playerName": "Abel Bretones",
+      "position": "D",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 996929,
+      "playerName": "Jesús Vázquez",
+      "position": "D",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 1918369,
+      "playerName": "Davinchi",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1008259,
+      "playerName": "Javier Rueda",
+      "position": "D",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 1430667,
+      "playerName": "Urko Izeta",
+      "position": "F",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 785468,
+      "playerName": "Aritz Elustondo",
+      "position": "D",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 1392054,
+      "playerName": "Coba da Costa",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 945404,
+      "playerName": "López, Javi",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 801837,
+      "playerName": "Íñigo Lekue",
+      "position": "D",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 326471,
+      "playerName": "Gerard Gumbau",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 873717,
+      "playerName": "Carlos Benavídez",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 845025,
+      "playerName": "Ovie Ejaria",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1170694,
+      "playerName": "Ugo Raghouber",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1014595,
+      "playerName": "Marc Aguado",
+      "position": "M",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 149606,
+      "playerName": "Jeremy Toljan",
+      "position": "D",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1525863,
+      "playerName": "Pau Navarro",
+      "position": "D",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1092515,
+      "playerName": "Yago Santiago",
+      "position": "M",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 1129360,
+      "playerName": "Clemens Riedel",
+      "position": "D",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 1649918,
+      "playerName": "Carlos Espí",
+      "position": "F",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 980732,
+      "playerName": "Adrià Altimira",
+      "position": "D",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1084381,
+      "playerName": "Pablo Ibáñez",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 141832,
+      "playerName": "Pedro Bigas",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 1466128,
+      "playerName": "Dani Díaz",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 882475,
+      "playerName": "Alberto Reina",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1398526,
+      "playerName": "Miguel Román",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 1019236,
+      "playerName": "Jofre Carreras",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 788141,
+      "playerName": "Jon Guridi",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 146852,
+      "playerName": "Abdón Prats",
+      "position": "F",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 1099175,
+      "playerName": "Jon Karrikaburu",
+      "position": "F",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 844752,
+      "playerName": "Nacho Vidal",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 353154,
+      "playerName": "Javier Muñoz",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 891931,
+      "playerName": "Ander Guevara",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 1632454,
+      "playerName": "Hugo Rincón",
+      "position": "D",
+      "teamId": 24264,
+      "teamName": "Girona FC"
+    },
+    {
+      "playerId": 927066,
+      "playerName": "Pablo Martínez",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 857205,
+      "playerName": "Fernando Calero",
+      "position": "D",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 1010383,
+      "playerName": "Jon Ander Olasagasti",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1085579,
+      "playerName": "Pablo Cuñat",
+      "position": "G",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1216080,
+      "playerName": "Damián Rodríguez",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 345333,
+      "playerName": "David Costas",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 966802,
+      "playerName": "Unai Vencedor",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1914318,
+      "playerName": "Marc Domenech",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 966836,
+      "playerName": "Álex Sola",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 828239,
+      "playerName": "Toni Lato",
+      "position": "D",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 1832286,
+      "playerName": "Jano Monserrate",
+      "position": "M",
+      "teamId": 2836,
+      "teamName": "Atlético Madrid"
+    },
+    {
+      "playerId": 944225,
+      "playerName": "Herrando, Jorge",
+      "position": "D",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 949722,
+      "playerName": "Antonio Sánchez",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 1090681,
+      "playerName": "Ramón Martínez",
+      "position": "D",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 827504,
+      "playerName": "Léo Pétrot",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 1119586,
+      "playerName": "Iker Muñoz",
+      "position": "M",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 897902,
+      "playerName": "Juan Cruz",
+      "position": "D",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 1142094,
+      "playerName": "Bueno, Manu",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1398518,
+      "playerName": "Álex Sancris",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1649919,
+      "playerName": "Kareem Tunde",
+      "position": "F",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1120947,
+      "playerName": "Jozhua Vertrouwd",
+      "position": "D",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1069703,
+      "playerName": "Carlos Domínguez",
+      "position": "D",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 1139724,
+      "playerName": "Pelayo Fernández",
+      "position": "D",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 813574,
+      "playerName": "Unai Elgezabal",
+      "position": "D",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1094758,
+      "playerName": "John Donald",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 1086346,
+      "playerName": "Iker Benito",
+      "position": "F",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 909554,
+      "playerName": "Roger Brugué",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1145100,
+      "playerName": "Yoel Lago",
+      "position": "D",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 849731,
+      "playerName": "Bambo Diaby",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 1068891,
+      "playerName": "Jose Salinas",
+      "position": "D",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 934351,
+      "playerName": "Miguel Rubio",
+      "position": "D",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 1428699,
+      "playerName": "Andres Castrin",
+      "position": "D",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 560756,
+      "playerName": "Dani Calvo",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1136702,
+      "playerName": "Mikel Goti",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 1086128,
+      "playerName": "Álex Forés",
+      "position": "F",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1985103,
+      "playerName": "Gorka  Carrera Zarranz",
+      "position": "F",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 1099344,
+      "playerName": "Antoniu Roca",
+      "position": "M",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 591132,
+      "playerName": "Kike Barja",
+      "position": "F",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 808955,
+      "playerName": "Josan",
+      "position": "M",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 1534422,
+      "playerName": "Oso",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 914749,
+      "playerName": "Sergio Lozano",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1526575,
+      "playerName": "Arkaitz Mariezkurrena",
+      "position": "F",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 985726,
+      "playerName": "Victor Parada",
+      "position": "D",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 855837,
+      "playerName": "Diego Pampín",
+      "position": "D",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 857229,
+      "playerName": "Oier Luengo",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1021165,
+      "playerName": "Rubén Sánchez",
+      "position": "D",
+      "teamId": 2814,
+      "teamName": "Espanyol"
+    },
+    {
+      "playerId": 1630975,
+      "playerName": "Manu Fernández",
+      "position": "D",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 952222,
+      "playerName": "Víctor García",
+      "position": "M",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1513896,
+      "playerName": "David López",
+      "position": "D",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 1162309,
+      "playerName": "Javi Llabrés",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 2115056,
+      "playerName": "Omar Falah",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 597876,
+      "playerName": "Lucas Ahijado",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1171626,
+      "playerName": "Dani Pérez",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 1869106,
+      "playerName": "Paco Cortés",
+      "position": "F",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 2216007,
+      "playerName": "Sanchez, Alex",
+      "position": "F",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 2238900,
+      "playerName": "Carlos Maciá",
+      "position": "M",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1905699,
+      "playerName": "Jan Salas",
+      "position": "M",
+      "teamId": 2826,
+      "teamName": "Mallorca"
+    },
+    {
+      "playerId": 1518564,
+      "playerName": "Miguel Sierra",
+      "position": "M",
+      "teamId": 2833,
+      "teamName": "Sevilla"
+    },
+    {
+      "playerId": 1399702,
+      "playerName": "Asier Osambela",
+      "position": "M",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 1542759,
+      "playerName": "Ivan Corralejo",
+      "position": "M",
+      "teamId": 2816,
+      "teamName": "Real Betis"
+    },
+    {
+      "playerId": 1807070,
+      "playerName": "Jorge Cabello",
+      "position": "D",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 2049311,
+      "playerName": "Nacho Pérez",
+      "position": "D",
+      "teamId": 2849,
+      "teamName": "Levante UD"
+    },
+    {
+      "playerId": 1966890,
+      "playerName": "Hugo Lopez",
+      "position": "F",
+      "teamId": 2819,
+      "teamName": "Villarreal"
+    },
+    {
+      "playerId": 1520814,
+      "playerName": "Mestanza, Alejandro",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1513222,
+      "playerName": "Ángel Pérez",
+      "position": "F",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 1550822,
+      "playerName": "Hierro, Asier",
+      "position": "F",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1495856,
+      "playerName": "Iñigo Arguibide",
+      "position": "D",
+      "teamId": 2820,
+      "teamName": "Osasuna"
+    },
+    {
+      "playerId": 602164,
+      "playerName": "Jairo Izquierdo",
+      "position": "D",
+      "teamId": 2846,
+      "teamName": "Elche"
+    },
+    {
+      "playerId": 758666,
+      "playerName": "Borja Sánchez",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1167704,
+      "playerName": "Rubén Iranzo",
+      "position": "D",
+      "teamId": 2828,
+      "teamName": "Valencia"
+    },
+    {
+      "playerId": 1535581,
+      "playerName": "Lander Astiazaran",
+      "position": "M",
+      "teamId": 2824,
+      "teamName": "Real Sociedad"
+    },
+    {
+      "playerId": 1587199,
+      "playerName": "Pablo Agudín",
+      "position": "M",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 2198232,
+      "playerName": "Samu Becerra",
+      "position": "M",
+      "teamId": 2818,
+      "teamName": "Rayo Vallecano"
+    },
+    {
+      "playerId": 1639543,
+      "playerName": "Aitor Mañas",
+      "position": "F",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 1425060,
+      "playerName": "Eder Garcia",
+      "position": "M",
+      "teamId": 2825,
+      "teamName": "Athletic Club"
+    },
+    {
+      "playerId": 1491660,
+      "playerName": "José Luis Pérez",
+      "position": "F",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1858279,
+      "playerName": "Burcio, Hugo",
+      "position": "M",
+      "teamId": 2821,
+      "teamName": "Celta Vigo"
+    },
+    {
+      "playerId": 1548439,
+      "playerName": "Marco Esteban",
+      "position": "D",
+      "teamId": 2851,
+      "teamName": "Real Oviedo"
+    },
+    {
+      "playerId": 1895197,
+      "playerName": "Jorge Montes",
+      "position": "D",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1429059,
+      "playerName": "Hugo Solozábal",
+      "position": "M",
+      "teamId": 2859,
+      "teamName": "Getafe"
+    },
+    {
+      "playerId": 1430809,
+      "playerName": "Morcillo, Diego",
+      "position": "F",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    },
+    {
+      "playerId": 1122588,
+      "playerName": "Lander Pinillos",
+      "position": "M",
+      "teamId": 2885,
+      "teamName": "Deportivo Alavés"
+    }
+  ]
+}

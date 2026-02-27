@@ -1,0 +1,381 @@
+league;season;id;slug;date;time;home_team;away_team;venue;attendance;match_min;first_half_min;second_half_min;home_score_ht;away_score_ht;home_score_ft;away_score_ft;referee
+73;2425;9lnqs15tkvrgup74sjpchfkes;ath-bar;2025-05-25Z;19:00:00Z;Athletic Club;FC Barcelona;Estadio de San Mamés;50231;96;47;49;0;2;0;3;Pablo González Fuertes
+73;2425;9pnpb9fgb07cjgi3tpo9pesr8;vil-sev;2025-05-25Z;14:15:00Z;Villarreal CF;Sevilla FC;Estadio de la Cerámica;17758;97;50;47;3;1;4;2;Javier Alberola Rojas
+73;2425;9o79ffn6khv6rutsdno6yh9uc;gir-atm;2025-05-25Z;12:00:00Z;Girona FC;Club Atlético de Madrid;Estadi Municipal de Montilivi;11546;97;50;47;0;0;0;4;Jesús Gil Manzano
+73;2425;9p5ge07j60hwe6c5gxq6848wk;ray-mll;2025-05-24Z;19:00:00Z;Rayo Vallecano de Madrid;Real Club Deportivo Mallorca;Estadio de Vallecas;13854;101;49;51;0;0;0;0;Ricardo De Burgos Bengoetxea
+73;2425;9ongy8h8d8jmbb4pxkkeimsyc;get-cel;2025-05-24Z;19:00:00Z;Getafe CF;Real Club Celta de Vigo;Estadio Coliseum;12862;103;51;52;1;1;1;2;Juan Martínez Munuera
+73;2425;9mxwiv3sxbnzx0kjk8lgm7jtg;ala-osa;2025-05-24Z;19:00:00Z;Deportivo Alavés;CA Osasuna;Estadio de Mendizorroza;19274;100;47;53;0;0;1;1;Guillermo Cuadra Fernández
+73;2425;9nrr908zd8ou14re1nckzvj84;esp-lpm;2025-05-24Z;16:30:00Z;Reial Club Deportiu Espanyol de Barcelona;UD Las Palmas;RCDE Stadium;32511;98;47;51;0;0;2;0;Alejandro Muñíz Ruiz
+73;2425;9ncf3apey31cqevqfiuzefoyc;leg-vll;2025-05-24Z;16:30:00Z;CD Leganés;Real Valladolid CF;Estadio Ontime Butarque;11523;95;49;45;3;0;3;0;César Soto Grado
+73;2425;9mjlpf87pxs1s8u6gnfsqgkk4;rma-rso;2025-05-24Z;14:15:00Z;Real Madrid CF;Real Sociedad de Fútbol;Estadio Bernabéu;73186;92;46;45;1;0;2;0;Mario Melero López
+73;2425;9m2wfdv7rfamy33zbetujbndg;bet-val;2025-05-23Z;19:00:00Z;Real Betis Balompié;Valencia CF;Estadio Benito Villamarín;51141;98;47;51;1;0;1;1;Víctor García Verdura
+73;2425;9la1uxyxrz4m35038kcxzgob8;osa-esp;2025-05-18Z;17:00:00Z;CA Osasuna;Reial Club Deportiu Espanyol de Barcelona;Estadio El Sadar;21131;101;48;53;1;0;2;0;Francisco José Hernández Maeso
+73;2425;9kvv3elucbullikg8m1xgxq1g;lpm-leg;2025-05-18Z;17:00:00Z;UD Las Palmas;CD Leganés;Estadio de Gran Canaria;11279;101;50;50;0;1;0;1;José María Sánchez Martínez
+73;2425;9kh7bepwdl81dzjvyhu85y8t0;vll-ala;2025-05-18Z;17:00:00Z;Real Valladolid CF;Deportivo Alavés;Estadio Municipal José Zorrilla;14506;97;47;49;0;1;0;1;Isidro Díaz de Mera Escuderos
+73;2425;9k2lcpit2c3iaegde42bu3uac;sev-rma;2025-05-18Z;17:00:00Z;Sevilla FC;Real Madrid CF;Estadio Ramón Sánchez Pizjuán;32500;96;51;45;0;0;0;2;Mateo Busquets Ferrer
+73;2425;9jo3uft2gpl7yksy7aj3f81sk;rso-gir;2025-05-18Z;17:00:00Z;Real Sociedad de Fútbol;Girona FC;Estadio Municipal de Anoeta;28315;104;50;54;2;1;3;2;Miguel Ángel Ortiz Arias
+73;2425;9j9iyih0tlfrn20g0e6m8cbo4;mll-get;2025-05-18Z;17:00:00Z;Real Club Deportivo Mallorca;Getafe CF;Estadi Mallorca Son Moix;18124;103;49;54;0;0;1;2;Alejandro José Hernández Hernández
+73;2425;9iur3bcdqm51h9du4qvke6mms;val-ath;2025-05-18Z;17:00:00Z;Valencia CF;Athletic Club;Estadio de Mestalla;45641;97;47;50;0;0;0;1;Alejandro Muñíz Ruiz
+73;2425;9ig9wvatwknucjj2b12t65ono;cel-ray;2025-05-18Z;17:00:00Z;Real Club Celta de Vigo;Rayo Vallecano de Madrid;Estadio Abanca-Balaídos;21482;101;50;51;1;2;1;2;Juan Luis Pulido Santana
+73;2425;9i1m7ysivkta7uiumut5nnl78;bar-vil;2025-05-18Z;17:00:00Z;FC Barcelona;Villarreal CF;Estadi Olímpic Lluís Companys;49558;101;50;51;2;1;2;3;José Luis Munuera Montero
+73;2425;9hn1yf521xobkjpkhg0n2t6vo;atm-bet;2025-05-18Z;17:00:00Z;Club Atlético de Madrid;Real Betis Balompié;Riyadh Air Metropolitano;62269;109;49;59;2;0;4;1;Adrián Cordero Vega
+73;2425;9ech4k0zpjcq8tdzzshdru2ac;get-ath;2025-05-15Z;19:30:00Z;Getafe CF;Athletic Club;Estadio Coliseum;11564;96;47;49;0;0;0;2;Guillermo Cuadra Fernández
+73;2425;9dyms4e8elozr1547fsy1gnx0;esp-bar;2025-05-15Z;19:30:00Z;Reial Club Deportiu Espanyol de Barcelona;FC Barcelona;RCDE Stadium;34283;99;47;52;0;0;0;2;César Soto Grado
+73;2425;9f5gojqhjfhmzdsacczb8olck;ray-bet;2025-05-15Z;17:00:00Z;Rayo Vallecano de Madrid;Real Betis Balompié;Estadio de Vallecas;13480;102;51;51;2;0;2;2;Pablo González Fuertes
+73;2425;9er1r7v64azavprsud6qffj84;osa-atm;2025-05-15Z;17:00:00Z;CA Osasuna;Club Atlético de Madrid;Estadio El Sadar;21171;98;46;52;1;0;2;0;Mario Melero López
+73;2425;9gd2pazo2arjtxyhatgsbotg4;rma-mll;2025-05-14Z;19:30:00Z;Real Madrid CF;Real Club Deportivo Mallorca;Estadio Bernabéu;60753;97;46;51;0;1;2;1;Javier Alberola Rojas
+73;2425;9h8f73snu15mi2ajd09ybiz9w;vil-leg;2025-05-14Z;17:00:00Z;Villarreal CF;CD Leganés;Estadio de la Cerámica;17067;96;47;49;3;0;3;0;Ricardo De Burgos Bengoetxea
+73;2425;9dl0bvebb1rl6cqc6d75vd6ok;ala-val;2025-05-14Z;17:00:00Z;Deportivo Alavés;Valencia CF;Estadio de Mendizorroza;17626;97;46;50;0;0;1;0;Jesús Gil Manzano
+73;2425;9gtznjshafb86gci18ma5nnys;sev-lpm;2025-05-13Z;19:30:00Z;Sevilla FC;UD Las Palmas;Estadio Ramón Sánchez Pizjuán;37078;105;47;57;0;0;1;0;Juan Martínez Munuera
+73;2425;9fk4d84wjwf9ga9fuss0541lg;rso-cel;2025-05-13Z;18:00:00Z;Real Sociedad de Fútbol;Real Club Celta de Vigo;Estadio Municipal de Anoeta;25124;99;47;52;0;1;0;1;Víctor García Verdura
+73;2425;9fymh8pbm5f73c31qqwpa6z9w;vll-gir;2025-05-13Z;17:00:00Z;Real Valladolid CF;Girona FC;Estadio Municipal José Zorrilla;12664;97;45;51;0;0;0;1;Alejandro Quintero González
+73;2425;9ab46aszksv5hfm8cg0ne8r9w;bet-osa;2025-05-11Z;19:00:00Z;Real Betis Balompié;CA Osasuna;Estadio Benito Villamarín;52839;97;46;51;0;0;1;1;Miguel Ángel Ortiz Arias
+73;2425;9csqa5fk51511i4abnz7wcyl0;ath-ala;2025-05-11Z;16:30:00Z;Athletic Club;Deportivo Alavés;Estadio de San Mamés;47947;100;46;54;0;0;1;0;José Luis Munuera Montero
+73;2425;99wedij17mim6jt5gz6035a8k;bar-rma;2025-05-11Z;14:15:00Z;FC Barcelona;Real Madrid CF;Estadi Olímpic Lluís Companys;50319;105;52;52;4;2;4;3;Alejandro José Hernández Hernández
+73;2425;9d6h5n8klz2wwpxdb9tg4i6ms;leg-esp;2025-05-11Z;12:00:00Z;CD Leganés;Reial Club Deportiu Espanyol de Barcelona;Estadio Ontime Butarque;11669;102;49;53;2;0;3;2;Javier Alberola Rojas
+73;2425;99hoqeg2wb9f0v0ppqjs29ogk;atm-rso;2025-05-10Z;19:00:00Z;Club Atlético de Madrid;Real Sociedad de Fútbol;Riyadh Air Metropolitano;59612;94;47;47;4;0;4;0;José María Sánchez Martínez
+73;2425;9bl535pupa8sjb2pda2pfdmhg;mll-vll;2025-05-10Z;16:30:00Z;Real Club Deportivo Mallorca;Real Valladolid CF;Estadi Mallorca Son Moix;16018;98;47;50;1;1;2;1;Juan Luis Pulido Santana
+73;2425;9b4gmdz3l5hikx3elyl2dol5g;gir-vil;2025-05-10Z;16:30:00Z;Girona FC;Villarreal CF;Estadi Municipal de Montilivi;12011;94;45;49;0;0;0;1;Isidro Díaz de Mera Escuderos
+73;2425;9apu2617tss9twcri6onxpono;cel-sev;2025-05-10Z;14:15:00Z;Real Club Celta de Vigo;Sevilla FC;Estadio Abanca-Balaídos;20281;108;54;53;1;1;3;2;Pablo González Fuertes
+73;2425;9ceabf798rk2714y1xucqsy6s;val-get;2025-05-10Z;12:00:00Z;Valencia CF;Getafe CF;Estadio de Mestalla;43357;99;50;49;3;0;3;0;Adrián Cordero Vega
+73;2425;9bzrosfvtegqfce71tgacc1ec;lpm-ray;2025-05-09Z;19:00:00Z;UD Las Palmas;Rayo Vallecano de Madrid;Estadio de Gran Canaria;20577;96;45;51;0;0;0;1;Francisco José Hernández Maeso
+73;2425;95dviwirap0bd0rg4vch45fkk;gir-mll;2025-05-05Z;19:00:00Z;Girona FC;Real Club Deportivo Mallorca;Estadi Municipal de Montilivi;7721;95;46;49;1;0;1;0;Mario Melero López
+73;2425;971nj92pert18qtmswyw51es4;rso-ath;2025-05-04Z;19:00:00Z;Real Sociedad de Fútbol;Athletic Club;Estadio Municipal de Anoeta;36058;93;45;48;0;0;0;0;César Soto Grado
+73;2425;96nnxbt6zgwq7cagxb7f469lg;esp-bet;2025-05-04Z;16:30:00Z;Reial Club Deportiu Espanyol de Barcelona;Real Betis Balompié;RCDE Stadium;29126;98;46;52;1;0;1;2;Guillermo Cuadra Fernández
+73;2425;9937pwmjvb7vcrkomi1h90xec;sev-leg;2025-05-04Z;14:15:00Z;Sevilla FC;CD Leganés;Estadio Ramón Sánchez Pizjuán;35495;100;49;51;1;1;2;2;Alejandro José Hernández Hernández
+73;2425;97v3mgeh2ohu37oere4xnk93o;rma-cel;2025-05-04Z;12:00:00Z;Real Madrid CF;Real Club Celta de Vigo;Estadio Bernabéu;67661;97;47;50;2;0;3;2;Jesús Gil Manzano
+73;2425;97g67vizt3iiut389n7kduc5w;vll-bar;2025-05-03Z;19:00:00Z;Real Valladolid CF;FC Barcelona;Estadio Municipal José Zorrilla;23967;99;49;50;1;0;1;2;Alejandro Muñíz Ruiz
+73;2425;95uvp7qevwjqssu70tzkcnuhg;lpm-val;2025-05-03Z;16:30:00Z;UD Las Palmas;Valencia CF;Estadio de Gran Canaria;24942;103;49;54;1;1;2;3;Ricardo De Burgos Bengoetxea
+73;2425;98ogauprimjykil09rvk7i2vo;vil-osa;2025-05-03Z;14:15:00Z;Villarreal CF;CA Osasuna;Estadio de la Cerámica;17147;101;48;53;3;0;4;2;Alejandro Quintero González
+73;2425;969hhzciz01qzn5bc8o13vy8k;ala-atm;2025-05-03Z;12:00:00Z;Deportivo Alavés;Club Atlético de Madrid;Estadio de Mendizorroza;18117;99;50;49;0;0;0;0;Juan Martínez Munuera
+73;2425;989qg6l5nsg0qiz5uqcg31y50;ray-get;2025-05-02Z;19:00:00Z;Rayo Vallecano de Madrid;Getafe CF;Estadio de Vallecas;11648;99;47;52;1;0;1;0;Víctor García Verdura
+73;2425;8cbdlyq0emzi4kmcv6lm40hsk;vil-esp;2025-04-27Z;14:15:00Z;Villarreal CF;Reial Club Deportiu Espanyol de Barcelona;Estadio de la Cerámica;17236;98;47;50;0;0;1;0;José Luis Munuera Montero
+73;2425;92kh3i90bwjl8upso5wdxbuvo;bet-vll;2025-04-24Z;19:30:00Z;Real Betis Balompié;Real Valladolid CF;Estadio Benito Villamarín;46458;100;50;50;1;1;5;1;Francisco José Hernández Maeso
+73;2425;91qf3zxzh7fd66nagrft9gn4k;atm-ray;2025-04-24Z;19:30:00Z;Club Atlético de Madrid;Rayo Vallecano de Madrid;Riyadh Air Metropolitano;49410;96;47;49;2;0;3;0;Pablo González Fuertes
+73;2425;94m5solpfdfvrnmf3461jjeac;leg-gir;2025-04-24Z;17:00:00Z;CD Leganés;Girona FC;Estadio Ontime Butarque;11595;97;45;51;0;0;1;1;José Luis Munuera Montero
+73;2425;93sqxd9xz44v7lb3dujs72gb8;osa-sev;2025-04-24Z;17:00:00Z;CA Osasuna;Sevilla FC;Estadio El Sadar;20555;99;51;48;1;0;1;0;Adrián Cordero Vega
+73;2425;947bt4f8ccsriyfkvj0dad7o4;ala-rso;2025-04-23Z;19:30:00Z;Deportivo Alavés;Real Sociedad de Fútbol;Estadio de Mendizorroza;17049;96;45;51;0;0;1;0;Mateo Busquets Ferrer
+73;2425;93e5i5umz8cmtb35x8nqgoqvo;get-rma;2025-04-23Z;19:30:00Z;Getafe CF;Real Madrid CF;Estadio Coliseum;15184;98;47;51;0;1;0;1;José María Sánchez Martínez
+73;2425;92zdkm87bm97rkiruvlm0x6ac;cel-vil;2025-04-23Z;17:00:00Z;Real Club Celta de Vigo;Villarreal CF;Estadio Abanca-Balaídos;19324;98;50;48;1;0;3;0;Javier Alberola Rojas
+73;2425;91ba97w4il2efb9td3tpomm8k;ath-lpm;2025-04-23Z;17:00:00Z;Athletic Club;UD Las Palmas;Estadio de San Mamés;47724;96;47;49;1;0;1;0;Isidro Díaz de Mera Escuderos
+73;2425;925mmanmqg3m7knzrj2xxnvv8;bar-mll;2025-04-22Z;19:30:00Z;FC Barcelona;Real Club Deportivo Mallorca;Estadi Olímpic Lluís Companys;45602;94;45;49;0;0;1;0;Miguel Ángel Ortiz Arias
+73;2425;94zt8zqmyu5q5mwl96f0xlvys;val-esp;2025-04-22Z;17:00:00Z;Valencia CF;Reial Club Deportiu Espanyol de Barcelona;Estadio de Mestalla;42448;97;48;49;0;1;1;1;Juan Luis Pulido Santana
+73;2425;8z7tk885lpg10k575u2ruwaac;gir-bet;2025-04-21Z;19:00:00Z;Girona FC;Real Betis Balompié;Estadi Municipal de Montilivi;12535;99;48;50;0;3;1;3;Alejandro José Hernández Hernández
+73;2425;8ye4m69n2dy10tjfech16y4no;rma-ath;2025-04-20Z;19:00:00Z;Real Madrid CF;Athletic Club;Estadio Bernabéu;72535;98;44;53;0;0;1;0;Juan Martínez Munuera
+73;2425;90i7vg7e71tp11q7nimk6sj6c;sev-ala;2025-04-20Z;16:30:00Z;Sevilla FC;Deportivo Alavés;Estadio Ramón Sánchez Pizjuán;36436;97;47;49;1;1;1;1;Miguel Ángel Ortiz Arias
+73;2425;901qdc2dqthz3tebq3c0qp6ac;vil-rso;2025-04-20Z;14:15:00Z;Villarreal CF;Real Sociedad de Fútbol;Estadio de la Cerámica;17620;100;48;52;1;1;2;2;Guillermo Cuadra Fernández
+73;2425;8zn8g5ihytsb0ohcq26lmj47o;vll-osa;2025-04-20Z;12:00:00Z;Real Valladolid CF;CA Osasuna;Estadio Municipal José Zorrilla;12230;99;48;51;0;2;2;3;Jesús Gil Manzano
+73;2425;8ysy191jvijh5nmpfovw7jklw;lpm-atm;2025-04-19Z;19:00:00Z;UD Las Palmas;Club Atlético de Madrid;Estadio de Gran Canaria;27154;97;45;52;0;0;1;0;Víctor García Verdura
+73;2425;90wujsngje89vuhbkjsd0qm1g;mll-leg;2025-04-19Z;16:30:00Z;Real Club Deportivo Mallorca;CD Leganés;Estadi Mallorca Son Moix;17404;98;47;51;0;0;0;0;Alejandro Muñíz Ruiz
+73;2425;8x7mcbpn21f4ksv8chxkj9es4;bar-cel;2025-04-19Z;14:15:00Z;FC Barcelona;Real Club Celta de Vigo;Estadi Olímpic Lluís Companys;48569;104;46;57;1;1;4;3;Mario Melero López
+73;2425;8xmgbdyvwbepcwocxxmlbul90;ray-val;2025-04-19Z;12:00:00Z;Rayo Vallecano de Madrid;Valencia CF;Estadio de Vallecas;11308;95;47;48;1;0;1;1;Alejandro Quintero González
+73;2425;8y05x1kqvdklpq7ackithzndg;esp-get;2025-04-18Z;19:00:00Z;Reial Club Deportiu Espanyol de Barcelona;Getafe CF;RCDE Stadium;25003;97;47;50;1;0;1;0;Ricardo De Burgos Bengoetxea
+73;2425;8tj3arn22gtg40mbo1rl7uvis;atm-vll;2025-04-14Z;19:00:00Z;Club Atlético de Madrid;Real Valladolid CF;Riyadh Air Metropolitano;55936;100;49;50;2;1;4;2;Isidro Díaz de Mera Escuderos
+73;2425;8t45zj3tuzxwoqqclbilgwufo;ath-ray;2025-04-13Z;19:00:00Z;Athletic Club;Rayo Vallecano de Madrid;Estadio de San Mamés;47584;102;49;53;0;1;3;1;Adrián Cordero Vega
+73;2425;8txwx10p8k9zbphq5kzuql3bo;bet-vil;2025-04-13Z;16:30:00Z;Real Betis Balompié;Villarreal CF;Estadio Benito Villamarín;54778;100;48;51;1;1;1;2;Juan Luis Pulido Santana
+73;2425;8utet1xsynpyxprrtaul6ii38;ala-rma;2025-04-13Z;14:15:00Z;Deportivo Alavés;Real Madrid CF;Estadio de Mendizorroza;19438;103;50;53;0;1;0;1;César Soto Grado
+73;2425;8vmhfp1fr3orva2g63ecs172s;osa-gir;2025-04-13Z;12:00:00Z;CA Osasuna;Girona FC;Estadio El Sadar;20260;101;47;54;1;0;2;1;Pablo González Fuertes
+73;2425;8v82f5y7wxjodibj54hl5beac;leg-bar;2025-04-12Z;19:00:00Z;CD Leganés;FC Barcelona;Estadio Ontime Butarque;12530;97;48;49;0;0;0;1;Francisco José Hernández Maeso
+73;2425;8wtt2xjl4hvd598k87lwib310;cel-esp;2025-04-12Z;16:30:00Z;Real Club Celta de Vigo;Reial Club Deportiu Espanyol de Barcelona;Estadio Abanca-Balaídos;19801;98;50;48;0;1;0;2;Mateo Busquets Ferrer
+73;2425;8ucjchu6l1cr4kyb9kqp6sljo;get-lpm;2025-04-12Z;14:15:00Z;Getafe CF;UD Las Palmas;Estadio Coliseum;8370;98;49;49;1;0;1;3;Javier Alberola Rojas
+73;2425;8w0txfb6jriswx7i0q1lmtdzo;rso-mll;2025-04-12Z;12:00:00Z;Real Sociedad de Fútbol;Real Club Deportivo Mallorca;Estadio Municipal de Anoeta;29181;97;47;50;0;1;0;2;José Luis Munuera Montero
+73;2425;8wfwjnvw6penth58inylw62hg;val-sev;2025-04-11Z;19:00:00Z;Valencia CF;Sevilla FC;Estadio de Mestalla;45618;100;50;50;1;0;1;0;José María Sánchez Martínez
+73;2425;8qadqoqsz3s7uhml5c2p6gnpw;leg-osa;2025-04-07Z;19:00:00Z;CD Leganés;CA Osasuna;Estadio Ontime Butarque;10755;95;46;49;0;0;1;1;Víctor García Verdura
+73;2425;8qp7g3mwck1ub9wtv5wfa7wgk;vil-ath;2025-04-06Z;19:00:00Z;Villarreal CF;Athletic Club;Estadio de la Cerámica;19158;101;48;52;0;0;0;0;Mario Melero López
+73;2425;8rxlb9u73dy66jrygywczq39w;vll-get;2025-04-06Z;16:30:00Z;Real Valladolid CF;Getafe CF;Estadio Municipal José Zorrilla;17737;95;48;46;0;3;0;4;Alejandro Quintero González
+73;2425;8r3zvhi1dd8spmmjtap8e84d0;sev-atm;2025-04-06Z;14:15:00Z;Sevilla FC;Club Atlético de Madrid;Estadio Ramón Sánchez Pizjuán;34505;103;50;53;1;1;1;2;César Soto Grado
+73;2425;8pvl7194q8ewxbxmhwgaz649g;lpm-rso;2025-04-06Z;12:00:00Z;UD Las Palmas;Real Sociedad de Fútbol;Estadio de Gran Canaria;22616;97;47;50;0;1;1;3;Miguel Ángel Ortiz Arias
+73;2425;8p0bnjv8wf1l8ikryg5my46xg;bar-bet;2025-04-05Z;19:00:00Z;FC Barcelona;Real Betis Balompié;Estadi Olímpic Lluís Companys;47043;97;48;49;1;1;1;1;Jesús Gil Manzano
+73;2425;8rioenh1q84kna533p0hzc3ys;mll-cel;2025-04-05Z;16:30:00Z;Real Club Deportivo Mallorca;Real Club Celta de Vigo;Estadi Mallorca Son Moix;18291;98;48;50;1;0;1;2;Ricardo De Burgos Bengoetxea
+73;2425;8ph6vm7kina2mf7w8f2qpn7dg;rma-val;2025-04-05Z;14:15:00Z;Real Madrid CF;Valencia CF;Estadio Bernabéu;75382;101;48;53;0;1;1;2;Guillermo Cuadra Fernández
+73;2425;8sci4stpiszrmzeh8au67mot0;gir-ala;2025-04-05Z;12:00:00Z;Girona FC;Deportivo Alavés;Estadi Municipal de Montilivi;11384;96;46;49;0;0;0;1;Alejandro Muñíz Ruiz
+73;2425;8sq7xhwy7rjqnmqr72zm6ldlg;ray-esp;2025-04-04Z;19:00:00Z;Rayo Vallecano de Madrid;Reial Club Deportiu Espanyol de Barcelona;Estadio de Vallecas;11905;98;47;50;0;2;0;4;Alejandro José Hernández Hernández
+73;2425;8m68cbggtviduhl5hvkldzbis;cel-lpm;2025-03-31Z;19:00:00Z;Real Club Celta de Vigo;UD Las Palmas;Estadio Abanca-Balaídos;18549;100;50;50;1;0;1;1;Juan Martínez Munuera
+73;2425;8lrhvu4opua00dv6liq9gqfpw;bet-sev;2025-03-30Z;19:00:00Z;Real Betis Balompié;Sevilla FC;Estadio Benito Villamarín;58538;98;49;49;2;1;2;1;Mateo Busquets Ferrer
+73;2425;8o7buanvu6dstbrs9k0kxzeok;val-mll;2025-03-30Z;16:30:00Z;Valencia CF;Real Club Deportivo Mallorca;Estadio de Mestalla;44082;100;46;54;0;0;1;0;Francisco José Hernández Maeso
+73;2425;8kxymwvv9he4yl9go7tp59wk4;ath-osa;2025-03-30Z;16:30:00Z;Athletic Club;CA Osasuna;Estadio de San Mamés;49671;93;45;48;0;0;0;0;Guillermo Cuadra Fernández
+73;2425;8lcjhyfefdoz6tk2pohcq0xzo;bar-gir;2025-03-30Z;14:15:00Z;FC Barcelona;Girona FC;Estadi Olímpic Lluís Companys;48258;97;47;50;1;0;4;1;Juan Luis Pulido Santana
+73;2425;8mlcby1fggdt6heyo1dx00sus;get-vil;2025-03-30Z;12:00:00Z;Getafe CF;Villarreal CF;Estadio Coliseum;11406;103;50;52;1;2;1;2;Isidro Díaz de Mera Escuderos
+73;2425;8olwirkuw3xk96xijujys800k;rma-leg;2025-03-29Z;20:00:00Z;Real Madrid CF;CD Leganés;Estadio Bernabéu;73641;102;49;53;1;2;3;2;Pablo González Fuertes
+73;2425;8new10i3n3whltnm49fm446j8;ala-ray;2025-03-29Z;17:30:00Z;Deportivo Alavés;Rayo Vallecano de Madrid;Estadio de Mendizorroza;18336;98;48;50;0;1;0;2;José Luis Munuera Montero
+73;2425;8nsqgpwxomfhp84bdm0c0lw5w;esp-atm;2025-03-29Z;15:15:00Z;Reial Club Deportiu Espanyol de Barcelona;Club Atlético de Madrid;RCDE Stadium;30559;98;48;49;0;1;1;1;Javier Alberola Rojas
+73;2425;8mzupl49voov2clns94jpptec;rso-vll;2025-03-29Z;13:00:00Z;Real Sociedad de Fútbol;Real Valladolid CF;Estadio Municipal de Anoeta;28151;99;47;52;1;0;2;1;Adrián Cordero Vega
+73;2425;8d3wder6umt4v3o2bi07n8vtg;bar-osa;2025-03-27Z;20:00:00Z;FC Barcelona;CA Osasuna;Estadi Olímpic Lluís Companys;42319;98;50;48;2;0;3;0;Mateo Busquets Ferrer
+73;2425;8gsx1pem8fisxdahkej1m7vo4;atm-bar;2025-03-16Z;20:00:00Z;Club Atlético de Madrid;FC Barcelona;Riyadh Air Metropolitano;67602;99;47;52;1;0;2;4;Ricardo De Burgos Bengoetxea
+73;2425;8ja868anwy6mfd7sbsyt8uyhg;osa-get;2025-03-16Z;17:30:00Z;CA Osasuna;Getafe CF;Estadio El Sadar;19611;98;47;51;1;0;1;2;Alejandro José Hernández Hernández
+73;2425;8hm12bumoms20zi4sxh8hvt3o;ray-rso;2025-03-16Z;17:30:00Z;Rayo Vallecano de Madrid;Real Sociedad de Fútbol;Estadio de Vallecas;12364;97;46;51;0;1;2;2;Alejandro Muñíz Ruiz
+73;2425;8i0saummm2wun952jbz9r9yj8;sev-ath;2025-03-16Z;15:15:00Z;Sevilla FC;Athletic Club;Estadio Ramón Sánchez Pizjuán;37016;97;49;48;0;0;0;1;Juan Luis Pulido Santana
+73;2425;8ifr63i44ucpfcdlc4rktuyac;leg-bet;2025-03-16Z;13:00:00Z;CD Leganés;Real Betis Balompié;Estadio Ontime Butarque;11691;99;47;52;2;0;2;3;César Soto Grado
+73;2425;8h7f7xk5r7g4jymjwuwyxnifo;gir-val;2025-03-15Z;20:00:00Z;Girona FC;Valencia CF;Estadi Municipal de Montilivi;10262;96;47;49;0;0;1;1;José Luis Munuera Montero
+73;2425;8jr94pv7fohrjpmts0rg8rthw;vil-rma;2025-03-15Z;17:30:00Z;Villarreal CF;Real Madrid CF;Estadio de la Cerámica;20559;96;48;48;1;2;1;2;Jesús Gil Manzano
+73;2425;8kjrw0zprkg3du97i4o7cr11w;mll-esp;2025-03-15Z;15:15:00Z;Real Club Deportivo Mallorca;Reial Club Deportiu Espanyol de Barcelona;Estadi Mallorca Son Moix;18240;101;45;56;0;0;2;1;Alejandro Quintero González
+73;2425;8ivef8ncftigc184htucul79w;vll-cel;2025-03-15Z;13:00:00Z;Real Valladolid CF;Real Club Celta de Vigo;Estadio Municipal José Zorrilla;17521;99;46;53;0;0;0;1;Víctor García Verdura
+73;2425;8k5sbfy6dhtz9xti99ltg7tp0;lpm-ala;2025-03-14Z;20:00:00Z;UD Las Palmas;Deportivo Alavés;Estadio de Gran Canaria;17566;103;48;55;0;1;2;2;Mario Melero López
+73;2425;8fln9yjee5yi6zxj70ti79vdg;esp-gir;2025-03-10Z;20:00:00Z;Reial Club Deportiu Espanyol de Barcelona;Girona FC;RCDE Stadium;23997;99;48;51;0;0;1;1;Adrián Cordero Vega
+73;2425;8edodbi4nfwnm24m5oltnn28k;rso-sev;2025-03-09Z;20:00:00Z;Real Sociedad de Fútbol;Sevilla FC;Estadio Municipal de Anoeta;25478;96;45;51;0;0;0;1;Víctor García Verdura
+73;2425;8dilhvd3n2coseanzjz0qeq6s;bet-lpm;2025-03-09Z;17:30:00Z;Real Betis Balompié;UD Las Palmas;Estadio Benito Villamarín;49292;97;46;51;0;0;1;0;José María Sánchez Martínez
+73;2425;8cp5rdxe9vr09ktbvacykzcic;ath-mll;2025-03-09Z;17:30:00Z;Athletic Club;Real Club Deportivo Mallorca;Estadio de San Mamés;48203;97;46;51;0;0;1;1;Alejandro José Hernández Hernández
+73;2425;8gecwi5jhceej0ha85ejrdc7o;rma-ray;2025-03-09Z;15:15:00Z;Real Madrid CF;Rayo Vallecano de Madrid;Estadio Bernabéu;74170;97;49;48;2;1;2;1;Francisco José Hernández Maeso
+73;2425;8fzmljoq956mwg9qe5644z7ro;get-atm;2025-03-09Z;13:00:00Z;Getafe CF;Club Atlético de Madrid;Estadio Coliseum;12862;104;46;57;0;0;2;1;Guillermo Cuadra Fernández
+73;2425;8es7cr53qzj0y5t39pgnbyxp0;val-vll;2025-03-08Z;17:30:00Z;Valencia CF;Real Valladolid CF;Estadio de Mestalla;41720;106;55;51;1;1;2;1;Juan Luis Pulido Santana
+73;2425;8f7bxni8pane7al666o5buexg;ala-vil;2025-03-08Z;15:15:00Z;Deportivo Alavés;Villarreal CF;Estadio de Mendizorroza;16582;107;45;61;1;0;1;0;Miguel Ángel Ortiz Arias
+73;2425;8dx9ckreb2k6g27ecbwlobwno;cel-leg;2025-03-08Z;13:00:00Z;Real Club Celta de Vigo;CD Leganés;Estadio Abanca-Balaídos;17326;100;49;51;2;1;2;1;Isidro Díaz de Mera Escuderos
+73;2425;89gnk5v9tfznpdwojgofbxct0;osa-val;2025-03-02Z;20:00:00Z;CA Osasuna;Valencia CF;Estadio El Sadar;19230;101;51;50;3;2;3;3;Mario Melero López
+73;2425;8bx3falys5wttciui7af9whlg;mll-ala;2025-03-02Z;17:30:00Z;Real Club Deportivo Mallorca;Deportivo Alavés;Estadi Mallorca Son Moix;17702;96;46;50;1;0;1;1;César Soto Grado
+73;2425;88np6iwbs91y924kgsvxozyms;bar-rso;2025-03-02Z;15:15:00Z;FC Barcelona;Real Sociedad de Fútbol;Estadi Olímpic Lluís Companys;46324;94;47;46;2;0;4;0;Alejandro Quintero González
+73;2425;8b3235tz8f46c36zklb458lxw;leg-get;2025-03-02Z;13:00:00Z;CD Leganés;Getafe CF;Estadio Ontime Butarque;10311;100;49;51;0;0;1;0;Alejandro Muñíz Ruiz
+73;2425;8a9nbtw1q31hgrxcsje2hfp5g;atm-ath;2025-03-01Z;20:00:00Z;Club Atlético de Madrid;Athletic Club;Riyadh Air Metropolitano;63810;94;45;49;0;0;1;0;Jesús Gil Manzano
+73;2425;89253ytsdxs3tnvhkaws8ppn8;bet-rma;2025-03-01Z;17:30:00Z;Real Betis Balompié;Real Madrid CF;Estadio Benito Villamarín;55873;96;47;49;1;1;2;1;Alejandro José Hernández Hernández
+73;2425;89v3ebdm3o1f4htfoglyvcwes;ray-sev;2025-03-01Z;15:15:00Z;Rayo Vallecano de Madrid;Sevilla FC;Estadio de Vallecas;11947;99;49;50;0;0;1;1;Pablo González Fuertes
+73;2425;8aoem249ccuf3d5l7gmc6jkt0;gir-cel;2025-03-01Z;13:00:00Z;Girona FC;Real Club Celta de Vigo;Estadi Municipal de Montilivi;11449;98;49;49;1;1;2;2;Miguel Ángel Ortiz Arias
+73;2425;8bi74nufh1axsz7khao0fy6tw;vll-lpm;2025-02-28Z;20:00:00Z;Real Valladolid CF;UD Las Palmas;Estadio Municipal José Zorrilla;15643;104;52;52;0;1;1;1;Ricardo De Burgos Bengoetxea
+73;2425;87sln5ll0hp78duo41shjjklw;sev-mll;2025-02-24Z;20:00:00Z;Sevilla FC;Real Club Deportivo Mallorca;Estadio Ramón Sánchez Pizjuán;35424;98;48;50;1;0;1;1;Alejandro Muñíz Ruiz
+73;2425;8875ef7xht468qjedw12s3yms;rso-leg;2025-02-23Z;20:00:00Z;Real Sociedad de Fútbol;CD Leganés;Estadio Municipal de Anoeta;22533;97;48;49;1;0;3;0;Francisco José Hernández Maeso
+73;2425;86z7rfrox65c4s9pwmqtmsf84;get-bet;2025-02-23Z;17:30:00Z;Getafe CF;Real Betis Balompié;Estadio Coliseum;13964;97;46;51;0;1;1;2;Javier Alberola Rojas
+73;2425;87dty28ofjijzhoh6lgrdl53o;rma-gir;2025-02-23Z;15:15:00Z;Real Madrid CF;Girona FC;Estadio Bernabéu;74028;94;46;48;1;0;2;0;Guillermo Cuadra Fernández
+73;2425;84l7elytkp94dkpl6pb4vcbv8;ath-vll;2025-02-23Z;13:00:00Z;Athletic Club;Real Valladolid CF;Estadio de San Mamés;47715;93;48;45;4;0;7;1;César Soto Grado
+73;2425;86klhzqep9qq01p9h52iy0oic;lpm-bar;2025-02-22Z;20:00:00Z;UD Las Palmas;FC Barcelona;Estadio de Gran Canaria;30746;98;45;53;0;0;0;2;Adrián Cordero Vega
+73;2425;865xvxn4hnce7w0jlu0lhpgr8;val-atm;2025-02-22Z;17:30:00Z;Valencia CF;Club Atlético de Madrid;Estadio de Mestalla;46297;96;48;47;0;2;0;3;Mateo Busquets Ferrer
+73;2425;85egxzytfjh8qop46h464w6qc;ray-vil;2025-02-22Z;15:15:00Z;Rayo Vallecano de Madrid;Villarreal CF;Estadio de Vallecas;13373;100;49;50;0;0;0;1;Víctor García Verdura
+73;2425;85s3ynlfyhm3p36m9xmbwuvbo;ala-esp;2025-02-22Z;13:00:00Z;Deportivo Alavés;Reial Club Deportiu Espanyol de Barcelona;Estadio de Mendizorroza;17068;98;46;52;0;0;0;1;Juan Luis Pulido Santana
+73;2425;84zwqg09kuyfxreoho69edt04;cel-osa;2025-02-21Z;20:00:00Z;Real Club Celta de Vigo;CA Osasuna;Estadio Abanca-Balaídos;22005;96;46;50;0;0;1;0;José María Sánchez Martínez
+73;2425;80ye7hght6b7q5782zl5b28es;bar-ray;2025-02-17Z;20:00:00Z;FC Barcelona;Rayo Vallecano de Madrid;Estadi Olímpic Lluís Companys;45296;99;47;51;1;0;1;0;Mario Melero López
+73;2425;81csg2xrb8enr0r96y0cmm4gk;bet-rso;2025-02-16Z;20:00:00Z;Real Betis Balompié;Real Sociedad de Fútbol;Estadio Benito Villamarín;48758;96;48;47;0;0;3;0;Jesús Gil Manzano
+73;2425;83s5fyl2v6blujc8yk03up9g4;mll-lpm;2025-02-16Z;17:30:00Z;Real Club Deportivo Mallorca;UD Las Palmas;Estadi Mallorca Son Moix;18475;98;48;50;3;0;3;1;Miguel Ángel Ortiz Arias
+73;2425;82wyqxxgmi0au1sskzy88yr6c;vll-sev;2025-02-16Z;15:15:00Z;Real Valladolid CF;Sevilla FC;Estadio Municipal José Zorrilla;22123;94;47;47;0;2;0;4;Javier Alberola Rojas
+73;2425;824szejz10ew517n9mffteqdw;esp-ath;2025-02-16Z;13:00:00Z;Reial Club Deportiu Espanyol de Barcelona;Athletic Club;RCDE Stadium;26645;99;48;51;0;0;1;1;Guillermo Cuadra Fernández
+73;2425;83dm2h9fhljcaj9rp90w91wyc;vil-val;2025-02-15Z;20:00:00Z;Villarreal CF;Valencia CF;Estadio de la Cerámica;19701;97;46;51;1;0;1;1;Ricardo De Burgos Bengoetxea
+73;2425;80js4oly0rw6la91cot7pgidw;atm-cel;2025-02-15Z;17:30:00Z;Club Atlético de Madrid;Real Club Celta de Vigo;Riyadh Air Metropolitano;64211;98;48;49;0;0;1;1;Juan Martínez Munuera
+73;2425;81r5ua1ndbll2jdmygw3gaxw4;osa-rma;2025-02-15Z;15:15:00Z;CA Osasuna;Real Madrid CF;Estadio El Sadar;22390;96;46;50;0;1;1;1;José Luis Munuera Montero
+73;2425;846mtshiyv5znecequtv2prmc;leg-ala;2025-02-15Z;13:00:00Z;CD Leganés;Deportivo Alavés;Estadio Ontime Butarque;10681;110;55;55;2;1;3;3;Pablo González Fuertes
+73;2425;82ilhisp34uoj6m9glhej96vo;gir-get;2025-02-14Z;20:00:00Z;Girona FC;Getafe CF;Estadi Municipal de Montilivi;10354;99;46;53;0;1;1;2;Alejandro Quintero González
+73;2425;7wvbqb1bb18dxburmqytkb85w;mll-osa;2025-02-10Z;20:00:00Z;Real Club Deportivo Mallorca;CA Osasuna;Estadi Mallorca Son Moix;15378;100;46;54;0;0;1;1;Adrián Cordero Vega
+73;2425;7yy8xa6195tztj8vew76h3xn8;sev-bar;2025-02-09Z;20:00:00Z;Sevilla FC;FC Barcelona;Estadio Ramón Sánchez Pizjuán;38592;100;49;51;1;1;1;4;Alejandro José Hernández Hernández
+73;2425;8057rh3fp43671kb15twiw5jo;rso-esp;2025-02-09Z;17:30:00Z;Real Sociedad de Fútbol;Reial Club Deportiu Espanyol de Barcelona;Estadio Municipal de Anoeta;29478;96;46;50;1;0;2;1;Javier Alberola Rojas
+73;2425;7zr9dqhztiq3bcl1iiv9mt4ic;val-leg;2025-02-09Z;15:15:00Z;Valencia CF;CD Leganés;Estadio de Mestalla;42312;98;48;50;2;0;2;0;Guillermo Cuadra Fernández
+73;2425;7y52ewvtijlud8l9uok6j81sk;ala-get;2025-02-09Z;13:00:00Z;Deportivo Alavés;Getafe CF;Estadio de Mendizorroza;16236;99;50;49;0;1;0;1;Isidro Díaz de Mera Escuderos
+73;2425;7yjpl2ai2bhpgw90oh2md2zo4;rma-atm;2025-02-08Z;20:00:00Z;Real Madrid CF;Club Atlético de Madrid;Estadio Bernabéu;78082;98;50;48;0;1;1;1;César Soto Grado
+73;2425;7xqll9aiarg9rolbt73i0y51w;lpm-vil;2025-02-08Z;17:30:00Z;UD Las Palmas;Villarreal CF;Estadio de Gran Canaria;22909;101;46;55;0;0;1;2;Francisco José Hernández Maeso
+73;2425;7wgkib19q65yu5rc5u6svpxqs;ath-gir;2025-02-08Z;15:15:00Z;Athletic Club;Girona FC;Estadio de San Mamés;48261;97;49;48;2;0;3;0;José María Sánchez Martínez
+73;2425;7zco85dfnnn9n96r4cit6zj84;cel-bet;2025-02-08Z;13:00:00Z;Real Club Celta de Vigo;Real Betis Balompié;Estadio Abanca-Balaídos;22651;98;47;51;0;2;3;2;Mateo Busquets Ferrer
+73;2425;7x9w7h2xgruvxtfe85dzbbrbo;ray-vll;2025-02-07Z;20:00:00Z;Rayo Vallecano de Madrid;Real Valladolid CF;Estadio de Vallecas;12286;97;48;49;0;0;1;0;Jesús Gil Manzano
+73;2425;7t9dw7onnhaccdd6uh01676dw;gir-lpm;2025-02-03Z;20:00:00Z;Girona FC;UD Las Palmas;Estadi Municipal de Montilivi;10088;100;49;50;1;0;2;1;Mario Melero López
+73;2425;7v8eblnrf8v38sbs9ylf3g3ro;bet-ath;2025-02-02Z;20:00:00Z;Real Betis Balompié;Athletic Club;Estadio Benito Villamarín;49292;98;48;50;2;1;2;2;Juan Martínez Munuera
+73;2425;7tnvnvdkjmze7yrqs5jjzih3o;osa-rso;2025-02-02Z;17:30:00Z;CA Osasuna;Real Sociedad de Fútbol;Estadio El Sadar;21678;98;47;51;1;0;2;1;Miguel Ángel Ortiz Arias
+73;2425;7vmzxcuwf8zkcxisuecdg4efo;val-cel;2025-02-02Z;15:15:00Z;Valencia CF;Real Club Celta de Vigo;Estadio de Mestalla;42273;100;47;53;1;0;2;1;Pablo González Fuertes
+73;2425;7w1vxahp1f51h5oqavl45l2qc;bar-ala;2025-02-02Z;13:00:00Z;FC Barcelona;Deportivo Alavés;Estadi Olímpic Lluís Companys;42900;99;51;48;0;0;1;0;José Luis Munuera Montero
+73;2425;7uum9l54eou5lsryh2877uqs4;esp-rma;2025-02-01Z;20:00:00Z;Reial Club Deportiu Espanyol de Barcelona;Real Madrid CF;RCDE Stadium;33669;99;47;52;0;0;1;0;Alejandro Muñíz Ruiz
+73;2425;7sgcrgjdm803jh0c6rpgws7pw;atm-mll;2025-02-01Z;17:30:00Z;Club Atlético de Madrid;Real Club Deportivo Mallorca;Riyadh Air Metropolitano;60710;96;46;50;1;0;2;0;Víctor García Verdura
+73;2425;7u2d4hk8738x73owqyxmh67tg;vil-vll;2025-02-01Z;15:15:00Z;Villarreal CF;Real Valladolid CF;Estadio de la Cerámica;17032;94;45;48;1;0;5;1;Isidro Díaz de Mera Escuderos
+73;2425;7suqx93dzmv9u710mpdc4iz2s;get-sev;2025-02-01Z;13:00:00Z;Getafe CF;Sevilla FC;Estadio Coliseum;11730;97;45;52;0;0;0;0;Ricardo De Burgos Bengoetxea
+73;2425;7ugwmiysltr9ml7mnhx4us4yc;leg-ray;2025-01-31Z;20:00:00Z;CD Leganés;Rayo Vallecano de Madrid;Estadio Ontime Butarque;11432;108;48;59;0;0;0;1;Alejandro Quintero González
+73;2425;7pzkhs4e155a2izm8xkyfs6c4;ala-cel;2025-01-27Z;20:00:00Z;Deportivo Alavés;Real Club Celta de Vigo;Estadio de Mendizorroza;13612;96;47;49;1;0;1;1;Francisco José Hernández Maeso
+73;2425;7p6ctmdcj509hh1ht5ex75rmc;bar-val;2025-01-26Z;20:00:00Z;FC Barcelona;Valencia CF;Estadi Olímpic Lluís Companys;45312;96;49;46;5;0;7;1;César Soto Grado
+73;2425;7od0vycpi6kwfynnb8ym9b384;ath-leg;2025-01-26Z;17:30:00Z;Athletic Club;CD Leganés;Estadio de San Mamés;47612;95;46;49;0;0;0;0;Alejandro José Hernández Hernández
+73;2425;7qsqd8qe2qousvl1cbvmwrwno;rso-get;2025-01-26Z;15:15:00Z;Real Sociedad de Fútbol;Getafe CF;Estadio Municipal de Anoeta;30004;102;48;53;0;0;0;3;Guillermo Cuadra Fernández
+73;2425;7r7ehm4vsgffbqn027vjdox04;ray-gir;2025-01-26Z;13:00:00Z;Rayo Vallecano de Madrid;Girona FC;Estadio de Vallecas;12405;101;47;53;0;0;2;1;Isidro Díaz de Mera Escuderos
+73;2425;7rmj1etarzdycexktczlff11w;vll-rma;2025-01-25Z;20:00:00Z;Real Valladolid CF;Real Madrid CF;Estadio Municipal José Zorrilla;26025;95;46;49;0;1;0;3;Mateo Busquets Ferrer
+73;2425;7s0eri1yrt65jtdqkihp2xmhg;sev-esp;2025-01-25Z;17:30:00Z;Sevilla FC;Reial Club Deportiu Espanyol de Barcelona;Estadio Ramón Sánchez Pizjuán;33602;103;51;51;0;1;1;1;Adrián Cordero Vega
+73;2425;7orni84bi3xe7mbmhzd1c5nh0;atm-vil;2025-01-25Z;15:15:00Z;Club Atlético de Madrid;Villarreal CF;Riyadh Air Metropolitano;63596;96;48;48;0;1;1;1;José María Sánchez Martínez
+73;2425;7qe5ulrtamikh412jtbvw87x0;mll-bet;2025-01-25Z;13:00:00Z;Real Club Deportivo Mallorca;Real Betis Balompié;Estadi Mallorca Son Moix;19452;100;47;52;0;0;0;1;Javier Alberola Rojas
+73;2425;7pl26osi3850nw3yttsztjtp0;lpm-osa;2025-01-24Z;20:00:00Z;UD Las Palmas;CA Osasuna;Estadio de Gran Canaria;19762;103;45;58;0;0;1;1;Jesús Gil Manzano
+73;2425;7mr6mc9hcr8gn7z37x5o4wr9w;vil-mll;2025-01-20Z;20:00:00Z;Villarreal CF;Real Club Deportivo Mallorca;Estadio de la Cerámica;14852;97;49;48;4;0;4;0;José Luis Munuera Montero
+73;2425;7n5l1br6mze0f1x325okja784;val-rso;2025-01-19Z;20:00:00Z;Valencia CF;Real Sociedad de Fútbol;Estadio de Mestalla;40791;99;48;50;1;0;1;0;Víctor García Verdura
+73;2425;7kpumzewnu7zka0x2i3a9iadw;osa-ray;2025-01-19Z;17:30:00Z;CA Osasuna;Rayo Vallecano de Madrid;Estadio El Sadar;20770;96;46;50;0;1;1;1;Alejandro Muñíz Ruiz
+73;2425;7njwnvpazrbnzbcoby9ob1zpw;rma-lpm;2025-01-19Z;15:15:00Z;Real Madrid CF;UD Las Palmas;Estadio Bernabéu;74808;97;49;47;3;1;4;1;Alejandro Quintero González
+73;2425;7lha50m3erf18kdx3jiruhvys;cel-ath;2025-01-19Z;13:00:00Z;Real Club Celta de Vigo;Athletic Club;Estadio Abanca-Balaídos;22279;95;45;50;0;0;1;2;Miguel Ángel Ortiz Arias
+73;2425;7maprxlnpb00agmzn1zhv2ql0;get-bar;2025-01-18Z;20:00:00Z;Getafe CF;FC Barcelona;Estadio Coliseum;15134;100;47;53;1;1;1;1;Pablo González Fuertes
+73;2425;7nyfr26uys20b4gvvs82hvbpw;bet-ala;2025-01-18Z;17:30:00Z;Real Betis Balompié;Deportivo Alavés;Estadio Benito Villamarín;50021;101;51;50;1;1;1;3;Alejandro José Hernández Hernández
+73;2425;7lw3lapb50fdei5c1f4vk639w;leg-atm;2025-01-18Z;15:15:00Z;CD Leganés;Club Atlético de Madrid;Estadio Ontime Butarque;12371;97;45;51;0;0;1;0;Mario Melero López
+73;2425;7kb64tppudupl2cpc2u05o8ic;gir-sev;2025-01-18Z;13:00:00Z;Girona FC;Sevilla FC;Estadi Municipal de Montilivi;12040;98;48;50;1;0;1;2;Juan Martínez Munuera
+73;2425;7l3jwu7az5rmshwzrdied0cus;esp-vll;2025-01-17Z;20:00:00Z;Reial Club Deportiu Espanyol de Barcelona;Real Valladolid CF;RCDE Stadium;23554;99;47;52;1;0;2;1;Ricardo De Burgos Bengoetxea
+73;2425;7h1kn1uskboomf15gmovbwavo;rso-vil;2025-01-13Z;20:00:00Z;Real Sociedad de Fútbol;Villarreal CF;Estadio Municipal de Anoeta;20855;95;45;49;0;0;1;0;César Soto Grado
+73;2425;7gmqcaeo0nbwicrswmmj7lixg;atm-osa;2025-01-12Z;15:15:00Z;Club Atlético de Madrid;CA Osasuna;Riyadh Air Metropolitano;64801;96;46;49;0;0;1;0;Isidro Díaz de Mera Escuderos
+73;2425;7jwjh7338cewc0yx13jh4buac;lpm-get;2025-01-12Z;13:00:00Z;UD Las Palmas;Getafe CF;Estadio de Gran Canaria;23698;97;45;51;0;0;1;2;Javier Alberola Rojas
+73;2425;7hin3ls4n2rne7lhgzoy1jtp0;sev-val;2025-01-11Z;20:00:00Z;Sevilla FC;Valencia CF;Estadio Ramón Sánchez Pizjuán;34297;97;46;51;0;0;1;1;Francisco José Hernández Maeso
+73;2425;7ibcf0osl4qe2dk43q5f369sk;esp-leg;2025-01-11Z;17:30:00Z;Reial Club Deportiu Espanyol de Barcelona;CD Leganés;RCDE Stadium;26606;97;47;50;1;1;1;1;Juan Martínez Munuera
+73;2425;7j3fa84eopbi3u5g74xz483ys;vll-bet;2025-01-11Z;15:15:00Z;Real Valladolid CF;Real Betis Balompié;Estadio Municipal José Zorrilla;21911;102;45;56;0;0;1;0;Adrián Cordero Vega
+73;2425;7hxgj3peug6f9i1n0mq0w0qhg;ala-gir;2025-01-11Z;13:00:00Z;Deportivo Alavés;Girona FC;Estadio de Mendizorroza;16454;98;49;49;0;0;0;1;Mateo Busquets Ferrer
+73;2425;7jhwwqtmxi70el5rlr3rs8bv8;ray-cel;2025-01-10Z;20:00:00Z;Rayo Vallecano de Madrid;Real Club Celta de Vigo;Estadio de Vallecas;12955;101;47;53;1;1;2;1;Guillermo Cuadra Fernández
+73;2425;6qggsn9rwpzkypp81nijecj6c;val-rma;2025-01-03Z;20:00:00Z;Valencia CF;Real Madrid CF;Estadio de Mestalla;46420;104;49;55;1;0;1;2;César Soto Grado
+73;2425;7c71fwybxuerr5jjr4p85s0es;bet-ray;2024-12-22Z;20:00:00Z;Real Betis Balompié;Rayo Vallecano de Madrid;Estadio Benito Villamarín;53121;97;47;50;1;0;1;1;Víctor García Verdura
+73;2425;7fu03cgwj42dy8mhciai7au50;lpm-esp;2024-12-22Z;17:30:00Z;UD Las Palmas;Reial Club Deportiu Espanyol de Barcelona;Estadio de Gran Canaria;23743;96;46;49;0;0;1;0;César Soto Grado
+73;2425;7e887z48e1axq53jsaqs2vjf8;leg-vil;2024-12-22Z;17:30:00Z;CD Leganés;Villarreal CF;Estadio Ontime Butarque;11034;103;50;53;2;2;2;5;Alejandro Muñíz Ruiz
+73;2425;7dthscik4ewme768879kdhiqc;rma-sev;2024-12-22Z;15:15:00Z;Real Madrid CF;Sevilla FC;Estadio Bernabéu;75227;96;47;48;3;1;4;2;Isidro Díaz de Mera Escuderos
+73;2425;7fg7wyhgt70ch6dbx9xk7fspg;val-ala;2024-12-22Z;13:00:00Z;Valencia CF;Deportivo Alavés;Estadio de Mestalla;37586;106;49;56;0;1;2;2;Javier Alberola Rojas
+73;2425;7f1q6o2xl2m147rhfietwq9ec;bar-atm;2024-12-21Z;20:00:00Z;FC Barcelona;Club Atlético de Madrid;Estadi Olímpic Lluís Companys;46249;99;46;52;1;0;1;2;Ricardo De Burgos Bengoetxea
+73;2425;7en5oqifhc73cyhxxdlo4obv8;osa-ath;2024-12-21Z;17:30:00Z;CA Osasuna;Athletic Club;Estadio El Sadar;22030;101;50;50;1;1;1;2;Alejandro Quintero González
+73;2425;7clks4m6lq5cl5zybprfzqzo4;cel-rso;2024-12-21Z;15:15:00Z;Real Club Celta de Vigo;Real Sociedad de Fútbol;Estadio Abanca-Balaídos;22956;96;46;50;2;0;2;0;Mateo Busquets Ferrer
+73;2425;7d09egj07v1mt60862supzxn8;get-mll;2024-12-21Z;13:00:00Z;Getafe CF;Real Club Deportivo Mallorca;Estadio Coliseum;9747;96;46;50;0;0;0;1;José Luis Munuera Montero
+73;2425;7dew6u2cpti7hq4mb06lh1rf8;gir-vll;2024-12-20Z;20:00:00Z;Girona FC;Real Valladolid CF;Estadi Municipal de Montilivi;9534;94;47;47;2;0;3;0;Pablo González Fuertes
+73;2425;6st8ht24yy6r4nxexllud6rkk;esp-val;2024-12-18Z;20:30:00Z;Reial Club Deportiu Espanyol de Barcelona;Valencia CF;RCDE Stadium;18122;98;47;50;1;0;1;1;Pablo González Fuertes
+73;2425;6q1x9ldpfmd125sqfbep9eplg;vil-ray;2024-12-18Z;20:30:00Z;Villarreal CF;Rayo Vallecano de Madrid;Estadio de la Cerámica;14000;100;50;50;1;1;1;1;Alejandro José Hernández Hernández
+73;2425;78joh39ikz3w63j3do7bbekgk;bar-leg;2024-12-15Z;20:00:00Z;FC Barcelona;CD Leganés;Estadi Olímpic Lluís Companys;39523;100;50;50;0;1;0;1;Alejandro Quintero González
+73;2425;7bsq4wfp2ik6jxz22cq868s2c;rso-lpm;2024-12-15Z;17:30:00Z;Real Sociedad de Fútbol;UD Las Palmas;Estadio Municipal de Anoeta;30775;97;47;50;0;0;0;0;Mario Melero López
+73;2425;7a4h0nlqxunsv5zk3rhad8yl0;vil-bet;2024-12-15Z;17:30:00Z;Villarreal CF;Real Betis Balompié;Estadio de la Cerámica;18757;100;47;52;0;1;1;2;Guillermo Cuadra Fernández
+73;2425;79d35c967hlzztv9vgazqu0wk;ala-ath;2024-12-15Z;15:15:00Z;Deportivo Alavés;Athletic Club;Estadio de Mendizorroza;19239;95;46;49;0;1;1;1;José María Sánchez Martínez
+73;2425;7850m5rbwfzgun3av5srreqs4;atm-get;2024-12-15Z;13:00:00Z;Club Atlético de Madrid;Getafe CF;Riyadh Air Metropolitano;60169;97;48;48;0;0;1;0;César Soto Grado
+73;2425;78yaz9t15odaxqfaq5qdolqms;ray-rma;2024-12-14Z;20:00:00Z;Rayo Vallecano de Madrid;Real Madrid CF;Estadio de Vallecas;14168;100;48;52;2;2;3;3;Juan Martínez Munuera
+73;2425;7aj38m30yhpi4qybumtyybnkk;sev-cel;2024-12-14Z;17:30:00Z;Sevilla FC;Real Club Celta de Vigo;Estadio Ramón Sánchez Pizjuán;37295;99;46;53;0;0;1;0;Jesús Gil Manzano
+73;2425;7axqcekjvpl9b7le61gnmgsgk;mll-gir;2024-12-14Z;15:15:00Z;Real Club Deportivo Mallorca;Girona FC;Estadi Mallorca Son Moix;15866;99;49;50;1;1;2;1;Francisco José Hernández Maeso
+73;2425;79qpk2mogz5y47z4eq9geymtw;esp-osa;2024-12-14Z;13:00:00Z;Reial Club Deportiu Espanyol de Barcelona;CA Osasuna;RCDE Stadium;20513;99;47;52;0;0;0;0;Adrián Cordero Vega
+73;2425;7bc7bhlxjy43uagkoihryq13o;vll-val;2024-12-13Z;20:00:00Z;Real Valladolid CF;Valencia CF;Estadio Municipal José Zorrilla;18449;100;47;53;1;0;1;0;Miguel Ángel Ortiz Arias
+73;2425;77r8u69g289un1n3bbgog51ck;get-esp;2024-12-09Z;20:00:00Z;Getafe CF;Reial Club Deportiu Espanyol de Barcelona;Estadio Coliseum;7559;94;45;49;1;0;1;0;Mateo Busquets Ferrer
+73;2425;74h1yfsvqa16s16aupaovwcgk;atm-sev;2024-12-08Z;20:00:00Z;Club Atlético de Madrid;Sevilla FC;Riyadh Air Metropolitano;60065;102;49;53;1;2;4;3;Javier Alberola Rojas
+73;2425;77drajgi3btgu23hbkp2y0ro4;osa-ala;2024-12-08Z;17:30:00Z;CA Osasuna;Deportivo Alavés;Estadio El Sadar;18220;105;53;52;0;1;2;2;César Soto Grado
+73;2425;742iljdzywcdxe1th8ownli50;ath-vil;2024-12-08Z;15:15:00Z;Athletic Club;Villarreal CF;Estadio de San Mamés;47203;98;46;51;1;0;2;0;Víctor García Verdura
+73;2425;763zbbgle0o63qb0a9n1bygb8;leg-rso;2024-12-08Z;13:00:00Z;CD Leganés;Real Sociedad de Fútbol;Estadio Ontime Butarque;11312;97;46;51;0;1;0;3;Pablo González Fuertes
+73;2425;75aj64v9t2kmg50a6ur2j7itw;gir-rma;2024-12-07Z;20:00:00Z;Girona FC;Real Madrid CF;Estadi Municipal de Montilivi;13827;95;46;49;0;1;0;3;Jesús Gil Manzano
+73;2425;76zahx7f1r6xs2n3n8m3bam8k;val-ray;2024-12-07Z;17:30:00Z;Valencia CF;Rayo Vallecano de Madrid;Estadio de Mestalla;40968;100;48;51;0;1;0;1;José Luis Munuera Montero
+73;2425;76kjhvrctrzgjs3lux65pzfh0;bet-bar;2024-12-07Z;15:15:00Z;Real Betis Balompié;FC Barcelona;Estadio Benito Villamarín;51749;102;48;54;0;1;2;2;Alejandro Muñíz Ruiz
+73;2425;75p81ujl6s1ypa88m8qfdu0b8;lpm-vll;2024-12-07Z;13:00:00Z;UD Las Palmas;Real Valladolid CF;Estadio de Gran Canaria;21610;101;47;54;1;1;2;1;Isidro Díaz de Mera Escuderos
+73;2425;74vs32lqyvtncixtqm56i2ivo;cel-mll;2024-12-06Z;20:00:00Z;Real Club Celta de Vigo;Real Club Deportivo Mallorca;Estadio Abanca-Balaídos;22861;99;47;52;1;0;2;0;Ricardo De Burgos Bengoetxea
+73;2425;7g7s7mx5srni9nmpe3mpbui38;ath-rma;2024-12-04Z;20:00:00Z;Athletic Club;Real Madrid CF;Estadio de San Mamés;51364;98;47;51;0;0;2;1;José María Sánchez Martínez
+73;2425;7ip3k9p8078zk6m5vz1314sgk;mll-bar;2024-12-03Z;18:00:00Z;Real Club Deportivo Mallorca;FC Barcelona;Estadi Mallorca Son Moix;22352;95;47;47;1;1;1;5;Jesús Gil Manzano
+73;2425;73ny3niy2ur4b53v9seh3zac4;sev-osa;2024-12-02Z;20:00:00Z;Sevilla FC;CA Osasuna;Estadio Ramón Sánchez Pizjuán;31536;95;45;50;0;0;1;1;Juan Martínez Munuera
+73;2425;72fy98aa5bh0lbvyc5iklbrpw;rso-bet;2024-12-01Z;20:00:00Z;Real Sociedad de Fútbol;Real Betis Balompié;Estadio Municipal de Anoeta;28119;98;50;48;2;0;2;0;Francisco José Hernández Maeso
+73;2425;71mrc86xzidsp5cwkzbf2pxxw;ray-ath;2024-12-01Z;17:30:00Z;Rayo Vallecano de Madrid;Athletic Club;Estadio de Vallecas;13639;96;46;50;1;0;1;2;Mario Melero López
+73;2425;72up4v7514muef0voyn2o3ggk;rma-get;2024-12-01Z;15:15:00Z;Real Madrid CF;Getafe CF;Estadio Bernabéu;74341;100;49;50;2;0;2;0;Alejandro José Hernández Hernández
+73;2425;739cgai6cd7jzbi6s1132inmc;vil-gir;2024-12-01Z;13:00:00Z;Villarreal CF;Girona FC;Estadio de la Cerámica;17732;102;46;56;1;0;2;2;Miguel Ángel Ortiz Arias
+73;2425;721czcw56iepujw2r65i81yqc;vll-atm;2024-11-30Z;20:00:00Z;Real Valladolid CF;Club Atlético de Madrid;Estadio Municipal José Zorrilla;23482;99;51;47;0;3;0;5;Guillermo Cuadra Fernández
+73;2425;718xfkjsr9yxi3949rqytllp0;esp-cel;2024-11-30Z;17:30:00Z;Reial Club Deportiu Espanyol de Barcelona;Real Club Celta de Vigo;RCDE Stadium;23792;99;49;49;1;0;3;1;José María Sánchez Martínez
+73;2425;70vbfm3rk1r28lzhthwufi2vo;ala-leg;2024-11-30Z;15:15:00Z;Deportivo Alavés;CD Leganés;Estadio de Mendizorroza;16881;97;45;51;0;0;1;1;Isidro Díaz de Mera Escuderos
+73;2425;700hkkqjgon5vinnhqpomvlsk;bar-lpm;2024-11-30Z;13:00:00Z;FC Barcelona;UD Las Palmas;Estadi Olímpic Lluís Companys;43921;102;48;53;0;0;1;2;Adrián Cordero Vega
+73;2425;70evdr8r0o9z5v0z0hzpii9ec;mll-val;2024-11-29Z;20:00:00Z;Real Club Deportivo Mallorca;Valencia CF;Estadi Mallorca Son Moix;17717;100;51;49;1;1;2;1;Alejandro Quintero González
+73;2425;6vz8do8bkrdtssjhfhcghdt78;ath-rso;2024-11-24Z;20:00:00Z;Athletic Club;Real Sociedad de Fútbol;Estadio de San Mamés;50719;95;45;49;1;0;1;0;Jesús Gil Manzano
+73;2425;6xm7awthmi5y08w85e28qarys;leg-rma;2024-11-24Z;17:30:00Z;CD Leganés;Real Madrid CF;Estadio Ontime Butarque;12338;95;46;48;0;1;0;3;Javier Alberola Rojas
+73;2425;6yu8yb0j8ns3dkbhvtt6v3bx0;sev-ray;2024-11-24Z;15:15:00Z;Sevilla FC;Rayo Vallecano de Madrid;Estadio Ramón Sánchez Pizjuán;35125;96;48;48;1;0;1;0;Mateo Busquets Ferrer
+73;2425;6wswnj03liqqa3b7e3fisjl78;osa-vil;2024-11-24Z;13:00:00Z;CA Osasuna;Villarreal CF;Estadio El Sadar;19795;99;48;51;2;0;2;2;José Luis Munuera Montero
+73;2425;6y0rev1t8s1s8hppafgrnmuc4;cel-bar;2024-11-23Z;20:00:00Z;Real Club Celta de Vigo;FC Barcelona;Estadio Abanca-Balaídos;24573;96;46;50;0;1;2;2;César Soto Grado
+73;2425;6zmf81flt0nkgrgwt2z4q5uz8;gir-esp;2024-11-23Z;17:30:00Z;Girona FC;Reial Club Deportiu Espanyol de Barcelona;Estadi Municipal de Montilivi;12461;95;48;46;4;0;4;1;Alejandro José Hernández Hernández
+73;2425;6x7muo25mpm0pflmu9sajsoic;lpm-mll;2024-11-23Z;17:30:00Z;UD Las Palmas;Real Club Deportivo Mallorca;Estadio de Gran Canaria;22940;100;45;55;0;0;2;3;Alejandro Muñíz Ruiz
+73;2425;6z8o2nii9u9o2jzjamlmcy5uc;atm-ala;2024-11-23Z;15:15:00Z;Club Atlético de Madrid;Deportivo Alavés;Riyadh Air Metropolitano;58910;98;47;51;0;1;2;1;Víctor García Verdura
+73;2425;6yfgav6ifl2uubennqmu6xkwk;val-bet;2024-11-23Z;13:00:00Z;Valencia CF;Real Betis Balompié;Estadio de Mestalla;43975;104;51;53;1;1;4;2;Ricardo De Burgos Bengoetxea
+73;2425;6webe8qervdlrasrusi82o93o;get-vll;2024-11-22Z;20:00:00Z;Getafe CF;Real Valladolid CF;Estadio Coliseum;9991;101;49;52;0;0;2;0;Pablo González Fuertes
+73;2425;6u0m4na1ejhk0ru961g48ns44;rso-bar;2024-11-10Z;20:00:00Z;Real Sociedad de Fútbol;FC Barcelona;Estadio Municipal de Anoeta;36194;98;48;49;1;0;1;0;Guillermo Cuadra Fernández
+73;2425;6t7287lij4eth62k8qkfyqqdw;vll-ath;2024-11-10Z;17:30:00Z;Real Valladolid CF;Athletic Club;Estadio Municipal José Zorrilla;23515;100;49;51;0;0;1;1;Adrián Cordero Vega
+73;2425;6s18gg5xojxxyeys58alps1zo;get-gir;2024-11-10Z;17:30:00Z;Getafe CF;Girona FC;Estadio Coliseum;10923;97;48;49;0;1;0;1;Juan Martínez Munuera
+73;2425;6tlu0ldjfj9uvk2x4ozh4zdas;mll-atm;2024-11-10Z;15:15:00Z;Real Club Deportivo Mallorca;Club Atlético de Madrid;Estadi Mallorca Son Moix;19500;95;46;49;0;0;0;1;José María Sánchez Martínez
+73;2425;6rmoy5sr5g3tsmr7fmkrlvms4;bet-cel;2024-11-10Z;13:00:00Z;Real Betis Balompié;Real Club Celta de Vigo;Estadio Benito Villamarín;54015;99;47;52;1;1;2;2;Miguel Ángel Ortiz Arias
+73;2425;6sfnrmw4iybhpy2wls4nilq8k;leg-sev;2024-11-09Z;20:00:00Z;CD Leganés;Sevilla FC;Estadio Ontime Butarque;11167;96;45;51;0;0;1;0;Juan Luis Pulido Santana
+73;2425;6vkjqtbv32tgj2g95siowa1hw;vil-ala;2024-11-09Z;15:15:00Z;Villarreal CF;Deportivo Alavés;Estadio de la Cerámica;17659;102;51;50;1;0;3;0;Alejandro Quintero González
+73;2425;6upih8qpars31g59rswn9vfo4;rma-osa;2024-11-09Z;13:00:00Z;Real Madrid CF;CA Osasuna;Estadio Bernabéu;72462;99;51;48;2;0;4;0;Mario Melero López
+73;2425;6v46rpwxiimqh7nnfvvvezpjo;ray-lpm;2024-11-08Z;20:00:00Z;Rayo Vallecano de Madrid;UD Las Palmas;Estadio de Vallecas;12978;99;50;49;0;1;1;3;Francisco José Hernández Maeso
+73;2425;6odxa3al8lpv1n8isl4qqwoic;cel-get;2024-11-04Z;20:00:00Z;Real Club Celta de Vigo;Getafe CF;Estadio Abanca-Balaídos;19502;98;49;49;1;0;1;0;Jesús Gil Manzano
+73;2425;6nl064c1ff2l3k2jloed2ehhw;ath-bet;2024-11-03Z;20:00:00Z;Athletic Club;Real Betis Balompié;Estadio de San Mamés;46898;94;45;49;0;0;1;1;Javier Alberola Rojas
+73;2425;6qv3gqr84p2e37rh5ly0i03ys;sev-rso;2024-11-03Z;17:30:00Z;Sevilla FC;Real Sociedad de Fútbol;Estadio Ramón Sánchez Pizjuán;37619;98;47;50;0;1;0;2;Alejandro Muñíz Ruiz
+73;2425;6r8wwv3jv71nrekp8s2tivyfo;bar-esp;2024-11-03Z;15:15:00Z;FC Barcelona;Reial Club Deportiu Espanyol de Barcelona;Estadi Olímpic Lluís Companys;48843;99;51;48;3;0;3;1;José Luis Munuera Montero
+73;2425;6nzf32jr50zk35iaq81405tsk;atm-lpm;2024-11-03Z;13:00:00Z;Club Atlético de Madrid;UD Las Palmas;Riyadh Air Metropolitano;56610;102;48;54;1;0;2;0;Ricardo De Burgos Bengoetxea
+73;2425;6osf9iabkyrr6ttqwgsr5naj8;gir-leg;2024-11-02Z;15:15:00Z;Girona FC;CD Leganés;Estadi Municipal de Montilivi;10839;102;49;53;2;2;4;3;Mateo Busquets Ferrer
+73;2425;6p6ymn8geskwqik6rc06k4phw;osa-vll;2024-11-02Z;13:00:00Z;CA Osasuna;Real Valladolid CF;Estadio El Sadar;20430;99;49;49;1;0;1;0;Víctor García Verdura
+73;2425;6pn928nisfaxaczy6cp8b1n2s;ala-mll;2024-11-01Z;20:00:00Z;Deportivo Alavés;Real Club Deportivo Mallorca;Estadio de Mendizorroza;17212;97;47;49;0;0;1;0;Pablo González Fuertes
+73;2425;6kc6tbuzh4psnzpedmpuuexas;mll-ath;2024-10-28Z;20:00:00Z;Real Club Deportivo Mallorca;Athletic Club;Estadi Mallorca Son Moix;19797;100;50;50;0;0;0;0;Juan Martínez Munuera
+73;2425;6md9ttmkpwo7bs5mznbmhg844;rso-osa;2024-10-27Z;20:00:00Z;Real Sociedad de Fútbol;CA Osasuna;Estadio Municipal de Anoeta;31729;99;49;50;0;2;0;2;Juan Luis Pulido Santana
+73;2425;6kqq8l70v2epftuk9h7e8fklw;bet-atm;2024-10-27Z;17:30:00Z;Real Betis Balompié;Club Atlético de Madrid;Estadio Benito Villamarín;52621;98;46;51;1;0;1;0;Jesús Gil Manzano
+73;2425;6jiwkla2x9d2ez2q4yrz1hlw4;get-val;2024-10-27Z;15:15:00Z;Getafe CF;Valencia CF;Estadio Coliseum;12412;100;47;53;0;1;1;1;Guillermo Cuadra Fernández
+73;2425;6ljsu6bdwf1c9xzbrm6g48m50;leg-cel;2024-10-27Z;13:00:00Z;CD Leganés;Real Club Celta de Vigo;Estadio Ontime Butarque;11358;97;45;52;0;0;3;0;Mario Melero López
+73;2425;6l5ceiwz9xtp9wl8qkdrkwff8;rma-bar;2024-10-26Z;19:00:00Z;Real Madrid CF;FC Barcelona;Estadio Bernabéu;78192;94;47;46;0;0;0;4;José María Sánchez Martínez
+73;2425;6lyln7s8ftleqvff5wt4pyntg;lpm-gir;2024-10-26Z;16:30:00Z;UD Las Palmas;Girona FC;Estadio de Gran Canaria;21506;100;47;52;1;0;1;0;Alejandro Quintero González
+73;2425;6n6i40wd0lgb3dae8bc6ezztg;ray-ala;2024-10-26Z;14:15:00Z;Rayo Vallecano de Madrid;Deportivo Alavés;Estadio de Vallecas;13010;100;49;51;0;0;1;0;Adrián Cordero Vega
+73;2425;6mrxozgbxxb9tnnxtq9gxknpw;vll-vil;2024-10-26Z;12:00:00Z;Real Valladolid CF;Villarreal CF;Estadio Municipal José Zorrilla;20178;95;46;49;0;1;1;2;Francisco José Hernández Maeso
+73;2425;6jwqlsks4qalg9jurq81iglck;esp-sev;2024-10-25Z;19:00:00Z;Reial Club Deportiu Espanyol de Barcelona;Sevilla FC;RCDE Stadium;23656;103;47;56;0;2;0;2;Miguel Ángel Ortiz Arias
+73;2425;6irfxmrjbaan5caqwab8xq9zo;val-lpm;2024-10-21Z;19:00:00Z;Valencia CF;UD Las Palmas;Estadio de Mestalla;42453;100;46;54;1;1;2;3;Jesús Gil Manzano
+73;2425;6fxech6nwatkx9ve4yusp3uhg;bar-sev;2024-10-20Z;19:00:00Z;FC Barcelona;Sevilla FC;Estadi Olímpic Lluís Companys;47848;97;48;49;3;0;5;1;Ricardo De Burgos Bengoetxea
+73;2425;6icvpmsvyijojghn1uhr94kk4;vil-get;2024-10-20Z;16:30:00Z;Villarreal CF;Getafe CF;Estadio de la Cerámica;19355;98;48;50;1;0;1;1;Víctor García Verdura
+73;2425;6fis5s5i2e7uv1z8wzcrlnk0k;atm-leg;2024-10-20Z;14:15:00Z;Club Atlético de Madrid;CD Leganés;Riyadh Air Metropolitano;60122;102;46;55;0;1;3;1;José Luis Munuera Montero
+73;2425;6h4opdcr03yxpmu6u4lcmqln8;mll-ray;2024-10-20Z;12:00:00Z;Real Club Deportivo Mallorca;Rayo Vallecano de Madrid;Estadi Mallorca Son Moix;18316;98;47;51;0;0;1;0;Javier Alberola Rojas
+73;2425;6gbsyrjq2pwe4heho3hx6pclw;cel-rma;2024-10-19Z;19:00:00Z;Real Club Celta de Vigo;Real Madrid CF;Estadio Abanca-Balaídos;24445;96;46;50;0;1;1;2;Alejandro José Hernández Hernández
+73;2425;6gq5zi3dzxmlg34bc0p1qh5w4;gir-rso;2024-10-19Z;16:30:00Z;Girona FC;Real Sociedad de Fútbol;Estadi Municipal de Montilivi;12602;96;46;49;0;1;0;1;César Soto Grado
+73;2425;6hycbbluudc6jssb3mesju7tg;osa-bet;2024-10-19Z;14:15:00Z;CA Osasuna;Real Betis Balompié;Estadio El Sadar;21045;104;48;56;0;1;1;2;Alejandro Muñíz Ruiz
+73;2425;6j53txcxd3d5xymq7py5kykus;ath-esp;2024-10-19Z;12:00:00Z;Athletic Club;Reial Club Deportiu Espanyol de Barcelona;Estadio de San Mamés;46713;97;49;48;3;0;4;1;Mateo Busquets Ferrer
+73;2425;6hjbwnq8ofmw5i84s9la32p04;ala-vll;2024-10-18Z;19:00:00Z;Deportivo Alavés;Real Valladolid CF;Estadio de Mendizorroza;16904;102;47;55;1;1;2;3;Mario Melero López
+73;2425;6dtjx87yffxl5ac75q3k13pqs;rso-atm;2024-10-06Z;19:00:00Z;Real Sociedad de Fútbol;Club Atlético de Madrid;Estadio Municipal de Anoeta;31983;95;45;49;0;1;1;1;Isidro Díaz de Mera Escuderos
+73;2425;6e8fu3jiqoblrt70tfpycctuc;sev-bet;2024-10-06Z;16:30:00Z;Sevilla FC;Real Betis Balompié;Estadio Ramón Sánchez Pizjuán;42571;99;47;52;0;0;1;0;Juan Martínez Munuera
+73;2425;6c8p4cgbqywptvo6lilt2mnf8;ala-bar;2024-10-06Z;14:15:00Z;Deportivo Alavés;FC Barcelona;Estadio de Mendizorroza;19468;98;50;47;0;3;0;3;Miguel Ángel Ortiz Arias
+73;2425;6dejybh88d2bz7rbo64nxde6s;gir-ath;2024-10-06Z;12:00:00Z;Girona FC;Athletic Club;Estadi Municipal de Montilivi;13396;108;51;57;1;1;2;1;Juan Luis Pulido Santana
+73;2425;6bu6tnf33gay36zm1d6p61wr8;rma-vil;2024-10-05Z;19:00:00Z;Real Madrid CF;Villarreal CF;Estadio Bernabéu;73842;98;46;51;1;0;2;0;Guillermo Cuadra Fernández
+73;2425;6f40b8phg3ut4rbh119krjwgk;vll-ray;2024-10-05Z;16:30:00Z;Real Valladolid CF;Rayo Vallecano de Madrid;Estadio Municipal José Zorrilla;21112;95;45;50;0;0;1;2;Pablo González Fuertes
+73;2425;6epfq0i6hy5rpdobekarp5st0;lpm-cel;2024-10-05Z;16:30:00Z;UD Las Palmas;Real Club Celta de Vigo;Estadio de Gran Canaria;21482;101;49;52;0;1;0;1;Adrián Cordero Vega
+73;2425;6bfl7c5wl3huc70e8fbok8ys4;get-osa;2024-10-05Z;14:15:00Z;Getafe CF;CA Osasuna;Estadio Coliseum;10670;97;47;50;1;0;1;1;José María Sánchez Martínez
+73;2425;6d0u0xeee4wz6ojhbyh2r6yac;esp-mll;2024-10-05Z;12:00:00Z;Reial Club Deportiu Espanyol de Barcelona;Real Club Deportivo Mallorca;RCDE Stadium;24434;102;46;56;1;0;2;1;Francisco José Hernández Maeso
+73;2425;6cn9zts9vzu0cfy0ms2pbf1uc;leg-val;2024-10-04Z;19:00:00Z;CD Leganés;Valencia CF;Estadio Ontime Butarque;10958;93;45;48;0;0;0;0;Alejandro Quintero González
+73;2425;69v1396td9466vft0tuygcd90;vil-lpm;2024-09-30Z;19:00:00Z;Villarreal CF;UD Las Palmas;Estadio de la Cerámica;18159;102;47;55;1;0;3;1;Mario Melero López
+73;2425;67t6jdk03argdkp4enrhycqac;atm-rma;2024-09-29Z;19:00:00Z;Club Atlético de Madrid;Real Madrid CF;Riyadh Air Metropolitano;70112;101;45;55;0;0;1;1;Mateo Busquets Ferrer
+73;2425;6b1o8xruzdij3xnwprnkwt05w;bet-esp;2024-09-29Z;16:30:00Z;Real Betis Balompié;Reial Club Deportiu Espanyol de Barcelona;Estadio Benito Villamarín;53065;101;48;53;0;0;1;0;Alejandro José Hernández Hernández
+73;2425;67elmttf59akqb6h72l7fqqz8;ath-sev;2024-09-29Z;14:15:00Z;Athletic Club;Sevilla FC;Estadio de San Mamés;48288;98;46;52;1;0;1;1;César Soto Grado
+73;2425;687puky17rzj95b7f9rqb1rtg;cel-gir;2024-09-29Z;12:00:00Z;Real Club Celta de Vigo;Girona FC;Estadio Abanca-Balaídos;21347;98;48;50;0;1;1;1;Ricardo De Burgos Bengoetxea
+73;2425;690iee00hs40h0o94hak47tp0;osa-bar;2024-09-28Z;19:00:00Z;CA Osasuna;FC Barcelona;Estadio El Sadar;22322;99;47;52;2;0;4;2;Guillermo Cuadra Fernández
+73;2425;68m2m1s5dol5di2vl19e1hd78;rso-val;2024-09-28Z;16:30:00Z;Real Sociedad de Fútbol;Valencia CF;Estadio Municipal de Anoeta;32332;95;47;48;1;0;3;0;Javier Alberola Rojas
+73;2425;6ao078l4kyhkgamhkopljt89g;ray-leg;2024-09-28Z;14:15:00Z;Rayo Vallecano de Madrid;CD Leganés;Estadio de Vallecas;13186;96;47;49;1;0;1;1;Alejandro Muñíz Ruiz
+73;2425;6a9fqe2av4fcdm83qdsuvqrro;get-ala;2024-09-28Z;12:00:00Z;Getafe CF;Deportivo Alavés;Estadio Coliseum;10006;103;53;50;1;0;2;0;Isidro Díaz de Mera Escuderos
+73;2425;69gpwcr00zri26svtn0oaoduc;vll-mll;2024-09-27Z;19:00:00Z;Real Valladolid CF;Real Club Deportivo Mallorca;Estadio Municipal José Zorrilla;20388;97;46;51;0;0;1;2;José Luis Munuera Montero
+73;2425;65s0nz9qa94kr4g9my3p7ynf8;cel-atm;2024-09-26Z;19:00:00Z;Real Club Celta de Vigo;Club Atlético de Madrid;Estadio Abanca-Balaídos;21533;94;45;49;0;0;0;1;Víctor García Verdura
+73;2425;666itf9ca5gc32h2l5wlo6zo4;lpm-bet;2024-09-26Z;17:00:00Z;UD Las Palmas;Real Betis Balompié;Estadio de Gran Canaria;22722;96;48;48;1;1;1;1;José María Sánchez Martínez
+73;2425;64zsgl4deyxdr5rdpamwtlams;esp-vil;2024-09-26Z;17:00:00Z;Reial Club Deportiu Espanyol de Barcelona;Villarreal CF;RCDE Stadium;23147;105;55;50;1;1;1;2;Alejandro Quintero González
+73;2425;63caanmmwfogw1hbixp2zklqs;bar-get;2024-09-25Z;19:00:00Z;FC Barcelona;Getafe CF;Estadi Olímpic Lluís Companys;44407;96;46;50;1;0;1;0;Pablo González Fuertes
+73;2425;63syq47tm563i22egotcb7itw;gir-ray;2024-09-25Z;17:00:00Z;Girona FC;Rayo Vallecano de Madrid;Estadi Municipal de Montilivi;12272;98;48;50;0;0;0;0;Juan Martínez Munuera
+73;2425;66zosz3fqz2ztfu9it2muu42c;rma-ala;2024-09-24Z;19:00:00Z;Real Madrid CF;Deportivo Alavés;Estadio Bernabéu;67480;98;47;51;2;0;3;2;Alejandro Muñíz Ruiz
+73;2425;66l34ax3m29s58ud7hbv3bd3o;val-osa;2024-09-24Z;17:00:00Z;Valencia CF;CA Osasuna;Estadio de Mestalla;40425;95;47;48;0;0;0;0;Miguel Ángel Ortiz Arias
+73;2425;64lywndahglmvr118amfxkf10;sev-vll;2024-09-24Z;17:00:00Z;Sevilla FC;Real Valladolid CF;Estadio Ramón Sánchez Pizjuán;35292;101;49;52;1;0;2;1;Juan Luis Pulido Santana
+73;2425;5zqhn00v48eye91tctbo1uo0k;bet-mll;2024-09-23Z;19:00:00Z;Real Betis Balompié;Real Club Deportivo Mallorca;Estadio Benito Villamarín;47017;99;48;50;1;1;1;2;Víctor García Verdura
+73;2425;60yfcq9jjwkz23gcvqpuifoyc;ray-atm;2024-09-22Z;19:00:00Z;Rayo Vallecano de Madrid;Club Atlético de Madrid;Estadio de Vallecas;13646;96;47;48;1;0;1;1;Mario Melero López
+73;2425;61cwhjuf2ktyf9a4amp57ieqc;vil-bar;2024-09-22Z;16:30:00Z;Villarreal CF;FC Barcelona;Estadio de la Cerámica;22048;99;50;48;1;2;1;5;Mateo Busquets Ferrer
+73;2425;5zc13oz3ip4z5wbqbhej6uhhw;ath-cel;2024-09-22Z;14:15:00Z;Athletic Club;Real Club Celta de Vigo;Estadio de San Mamés;48737;96;48;47;2;1;3;1;José María Sánchez Martínez
+73;2425;604ya0n4fh6nijyxuxybr0is4;get-leg;2024-09-22Z;12:00:00Z;Getafe CF;CD Leganés;Estadio Coliseum;13060;97;47;49;0;0;1;1;Adrián Cordero Vega
+73;2425;62ynouhnra4702bfgi3cuakus;rma-esp;2024-09-21Z;19:00:00Z;Real Madrid CF;Reial Club Deportiu Espanyol de Barcelona;Estadio Bernabéu;72284;94;45;48;0;0;4;1;José Luis Munuera Montero
+73;2425;61rjxg15ik34493xle4c72psk;val-gir;2024-09-21Z;16:30:00Z;Valencia CF;Girona FC;Estadio de Mestalla;40896;96;45;51;0;0;2;0;Alejandro José Hernández Hernández
+73;2425;62kw8d568qve1rhminzbmxn9w;osa-lpm;2024-09-21Z;14:15:00Z;CA Osasuna;UD Las Palmas;Estadio El Sadar;19043;100;52;48;1;1;2;1;Isidro Díaz de Mera Escuderos
+73;2425;626errdvn7ta3vncvipxpdtzo;vll-rso;2024-09-21Z;12:00:00Z;Real Valladolid CF;Real Sociedad de Fútbol;Estadio Municipal José Zorrilla;21171;97;47;50;0;0;0;0;Guillermo Cuadra Fernández
+73;2425;60jqe1h7rodt2n113439gf40k;ala-sev;2024-09-20Z;19:00:00Z;Deportivo Alavés;Sevilla FC;Estadio de Mendizorroza;16538;99;49;50;1;0;2;1;Javier Alberola Rojas
+73;2425;65dekeom0wbecv9pu2vfb9kb8;leg-ath;2024-09-19Z;17:00:00Z;CD Leganés;Athletic Club;Estadio Ontime Butarque;8304;95;46;49;0;0;0;2;Francisco José Hernández Maeso
+73;2425;5ns4fg6y1hq3cufyms4pd1vdg;bet-get;2024-09-18Z;17:00:00Z;Real Betis Balompié;Getafe CF;Estadio Benito Villamarín;48547;105;51;53;0;0;2;1;Juan Luis Pulido Santana
+73;2425;647jn50wp2vojesyn36x66nf8;mll-rso;2024-09-17Z;17:00:00Z;Real Club Deportivo Mallorca;Real Sociedad de Fútbol;Estadi Mallorca Son Moix;17132;96;47;48;1;0;1;0;Adrián Cordero Vega
+73;2425;5y4lx9rzp0ow61yo13pi3nxuc;ray-osa;2024-09-16Z;19:00:00Z;Rayo Vallecano de Madrid;CA Osasuna;Estadio de Vallecas;13073;98;46;52;0;1;3;1;Alejandro Quintero González
+73;2425;5vblcjrjoaquvkt23jpttrlec;atm-val;2024-09-15Z;19:00:00Z;Club Atlético de Madrid;Valencia CF;Riyadh Air Metropolitano;61752;95;46;49;1;0;3;0;César Soto Grado
+73;2425;5wxdb9o5eg7sffkn8m09r0qok;lpm-ath;2024-09-15Z;16:30:00Z;UD Las Palmas;Athletic Club;Estadio de Gran Canaria;25908;97;48;49;0;2;2;3;Miguel Ángel Ortiz Arias
+73;2425;5xbnsmhknyjgljqluckg5ifx0;gir-bar;2024-09-15Z;14:15:00Z;Girona FC;FC Barcelona;Estadi Municipal de Montilivi;13891;100;49;51;0;2;1;4;Alejandro Muñíz Ruiz
+73;2425;5w4b6ohqxt21h0vglnjgvpes4;cel-vll;2024-09-15Z;12:00:00Z;Real Club Celta de Vigo;Real Valladolid CF;Estadio Abanca-Balaídos;21670;103;50;52;2;0;3;1;Francisco José Hernández Maeso
+73;2425;5yklujtutkh5ksc5f5iojpdzo;rso-rma;2024-09-14Z;19:00:00Z;Real Sociedad de Fútbol;Real Madrid CF;Estadio Municipal de Anoeta;37370;97;47;49;0;0;0;2;Juan Martínez Munuera
+73;2425;5xq75nlg0hhutyqys6lqj0hzo;sev-get;2024-09-14Z;16:30:00Z;Sevilla FC;Getafe CF;Estadio Ramón Sánchez Pizjuán;32643;108;49;59;1;0;1;0;Mateo Busquets Ferrer
+73;2425;5yyc4zqwgchbo16kocdcq1ams;esp-ala;2024-09-14Z;14:15:00Z;Reial Club Deportiu Espanyol de Barcelona;Deportivo Alavés;RCDE Stadium;24238;99;47;52;1;1;3;2;Juan Luis Pulido Santana
+73;2425;5wiwtn06uxlem9qm2mhnxggt0;mll-vil;2024-09-14Z;12:00:00Z;Real Club Deportivo Mallorca;Villarreal CF;Estadi Mallorca Son Moix;18303;99;47;52;0;1;1;2;Ricardo De Burgos Bengoetxea
+73;2425;5vpwbyi79lvl0ukif4cyygnpw;bet-leg;2024-09-13Z;19:00:00Z;Real Betis Balompié;CD Leganés;Estadio Benito Villamarín;48089;102;50;52;0;0;2;0;Pablo González Fuertes
+73;2425;5u3wx1ukwc8ezs3iztiha7bx0;rma-bet;2024-09-01Z;19:30:00Z;Real Madrid CF;Real Betis Balompié;Estadio Bernabéu;73072;99;48;51;0;0;2;0;Javier Alberola Rojas
+73;2425;5s3xwqhpxe5lxs3fskk6vtr84;get-rso;2024-09-01Z;17:15:00Z;Getafe CF;Real Sociedad de Fútbol;Estadio Coliseum;10929;102;50;52;0;0;0;0;José Luis Munuera Montero
+73;2425;5ux5nsf6org4a8iugiyofzlec;sev-gir;2024-09-01Z;17:00:00Z;Sevilla FC;Girona FC;Estadio Ramón Sánchez Pizjuán;35735;100;48;52;0;1;0;2;José María Sánchez Martínez
+73;2425;5uiswh4s7uixm5suih5vyz2ms;osa-cel;2024-09-01Z;15:00:00Z;CA Osasuna;Real Club Celta de Vigo;Estadio El Sadar;19908;98;48;50;2;1;3;2;Juan Martínez Munuera
+73;2425;5synj2tonhl9q7029mdt8p2qc;ala-lpm;2024-09-01Z;15:00:00Z;Deportivo Alavés;UD Las Palmas;Estadio de Mendizorroza;16386;98;48;49;1;0;2;0;Víctor García Verdura
+73;2425;5td1p1s4tqjpjp87klzwu2rkk;leg-mll;2024-08-31Z;19:30:00Z;CD Leganés;Real Club Deportivo Mallorca;Estadio Ontime Butarque;10482;96;46;49;0;1;0;1;Mario Melero López
+73;2425;5sicbm55qbgeecbcprwy97uac;val-vil;2024-08-31Z;19:30:00Z;Valencia CF;Villarreal CF;Estadio de Mestalla;43857;98;48;49;1;1;1;1;Jesús Gil Manzano
+73;2425;5tqfezsv146ktc9c481m2lkpg;esp-ray;2024-08-31Z;17:15:00Z;Reial Club Deportiu Espanyol de Barcelona;Rayo Vallecano de Madrid;RCDE Stadium;22405;106;51;55;1;1;2;1;Adrián Cordero Vega
+73;2425;5rb6zpmugit67qx1oa0b3tz4k;ath-atm;2024-08-31Z;17:00:00Z;Athletic Club;Club Atlético de Madrid;Estadio de San Mamés;48617;97;45;51;0;0;0;1;Alejandro José Hernández Hernández
+73;2425;5rpelvwkel423rwai2gfaekno;bar-vll;2024-08-31Z;15:00:00Z;FC Barcelona;Real Valladolid CF;Estadi Olímpic Lluís Companys;44359;96;48;47;3;0;7;0;Isidro Díaz de Mera Escuderos
+73;2425;5ozboc3vkmy8gtsk7gxb7imms;lpm-rma;2024-08-29Z;19:30:00Z;UD Las Palmas;Real Madrid CF;Estadio de Gran Canaria;31192;95;45;49;1;0;1;1;Mateo Busquets Ferrer
+73;2425;5o6kqt43c2cjrkp0b6ufovvo4;gir-osa;2024-08-29Z;17:00:00Z;Girona FC;CA Osasuna;Estadi Municipal de Montilivi;13275;99;48;51;1;0;4;0;Francisco José Hernández Maeso
+73;2425;5qxo256z1jw0dps23hd0k06qc;atm-esp;2024-08-28Z;19:30:00Z;Club Atlético de Madrid;Reial Club Deportiu Espanyol de Barcelona;Riyadh Air Metropolitano;56669;101;48;53;0;0;0;0;Ricardo De Burgos Bengoetxea
+73;2425;5q63q612ph6ma47d4rf69naj8;rso-ala;2024-08-28Z;19:30:00Z;Real Sociedad de Fútbol;Deportivo Alavés;Estadio Municipal de Anoeta;32220;104;52;52;1;1;1;2;José María Sánchez Martínez
+73;2425;5qk8chtwtmvvpatkmcksfcutw;vll-leg;2024-08-28Z;17:00:00Z;Real Valladolid CF;CD Leganés;Estadio Municipal José Zorrilla;21764;98;48;50;0;0;0;0;Alejandro Quintero González
+73;2425;5nbu5gmdx5gm9b2wjsybtr76c;ath-val;2024-08-28Z;17:00:00Z;Athletic Club;Valencia CF;Estadio de San Mamés;48644;95;47;48;1;0;1;0;Pablo González Fuertes
+73;2425;5pdlhap2xv8f1uannrtk1f4lw;ray-bar;2024-08-27Z;19:30:00Z;Rayo Vallecano de Madrid;FC Barcelona;Estadio de Vallecas;14031;105;49;56;1;0;1;2;César Soto Grado
+73;2425;5okyjoqk1187nzifkct2bqcr8;mll-sev;2024-08-27Z;17:00:00Z;Real Club Deportivo Mallorca;Sevilla FC;Estadi Mallorca Son Moix;20470;95;46;49;0;0;0;0;Alejandro Muñíz Ruiz
+73;2425;5prygp8gcta4ykggusdxqwys4;vil-cel;2024-08-26Z;19:30:00Z;Villarreal CF;Real Club Celta de Vigo;Estadio de la Cerámica;19651;104;49;55;1;2;4;3;Miguel Ángel Ortiz Arias
+73;2425;5jegs4j4ybvjcgdaghy7ilwk4;atm-gir;2024-08-25Z;19:30:00Z;Club Atlético de Madrid;Girona FC;Riyadh Air Metropolitano;60414;99;48;50;1;0;3;0;Juan Martínez Munuera
+73;2425;5le7pln28h10g7u3vlsspflzo;ala-bet;2024-08-25Z;17:15:00Z;Deportivo Alavés;Real Betis Balompié;Estadio de Mendizorroza;16623;94;45;49;0;0;0;0;Mateo Busquets Ferrer
+73;2425;5lsd435qp9ov0369fxwxsdq8k;leg-lpm;2024-08-25Z;17:00:00Z;CD Leganés;UD Las Palmas;Estadio Ontime Butarque;10052;102;48;54;0;0;2;1;Ricardo De Burgos Bengoetxea
+73;2425;5kldlsgi64xxe5nym5szuok5w;rma-vll;2024-08-25Z;15:00:00Z;Real Madrid CF;Real Valladolid CF;Estadio Bernabéu;70178;100;49;51;0;0;3;0;Víctor García Verdura
+73;2425;5m5srxg0a0rsvjcthcv4qdxqs;esp-rso;2024-08-24Z;19:30:00Z;Reial Club Deportiu Espanyol de Barcelona;Real Sociedad de Fútbol;RCDE Stadium;20900;102;48;53;0;0;0;1;Mario Melero López
+73;2425;5k75djtbbjl493cac58zuyqs4;get-ray;2024-08-24Z;19:30:00Z;Getafe CF;Rayo Vallecano de Madrid;Estadio Coliseum;9529;100;49;51;0;0;0;0;Javier Alberola Rojas
+73;2425;5mj8s0rijkav768ck08cz6fbo;bar-ath;2024-08-24Z;17:00:00Z;FC Barcelona;Athletic Club;Estadi Olímpic Lluís Companys;46448;102;51;50;1;1;2;1;Jesús Gil Manzano
+73;2425;5mxpzicz2rwte364wph5ct3bo;osa-mll;2024-08-24Z;15:00:00Z;CA Osasuna;Real Club Deportivo Mallorca;Estadio El Sadar;19900;98;48;50;0;0;1;0;Adrián Cordero Vega
+73;2425;5kzt2vp9lvxghav8iiertuplg;sev-vil;2024-08-23Z;19:30:00Z;Sevilla FC;Villarreal CF;Estadio Ramón Sánchez Pizjuán;34004;107;52;54;1;1;1;2;Isidro Díaz de Mera Escuderos
+73;2425;5jstvmxnddtgt2x7z9kyrx0yc;cel-val;2024-08-23Z;17:00:00Z;Real Club Celta de Vigo;Valencia CF;Estadio Abanca-Balaídos;23519;100;49;50;2;1;3;1;José Luis Munuera Montero
+73;2425;5glmgn713wlnica0brb18c650;vil-atm;2024-08-19Z;19:30:00Z;Villarreal CF;Club Atlético de Madrid;Estadio de la Cerámica;21566;100;50;49;2;2;2;2;Guillermo Cuadra Fernández
+73;2425;5j0zusmwyelfhjs2edw4ztfdg;vll-esp;2024-08-19Z;17:00:00Z;Real Valladolid CF;Reial Club Deportiu Espanyol de Barcelona;Estadio Municipal José Zorrilla;22027;101;49;51;1;0;1;0;Pablo González Fuertes
+73;2425;5flq3r7vdtxfv2ysdhmhlxs7o;mll-rma;2024-08-18Z;19:30:00Z;Real Club Deportivo Mallorca;Real Madrid CF;Estadi Mallorca Son Moix;23010;101;49;51;0;1;1;1;César Soto Grado
+73;2425;5hl3kbigpss3j000mn0oejg2c;rso-ray;2024-08-18Z;17:00:00Z;Real Sociedad de Fútbol;Rayo Vallecano de Madrid;Estadio Municipal de Anoeta;31763;100;46;54;0;0;1;2;Alejandro José Hernández Hernández
+73;2425;5h3b0pzfw6ldoy2w08t39smj8;val-bar;2024-08-17Z;19:30:00Z;Valencia CF;FC Barcelona;Estadio de Mestalla;46673;103;51;52;1;1;1;2;José María Sánchez Martínez
+73;2425;5ilutiy199xb72tzt92jl8ges;osa-leg;2024-08-17Z;17:00:00Z;CA Osasuna;CD Leganés;Estadio El Sadar;19561;99;49;49;0;1;1;1;Juan Luis Pulido Santana
+73;2425;5g3vemb94j4xdrnwt6wkmsyz8;lpm-sev;2024-08-16Z;19:30:00Z;UD Las Palmas;Sevilla FC;Estadio de Gran Canaria;24843;99;46;52;1;1;2;2;Francisco José Hernández Maeso
+73;2425;5i2tjytubfo8jgi6mockkrkt0;cel-ala;2024-08-16Z;17:00:00Z;Real Club Celta de Vigo;Deportivo Alavés;Estadio Abanca-Balaídos;22477;105;52;52;0;1;2;1;Alejandro Quintero González
+73;2425;5f3ska55qwluoz1kkft477das;bet-gir;2024-08-15Z;19:30:00Z;Real Betis Balompié;Girona FC;Estadio Benito Villamarín;54084;99;48;51;1;0;1;1;Miguel Ángel Ortiz Arias
+73;2425;5ei8cjo15u5k6qgqims0rsutw;ath-get;2024-08-15Z;17:00:00Z;Athletic Club;Getafe CF;Estadio de San Mamés;47845;102;52;50;1;0;1;1;Alejandro Muñíz Ruiz

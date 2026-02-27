@@ -1,0 +1,109 @@
+{
+  "player": {
+    "name": "Alejandro Balde",
+    "slug": "alejandro-balde",
+    "shortName": "A. Balde",
+    "position": "D",
+    "jerseyNumber": "3",
+    "height": 175,
+    "userCount": 127523,
+    "gender": "M",
+    "sofascoreId": "AlejandroBalde",
+    "id": 997035,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 1066435200,
+    "proposedMarketValueRaw": {
+      "value": 66000000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "أليخاندرو بالدي",
+        "bn": "আলেজান্দ্রো বালদে",
+        "hi": "एलेजांद्रो बाल्डे"
+      },
+      "shortNameTranslation": {
+        "ar": "أ. بالدي",
+        "bn": "এ. বালদে",
+        "hi": "ए. बाल्डे"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 89,
+    "accuratePass": 84,
+    "totalLongBalls": 3,
+    "accurateLongBalls": 2,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 28,
+    "totalOwnHalfPasses": 28,
+    "accurateOppositionHalfPasses": 56,
+    "totalOppositionHalfPasses": 61,
+    "totalCross": 3,
+    "duelLost": 6,
+    "duelWon": 2,
+    "dispossessed": 5,
+    "totalContest": 3,
+    "wonContest": 2,
+    "totalClearance": 1,
+    "outfielderBlock": 1,
+    "ballRecovery": 6,
+    "minutesPlayed": 90,
+    "touches": 112,
+    "rating": 6.9,
+    "possessionLostCtrl": 15,
+    "expectedAssists": 0.0464923,
+    "totalBallCarriesDistance": 329.04633046578,
+    "ballCarriesCount": 40,
+    "totalProgression": 172.56335686931,
+    "bestBallCarryProgression": 31.831603226011,
+    "totalProgressiveBallCarriesDistance": 75.332338279051,
+    "progressiveBallCarriesCount": 3,
+    "keyPass": 1,
+    "ratingVersions": {
+      "original": 6.9,
+      "alternative": 7.1
+    },
+    "totalShots": 0,
+    "passValueNormalized": 0,
+    "dribbleValueNormalized": 0.27,
+    "defensiveValueNormalized": 0.21,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "D",
+  "extra": null
+}

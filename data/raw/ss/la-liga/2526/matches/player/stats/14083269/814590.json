@@ -1,0 +1,114 @@
+{
+  "player": {
+    "name": "Marcus Rashford",
+    "slug": "marcus-rashford",
+    "shortName": "M. Rashford",
+    "position": "M",
+    "jerseyNumber": "14",
+    "height": 185,
+    "userCount": 367299,
+    "gender": "M",
+    "sofascoreId": "Rashford",
+    "id": 814590,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 878256000,
+    "proposedMarketValueRaw": {
+      "value": 38000000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ماركوس راشفورد",
+        "bn": "মার্কাস রাশফোর্ড",
+        "hi": "मार्कस रैशफोर्ड"
+      },
+      "shortNameTranslation": {
+        "ar": "م. راشفورد",
+        "bn": "এম. রাশফোর্ড",
+        "hi": "एम. रैशफोर्ड"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 46,
+    "accuratePass": 37,
+    "totalLongBalls": 2,
+    "accurateLongBalls": 1,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 5,
+    "totalOwnHalfPasses": 5,
+    "accurateOppositionHalfPasses": 32,
+    "totalOppositionHalfPasses": 41,
+    "totalCross": 7,
+    "aerialWon": 1,
+    "duelLost": 1,
+    "duelWon": 2,
+    "totalContest": 2,
+    "wonContest": 1,
+    "shotOffTarget": 2,
+    "onTargetScoringAttempt": 1,
+    "blockedScoringAttempt": 5,
+    "totalClearance": 1,
+    "unsuccessfulTouch": 2,
+    "minutesPlayed": 67,
+    "touches": 71,
+    "rating": 6.5,
+    "possessionLostCtrl": 19,
+    "expectedGoals": 0.2503,
+    "expectedGoalsOnTarget": 0.2014,
+    "expectedAssists": 0.0590272,
+    "totalBallCarriesDistance": 218.29023095897,
+    "ballCarriesCount": 24,
+    "totalProgression": 101.09424090681,
+    "bestBallCarryProgression": 30.654810153116,
+    "totalProgressiveBallCarriesDistance": 79.788140113553,
+    "progressiveBallCarriesCount": 5,
+    "keyPass": 2,
+    "ratingVersions": {
+      "original": 6.5,
+      "alternative": 7.5
+    },
+    "totalShots": 8,
+    "shotValueNormalized": -0.55,
+    "passValueNormalized": -0.28,
+    "dribbleValueNormalized": 0.39,
+    "defensiveValueNormalized": 0.14,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "F",
+  "extra": null
+}

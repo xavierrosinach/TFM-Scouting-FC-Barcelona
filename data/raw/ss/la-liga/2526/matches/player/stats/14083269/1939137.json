@@ -1,0 +1,94 @@
+{
+  "player": {
+    "name": "Tomás Marqués",
+    "firstName": "Tomás Marqués",
+    "slug": "tomas-marques",
+    "shortName": "T. Marqués",
+    "position": "M",
+    "jerseyNumber": "43",
+    "height": 185,
+    "userCount": 10360,
+    "gender": "M",
+    "id": 1939137,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 1162166400,
+    "proposedMarketValueRaw": {
+      "value": 1000000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "توماس ماركيس"
+      },
+      "shortNameTranslation": {
+        "ar": "ت. ماركيس"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 6,
+    "accuratePass": 6,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 4,
+    "totalOwnHalfPasses": 4,
+    "accurateOppositionHalfPasses": 2,
+    "totalOppositionHalfPasses": 2,
+    "aerialLost": 1,
+    "duelLost": 2,
+    "totalContest": 1,
+    "unsuccessfulTouch": 1,
+    "minutesPlayed": 9,
+    "touches": 8,
+    "rating": 6.5,
+    "possessionLostCtrl": 2,
+    "expectedAssists": 0.00164371,
+    "totalBallCarriesDistance": 16.469855459542,
+    "ballCarriesCount": 2,
+    "totalProgression": 5.5906983791685,
+    "ratingVersions": {
+      "original": 6.5,
+      "alternative": 6.3
+    },
+    "totalShots": 0,
+    "passValueNormalized": 0.01,
+    "dribbleValueNormalized": -0.08,
+    "defensiveValueNormalized": -0.01,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "M",
+  "extra": null
+}

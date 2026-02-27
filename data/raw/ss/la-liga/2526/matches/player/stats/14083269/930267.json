@@ -1,0 +1,101 @@
+{
+  "player": {
+    "name": "Joan García",
+    "slug": "joan-garcia",
+    "shortName": "J. García",
+    "position": "G",
+    "jerseyNumber": "13",
+    "height": 193,
+    "userCount": 113400,
+    "gender": "M",
+    "id": 930267,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 988934400,
+    "proposedMarketValueRaw": {
+      "value": 31000000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "جوان جارسيا",
+        "bn": "জোয়ান গার্সিয়া",
+        "hi": "जोन गार्सिया"
+      },
+      "shortNameTranslation": {
+        "ar": "ج. جارسيا",
+        "bn": "জে. গার্সিয়া",
+        "hi": "जे. गार्सिया"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 22,
+    "accuratePass": 21,
+    "totalLongBalls": 6,
+    "accurateLongBalls": 5,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 19,
+    "totalOwnHalfPasses": 20,
+    "accurateOppositionHalfPasses": 2,
+    "totalOppositionHalfPasses": 2,
+    "ballRecovery": 6,
+    "savedShotsFromInsideTheBox": 2,
+    "saves": 4,
+    "minutesPlayed": 90,
+    "touches": 30,
+    "rating": 7.8,
+    "possessionLostCtrl": 1,
+    "expectedAssists": 0.00034384,
+    "totalBallCarriesDistance": 26.817488648892,
+    "ballCarriesCount": 4,
+    "totalProgression": 19.949343517261,
+    "keeperSaveValue": 0.4549,
+    "ratingVersions": {
+      "original": 7.8,
+      "alternative": 7.8
+    },
+    "totalShots": 0,
+    "goalsPrevented": 0.9672,
+    "passValueNormalized": 0.07,
+    "dribbleValueNormalized": 0.03,
+    "defensiveValueNormalized": 0.21,
+    "goalkeeperValueNormalized": 0.39,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "G",
+  "extra": null
+}

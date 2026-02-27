@@ -1,0 +1,111 @@
+{
+  "player": {
+    "name": "Samú Costa",
+    "slug": "samuel-costa",
+    "shortName": "S. Costa",
+    "position": "M",
+    "jerseyNumber": "12",
+    "height": 183,
+    "userCount": 1431,
+    "gender": "M",
+    "id": 988351,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 975283200,
+    "proposedMarketValueRaw": {
+      "value": 14600000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "صامويل كوستا",
+        "bn": "স্যামুয়েল কোস্টা",
+        "hi": "सैमुअल कोस्टा"
+      },
+      "shortNameTranslation": {
+        "ar": "ص. كوستا",
+        "bn": "এস. কোস্টা",
+        "hi": "एस. कोस्टा"
+      }
+    }
+  },
+  "team": {
+    "name": "Mallorca",
+    "slug": "mallorca",
+    "shortName": "Mallorca",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 177809,
+    "nameCode": "MLL",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2826,
+    "teamColors": {
+      "primary": "#cc0000",
+      "secondary": "#000000",
+      "text": "#000000"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "مايوركا",
+        "bn": "ম্যালোর্কা",
+        "hi": "मल्लोर्का",
+        "ru": "Мальорка"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 29,
+    "accuratePass": 22,
+    "totalLongBalls": 3,
+    "accurateLongBalls": 3,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 14,
+    "totalOwnHalfPasses": 16,
+    "accurateOppositionHalfPasses": 8,
+    "totalOppositionHalfPasses": 13,
+    "aerialLost": 2,
+    "aerialWon": 3,
+    "duelLost": 8,
+    "duelWon": 9,
+    "dispossessed": 2,
+    "totalContest": 2,
+    "totalClearance": 4,
+    "outfielderBlock": 1,
+    "interceptionWon": 2,
+    "ballRecovery": 11,
+    "totalTackle": 3,
+    "wonTackle": 3,
+    "unsuccessfulTouch": 1,
+    "wasFouled": 3,
+    "fouls": 2,
+    "minutesPlayed": 77,
+    "touches": 51,
+    "rating": 6.8,
+    "possessionLostCtrl": 14,
+    "expectedAssists": 0.169319,
+    "totalBallCarriesDistance": 48.709367321549,
+    "ballCarriesCount": 8,
+    "totalProgression": -13.536086534318,
+    "keyPass": 1,
+    "ratingVersions": {
+      "original": 6.8,
+      "alternative": 7.1
+    },
+    "totalShots": 0,
+    "passValueNormalized": -0.11,
+    "dribbleValueNormalized": -0.31,
+    "defensiveValueNormalized": -0.01,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "M",
+  "extra": null
+}

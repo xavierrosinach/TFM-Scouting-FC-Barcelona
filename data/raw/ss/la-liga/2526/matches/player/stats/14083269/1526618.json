@@ -1,0 +1,114 @@
+{
+  "player": {
+    "name": "Marc Bernal",
+    "slug": "marc-bernal",
+    "shortName": "M. Bernal",
+    "position": "M",
+    "jerseyNumber": "22",
+    "height": 191,
+    "userCount": 57918,
+    "gender": "M",
+    "sofascoreId": "marc_bernal",
+    "id": 1526618,
+    "marketValueCurrency": "EUR",
+    "dateOfBirthTimestamp": 1180137600,
+    "proposedMarketValueRaw": {
+      "value": 9700000,
+      "currency": "EUR"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "مارك برنال",
+        "bn": "মার্ক বার্নাল",
+        "hi": "मार्क बर्नल"
+      },
+      "shortNameTranslation": {
+        "ar": "م. برنال",
+        "bn": "এম. বার্নাল",
+        "hi": "एम. बर्नल"
+      }
+    }
+  },
+  "team": {
+    "name": "Barcelona",
+    "slug": "barcelona",
+    "shortName": "Barcelona",
+    "gender": "M",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "userCount": 6438008,
+    "nameCode": "BAR",
+    "disabled": false,
+    "national": false,
+    "type": 0,
+    "id": 2817,
+    "teamColors": {
+      "primary": "#154284",
+      "secondary": "#9d1009",
+      "text": "#9d1009"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "برشلونة",
+        "bn": "বার্সেলোনা",
+        "hi": "बार्सिलोना",
+        "ru": "Барселона"
+      },
+      "shortNameTranslation": {}
+    }
+  },
+  "statistics": {
+    "totalPass": 12,
+    "accuratePass": 9,
+    "totalLongBalls": 1,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 4,
+    "totalOwnHalfPasses": 6,
+    "accurateOppositionHalfPasses": 5,
+    "totalOppositionHalfPasses": 6,
+    "aerialWon": 1,
+    "duelLost": 1,
+    "duelWon": 3,
+    "totalContest": 1,
+    "wonContest": 1,
+    "bigChanceCreated": 1,
+    "onTargetScoringAttempt": 1,
+    "goals": 1,
+    "ballRecovery": 1,
+    "errorLeadToAShot": 1,
+    "wasFouled": 1,
+    "fouls": 1,
+    "minutesPlayed": 23,
+    "touches": 16,
+    "rating": 7.9,
+    "possessionLostCtrl": 3,
+    "expectedGoals": 0.3841,
+    "expectedGoalsOnTarget": 0.6586,
+    "expectedAssists": 0.00710658,
+    "totalBallCarriesDistance": 35.780731982661,
+    "ballCarriesCount": 3,
+    "totalProgression": 27.314834211537,
+    "bestBallCarryProgression": 25.892860659648,
+    "totalProgressiveBallCarriesDistance": 27.741343586784,
+    "progressiveBallCarriesCount": 1,
+    "keyPass": 2,
+    "ratingVersions": {
+      "original": 7.9,
+      "alternative": 7.7
+    },
+    "totalShots": 1,
+    "shotValueNormalized": 0.51,
+    "passValueNormalized": -0.17,
+    "dribbleValueNormalized": 0.4,
+    "defensiveValueNormalized": -0.12,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  "position": "M",
+  "extra": null
+}
