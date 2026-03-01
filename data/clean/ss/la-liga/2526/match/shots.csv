@@ -1,0 +1,56 @@
+match_id;team;opponent;player;type;situation;body_part;xg;xgot;time;goalkeeper;player_x;player_y;block_x;block_y;goal_x;goal_y;goal_z
+14083269;Mallorca;Barcelona;Javi Llabrés;miss;regular;regular;0.056237030774355;0.0;90;Joan García;11.3;62.3;0.0;0.0;0;47.2;84.7
+14083269;Mallorca;Barcelona;Pablo Maffeo;block;assisted;assisted;0.030143857002258;0.0;90;Joan García;13.1;71.6;10.7;67.9;0;48.9;19.0
+14083269;Mallorca;Barcelona;Mateo Joseph;miss;assisted;assisted;0.028503388166428;0.0;90;Joan García;4.8;71.7;0.0;0.0;0;41.0;84.7
+14083269;Mallorca;Barcelona;Antonio Sánchez;save;regular;regular;0.035795003175735;0.012010983191431;85;Joan García;22.3;59.8;2.2;51.3;0;49.7;10.8
+14083269;Barcelona;Mallorca;Marc Bernal;goal;assisted;assisted;0.38410630822182;0.65862989425659;83;Leo Román;11.0;61.2;0.0;0.0;0;46.8;3.8
+14083269;Mallorca;Barcelona;Antonio Sánchez;save;regular;regular;0.13827170431614;0.2252239137888;80;Joan García;17.4;53.4;4.4;51.3;0;47.4;9.5
+14083269;Barcelona;Mallorca;Lamine Yamal;miss;assisted;assisted;0.035120040178299;0.0;75;Leo Román;13.2;75.8;0.0;0.0;0;58.2;37.5
+14083269;Barcelona;Mallorca;Jules Koundé;block;assisted;assisted;0.028420649468899;0.0;68;Leo Román;22.2;72.1;17.7;67.2;0;52.5;19.0
+14083269;Barcelona;Mallorca;Robert Lewandowski;block;regular;regular;0.10778867453337;0.0;68;Leo Román;14.1;44.4;10.3;46.2;0;48.8;19.0
+14083269;Barcelona;Mallorca;Dani Olmo;block;corner;corner;0.017997512593865;0.0;66;Leo Román;23.6;32.7;19.9;35.0;0;52.4;19.0
+14083269;Barcelona;Mallorca;Lamine Yamal;goal;corner;corner;0.021443344652653;0.11415576934814;61;Leo Román;24.9;51.0;0.0;0.0;0;46.4;15.8
+14083269;Barcelona;Mallorca;Lamine Yamal;block;corner;corner;0.0073660910129547;0.0;58;Leo Román;19.2;72.0;17.9;70.4;0;50.9;19.0
+14083269;Barcelona;Mallorca;Fermín López;save;assisted;assisted;0.092484511435032;0.32356730103493;57;Leo Román;13.2;38.2;1.1;47.8;0;53.8;20.9
+14083269;Barcelona;Mallorca;Dani Olmo;save;fast-break;fast-break;0.023090921342373;0.013407531194389;57;Leo Román;24.1;34.2;1.2;48.7;0;50.9;8.2
+14083269;Barcelona;Mallorca;Pau Cubarsí;save;corner;corner;0.027483560144901;0.26857399940491;55;Leo Román;13.9;40.8;1.0;50.0;0;50.7;32.3
+14083269;Barcelona;Mallorca;Marcus Rashford;block;corner;corner;0.013921407051384;0.0;54;Leo Román;22.8;40.4;18.9;41.9;0;51.0;19.0
+14083269;Barcelona;Mallorca;Marc Casadó;block;regular;regular;0.055212166160345;0.0;54;Leo Román;18.4;44.7;10.3;46.9;0;50.2;19.0
+14083269;Barcelona;Mallorca;Marcus Rashford;block;free-kick;free-kick;0.035631462931633;0.0;51;Leo Román;25.9;33.2;19.4;37.5;0;49.5;19.0
+14083269;Barcelona;Mallorca;Marcus Rashford;block;assisted;assisted;0.042483955621719;0.0;50;Leo Román;13.9;33.9;10.7;37.5;0;50.2;19.0
+14083269;Barcelona;Mallorca;Lamine Yamal;miss;set-piece;set-piece;0.81371825933456;0.0;45;Leo Román;3.1;46.5;0.0;0.0;0;57.0;2.8
+14083269;Barcelona;Mallorca;Jules Koundé;miss;set-piece;set-piece;0.061638742685318;0.0;45;Leo Román;9.9;64.0;3.7;44.6;0;70.6;30.6
+14083269;Barcelona;Mallorca;Marcus Rashford;save;free-kick;free-kick;0.036807339638472;0.20139287412167;45;Leo Román;25.5;33.8;1.1;49.3;0;46.9;24.7
+14083269;Barcelona;Mallorca;Marcus Rashford;miss;assisted;assisted;0.023760244250298;0.0;45;Leo Román;9.0;30.4;0.0;0.0;0;58.0;52.8
+14083269;Barcelona;Mallorca;Marcus Rashford;block;assisted;assisted;0.025417955592275;0.0;37;Leo Román;23.3;38.5;11.1;44.8;0;49.5;19.0
+14083269;Barcelona;Mallorca;Pau Cubarsí;miss;corner;corner;0.13279865682125;0.0;36;Leo Román;2.6;56.9;0.0;0.0;0;26.7;15.3
+14083269;Barcelona;Mallorca;Robert Lewandowski;goal;assisted;assisted;0.66167277097702;0.91504549980164;29;Leo Román;8.7;50.8;0.0;0.0;0;46.9;3.8
+14083269;Barcelona;Mallorca;Marcus Rashford;block;assisted;assisted;0.054121930152178;0.0;29;Leo Román;19.2;32.9;7.6;43.3;0;49.8;19.0
+14083269;Barcelona;Mallorca;Marcus Rashford;miss;assisted;assisted;0.018190978094935;0.0;26;Leo Román;28.3;34.5;0.0;0.0;0;43.0;6.9
+14083269;Mallorca;Barcelona;Jan Virgili;save;fast-break;fast-break;0.086803801357746;0.60004031658173;21;Joan García;12.0;38.7;1.2;48.6;0;53.9;0.6
+14083269;Barcelona;Mallorca;Dani Olmo;block;assisted;assisted;0.012551514431834;0.0;18;Leo Román;26.7;27.7;22.3;31.2;0;51.1;19.0
+14083269;Mallorca;Barcelona;Vedat Muriqi;miss;assisted;assisted;0.34657418727875;0.0;17;Joan García;5.1;43.4;0.0;0.0;0;58.0;1.4
+14083269;Mallorca;Barcelona;Jan Virgili;save;throw-in-set-piece;throw-in-set-piece;0.032347429543734;0.12995420396328;12;Joan García;9.9;43.0;1.1;48.9;0;53.0;8.2
+14083269;Mallorca;Barcelona;Pablo Torre;block;throw-in-set-piece;throw-in-set-piece;0.039756577461958;0.0;12;Joan García;18.0;54.5;16.0;54.2;0;48.7;19.0
+14083292;Real Sociedad;Elche;Orri Steinn Óskarsson;goal;assisted;assisted;0.35285216569901;0.73213768005371;89;Iñaki Peña;16.9;57.0;0.0;0.0;0;46.1;0.6
+14083292;Real Sociedad;Elche;Orri Steinn Óskarsson;miss;assisted;assisted;0.61662077903748;0.0;85;Iñaki Peña;4.3;43.6;0.0;0.0;0;53.8;59.7
+14083292;Real Sociedad;Elche;Beñat Turrientes;miss;assisted;assisted;0.096721149981022;0.0;85;Iñaki Peña;7.4;59.1;4.2;42.2;0;77.6;25.0
+14083292;Elche;Real Sociedad;David Affengruber;miss;corner;corner;0.011819017119706;0.0;81;Álex Remiro;9.1;35.6;0.0;0.0;0;64.2;84.7
+14083292;Real Sociedad;Elche;Beñat Turrientes;miss;assisted;assisted;0.10130630433559;0.0;80;Iñaki Peña;15.4;44.5;0.0;0.0;0;56.3;61.1
+14083292;Real Sociedad;Elche;Jon Gorrotxategi;miss;assisted;assisted;0.029847022145987;0.0;73;Iñaki Peña;21.9;64.2;0.0;0.0;0;17.8;44.4
+14083292;Elche;Real Sociedad;Germán Valera;block;assisted;assisted;0.14942805469036;0.0;71;Álex Remiro;4.5;38.5;2.5;42.8;0;51.7;19.0
+14083292;Real Sociedad;Elche;Mikel Oyarzabal;miss;fast-break;fast-break;0.22007724642754;0.0;69;Iñaki Peña;14.4;49.1;0.0;0.0;0;58.2;44.4
+14083292;Elche;Real Sociedad;Aleix Febas;save;assisted;assisted;0.024797582998872;0.033602427691221;60;Álex Remiro;18.7;29.5;1.9;47.1;0;48.6;13.3
+14083292;Elche;Real Sociedad;Álvaro Rodriguez;save;assisted;assisted;0.033532612025738;0.51552563905716;55;Álex Remiro;22.8;59.5;1.8;50.9;0;54.2;1.3
+14083292;Real Sociedad;Elche;Beñat Turrientes;miss;regular;regular;0.029875239357352;0.0;51;Iñaki Peña;24.3;66.1;0.0;0.0;0;37.6;72.2
+14083292;Elche;Real Sociedad;André Silva;save;assisted;assisted;0.46565473079681;0.3543564081192;50;Álex Remiro;7.0;62.0;3.6;56.5;0;48.1;19.0
+14083292;Elche;Real Sociedad;André Silva;goal;regular;regular;0.055704317986965;0.74892616271973;42;Álex Remiro;9.3;37.7;0.0;0.0;0;45.8;5.7
+14083292;Real Sociedad;Elche;Sergio Gómez;miss;assisted;assisted;0.074059374630451;0.0;40;Iñaki Peña;15.0;34.5;0.0;0.0;0;45.9;80.6
+14083292;Real Sociedad;Elche;Mikel Oyarzabal;goal;regular;regular;0.66196298599243;0.98892259597778;37;Iñaki Peña;20.0;54.8;0.0;0.0;0;50.3;1.3
+14083292;Real Sociedad;Elche;Sergio Gómez;block;assisted;assisted;0.020519064739347;0.0;33;Iñaki Peña;11.0;29.1;9.6;31.6;0;52.0;19.0
+14083292;Real Sociedad;Elche;Luka Sučić;goal;fast-break;fast-break;0.30201843380928;0.88225996494293;24;Iñaki Peña;10.7;57.5;0.0;0.0;0;53.1;3.8
+14083292;Elche;Real Sociedad;Grady Diangana;miss;assisted;assisted;0.10027098655701;0.0;16;Álex Remiro;8.8;56.2;0.0;0.0;0;35.3;8.3
+14083292;Elche;Real Sociedad;Germán Valera;miss;assisted;assisted;0.082448221743107;0.0;16;Álex Remiro;14.4;37.4;7.7;51.8;0;29.9;1.4
+14083292;Elche;Real Sociedad;André Silva;save;assisted;assisted;0.31353977322578;0.40196454524994;9;Álex Remiro;9.6;41.2;1.4;48.9;0;47.7;7.0
+14083292;Elche;Real Sociedad;André Silva;miss;corner;corner;0.012432692572474;0.0;5;Álex Remiro;25.0;14.3;0.0;0.0;0;57.0;11.1
+14083292;Elche;Real Sociedad;Grady Diangana;miss;assisted;assisted;0.0212437864393;0.0;2;Álex Remiro;18.9;27.7;0.0;0.0;0;39.0;5.6

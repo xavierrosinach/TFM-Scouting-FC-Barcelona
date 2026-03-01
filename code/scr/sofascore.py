@@ -47,6 +47,9 @@ def page_scraper(url: str, sleep_time: int = 3, timeout: int = 10, print_info: b
 # Comprueva que el guardado de un fichero ha sucedido X días antes o no
 def need_to_upload(path: str, total_days: int = 5) -> bool:                 # Si a los cinco días no se ha actualizado, lo actualizamos
 
+    if not os.path.exists(path):
+        return True
+
     # Día de creación
     creation_time = os.path.getctime(path)
     return datetime.now() - datetime.fromtimestamp(creation_time) > timedelta(days = total_days)
@@ -235,60 +238,6 @@ def match_scraping(matches_dict: dict, match_id: int, out_path: str) -> dict:
     
     return {}    
 
-# Scraping de estadísticas de jugadores en un partido
-def match_players_stats(players_dict: dict, player_id: int, matches_dict: dict, match_id: int, season_key: str, league_code: int, out_path: str) -> dict:
-
-    if player_id not in players_dict.keys() or match_id not in matches_dict.keys():
-        return {}
-    
-    # Carpeta output
-    out_season_path = os.path.join(out_path, 'matches', 'player', 'stats', str(match_id))
-    os.makedirs(out_season_path, exist_ok=True)
-
-    # Comprovamos que no existe
-    final_path = os.path.join(out_season_path, f'{player_id}.json')
-    if os.path.exists(final_path):
-        with open(final_path, "r", encoding="utf-8") as f:
-            return jsonlib.load(f)
-    
-    # Scrapeamos y guardamos
-    link_to_scrape = f'https://api.sofascore.com/api/v1/event/{match_id}/player/{player_id}/statistics'
-    player_json = page_scraper(url=link_to_scrape)
-    
-    if player_json.get('player'):
-        with open(final_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(player_json, f, ensure_ascii=False, indent=2)
-        return player_json
-    
-    return {}
-
-# Scraping de heatmap de jugadores en un partido
-def match_players_heatmaps(players_dict: dict, player_id: int, matches_dict: dict, match_id: int, season_key: str, league_code: int, out_path: str) -> dict:
-
-    if player_id not in players_dict.keys() or match_id not in matches_dict.keys():
-        return {}
-    
-    # Carpeta output
-    out_season_path = os.path.join(out_path, 'matches', 'player', 'heatmap', str(match_id))
-    os.makedirs(out_season_path, exist_ok=True)
-
-    # Comprovamos que no existe
-    final_path = os.path.join(out_season_path, f'{player_id}.json')
-    if os.path.exists(final_path):
-        with open(final_path, "r", encoding="utf-8") as f:
-            return jsonlib.load(f)
-    
-    # Scrapeamos y guardamos
-    link_to_scrape = f'https://api.sofascore.com/api/v1/event/{match_id}/player/{player_id}/heatmap'
-    player_json = page_scraper(url=link_to_scrape)
-    
-    if player_json.get('heatmap'):
-        with open(final_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(player_json, f, ensure_ascii=False, indent=2)
-        return player_json
-    
-    return {}
-
 # Ejecución de un proceso en R para la descarga de la imagen de un jugador, equipo, manager, o estadio
 def image_downloader(type: str, id: int, out_path: str, sleep_time: int = 3, rscript_path: str = r"C:\Program Files\R\R-4.4.1\bin\x64\Rscript.exe", rfile: str = 'sofascore_images.R') -> None:
 
@@ -322,7 +271,7 @@ def image_downloader(type: str, id: int, out_path: str, sleep_time: int = 3, rsc
         out_file = os.path.join(out_dir, f'{id}.png') 
 
     # Run si no existe el file
-    if not os.path.exists(out_file) and not need_to_upload(path=out_file, total_days=90):       # Cada tres meses actualizamos fotos
+    if not os.path.exists(out_file) and need_to_upload(path=out_file, total_days=90):       # Cada tres meses actualizamos fotos
         cmd = [rscript_path, r_script, image_url, os.path.join(out_file)]
         res = subprocess.run(cmd, text=True, capture_output=True)
 
@@ -411,34 +360,29 @@ def scrape_league_data(league_id: int, out_path: str) -> None:
             match_info = match_scraping(matches_dict=dict_matches, match_id=match_id, out_path=out_season_path)
 
             # IDs de los jugadores que han jugado almenos un minuto en el partido -> los que tienen estadísticas
-            home_players_ids = {p['player']['id']: p['player']['slug'] for p in match_info.get('lineups', {}).get('home', {}).get('players', []) if p.get('statistics', {}).get('minutesPlayed', 0) > 0}
-            away_players_ids = {p['player']['id']: p['player']['slug'] for p in match_info.get('lineups', {}).get('away', {}).get('players', []) if p.get('statistics', {}).get('minutesPlayed', 0) > 0}
+            home_players_ids = {p.get('player', {}).get('id', 0): p.get('player', {}).get('slug', '') for p in match_info.get('lineups', {}).get('home', {}).get('players', []) if p.get('statistics', {}).get('minutesPlayed', 0) > 0}
+            away_players_ids = {p.get('player', {}).get('id', 0): p.get('player', {}).get('slug', '') for p in match_info.get('lineups', {}).get('away', {}).get('players', []) if p.get('statistics', {}).get('minutesPlayed', 0) > 0}
             players_ids = home_players_ids | away_players_ids
 
             # Diccionario con los managers del partido
-            home_manager = {match_info['match']['event']['homeTeam']['manager']['id']: match_info['match']['event']['homeTeam']['manager']['slug']}
-            away_manager = {match_info['match']['event']['awayTeam']['manager']['id']: match_info['match']['event']['awayTeam']['manager']['slug']}
+            home_manager = {match_info.get('match', {}).get('event', {}).get('homeTeam', {}).get('manager', {}).get('id', 0): match_info.get('match', {}).get('event', {}).get('homeTeam', {}).get('manager', {}).get('slug', '')}
+            away_manager = {match_info.get('match', {}).get('event', {}).get('awayTeam', {}).get('manager', {}).get('id', 0): match_info.get('match', {}).get('event', {}).get('awayTeam', {}).get('manager', {}).get('slug', '')}
             managers_ids = home_manager | away_manager
-
-            # Para cada jugador del partido
-            for player_id in players_ids.keys():
-                player_stats = match_players_stats(players_dict=players_ids, player_id=player_id, matches_dict=dict_matches, match_id=match_id, season_key=season_key, league_code=ss_code, out_path=out_season_path)
-                player_heatmap = match_players_heatmaps(players_dict=players_ids, player_id=player_id, matches_dict=dict_matches, match_id=match_id, season_key=season_key, league_code=ss_code, out_path=out_season_path)
 
             # Para manager en el partido, obtener información de los managers y fotografias
             for manager in managers_ids.keys():
                 manager_info = obtain_information(type='manager', id=manager, season_key=season_key, league_code=ss_code, out_season_path=out_season_path)
-                # image_downloader(type='manager', id=manager, out_path=out_path)
+                image_downloader(type='manager', id=manager, out_path=out_season_path)
 
         # Para cada jugador de todos los disponibles, obtenemos información y fotografías, al igual que con equipos y venues
         for player in dict_players.keys():
             player_info = obtain_information(type='player', id=player, season_key=season_key, league_code=ss_code, out_season_path=out_season_path)
-            # image_downloader(type='player', id=player, out_path=out_season_path)
+            image_downloader(type='player', id=player, out_path=out_season_path)
 
         for team in dict_teams.keys():
             team_info = obtain_information(type='team', id=team, season_key=season_key, league_code=ss_code, out_season_path=out_season_path)
-            # image_downloader(type='team', id=team, out_path=out_season_path)
+            image_downloader(type='team', id=team, out_path=out_season_path)
 
         for venue in dict_venues.keys():
             venue_info = obtain_information(type='venue', id=venue, season_key=season_key, league_code=ss_code, out_season_path=out_season_path)
-            # image_downloader(type='venue', id=venue, out_path=out_season_path)
+            image_downloader(type='venue', id=venue, out_path=out_season_path)

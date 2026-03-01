@@ -1,9 +1,6 @@
 import os
 import pandas as pd
 
-# out_path='G:\\Xavier Rosinach Capell\\03 Máster en Big Data Deportivo\\04 Trabajo Final de Master\\data'
-out_path = r'C:\Users\xrosinach\Desktop\TFM-Scouting-FC-Barcelona\data\raw'
-
 # Obtenemos el CSV con competiciones
 cdir = os.getcwd()
 utils = os.path.join(os.path.abspath(os.path.join(cdir, '..', '..')), 'utils')
@@ -21,5 +18,7 @@ def main_scrape_league_data(league_id: int, out_path: str, do_ss: bool = False, 
     elif do_fm:
         import fotmob as fm
         fm.scrape_league_data(league_id=league_id, out_path=os.path.join(out_path, 'fm'))
-    
+
+out_path = r'G:\Xavier Rosinach Capell\03 Máster en Big Data Deportivo\04 Trabajo Final de Master\data\raw'
+# out_path = r'C:\Users\xrosinach\Desktop\TFM-Scouting-FC-Barcelona\data\raw'
 main_scrape_league_data(league_id=73, out_path=out_path, do_ss=True)

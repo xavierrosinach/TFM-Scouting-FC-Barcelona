@@ -33,6 +33,11 @@ def matches_processing(matches_path: str) -> pd.DataFrame:
         single_match_info = match.get('matchInfo', {})
         single_match_live_data = match.get('liveData', {})
 
+        try:
+            match_ref = f'{single_match_live_data.get('matchDetailsExtra', {}).get('matchOfficial')[0].get('firstName', '')} {single_match_live_data.get('matchDetailsExtra', {}).get('matchOfficial')[0].get('lastName', '')}'
+        except:
+            match_ref = ''
+
         # Añadimos la info al diccionario
         match_info_list.append({'id': single_match_info.get('id', ''),
                                 'slug': f'{single_match_info.get('contestant')[0].get('code', '').lower()}-{single_match_info.get('contestant')[1].get('code', '').lower()}',
@@ -43,13 +48,11 @@ def matches_processing(matches_path: str) -> pd.DataFrame:
                                 'venue': single_match_info.get('venue', {}).get('longName', ''),
                                 'attendance': single_match_live_data.get('matchDetailsExtra', {}).get('attendance', 0),
                                 'match_min': single_match_live_data.get('matchDetails', {}).get('matchLengthMin', 90),
-                                'first_half_min': single_match_live_data.get('matchDetails', {}).get('period', [])[0].get('lengthMin', 45),
-                                'second_half_min': single_match_live_data.get('matchDetails', {}).get('period', [])[1].get('lengthMin', 45),
                                 'home_score_ht': single_match_live_data.get('matchDetails', {}).get('scores', {}).get('ht', {}).get('home', 0),
                                 'away_score_ht': single_match_live_data.get('matchDetails', {}).get('scores', {}).get('ht', {}).get('away', 0),
                                 'home_score_ft': single_match_live_data.get('matchDetails', {}).get('scores', {}).get('ft', {}).get('home', 0),
                                 'away_score_ft': single_match_live_data.get('matchDetails', {}).get('scores', {}).get('ft', {}).get('away', 0),
-                                'referee': f'{single_match_live_data.get('matchDetailsExtra', {}).get('matchOfficial')[0].get('firstName', '')} {single_match_live_data.get('matchDetailsExtra', {}).get('matchOfficial')[0].get('lastName', '')}'})
+                                'referee': match_ref})
         
     return pd.DataFrame(match_info_list)
     
