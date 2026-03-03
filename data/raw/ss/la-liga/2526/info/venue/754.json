@@ -1,0 +1,77 @@
+{
+  "venue": {
+    "city": {
+      "name": "Madrid"
+    },
+    "venueCoordinates": {
+      "latitude": 40.453,
+      "longitude": -3.6883
+    },
+    "hidden": false,
+    "slug": "santiago-bernab-u",
+    "name": "Bernabéu",
+    "capacity": 84744,
+    "mainTeams": [
+      {
+        "name": "Real Madrid",
+        "slug": "real-madrid",
+        "shortName": "Real Madrid",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 6803037,
+        "nameCode": "RMA",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2829,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#004996",
+          "text": "#004996"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ريال مدريد",
+            "bn": "রিয়াল মাদ্রিদ",
+            "hi": "रियल मैड्रिड",
+            "ru": "Реал Мадрид"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 754,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "سانتياغو برنابيو",
+        "hi": "सैंटियागो बर्नबेउ",
+        "bn": "সান্তিয়াগো বার্নাব্যু"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Bernabéu",
+      "capacity": 84744
+    },
+    "openedAtTimestamp": -695865600
+  },
+  "statistics": {
+    "totalMatches": 363,
+    "homeTeamGoalsScored": 922,
+    "awayTeamGoalsScored": 332,
+    "avgRedCardsPerGame": 0.1763085399449,
+    "avgCornerKicksPerGame": 17.539944903581,
+    "homeTeamWinsPercentage": 72.176308539945,
+    "awayTeamWinsPercentage": 9.9173553719008,
+    "drawsPercentage": 14.876033057851
+  }
+}

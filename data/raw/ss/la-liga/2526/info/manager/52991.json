@@ -1,0 +1,460 @@
+{
+  "manager": {
+    "name": "Ernesto Valverde",
+    "slug": "ernesto-valverde",
+    "shortName": "E. Valverde",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "teams": [
+      {
+        "name": "Athletic Club",
+        "slug": "athletic-club",
+        "shortName": "Athletic Club",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "category": {
+          "name": "Spain",
+          "slug": "spain",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 32,
+          "flag": "spain",
+          "alpha2": "ES",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إسبانيا",
+              "hi": "स्पेन",
+              "bn": "স্পেন",
+              "ru": "Испания"
+            },
+            "shortNameTranslation": {}
+          },
+          "transferPeriod": [
+            {
+              "activeFrom": "06-01 00:00",
+              "activeTo": "09-18 00:00"
+            },
+            {
+              "activeFrom": "12-30 00:00",
+              "activeTo": "02-16 00:00"
+            }
+          ]
+        },
+        "tournament": {
+          "name": "LaLiga",
+          "slug": "laliga",
+          "category": {
+            "name": "Spain",
+            "slug": "spain",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 32,
+            "flag": "spain",
+            "alpha2": "ES",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إسبانيا",
+                "hi": "स्पेन",
+                "bn": "স্পেন",
+                "ru": "Испания"
+              },
+              "shortNameTranslation": {}
+            },
+            "transferPeriod": [
+              {
+                "activeFrom": "06-01 00:00",
+                "activeTo": "09-18 00:00"
+              },
+              {
+                "activeFrom": "12-30 00:00",
+                "activeTo": "02-16 00:00"
+              }
+            ]
+          },
+          "uniqueTournament": {
+            "name": "LaLiga",
+            "slug": "laliga",
+            "primaryColorHex": "#2f4a89",
+            "secondaryColorHex": "#f4a32e",
+            "category": {
+              "name": "Spain",
+              "slug": "spain",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "id": 32,
+              "flag": "spain",
+              "alpha2": "ES",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "إسبانيا",
+                  "hi": "स्पेन",
+                  "bn": "স্পেন",
+                  "ru": "Испания"
+                },
+                "shortNameTranslation": {}
+              },
+              "transferPeriod": [
+                {
+                  "activeFrom": "06-01 00:00",
+                  "activeTo": "09-18 00:00"
+                },
+                {
+                  "activeFrom": "12-30 00:00",
+                  "activeTo": "02-16 00:00"
+                }
+              ]
+            },
+            "userCount": 813956,
+            "hasPerformanceGraphFeature": true,
+            "id": 8,
+            "displayInverseHomeAwayTeams": false,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "الدوري الإسباني",
+                "hi": "ला लिगा",
+                "bn": "লা লীগা"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "priority": 697,
+          "isLive": false,
+          "id": 36,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "hi": "ला लीगा",
+              "ar": "الدوري الإسباني",
+              "bn": "লা লীগা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "primaryUniqueTournament": {
+          "name": "LaLiga",
+          "slug": "laliga",
+          "primaryColorHex": "#2f4a89",
+          "secondaryColorHex": "#f4a32e",
+          "category": {
+            "name": "Spain",
+            "slug": "spain",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 32,
+            "flag": "spain",
+            "alpha2": "ES",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إسبانيا",
+                "hi": "स्पेन",
+                "bn": "স্পেন",
+                "ru": "Испания"
+              },
+              "shortNameTranslation": {}
+            },
+            "transferPeriod": [
+              {
+                "activeFrom": "06-01 00:00",
+                "activeTo": "09-18 00:00"
+              },
+              {
+                "activeFrom": "12-30 00:00",
+                "activeTo": "02-16 00:00"
+              }
+            ]
+          },
+          "userCount": 813956,
+          "hasPerformanceGraphFeature": true,
+          "id": 8,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوري الإسباني",
+              "hi": "ला लिगा",
+              "bn": "লা লীগা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 507217,
+        "nameCode": "ATH",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2825,
+        "fullName": "Athletic Club",
+        "teamColors": {
+          "primary": "#aa0000",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "نادي أتليتيك",
+            "bn": "অ্যাথলেটিক ক্লাব",
+            "hi": "एथलेटिक क्लब",
+            "ru": "Атлетик Бильбао"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ],
+    "preferredFormation": "4-2-3-1",
+    "deceased": false,
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain"
+    },
+    "id": 52991,
+    "team": {
+      "name": "Athletic Club",
+      "slug": "athletic-club",
+      "shortName": "Athletic Club",
+      "gender": "M",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "category": {
+        "name": "Spain",
+        "slug": "spain",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "id": 32,
+        "flag": "spain",
+        "alpha2": "ES",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إسبانيا",
+            "hi": "स्पेन",
+            "bn": "স্পেন",
+            "ru": "Испания"
+          },
+          "shortNameTranslation": {}
+        },
+        "transferPeriod": [
+          {
+            "activeFrom": "06-01 00:00",
+            "activeTo": "09-18 00:00"
+          },
+          {
+            "activeFrom": "12-30 00:00",
+            "activeTo": "02-16 00:00"
+          }
+        ]
+      },
+      "tournament": {
+        "name": "LaLiga",
+        "slug": "laliga",
+        "category": {
+          "name": "Spain",
+          "slug": "spain",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 32,
+          "flag": "spain",
+          "alpha2": "ES",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إسبانيا",
+              "hi": "स्पेन",
+              "bn": "স্পেন",
+              "ru": "Испания"
+            },
+            "shortNameTranslation": {}
+          },
+          "transferPeriod": [
+            {
+              "activeFrom": "06-01 00:00",
+              "activeTo": "09-18 00:00"
+            },
+            {
+              "activeFrom": "12-30 00:00",
+              "activeTo": "02-16 00:00"
+            }
+          ]
+        },
+        "uniqueTournament": {
+          "name": "LaLiga",
+          "slug": "laliga",
+          "primaryColorHex": "#2f4a89",
+          "secondaryColorHex": "#f4a32e",
+          "category": {
+            "name": "Spain",
+            "slug": "spain",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 32,
+            "flag": "spain",
+            "alpha2": "ES",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إسبانيا",
+                "hi": "स्पेन",
+                "bn": "স্পেন",
+                "ru": "Испания"
+              },
+              "shortNameTranslation": {}
+            },
+            "transferPeriod": [
+              {
+                "activeFrom": "06-01 00:00",
+                "activeTo": "09-18 00:00"
+              },
+              {
+                "activeFrom": "12-30 00:00",
+                "activeTo": "02-16 00:00"
+              }
+            ]
+          },
+          "userCount": 813956,
+          "hasPerformanceGraphFeature": true,
+          "id": 8,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوري الإسباني",
+              "hi": "ला लिगा",
+              "bn": "লা লীগা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 697,
+        "isLive": false,
+        "id": 36,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "hi": "ला लीगा",
+            "ar": "الدوري الإسباني",
+            "bn": "লা লীগা"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "primaryUniqueTournament": {
+        "name": "LaLiga",
+        "slug": "laliga",
+        "primaryColorHex": "#2f4a89",
+        "secondaryColorHex": "#f4a32e",
+        "category": {
+          "name": "Spain",
+          "slug": "spain",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 32,
+          "flag": "spain",
+          "alpha2": "ES",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إسبانيا",
+              "hi": "स्पेन",
+              "bn": "স্পেন",
+              "ru": "Испания"
+            },
+            "shortNameTranslation": {}
+          },
+          "transferPeriod": [
+            {
+              "activeFrom": "06-01 00:00",
+              "activeTo": "09-18 00:00"
+            },
+            {
+              "activeFrom": "12-30 00:00",
+              "activeTo": "02-16 00:00"
+            }
+          ]
+        },
+        "userCount": 813956,
+        "hasPerformanceGraphFeature": true,
+        "id": 8,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الدوري الإسباني",
+            "hi": "ला लिगा",
+            "bn": "লা লীগা"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "userCount": 507217,
+      "nameCode": "ATH",
+      "disabled": false,
+      "national": false,
+      "type": 0,
+      "id": 2825,
+      "fullName": "Athletic Club",
+      "teamColors": {
+        "primary": "#aa0000",
+        "secondary": "#ffffff",
+        "text": "#ffffff"
+      },
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "نادي أتليتيك",
+          "bn": "অ্যাথলেটিক ক্লাব",
+          "hi": "एथलेटिक क्लब",
+          "ru": "Атлетик Бильбао"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "formerPlayerId": 1011754,
+    "nationality": "ESP",
+    "nationalityISO2": "ES",
+    "performance": {
+      "total": 927,
+      "wins": 485,
+      "draws": 198,
+      "losses": 244,
+      "goalsScored": 1580,
+      "goalsConceded": 1007,
+      "totalPoints": 1653
+    },
+    "dateOfBirthTimestamp": -186019200,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "إرنستو فالڤيردي",
+        "bn": "আর্নেস্তো ভালভার্দে",
+        "hi": "अर्नेस्टो वाल्वरडे"
+      },
+      "shortNameTranslation": {
+        "ar": "إ. فالڤيردي",
+        "hi": "ई. वाल्वरडे",
+        "bn": "ই. ভালভার্দে"
+      }
+    }
+  }
+}

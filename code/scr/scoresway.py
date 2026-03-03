@@ -170,7 +170,7 @@ def match_stats(match_id: str, out_path: str) -> dict:
     return {}
 
 # Dado el codigo de una liga, scraping de toda la información
-def scrape_league_data(league_id: int, out_path: str, available_sw_seasons: list = ['2425', '2526']) -> None:
+def scrape_league_data(league_id: int, out_path: str, available_sw_seasons: list = ['2526', '2425']) -> None:
 
     # Obtenemos el nombre de la liga
     league_name = comps[comps['id'] == league_id]['tournament'].iloc[0]

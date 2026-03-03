@@ -1,0 +1,22 @@
+{
+  "manager": {
+    "name": "Javi Martinez",
+    "slug": "martinez-javi",
+    "shortName": "J. Martinez",
+    "sport": {
+      "name": "Football",
+      "slug": "football",
+      "id": 1
+    },
+    "teams": [],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain"
+    },
+    "id": 818747,
+    "formerPlayerId": 598134,
+    "nationality": "ESP",
+    "nationalityISO2": "ES",
+    "dateOfBirthTimestamp": 583718400
+  }
+}

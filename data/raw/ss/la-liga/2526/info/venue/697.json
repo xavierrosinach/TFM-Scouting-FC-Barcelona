@@ -1,0 +1,79 @@
+{
+  "venue": {
+    "city": {
+      "name": "Vigo"
+    },
+    "venueCoordinates": {
+      "latitude": 42.211122,
+      "longitude": -8.739231
+    },
+    "hidden": false,
+    "slug": "municipal-de-balaidos",
+    "name": "Estadio Abanca Balaídos",
+    "capacity": 24870,
+    "mainTeams": [
+      {
+        "name": "Celta Vigo",
+        "slug": "celta-vigo",
+        "shortName": "Celta",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 228725,
+        "nameCode": "CEL",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2821,
+        "teamColors": {
+          "primary": "#6cace4",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "سيلتا فيغو",
+            "bn": "সেলটা ভিগো",
+            "ru": "Сельта"
+          },
+          "shortNameTranslation": {
+            "ar": "سيلتا",
+            "hi": "सेल्टा"
+          }
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 697,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "بلدية بالايدوس",
+        "hi": "म्युनिसिपल डे बलाइदोस",
+        "bn": "মিউনিসিপ্যাল ​​ডি বালাইডোস"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Estadio Abanca Balaídos",
+      "capacity": 24870
+    },
+    "openedAtTimestamp": -1294012800
+  },
+  "statistics": {
+    "totalMatches": 317,
+    "homeTeamGoalsScored": 453,
+    "awayTeamGoalsScored": 388,
+    "avgRedCardsPerGame": 0.26182965299685,
+    "avgCornerKicksPerGame": 14.16403785489,
+    "homeTeamWinsPercentage": 40.694006309148,
+    "awayTeamWinsPercentage": 30.599369085173,
+    "drawsPercentage": 26.182965299685
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "venue": {
+    "city": {
+      "name": "Seville"
+    },
+    "venueCoordinates": {
+      "latitude": 37.356535,
+      "longitude": -5.981757
+    },
+    "hidden": false,
+    "slug": "benito-villamarin",
+    "name": "Benito Villamarin",
+    "capacity": 60721,
+    "mainTeams": [
+      {
+        "name": "Real Betis",
+        "slug": "real-betis",
+        "shortName": "Real Betis",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 559931,
+        "nameCode": "BET",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2816,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#006633",
+          "text": "#006633"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ريال بيتيس",
+            "ru": "Реал Бетис"
+          },
+          "shortNameTranslation": {
+            "ar": "ريال بيتيس",
+            "bn": "বেটিস",
+            "hi": "बेटिस"
+          }
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 1045,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "بينيتو فيلامارين",
+        "hi": "बेनिटो विलामारिन",
+        "bn": "বেনিটো ভিলামারিন"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Benito Villamarin",
+      "capacity": 60721
+    },
+    "openedAtTimestamp": -1287360000
+  },
+  "statistics": {
+    "totalMatches": 316,
+    "homeTeamGoalsScored": 471,
+    "awayTeamGoalsScored": 385,
+    "avgRedCardsPerGame": 0.29746835443038,
+    "avgCornerKicksPerGame": 15.481012658228,
+    "homeTeamWinsPercentage": 44.620253164557,
+    "awayTeamWinsPercentage": 27.53164556962,
+    "drawsPercentage": 26.898734177215
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "venue": {
+    "city": {
+      "name": "Leganes"
+    },
+    "venueCoordinates": {
+      "latitude": 40.340375,
+      "longitude": -3.760651
+    },
+    "hidden": false,
+    "slug": "estadio-municipal-de-butarque",
+    "name": "Estadio Municipal de Butarque",
+    "capacity": 12454,
+    "mainTeams": [
+      {
+        "name": "Leganés",
+        "slug": "leganes",
+        "shortName": "Leganés",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 77426,
+        "nameCode": "LEG",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2845,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#3300ff",
+          "text": "#3300ff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ليغانيس",
+            "bn": "লেগানেস",
+            "hi": "लेगानेस",
+            "ru": "Леганес"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 14888,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "استاد بوتاركي البلدي",
+        "hi": "एस्टेडियो म्युनिसिपल डी बुटार्क",
+        "bn": "এস্তাদিও মিউনিসিপ্যাল ​​ডি বুটার্ক"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Estadio Municipal de Butarque",
+      "capacity": 12454
+    },
+    "openedAtTimestamp": 887414400
+  },
+  "statistics": {
+    "totalMatches": 273,
+    "homeTeamGoalsScored": 346,
+    "awayTeamGoalsScored": 263,
+    "avgRedCardsPerGame": 0.21978021978022,
+    "avgCornerKicksPerGame": 14.589743589744,
+    "homeTeamWinsPercentage": 42.490842490842,
+    "awayTeamWinsPercentage": 26.007326007326,
+    "drawsPercentage": 27.838827838828
+  }
+}

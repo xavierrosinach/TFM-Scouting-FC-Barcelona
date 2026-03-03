@@ -1,0 +1,77 @@
+{
+  "venue": {
+    "city": {
+      "name": "Cornella"
+    },
+    "venueCoordinates": {
+      "latitude": 41.347807,
+      "longitude": 2.074801
+    },
+    "hidden": false,
+    "slug": "rcde-stadium",
+    "name": "RCDE Stadium",
+    "capacity": 40000,
+    "mainTeams": [
+      {
+        "name": "Espanyol",
+        "slug": "espanyol",
+        "shortName": "Espanyol",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 162928,
+        "nameCode": "ESP",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2814,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#1369d2",
+          "text": "#1369d2"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "اسبانيول",
+            "bn": "এসপানিওল",
+            "hi": "एस्पेनयोल",
+            "ru": "Эспаньол"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 1307,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ملعب RCDE",
+        "hi": "आरसीडीई स्टेडियम",
+        "bn": "আরসিডিই স্টেডিয়াম"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "RCDE Stadium",
+      "capacity": 40000
+    },
+    "openedAtTimestamp": 1249171200
+  },
+  "statistics": {
+    "totalMatches": 308,
+    "homeTeamGoalsScored": 423,
+    "awayTeamGoalsScored": 360,
+    "avgRedCardsPerGame": 0.29545454545455,
+    "avgCornerKicksPerGame": 14.909090909091,
+    "homeTeamWinsPercentage": 43.506493506494,
+    "awayTeamWinsPercentage": 29.545454545455,
+    "drawsPercentage": 24.675324675325
+  }
+}

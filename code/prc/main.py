@@ -22,8 +22,13 @@ def main_processing_league_data(league_id: int, raw_out_path: str, clean_out_pat
         import fotmob as fm
         fm.league_processing(league_id=league_id, out_path=raw_out_path, clean_out_path=clean_out_path)
 
-raw_out_path = r'G:\Xavier Rosinach Capell\03 Máster en Big Data Deportivo\04 Trabajo Final de Master\data\raw'
-clean_out_path = r'G:\Xavier Rosinach Capell\03 Máster en Big Data Deportivo\04 Trabajo Final de Master\data\clean'
+# raw_out_path = r'G:\Xavier Rosinach Capell\03 Máster en Big Data Deportivo\04 Trabajo Final de Master\data\raw'
+# clean_out_path = r'G:\Xavier Rosinach Capell\03 Máster en Big Data Deportivo\04 Trabajo Final de Master\data\clean'
+
+
+raw_out_path = r'C:\Users\xrosinach\Desktop\TFM-Scouting-FC-Barcelona\data\raw'
+clean_out_path = r'C:\Users\xrosinach\Desktop\TFM-Scouting-FC-Barcelona\data\proc'
+
 main_processing_league_data(league_id=73, raw_out_path=raw_out_path, clean_out_path=clean_out_path, do_fm=True)
 main_processing_league_data(league_id=73, raw_out_path=raw_out_path, clean_out_path=clean_out_path, do_ss=True)
 main_processing_league_data(league_id=73, raw_out_path=raw_out_path, clean_out_path=clean_out_path, do_sw=True)

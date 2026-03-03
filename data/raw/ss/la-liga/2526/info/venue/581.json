@@ -1,0 +1,77 @@
+{
+  "venue": {
+    "city": {
+      "name": "San Sebastian"
+    },
+    "venueCoordinates": {
+      "latitude": 43.301337,
+      "longitude": -1.973552
+    },
+    "hidden": false,
+    "slug": "reale-arena",
+    "name": "Reale Arena",
+    "capacity": 40000,
+    "mainTeams": [
+      {
+        "name": "Real Sociedad",
+        "slug": "real-sociedad",
+        "shortName": "Real Sociedad",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 394385,
+        "nameCode": "RSO",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2824,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#0077c7",
+          "text": "#0077c7"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ريال سوسيداد",
+            "bn": "রিয়াল সোসিয়েদাদ",
+            "hi": "रियल सोसियदाद",
+            "ru": "Реал Сосьедад"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 581,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ريالي أرينا",
+        "hi": "रीले एरिना",
+        "bn": "রিয়েল এরিনা"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Reale Arena",
+      "capacity": 40000
+    },
+    "openedAtTimestamp": 745200000
+  },
+  "statistics": {
+    "totalMatches": 359,
+    "homeTeamGoalsScored": 537,
+    "awayTeamGoalsScored": 377,
+    "avgRedCardsPerGame": 0.22284122562674,
+    "avgCornerKicksPerGame": 15.958217270195,
+    "homeTeamWinsPercentage": 45.682451253482,
+    "awayTeamWinsPercentage": 25.626740947075,
+    "drawsPercentage": 25.348189415042
+  }
+}

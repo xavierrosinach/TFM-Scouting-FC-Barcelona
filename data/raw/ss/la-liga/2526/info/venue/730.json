@@ -1,0 +1,77 @@
+{
+  "venue": {
+    "city": {
+      "name": "Seville"
+    },
+    "venueCoordinates": {
+      "latitude": 37.384634,
+      "longitude": -5.971156
+    },
+    "hidden": false,
+    "slug": "ram-n-s-nchez-pizju-n",
+    "name": "Ramón Sánchez Pizjuán",
+    "capacity": 42714,
+    "mainTeams": [
+      {
+        "name": "Sevilla",
+        "slug": "sevilla",
+        "shortName": "Sevilla",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 372484,
+        "nameCode": "SEV",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2833,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#cc1020",
+          "text": "#cc1020"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إشبيلية",
+            "bn": "সেভিলা",
+            "hi": "सेविला",
+            "ru": "Cевилья"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 730,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "رامون سانشيز بيزخوان",
+        "hi": "रामोन सांचेज़ पिज़्ज़ुआन",
+        "bn": "রামন সানচেজ পিজজুয়ান"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Ramón Sánchez Pizjuán",
+      "capacity": 42714
+    },
+    "openedAtTimestamp": -357177600
+  },
+  "statistics": {
+    "totalMatches": 368,
+    "homeTeamGoalsScored": 640,
+    "awayTeamGoalsScored": 366,
+    "avgRedCardsPerGame": 0.28804347826087,
+    "avgCornerKicksPerGame": 15.940217391304,
+    "homeTeamWinsPercentage": 57.608695652174,
+    "awayTeamWinsPercentage": 20.380434782609,
+    "drawsPercentage": 19.836956521739
+  }
+}

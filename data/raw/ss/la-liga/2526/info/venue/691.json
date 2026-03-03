@@ -1,0 +1,77 @@
+{
+  "venue": {
+    "city": {
+      "name": "Valencia"
+    },
+    "venueCoordinates": {
+      "latitude": 39.474528,
+      "longitude": -0.358157
+    },
+    "hidden": false,
+    "slug": "mestalla",
+    "name": "Mestalla",
+    "capacity": 49430,
+    "mainTeams": [
+      {
+        "name": "Valencia",
+        "slug": "valencia",
+        "shortName": "Valencia",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 274792,
+        "nameCode": "VAL",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2828,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فالنسيا",
+            "bn": "ভ্যালেন্সিয়া",
+            "hi": "वेलेंसिया",
+            "ru": "Валенсия"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 691,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ميستايا",
+        "hi": "मेस्टाला",
+        "bn": "মেস্তাল্লা"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Mestalla",
+      "capacity": 49430
+    },
+    "openedAtTimestamp": -1471219200
+  },
+  "statistics": {
+    "totalMatches": 337,
+    "homeTeamGoalsScored": 551,
+    "awayTeamGoalsScored": 362,
+    "avgRedCardsPerGame": 0.23442136498516,
+    "avgCornerKicksPerGame": 15.522255192878,
+    "homeTeamWinsPercentage": 49.554896142433,
+    "awayTeamWinsPercentage": 23.442136498516,
+    "drawsPercentage": 24.925816023739
+  }
+}

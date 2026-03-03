@@ -1,0 +1,77 @@
+{
+  "venue": {
+    "city": {
+      "name": "Palma"
+    },
+    "venueCoordinates": {
+      "latitude": 39.589935,
+      "longitude": 2.630116
+    },
+    "hidden": false,
+    "slug": "estadi-de-son-moix",
+    "name": "Estadi de Son Moix",
+    "capacity": 26020,
+    "mainTeams": [
+      {
+        "name": "Mallorca",
+        "slug": "mallorca",
+        "shortName": "Mallorca",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 178149,
+        "nameCode": "MLL",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2826,
+        "teamColors": {
+          "primary": "#cc0000",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "مايوركا",
+            "bn": "ম্যালোর্কা",
+            "hi": "मल्लोर्का",
+            "ru": "Мальорка"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 760,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ملعب دي سون مويس",
+        "hi": "एस्ताडी डी सोन मोइक्स",
+        "bn": "এস্তাদি দে সন মোইক্স"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Estadi de Son Moix",
+      "capacity": 26020
+    },
+    "openedAtTimestamp": 928195200
+  },
+  "statistics": {
+    "totalMatches": 298,
+    "homeTeamGoalsScored": 381,
+    "awayTeamGoalsScored": 305,
+    "avgRedCardsPerGame": 0.30201342281879,
+    "avgCornerKicksPerGame": 13.395973154362,
+    "homeTeamWinsPercentage": 44.630872483221,
+    "awayTeamWinsPercentage": 26.174496644295,
+    "drawsPercentage": 26.174496644295
+  }
+}

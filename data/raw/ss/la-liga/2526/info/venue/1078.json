@@ -1,0 +1,76 @@
+{
+  "venue": {
+    "city": {
+      "name": "Seville"
+    },
+    "venueCoordinates": {
+      "latitude": 37.417235,
+      "longitude": -6.004613
+    },
+    "hidden": false,
+    "slug": "estadio-de-la-cartuja",
+    "name": "Estadio de la Cartuja",
+    "capacity": 70000,
+    "mainTeams": [
+      {
+        "name": "Real Ciencias Enerside",
+        "slug": "real-ciencias-enerside",
+        "shortName": "Real Ciencias Enerside",
+        "gender": "M",
+        "sport": {
+          "name": "Rugby",
+          "slug": "rugby",
+          "id": 12
+        },
+        "userCount": 72,
+        "nameCode": "RCI",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 314035,
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ريال سيينسيا إنيرسايد"
+          },
+          "shortNameTranslation": {
+            "ar": "ريال سيينسيا إنيرسايد"
+          }
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 1078,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ملعب دي لا كارتوجا",
+        "hi": "एस्टेडियो डे ला कार्टुजा",
+        "bn": "এস্তাদিও দে লা কার্তুজা"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Estadio de la Cartuja",
+      "capacity": 70000
+    },
+    "openedAtTimestamp": 925862400
+  },
+  "statistics": {
+    "totalMatches": 33,
+    "homeTeamGoalsScored": 49,
+    "awayTeamGoalsScored": 42,
+    "avgRedCardsPerGame": 0.21212121212121,
+    "avgCornerKicksPerGame": 13.636363636364,
+    "homeTeamWinsPercentage": 42.424242424242,
+    "awayTeamWinsPercentage": 21.212121212121,
+    "drawsPercentage": 21.212121212121
+  }
+}

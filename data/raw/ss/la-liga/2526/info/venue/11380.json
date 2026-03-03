@@ -1,0 +1,80 @@
+{
+  "venue": {
+    "city": {
+      "name": "Girona"
+    },
+    "venueCoordinates": {
+      "latitude": 41.9611,
+      "longitude": 2.8278
+    },
+    "hidden": false,
+    "slug": "estadi-montilivi",
+    "name": "Estadi Montilivi",
+    "capacity": 14624,
+    "mainTeams": [
+      {
+        "name": "Girona FC",
+        "slug": "girona-fc",
+        "shortName": "Girona",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 350254,
+        "nameCode": "GIR",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 24264,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#ff0000",
+          "text": "#ff0000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "جيرونا إف سي",
+            "hi": "जिरोना",
+            "ru": "Жирона"
+          },
+          "shortNameTranslation": {
+            "ar": "جيرونا",
+            "bn": "জিরোনা",
+            "hi": "गिरोना"
+          }
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 11380,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ملعب مونتيلفي",
+        "hi": "एस्टेडी मोंटिलिवी",
+        "bn": "এস্তাদি মন্টিলিভি"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Estadi Montilivi",
+      "capacity": 14624
+    },
+    "openedAtTimestamp": 19440000
+  },
+  "statistics": {
+    "totalMatches": 268,
+    "homeTeamGoalsScored": 383,
+    "awayTeamGoalsScored": 270,
+    "avgRedCardsPerGame": 0.25,
+    "avgCornerKicksPerGame": 15.787313432836,
+    "homeTeamWinsPercentage": 47.761194029851,
+    "awayTeamWinsPercentage": 28.731343283582,
+    "drawsPercentage": 20.522388059701
+  }
+}

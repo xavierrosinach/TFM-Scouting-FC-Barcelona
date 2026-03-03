@@ -1,0 +1,15 @@
+league;season;id;name;slug;short_name;team;pref_formation;country;date_birth;matches;wins;draws;losses;goals_for;goals_against;points
+73;2526;52986;Manuel Pellegrini;manuel-pellegrini;M. Pellegrini;Real Betis;4-2-3-1;Chile;-514166400;1205;596;273;336;2052;1463;2061
+73;2526;52991;Ernesto Valverde;ernesto-valverde;E. Valverde;Athletic Club;4-2-3-1;Spain;-186019200;927;485;198;244;1580;1007;1653
+73;2526;53376;Diego Simeone;diego-simeone;D. Simeone;Atlético Madrid;4-4-2;Argentina;10108800;985;556;220;209;1632;894;1888
+73;2526;784639;Eduardo Coudet;eduardo-coudet;E. Coudet;Deportivo Alavés;4-1-3-2;Argentina;148176000;460;207;123;130;680;514;744
+73;2526;785589;Jagoba Arrasate;jagoba-arrasate;J. Arrasate;;4-2-3-1;Spain;262051200;531;197;146;188;644;662;737
+73;2526;787742;Carlos Corberán;carlos-corberan;C. Corberán;Valencia;4-2-3-1;Spain;418521600;298;119;79;100;396;370;436
+73;2526;788163;Michel;michel;Michel;Girona FC;4-2-3-1;Spain;183859200;362;147;81;134;508;475;522
+73;2526;793014;Luís Castro;luis-castro;L. Castro;Levante UD;4-1-4-1;Portugal;326505600;236;109;44;83;388;319;371
+73;2526;793676;Hans-Dieter Flick;hans-dieter-flick;H. Flick;Barcelona;4-2-3-1;Germany;-153100800;405;244;70;91;941;500;802
+73;2526;794112;Pellegrino Matarazzo;pellegrino-matarazzo;P. Matarazzo;Real Sociedad;3-4-2-1;USA;249523200;301;115;80;106;502;454;425
+73;2526;795439;Eder Sarabia;eder-sarabia-armesto;E. Sarabia ;Elche;4-3-3;Spain;338860800;211;86;53;72;269;222;311
+73;2526;798940;Álvaro Arbeloa;alvaro-arbeloa;Á. Arbeloa;Real Madrid;4-3-3;Spain;411609600;58;36;6;16;114;63;114
+73;2526;818747;Javi Martinez;martinez-javi;J. Martinez;;;Spain;583718400;0;0;0;0;0;0;0
+73;2526;94696;José Bordalás;jose-bordalas;J. Bordalás;Getafe;4-4-2;Spain;-183859200;717;290;191;236;895;787;1061

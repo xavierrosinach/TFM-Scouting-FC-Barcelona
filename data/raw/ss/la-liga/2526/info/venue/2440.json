@@ -1,0 +1,77 @@
+{
+  "venue": {
+    "city": {
+      "name": "Madrid"
+    },
+    "venueCoordinates": {
+      "latitude": 40.3921,
+      "longitude": -3.6587
+    },
+    "hidden": false,
+    "slug": "estadio-de-vallecas",
+    "name": "Estadio de Vallecas",
+    "capacity": 14708,
+    "mainTeams": [
+      {
+        "name": "Rayo Vallecano",
+        "slug": "rayo-vallecano",
+        "shortName": "Rayo Vallecano",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 186796,
+        "nameCode": "RAY",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2818,
+        "teamColors": {
+          "primary": "#ffffff",
+          "secondary": "#ffffff",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "رايو فاليكانو",
+            "bn": "রায়ো ভ্যালেকানো",
+            "hi": "रेयो वैलेकैनो",
+            "ru": "Райо Вальекано"
+          },
+          "shortNameTranslation": {}
+        }
+      }
+    ],
+    "country": {
+      "alpha2": "ES",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 2440,
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "ملعب فالكا",
+        "hi": "एस्टेडियो डे वैलेकास",
+        "bn": "এস্তাদিও ডি ভ্যালেকাস"
+      },
+      "shortNameTranslation": {}
+    },
+    "stadium": {
+      "name": "Estadio de Vallecas",
+      "capacity": 14708
+    },
+    "openedAtTimestamp": 200534400
+  },
+  "statistics": {
+    "totalMatches": 293,
+    "homeTeamGoalsScored": 398,
+    "awayTeamGoalsScored": 357,
+    "avgRedCardsPerGame": 0.26962457337884,
+    "avgCornerKicksPerGame": 16.201365187713,
+    "homeTeamWinsPercentage": 39.249146757679,
+    "awayTeamWinsPercentage": 30.37542662116,
+    "drawsPercentage": 26.621160409556
+  }
+}
