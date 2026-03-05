@@ -26,9 +26,9 @@ def main_processing_league_data(league_id: int, raw_out_path: str, clean_out_pat
 # clean_out_path = r'G:\Xavier Rosinach Capell\03 Máster en Big Data Deportivo\04 Trabajo Final de Master\data\clean'
 
 
-raw_out_path = r'C:\Users\xrosinach\Desktop\TFM-Scouting-FC-Barcelona\data\raw'
-clean_out_path = r'C:\Users\xrosinach\Desktop\TFM-Scouting-FC-Barcelona\data\proc'
+raw_data_path = r'G:\Xavier Rosinach Capell\03 Máster en Big Data Deportivo\04 Trabajo Final de Master\data\raw'
+proc_data_path = r'G:\Xavier Rosinach Capell\03 Máster en Big Data Deportivo\04 Trabajo Final de Master\data\proc'
 
-main_processing_league_data(league_id=73, raw_out_path=raw_out_path, clean_out_path=clean_out_path, do_fm=True)
-main_processing_league_data(league_id=73, raw_out_path=raw_out_path, clean_out_path=clean_out_path, do_ss=True)
-main_processing_league_data(league_id=73, raw_out_path=raw_out_path, clean_out_path=clean_out_path, do_sw=True)
+main_processing_league_data(league_id=73, raw_out_path=raw_data_path, clean_out_path=proc_data_path, do_fm=True)
+main_processing_league_data(league_id=73, raw_out_path=raw_data_path, clean_out_path=proc_data_path, do_ss=True)
+main_processing_league_data(league_id=73, raw_out_path=raw_data_path, clean_out_path=proc_data_path, do_sw=True)

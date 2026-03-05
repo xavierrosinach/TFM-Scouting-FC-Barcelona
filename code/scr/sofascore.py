@@ -29,6 +29,18 @@ options.add_argument("--headless=new")
 driver = webdriver.Chrome(options=options)
 driver.get("https://www.google.com")
 
+# Escrive un archivo JSON
+def safe_json_dump(data: dict, path: str) -> None:
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            jsonlib.dump(data, f, ensure_ascii=False)
+    except Exception:
+        try:
+            with open(path, "w", encoding="utf-8") as f:
+                jsonlib.dump({}, f)
+        except Exception:
+            pass
+
 # Convertir un URL a JSON
 def page_scraper(url: str, sleep_time: int = 3, timeout: int = 10, print_info: bool = True) -> dict:
 
@@ -74,8 +86,7 @@ def league_available_seasons(league_code: int, out_path: str) -> dict:
 
     # Guardado en JSON si existe 'seasons'
     if available_seasons_json.get('seasons'):
-        with open(json_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(available_seasons_json, f)
+        safe_json_dump(data=available_seasons_json, path=json_path)
     
     return available_seasons_json
 
@@ -115,8 +126,7 @@ def season_data(seasons_dict: dict, season_key: str, league_code: int, out_path:
                 return list_match_dict
             else:
                 # Guardamos
-                with open(json_path, "w", encoding="utf-8") as f:
-                    jsonlib.dump(matches_json, f)
+                safe_json_dump(data=matches_json, path=json_path)
     
                 # Añadimos a la lista
                 list_match_dict.append(matches_json)
@@ -154,8 +164,7 @@ def season_standings(seasons_dict: dict, season_key: str, league_code: int, out_
         standings[key] = standings_json if standings_json.get("standings") else {}
 
     # Guardar 1 vez el dict completo
-    with open(standings_path, "w", encoding="utf-8") as f:
-        jsonlib.dump(standings, f, ensure_ascii=False, indent=2)
+    safe_json_dump(data=standings, path=standings_path)
 
     return standings
 
@@ -191,8 +200,7 @@ def season_information(seasons_dict: dict, season_key: str, league_code: int, ou
             info_scraped = page_scraper(url=page_to_scrape)
 
             # Obtenemos la información
-            with open(info_path, "w", encoding="utf-8") as f:
-                jsonlib.dump(info_scraped, f, ensure_ascii=False, indent=2)
+            safe_json_dump(data=info_scraped, path=info_path)
             list_information[info_key] = (info_scraped)
     
     return list_information
@@ -210,8 +218,11 @@ def match_scraping(matches_dict: dict, match_id: int, out_path: str) -> dict:
     # Comprovamos que no existe
     final_path = os.path.join(out_season_path, f'{match_id}.json')
     if os.path.exists(final_path):
-        with open(final_path, "r", encoding="utf-8") as f:
-            return jsonlib.load(f)
+        try:
+            with open(final_path, "r", encoding="utf-8") as f:
+                return jsonlib.load(f)
+        except:
+            return {}
         
     # Vamos a scrapear uno a uno, si en alguno hay error, devolveremos vacío -> no seguiremos si hay error
     match_info_url = f'https://api.sofascore.com/api/v1/event/{match_id}'
@@ -232,8 +243,7 @@ def match_scraping(matches_dict: dict, match_id: int, out_path: str) -> dict:
 
         # Diccionario y lo guardamos
         full_match_info = {'match': match_info_json, 'lineups': match_lineups_json, 'statistics': match_stats_json, 'shotmap': match_shotmap_json, 'graph': match_graph_json, 'incidents': match_incidents_json}
-        with open(final_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(full_match_info, f, ensure_ascii=False, indent=2)
+        safe_json_dump(data=full_match_info, path=final_path)
         return full_match_info
     
     return {}    
@@ -309,8 +319,8 @@ def obtain_information(type: str, id: int, season_key: str, league_code: int, ou
     else:
         info_json = page_scraper(url=info_path)
         if info_json.get(type):
-            with open(out_json, "w", encoding="utf-8") as f:
-                jsonlib.dump(info_json, f, ensure_ascii=False, indent=2)
+            safe_json_dump(data=info_json, path=out_json)
+
         return info_json
     
 # Dado el codigo de una liga, scraping de toda la información

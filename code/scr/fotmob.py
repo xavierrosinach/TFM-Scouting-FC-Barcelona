@@ -15,6 +15,18 @@ comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';')
 with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
     desired_seasons = jsonlib.load(f)
 
+# Escrive un archivo JSON
+def safe_json_dump(data: dict, path: str) -> None:
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            jsonlib.dump(data, f, ensure_ascii=False)
+    except Exception:
+        try:
+            with open(path, "w", encoding="utf-8") as f:
+                jsonlib.dump({}, f)
+        except Exception:
+            pass
+
 # Convertir un URL a JSON
 def url_to_json(url: str, sleep_time: int = 3, print_info: bool = True) -> dict:
 
@@ -75,8 +87,8 @@ def league_available_seasons(league_code: int, out_path: str) -> dict:
 
     # Guardado en JSON
     if available_seasons_json.get('allAvailableSeasons'):
-        with open(json_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(available_seasons_json, f)
+        safe_json_dump(data=available_seasons_json, path=json_path)
+
     
     return available_seasons_json
 
@@ -104,8 +116,7 @@ def season_data(seasons_dict: dict, season_key: str, league_code: int, out_path:
     season_json = url_to_json(season_link)
 
     if season_json.get('fixtures'):
-        with open(json_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(season_json, f)
+        safe_json_dump(data=season_json, path=json_path)
     
     return season_json
 
@@ -132,8 +143,7 @@ def match_data(matches_dict: dict, match_id: str, league_code: int, out_path: st
 
     # Leemos el link y guardado en JSON
     match_json = url_to_json(url=match_link)
-    with open(json_path, "w", encoding="utf-8") as f:
-        jsonlib.dump(match_json, f)
+    safe_json_dump(data=match_json, path=json_path)
     
     return match_json
 

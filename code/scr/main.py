@@ -20,7 +20,9 @@ def main_scrape_league_data(league_id: int, out_path: str, do_ss: bool = False, 
         fm.scrape_league_data(league_id=league_id, out_path=os.path.join(out_path, 'fm'))
 
 # out_path = r'G:\Xavier Rosinach Capell\03 Máster en Big Data Deportivo\04 Trabajo Final de Master\data\raw'
-out_path = r'C:\Users\xrosinach\Desktop\TFM-Scouting-FC-Barcelona\data\raw'
+# out_path = r'C:\Users\xrosinach\Desktop\TFM-Scouting-FC-Barcelona\data\raw'
+# out_path = r"G:\Xavier Rosinach Capell\03 Máster en Big Data Deportivo\04 Trabajo Final de Master\data\raw"
+out_path = r"C:\Users\ASUS\Desktop\data\raw"
 main_scrape_league_data(league_id=73, out_path=out_path, do_sw=True)
-# main_scrape_league_data(league_id=73, out_path=out_path, do_fm=True)
-# main_scrape_league_data(league_id=73, out_path=out_path, do_ss=True)
+main_scrape_league_data(league_id=73, out_path=out_path, do_fm=True)
+main_scrape_league_data(league_id=73, out_path=out_path, do_ss=True)

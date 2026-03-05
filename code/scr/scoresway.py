@@ -16,6 +16,18 @@ comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';')
 with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
     desired_seasons = jsonlib.load(f)
 
+# Escrive un archivo JSON
+def safe_json_dump(data: dict, path: str) -> None:
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            jsonlib.dump(data, f, ensure_ascii=False)
+    except Exception:
+        try:
+            with open(path, "w", encoding="utf-8") as f:
+                jsonlib.dump({}, f)
+        except Exception:
+            pass
+
 # Descargar datos de url de Scoresway
 def scrape_json(url: str, referer: str = 'https://www.scoresway.com/', sleep_time: int = 3, print_info: bool = True) -> dict:
 
@@ -79,8 +91,7 @@ def season_matches(season: str, league_code: int, out_path: str) -> dict:
     matches_json = scrape_json(url=matches_url)
 
     if matches_json.get('match'):
-        with open(json_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(matches_json, f)
+        safe_json_dump(data=matches_json, path=json_path)
         return matches_json
     
     return {}
@@ -105,8 +116,7 @@ def season_standings(season: str, league_code: int, out_path: str) -> dict:
     standings_json = scrape_json(url=standings_url)
 
     if standings_json.get('stage'):
-        with open(json_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(standings_json, f)
+        safe_json_dump(data=standings_json, path=json_path)
         return standings_json
     
     return {}
@@ -131,8 +141,7 @@ def season_squads(season: str, league_code: int, out_path: str) -> dict:
     squads_json = scrape_json(url=squads_url)
 
     if squads_json.get('squad'):
-        with open(json_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(squads_json, f)
+        safe_json_dump(data=squads_json, path=json_path)
         return squads_json
     
     return {}
@@ -163,8 +172,7 @@ def match_stats(match_id: str, out_path: str) -> dict:
     stats_json = scrape_json(stats_url) or {}
 
     if isinstance(stats_json, dict) and stats_json.get('matchInfo'):
-        with open(json_path, "w", encoding="utf-8") as f:
-            jsonlib.dump(stats_json, f, ensure_ascii=False)
+        safe_json_dump(data=stats_json, path=json_path)
         return stats_json
     
     return {}
