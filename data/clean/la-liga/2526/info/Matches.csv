@@ -1,0 +1,9 @@
+League;Season;Round;Slug;Date;Time;HomeTeam;AwayTeam;HomeScore;AwayScore;HalfTimeHomeScore;HalfTimeAwayScore;HomeFormation;AwayFormation;MatchMin;Attendance;Venue;Referee
+73;2526;23;barcelona-mallorca;07/02/2026;15:15;Barcelona;Mallorca;3;0;1;0;4-3-3;4-2-3-1;95;44301;Spotify Camp Nou;Alejandro Quintero González
+73;2526;23;real_sociedad-elche;07/02/2026;20:00;Real Sociedad;Elche;3;1;2;1;4-4-2;3-1-4-2;98;30187;Estadio Municipal de Anoeta;José Luis Guzmán Mansilla
+73;2526;23;alaves-getafe;08/02/2026;13:00;Alavés;Getafe;0;2;0;0;4-4-2;5-3-2;99;15960;Estadio de Mendizorroza;Juan Martínez Munuera
+73;2526;23;athletic_club-levante;08/02/2026;15:15;Athletic Club;Levante;4;2;2;0;4-2-3-1;4-2-3-1;103;46487;Estadio de San Mamés;Alejandro Muñíz Ruiz
+73;2526;23;atletico_de_madrid-real_betis;08/02/2026;17:30;Atlético de Madrid;Real Betis;0;1;0;1;4-4-2;4-3-3;96;65210;Riyadh Air Metropolitano;Mateo Busquets Ferrer
+73;2526;23;sevilla-girona;08/02/2026;15:15;Sevilla;Girona;1;1;0;1;5-3-2;4-2-3-1;98;30384;Estadio Ramón Sánchez Pizjuán;Jesús Gil Manzano
+73;2526;23;valencia-real_madrid;08/02/2026;20:00;Valencia;Real Madrid;0;2;0;0;4-4-2;4-4-2;95;47515;Estadio de Mestalla;Javier Alberola Rojas
+73;2526;23;villarreal-espanyol;09/02/2026;20:00;Villarreal;Espanyol;4;1;2;0;4-4-2;4-2-3-1;94;16825;Estadio de la Cerámica;Adrián Cordero Vega
