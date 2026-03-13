@@ -12,7 +12,7 @@ import sw_scr as scr        # Codigo de scraping
 # Obtenemos el CSV con competiciones
 cdir = os.getcwd()
 utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')
-comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';')
+comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';', encoding='latin1')
 
 # JSON con temporadas deseadas
 with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
@@ -332,9 +332,9 @@ def main_scoresway_league_cleaning(league_id: int, out_path: str, do_scraping: b
         season_info_path = os.path.join(league_raw_path, s, 'info')             # Path con la información de la liga
         season_matches_path = os.path.join(league_raw_path, s, 'matches')       # Path con los partidos
 
-        league_clean_info_path = os.path.join(league_clean_path, 'info')        # Creación carpeta de output de información
+        league_clean_info_path = os.path.join(league_clean_path, s, 'info')        # Creación carpeta de output de información
         os.makedirs(league_clean_info_path, exist_ok=True)
-        league_clean_matches_path = os.path.join(league_clean_path, 'matches')  # Creación carpeta de output de partidos
+        league_clean_matches_path = os.path.join(league_clean_path, s, 'matches')  # Creación carpeta de output de partidos
         os.makedirs(league_clean_matches_path, exist_ok=True)
 
         matches_df = proc_matches(json_path=os.path.join(season_info_path, 'matches.json'), out_path=league_clean_info_path)                                                        # Procesado de partidos
@@ -342,6 +342,9 @@ def main_scoresway_league_cleaning(league_id: int, out_path: str, do_scraping: b
         dict_standings_dfs = proc_standings(json_path=os.path.join(season_info_path, 'standings.json'), out_path_standings=os.path.join(league_clean_info_path, 'standings'))       # Procesado de tablas de clasificación
 
         all_match_info_df, all_team_stats_df, all_player_stats_df, all_refs_df = proc_all_league_matches(matches_raw_path=season_matches_path, matches_clean_path=league_clean_matches_path)         # Procesado de todos los partidos de la liga
+
+        if print_info:
+            print(f'     - Information cleaned for season {s}')
 
     elapsed_time = time.time() - start_time         # Tiempo transcurrido
     if print_info:

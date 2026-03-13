@@ -11,7 +11,7 @@ import unicodedata
 # Obtenemos el CSV con competiciones
 cdir = os.getcwd()
 utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')
-comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';')
+comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';', encoding='latin1')
 
 # JSON con temporadas deseadas
 with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:

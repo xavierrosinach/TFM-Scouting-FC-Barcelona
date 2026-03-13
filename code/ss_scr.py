@@ -20,7 +20,7 @@ from contextlib import contextmanager
 # Obtenemos el CSV con competiciones
 cdir = os.getcwd()
 utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')
-comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';')
+comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';', encoding='latin1')
 
 # JSON con temporadas deseadas
 with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
@@ -321,7 +321,7 @@ def match_scraping(matches_dict: dict, match_id: int, out_path: str) -> dict:
     return {}    
 
 # Función principal para la extracción de datos de Sofascore de una liga
-def main_sofascore_league_scraping(league_id:int, out_path:str, matches_to_proc:int=None, print_info:bool=True) -> str:
+def main_sofascore_league_scraping(league_id:int, out_path:str, scrape_images:bool=True, matches_to_proc:int=None, print_info:bool=True) -> str:
 
     start_time = time.time()   # Inicio del contador
 
@@ -364,12 +364,15 @@ def main_sofascore_league_scraping(league_id:int, out_path:str, matches_to_proc:
     
         for player in players_ids:
             player_info = obtain_information(type='player', id=player, out_season_path=out_season_path)
-            image_downloader(type='player', id=player, out_path=out_season_path)
+            if scrape_images:
+                image_downloader(type='player', id=player, out_path=out_season_path)
         for team in teams_ids:
             team_info = obtain_information(type='team', id=team, out_season_path=out_season_path)
-            image_downloader(type='team', id=team, out_path=out_season_path)
+            if scrape_images:
+                image_downloader(type='team', id=team, out_path=out_season_path)
         for venue in venues_ids:        # No hace falta extraer información de los estadios porque ya la tenemos
-            image_downloader(type='venue', id=venue, out_path=out_season_path)
+            if scrape_images:
+                image_downloader(type='venue', id=venue, out_path=out_season_path)
 
         match_ids = list(dict_matches.keys())           # Limitamos si queremos scrapear menos información
         if matches_to_proc is not None:
@@ -390,7 +393,8 @@ def main_sofascore_league_scraping(league_id:int, out_path:str, matches_to_proc:
             managers_ids = home_manager | away_manager          # Diccionario con informaicón de los managers
             for manager in managers_ids.keys():
                 manager_info = obtain_information(type='manager', id=manager, out_season_path=out_season_path)
-                image_downloader(type='manager', id=manager, out_path=out_season_path)
+                if scrape_images:
+                    image_downloader(type='manager', id=manager, out_path=out_season_path)
 
     elapsed_time = time.time() - start_time                 # Suele tardar más en Sofascore por eso añadimos la posibilidad de mostrarlo en minutos
     if elapsed_time >= 60:

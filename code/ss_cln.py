@@ -12,7 +12,7 @@ import ss_scr as scr        # Codigo de scraping
 # Obtenemos el CSV con competiciones
 cdir = os.getcwd()
 utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')
-comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';')
+comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';', encoding='latin1')
 
 # JSON con temporadas deseadas
 with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
@@ -296,7 +296,7 @@ def all_matches_proc(league_raw_matches_path: str, league_clean_matches_path: st
     return all_matches_df, all_lineups_df, all_stats_df
 
 # Función principal para la limpieza de datos de Sofascore de una liga
-def main_sofascore_league_cleaning(league_id: int, out_path: str, matches_to_proc:int=None, do_scraping: bool = True, print_info: bool = True) -> str:
+def main_sofascore_league_cleaning(league_id: int, out_path: str, matches_to_proc:int=None, do_scraping: bool = True, scrape_images: bool = True, print_info: bool = True) -> str:
 
     start_time = time.time()   # Inicio del contador
 
@@ -304,7 +304,7 @@ def main_sofascore_league_cleaning(league_id: int, out_path: str, matches_to_pro
     league_slug = create_slug(text=league_name)                             # Slug de la liga
 
     if do_scraping:
-        league_raw_path = scr.main_sofascore_league_scraping(league_id=league_id, matches_to_proc=matches_to_proc, out_path=out_path, print_info=print_info)          # Proceso de scraping
+        league_raw_path = scr.main_sofascore_league_scraping(league_id=league_id, matches_to_proc=matches_to_proc, scrape_images=scrape_images, out_path=out_path, print_info=print_info)          # Proceso de scraping
     else:
         league_raw_path = os.path.join(out_path, 'sofascore', league_slug)
 
@@ -334,6 +334,9 @@ def main_sofascore_league_cleaning(league_id: int, out_path: str, matches_to_pro
 
         # Procesado de todos los partidos
         matches_df, lineups_df, stats_df = all_matches_proc(league_raw_matches_path=league_raw_matches_path, league_clean_matches_path=league_clean_matches_path)
+
+        if print_info:
+            print(f'     - Information cleaned for season {season}')
 
     elapsed_time = time.time() - start_time         # Tiempo transcurrido
     if print_info:
