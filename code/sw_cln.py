@@ -7,17 +7,7 @@ import re
 import numpy as np
 from typing import Tuple
 
-import sw_scr as scr        # Codigo de scraping
-
-# Obtenemos el CSV con competiciones
-cdir = os.getcwd()
-utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')
-comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';', encoding='latin1')
-
-# JSON con temporadas deseadas
-with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
-    desired_seasons = jsonlib.load(f)
-act_season = desired_seasons[0]
+from config import comps, desired_seasons, act_season
 
 # Lector de JSON
 def json_to_dict(json_path: str) -> dict:
@@ -254,7 +244,7 @@ def single_match_stats(match_id: str, match_raw_path: str) -> Tuple[pd.DataFrame
         teams_stats_df = pd.concat([info_lineups_df, teams_stats_df], axis=1)
         teams_stats_df.insert(0, 'match_id', match_id)
 
-        players_stats_df = match_player_stats(home_lineup=lineup_home.get('player'), away_lineup=lineup_away.get('players'))      # Estadísticas de los jugadores
+        players_stats_df = match_player_stats(home_lineup=lineup_home.get('player'), away_lineup=lineup_away.get('player'))      # Estadísticas de los jugadores
         players_stats_df.insert(0, 'match_id', match_id)
         ha_team_dict = dict(zip(teams_stats_df['ha'], teams_stats_df['team_id']))       # Diccionario con ID de equipos
         players_stats_df['team_id'] = players_stats_df['ha'].map(ha_team_dict)
@@ -308,19 +298,15 @@ def proc_all_league_matches(matches_raw_path: str, matches_clean_path: str) -> T
     return all_match_info_df, all_team_stats_df, all_player_stats_df, all_refs_df
 
 # Función principal para la limpieza de datos de Scoresway de una liga
-def main_scoresway_league_cleaning(league_id: int, out_path: str, do_scraping: bool = True, matches_to_proc: int = None, print_info: bool = True) -> str:
+def main_scoresway_league_cleaning(league_id: int, out_path: str, print_info: bool = True) -> None:
 
     start_time = time.time()   # Inicio del contador
 
     league_name = comps[comps['id'] == league_id]['tournament'].iloc[0]     # Nombre de la liga
     league_slug = create_slug(text=league_name)                             # Slug de la liga
 
-    if do_scraping:
-        league_raw_path = scr.main_scoresway_league_scraping(league_id=league_id, out_path=out_path, matches_to_proc=matches_to_proc, print_info=print_info)          # Proceso de scraping
-    else:
-        league_raw_path = os.path.join(out_path, 'scoresway', league_slug)
-
-    league_clean_path = league_raw_path.replace('raw', 'clean')                                                                                                   # Obtención de la nueva carpeta
+    league_raw_path = os.path.join(out_path, 'scoresway', league_slug)      # Path de los datos raw
+    league_clean_path = league_raw_path.replace('raw', 'clean')             # Path de los datos clean                                                               # Obtención de la nueva carpeta
     os.makedirs(league_clean_path, exist_ok=True)                                                                                                                 # Creación de la carpeta con datos limpios en caso de que no se haya hecho
 
     if print_info:
@@ -346,9 +332,13 @@ def main_scoresway_league_cleaning(league_id: int, out_path: str, do_scraping: b
         if print_info:
             print(f'     - Information cleaned for season {s}')
 
-    elapsed_time = time.time() - start_time         # Tiempo transcurrido
+    elapsed_time = time.time() - start_time                 # Suele tardar más en Sofascore por eso añadimos la posibilidad de mostrarlo en minutos
+    if elapsed_time >= 60:
+        minutes = int(elapsed_time // 60)
+        seconds = int(elapsed_time % 60)
+        time_str = f"{minutes} minutes {seconds} seconds"
+    else:
+        time_str = f"{elapsed_time:.2f} seconds"
     if print_info:
         print(f'Finished Scoresway cleaning ({league_name}) in {elapsed_time:.2f} seconds')
         print('================================================================================')
-
-    return league_clean_path

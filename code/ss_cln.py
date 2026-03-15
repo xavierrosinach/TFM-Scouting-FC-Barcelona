@@ -7,17 +7,7 @@ import re
 import numpy as np
 from typing import Tuple
 
-import ss_scr as scr        # Codigo de scraping
-
-# Obtenemos el CSV con competiciones
-cdir = os.getcwd()
-utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')
-comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';', encoding='latin1')
-
-# JSON con temporadas deseadas
-with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
-    desired_seasons = jsonlib.load(f)
-act_season = desired_seasons[0]
+from config import comps, desired_seasons, act_season
 
 # Lector de JSON
 def json_to_dict(json_path: str) -> dict:
@@ -296,19 +286,15 @@ def all_matches_proc(league_raw_matches_path: str, league_clean_matches_path: st
     return all_matches_df, all_lineups_df, all_stats_df
 
 # Función principal para la limpieza de datos de Sofascore de una liga
-def main_sofascore_league_cleaning(league_id: int, out_path: str, matches_to_proc:int=None, do_scraping: bool = True, scrape_images: bool = True, print_info: bool = True) -> str:
+def main_sofascore_league_cleaning(league_id: int, out_path: str, print_info: bool = True) -> None:
 
     start_time = time.time()   # Inicio del contador
 
     league_name = comps[comps['id'] == league_id]['tournament'].iloc[0]     # Nombre de la liga
     league_slug = create_slug(text=league_name)                             # Slug de la liga
 
-    if do_scraping:
-        league_raw_path = scr.main_sofascore_league_scraping(league_id=league_id, matches_to_proc=matches_to_proc, scrape_images=scrape_images, out_path=out_path, print_info=print_info)          # Proceso de scraping
-    else:
-        league_raw_path = os.path.join(out_path, 'sofascore', league_slug)
-
-    league_clean_path = league_raw_path.replace('raw', 'clean')                                                                  # Obtención de la nueva carpeta
+    league_raw_path = os.path.join(out_path, 'sofascore', league_slug)      # Path de datos raw
+    league_clean_path = league_raw_path.replace('raw', 'clean')             # Obtención de la nueva carpeta
     os.makedirs(league_clean_path, exist_ok=True)                                                                                # Creación de la carpeta con datos limpios en caso de que no se haya hecho
 
     if print_info:
@@ -342,5 +328,3 @@ def main_sofascore_league_cleaning(league_id: int, out_path: str, matches_to_pro
     if print_info:
         print(f'Finished Scoresway cleaning ({league_name}) in {elapsed_time:.2f} seconds')
         print('================================================================================')
-
-    return league_clean_path

@@ -8,15 +8,7 @@ import time
 from datetime import datetime, timedelta
 import unicodedata
 
-# Obtenemos el CSV con competiciones
-cdir = os.getcwd()
-utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')
-comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';', encoding='latin1')
-
-# JSON con temporadas deseadas
-with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
-    desired_seasons = jsonlib.load(f)
-act_season = desired_seasons[0]
+from config import comps, desired_seasons, act_season
 
 # A partir de un diccionario en formato JSON, lo guarda.
 def safe_json_dump(data: dict, path: str) -> None:
@@ -191,7 +183,7 @@ def match_stats(match_id: str, out_path: str) -> dict:
     return {}
 
 # Función principal para la extracción de datos de Scoresway de una liga
-def main_scoresway_league_scraping(league_id:int, out_path:str, matches_to_proc:int=None, print_info:bool=True) -> str:
+def main_scoresway_league_scraping(league_id:int, out_path:str, matches_to_proc:int=None, print_info:bool=True) -> None:
 
     start_time = time.time()   # Inicio del contador
 
@@ -235,5 +227,3 @@ def main_scoresway_league_scraping(league_id:int, out_path:str, matches_to_proc:
     if print_info:
         print(f'Finished Scoresway scraping ({league_name}) in {elapsed_time:.2f} seconds')
         print('================================================================================')
-
-    return out_league_path

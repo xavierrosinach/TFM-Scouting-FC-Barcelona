@@ -8,15 +8,7 @@ import unicodedata
 import re
 from datetime import datetime, timedelta
 
-# Obtenemos el CSV con competiciones
-cdir = os.getcwd()
-utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')
-comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';', encoding='latin1')
-
-# JSON con temporadas deseadas
-with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
-    desired_seasons = jsonlib.load(f)
-act_season = desired_seasons[0]
+from config import comps, desired_seasons, act_season
 
 # A partir de un diccionario en formato JSON, lo guarda.
 def safe_json_dump(data: dict, path: str) -> None:
@@ -113,7 +105,7 @@ def season_data(seasons_dict: dict, season_key: str, out_path: str) -> dict:
     return season_json
 
 # Función principal para la extracción de datos de Fotmob de una liga
-def main_fotmob_league_scraping(league_id: int, out_path: str, print_info: bool = True) -> str:
+def main_fotmob_league_scraping(league_id: int, out_path: str, print_info: bool = True) -> None:
    
     start_time = time.time()   # Inicio del contador
 
@@ -141,5 +133,3 @@ def main_fotmob_league_scraping(league_id: int, out_path: str, print_info: bool 
     if print_info:
         print(f'Finished Fotmob scraping ({league_name}) in {elapsed_time:.2f} seconds')
         print('================================================================================')
-    
-    return out_league_path             # Return del path donde tenemos toda la información estructurada

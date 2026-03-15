@@ -17,15 +17,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from contextlib import contextmanager
 
-# Obtenemos el CSV con competiciones
-cdir = os.getcwd()
-utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')
-comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';', encoding='latin1')
-
-# JSON con temporadas deseadas
-with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
-    desired_seasons = jsonlib.load(f)
-act_season = desired_seasons[0]
+from config import comps, desired_seasons, act_season
 
 # Función para suprimir stderr (logs internos de Chrome)
 @contextmanager
@@ -254,7 +246,7 @@ def season_information(seasons_dict: dict, season_key: str, league_code: int, ou
 # Ejecución de un proceso en R para la descarga de la imagen de un jugador, equipo, manager, o estadio
 def image_downloader(type: str, id: int, out_path: str, sleep_time: int = 3, rscript_path: str = r"C:\Program Files\R\R-4.4.1\bin\x64\Rscript.exe", rfile: str = 'ss_pict.R') -> None:
 
-    r_script = os.path.join(cdir, 'ext', rfile)                    # Output de imagenes y script
+    r_script = os.path.join(os.getcwd(), 'ext', rfile)                    # Output de imagenes y script
     out_season_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(out_path))), 'images')
     os.makedirs(out_season_path, exist_ok=True)
                                   
@@ -321,7 +313,7 @@ def match_scraping(matches_dict: dict, match_id: int, out_path: str) -> dict:
     return {}    
 
 # Función principal para la extracción de datos de Sofascore de una liga
-def main_sofascore_league_scraping(league_id:int, out_path:str, scrape_images:bool=True, matches_to_proc:int=None, print_info:bool=True) -> str:
+def main_sofascore_league_scraping(league_id:int, out_path:str, scrape_images:bool=True, matches_to_proc:int=None, print_info:bool=True) -> None:
 
     start_time = time.time()   # Inicio del contador
 

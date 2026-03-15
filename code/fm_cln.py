@@ -6,17 +6,7 @@ import unicodedata
 import re
 import numpy as np
 
-import fm_scr as scr        # Codigo de scraping
-
-# Obtenemos el CSV con competiciones
-cdir = os.getcwd()
-utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')
-comps = pd.read_csv(os.path.join(utils, 'comps.csv'), sep=';', encoding='latin1')
-
-# JSON con temporadas deseadas
-with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:
-    desired_seasons = jsonlib.load(f)
-act_season = desired_seasons[0]
+from config import comps, desired_seasons, act_season
 
 # Lector de JSON
 def json_to_dict(json_path: str) -> dict:
@@ -81,20 +71,16 @@ def clean_season_information(season_info: dict, season_key: str, league_slug: st
         matches_df.to_csv(os.path.join(season_out_path, 'matches.csv'), index=False, sep=';')         # Guardado
     
 # Función principal para la limpieza de datos de Fotmob de una liga
-def main_fotmob_league_cleaning(league_id: int, out_path: str, do_scraping: bool = True, print_info: bool = True) -> str:
+def main_fotmob_league_cleaning(league_id: int, out_path: str, print_info: bool = True) -> None:
 
     start_time = time.time()   # Inicio del contador
 
     league_name = comps[comps['id'] == league_id]['tournament'].iloc[0]     # Nombre de la liga
     league_slug = create_slug(text=league_name)                             # Slug de la liga
 
-    if do_scraping:
-        league_raw_path = scr.main_fotmob_league_scraping(league_id=league_id, out_path=out_path, print_info=print_info)          # Proceso de scraping
-    else:
-        league_raw_path = os.path.join(out_path, 'fotmob', league_slug)
-
-    league_clean_path = league_raw_path.replace('raw', 'clean')                                                               # Obtención de la nueva carpeta
-    os.makedirs(league_clean_path, exist_ok=True)                                                                             # Creación de la carpeta con datos limpios en caso de que no se haya hecho
+    league_raw_path = os.path.join(out_path, 'fotmob', league_slug)         # Path de datos raw
+    league_clean_path = league_raw_path.replace('raw', 'clean')             # Obtención de la nueva carpeta
+    os.makedirs(league_clean_path, exist_ok=True)                           # Creación de la carpeta con datos limpios en caso de que no se haya hecho
 
     if print_info:
         print('================================================================================')
@@ -115,5 +101,3 @@ def main_fotmob_league_cleaning(league_id: int, out_path: str, do_scraping: bool
     if print_info:
         print(f'Finished Fotmob cleaning ({league_name}) in {elapsed_time:.2f} seconds')
         print('================================================================================')
-
-    return league_clean_path
