@@ -7,24 +7,8 @@ import re
 import numpy as np
 from typing import Tuple
 
-from config import comps, desired_seasons, act_season
-
-# Lector de JSON
-def json_to_dict(json_path: str) -> dict:
-    with open(json_path, "r", encoding="utf-8") as f:
-        dict = jsonlib.load(f)
-    return dict
-
-# Creación de slug a partir de un string.
-def create_slug(text: str) -> str:
-
-    text = text.lower()                                                                                     # Letra minúscula
-    text = ''.join(c for c in unicodedata.normalize('NFD', text) if unicodedata.category(c) != 'Mn')        # Eliminación de acentos
-    text = re.sub(r"\s+", "_", text)                                                                        # Substitución de espacios por '_'
-    text = re.sub(r"[^a-z0-9_]", "", text)                                                                  # Eliminación de carácteres no alfanuméricos
-    text = re.sub(r"_+", "_", text).strip("_")
-    
-    return text
+from use.config import comps
+from use.functions import json_to_dict, create_slug
 
 # Procesado de datos de partidos a partir de su path
 def proc_matches(json_path: str, out_path: str) -> pd.DataFrame:
@@ -92,15 +76,16 @@ def proc_squads(json_path: str, out_path: str) -> Tuple[pd.DataFrame, pd.DataFra
             for person in squad.get('person', []):                                              # Person - incluye jugadores y entrenadores
                 if person.get('type', '') == 'player' and person.get('shirtNumber'):            # Jugadores
                     info_players.append({'id': person.get('id', np.nan),
-                                         'first_name': person.get('firstName', np.nan),
-                                         'last_name': person.get('lastName', np.nan),
-                                         'short_first_name': person.get('shortFirstName', np.nan),
-                                         'short_last_name': person.get('shortLastName', np.nan),
-                                         'match_name': person.get('matchName', np.nan),
-                                         'team': squad_name,
-                                         'nationality': person.get('nationality', np.nan),
-                                         'position': person.get('position', np.nan),
-                                         'shirt_number': person.get('shirtNumber', np.nan)})
+                                        'first_name': person.get('firstName', np.nan),
+                                        'last_name': person.get('lastName', np.nan),
+                                        'short_first_name': person.get('shortFirstName', np.nan),
+                                        'short_last_name': person.get('shortLastName', np.nan),
+                                        'match_name': person.get('matchName', np.nan),
+                                        'team': squad_name,
+                                        'nationality': person.get('nationality', np.nan),
+                                        'position': person.get('position', np.nan),
+                                        'shirt_number': person.get('shirtNumber', np.nan), 
+                                        'active': person.get('active', np.nan)})
                 elif person.get('type', '') != 'player':                                        # Entrenador
                     info_managers.append({'id': person.get('id', np.nan),
                                           'first_name': person.get('firstName', np.nan),

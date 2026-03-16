@@ -1,19 +1,8 @@
-import fm_scr as fm_scr         # Scraping de Fotmob
-import sw_scr as sw_scr         # Scraping de Scoresway
-import ss_scr as ss_scr         # Scraping de Sofascore
-
-import fm_cln as fm_cln         # Cleaning de Fotmob
-import sw_cln as sw_cln         # Cleaning de Scoresway
-import ss_cln as ss_cln         # Cleaning de Sofascore
-
-import unifier as unif          # Unificador de datos
-
 import os
 import pandas as pd
-import json as jsonlib
 import time
 
-from config import comps, desired_seasons, act_season
+from use.config import comps, comps_path
 
 # Función principal que procesa todos los datos de una liga
 def main_league_data(league_id: int, data_path: str, act_time_scr: float, act_time_cln: float, act_time_uni:float=None, max_age_days:int=7, print_info: bool = True, matches_to_proc: int = None, scrape_images: bool = True, do_scr: bool = True, do_cln: bool = True, do_uni: bool = True, do_fm: bool = True, do_sw: bool = True, do_ss: bool = True) -> None:
@@ -34,41 +23,52 @@ def main_league_data(league_id: int, data_path: str, act_time_scr: float, act_ti
     # Parte de Scraping
     if do_scr and run_proc(act_time_scr):
         if do_fm:       # Scraping de Fotmob
+            import scr.fm_scr as fm_scr
             fm_scr.main_fotmob_league_scraping(league_id=league_id, out_path=raw_data_path, print_info=print_info)
         if do_sw:       # Scraping de Scoresway
+            import scr.sw_scr as sw_scr
             sw_scr.main_scoresway_league_scraping(league_id=league_id, out_path=raw_data_path, matches_to_proc=matches_to_proc, print_info=print_info)
         if do_ss:       # Scraping de Sofascore
+            import scr.ss_scr as ss_scr
             ss_scr.main_sofascore_league_scraping(league_id=league_id, out_path=raw_data_path, scrape_images=scrape_images, matches_to_proc=matches_to_proc, print_info=print_info)
         time_scr = time.time()
     else:
-        time_scr = act_time_scr
+        time_scr = None
 
     # Parte de Cleaning
     if do_cln and run_proc(act_time_cln):
         if do_fm:       # Cleaning de Fotmob
+            import cln.fm_cln as fm_cln
             fm_cln.main_fotmob_league_cleaning(league_id=league_id, out_path=raw_data_path, print_info=print_info)
         if do_sw:       # Cleaning de Scoresway
+            import cln.sw_cln as sw_cln
             sw_cln.main_scoresway_league_cleaning(league_id=league_id, out_path=raw_data_path, print_info=print_info)
         if do_ss:       # Cleaning de Sofascore
+            import cln.ss_cln as ss_cln 
             ss_cln.main_sofascore_league_cleaning(league_id=league_id, out_path=raw_data_path, print_info=print_info)
         time_cln = time.time()
     else:
-        time_cln = act_time_cln
+        time_cln = None
 
     # Parte de Unificación de datos
     if do_uni and run_proc(act_time_uni):
+        import uni.unifier as unif
         unif.league_data_unification(league_id=league_id, raw_data_path=raw_data_path, clean_data_path=clean_data_path, processed_data_path=processed_data_path, print_info=print_info)
         time_uni = time.time()
     else:
-        time_uni = act_time_uni
+        time_uni = None
 
     return time_scr, time_cln, time_uni
 
 # Función principal - aplicado para todas las ligas
 def main():
 
-    data = r"C:\Users\ASUS\Desktop\TFM\data"       # Data path
-    for idx, row in comps.head(1).iterrows():
+    data = r"C:\Users\xrosinach\Desktop\TFM\data"       # Data path
+    for idx, row in comps.iterrows():
+
+        if row['id'] != 82:
+            continue
+
         print('================================================================================')
         print(f'Starting the full data pipeline ({row['tournament']})')
 
@@ -77,14 +77,19 @@ def main():
         # --------------------------------------------------------------------------------------------------------------
         #                                                  FUNCIÓN PRINCIPAL
         # --------------------------------------------------------------------------------------------------------------
-        time_scr, time_cln, time_uni = main_league_data(league_id=row['id'], data_path=data, print_info=False,
+        time_scr, time_cln, time_uni = main_league_data(league_id=row['id'], data_path=data, print_info=False, do_scr=False, do_uni=False,
                                                         act_time_scr=row['time_scr'], act_time_cln=row['time_cln'], 
                                                         act_time_uni=row['time_uni'])
         # --------------------------------------------------------------------------------------------------------------
 
-        comps.loc[idx, 'time_scr'] = time_scr       # Guardar los resultados en el dataframe
-        comps.loc[idx, 'time_cln'] = time_cln
-        comps.loc[idx, 'time_uni'] = time_uni
+        if time_scr is not None:
+            comps.loc[idx, 'time_scr'] = time_scr       # Guardar los resultados en el dataframe
+        if time_cln is not None:
+            comps.loc[idx, 'time_cln'] = time_cln
+        if time_uni is not None:
+            comps.loc[idx, 'time_uni'] = time_uni
+
+        comps.to_csv(comps_path, index=False, sep=';', encoding='latin1')       # Guardado una vez actualizado
 
         elapsed_time = time.time() - start_time
         if elapsed_time >= 60:

@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import json as jsonlib
 from typing import Tuple
-import unicodedata
 import re
 from rapidfuzz import process, fuzz
 import warnings
@@ -13,23 +12,8 @@ import time
 
 warnings.filterwarnings("ignore", category=pd.errors.PerformanceWarning)
 
-from config import comps, desired_seasons, utils
-
-# Creación de slug a partir de un string.
-def create_slug(text: str) -> str:
-    text = text.lower()                                                                                     # Letra minúscula
-    text = ''.join(c for c in unicodedata.normalize('NFD', text) if unicodedata.category(c) != 'Mn')        # Eliminación de acentos
-    text = re.sub(r"\s+", "_", text)                                                                        # Substitución de espacios por '_'
-    text = re.sub(r"[^a-z0-9_]", "", text)                                                                  # Eliminación de carácteres no alfanuméricos
-    text = re.sub(r"_+", "_", text).strip("_")
-    return text
-
-# División segura
-def safe_div(num, den, ndigits=4):
-
-    if pd.isna(num) or pd.isna(den) or den == 0:
-        return np.nan
-    return round(num / den, ndigits)
+from use.config import comps, desired_seasons, utils
+from use.functions import create_slug, safe_div
 
 # Lectura de los datos de Fotmob
 def read_fotmob_data(fotmob_clean_path: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -1138,6 +1122,8 @@ def league_data_unification(league_id: int, raw_data_path: str, clean_data_path:
     league_name = comps[comps['id'] == league_id]['tournament'].iloc[0]     # Nombre de la liga
     league_slug = create_slug(text=league_name)                             # Slug de la liga
 
+    start_time = time.time()
+
     if print_info:
         print("================================================================================")
         print(f"Starting data unification ({league_name})")
@@ -1263,5 +1249,5 @@ def league_data_unification(league_id: int, raw_data_path: str, clean_data_path:
     else:
         time_str = f"{elapsed_time:.2f} seconds"
     if print_info:
-        print(f'Finished data unification ({league_name}) in {elapsed_time:.2f} seconds')
+        print(f'Finished data unification ({league_name}) in {time_str}')
         print('================================================================================')

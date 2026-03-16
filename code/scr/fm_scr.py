@@ -1,49 +1,10 @@
-import requests
-import pandas as pd
-import numpy as np
 import os
 import json as jsonlib
 import time
-import unicodedata
-import re
 from datetime import datetime, timedelta
 
-from config import comps, desired_seasons, act_season
-
-# A partir de un diccionario en formato JSON, lo guarda.
-def safe_json_dump(data: dict, path: str) -> None:
-    try:
-        with open(path, "w", encoding="utf-8") as f:
-            jsonlib.dump(data, f, ensure_ascii=False)
-    except Exception:
-        try:
-            with open(path, "w", encoding="utf-8") as f:
-                jsonlib.dump({}, f)
-        except Exception:
-            pass
-
-# Procede a hacer scraping de un URL de Fotmob y obtiene los datos en formato de diccionario.
-def url_to_json(url: str, sleep_time: int = 3) -> dict:
-    out = requests.get(url).json()
-    time.sleep(sleep_time)                           # Para garantir seguridad
-    return out
-
-# Comprueva la antiguidad del archivo, si supera unos días, devuelve True conforme se tiene que actualizar.
-def need_to_upload(path: str, total_days: int = 5) -> bool:
-
-    creation_time = os.path.getctime(path)          # Día de creación
-    return datetime.now() - datetime.fromtimestamp(creation_time) > timedelta(days = total_days)
-
-# Creación de slug a partir de un string.
-def create_slug(text: str) -> str:
-
-    text = text.lower()                                                                                     # Letra minúscula
-    text = ''.join(c for c in unicodedata.normalize('NFD', text) if unicodedata.category(c) != 'Mn')        # Eliminación de acentos
-    text = re.sub(r"\s+", "_", text)                                                                        # Substitución de espacios por '_'
-    text = re.sub(r"[^a-z0-9_]", "", text)                                                                  # Eliminación de carácteres no alfanuméricos
-    text = re.sub(r"_+", "_", text).strip("_")
-    
-    return text
+from use.config import comps, desired_seasons, act_season
+from use.functions import safe_json_dump, url_to_json, need_to_upload, create_slug
 
 # Obtenemos un diccionario JSON con las temporadas disponibles en una liga.
 def league_available_seasons(league_code: int, out_path: str) -> dict:

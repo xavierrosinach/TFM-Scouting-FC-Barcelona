@@ -1,12 +1,7 @@
-import pandas as pd
-import numpy as np
 import os
 import json as jsonlib
 import time
 import subprocess                           # Para ejecutar processos en R
-from datetime import datetime, timedelta
-import re
-import unicodedata
 
 from selenium import webdriver                              # Librería y extensiones de Selenium para 
 from selenium.webdriver.chrome.service import Service
@@ -17,7 +12,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from contextlib import contextmanager
 
-from config import comps, desired_seasons, act_season
+from use.config import comps, desired_seasons, act_season
+from use.functions import safe_json_dump, create_slug, need_to_upload
 
 # Función para suprimir stderr (logs internos de Chrome)
 @contextmanager
@@ -58,35 +54,6 @@ service = Service(log_path=os.devnull)
 with suppress_stderr():
     driver = webdriver.Chrome(service=service, options=options)
 driver.get("https://www.google.com")
-
-# A partir de un diccionario en formato JSON, lo guarda.
-def safe_json_dump(data: dict, path: str) -> None:
-    try:
-        with open(path, "w", encoding="utf-8") as f:
-            jsonlib.dump(data, f, ensure_ascii=False)
-    except Exception:
-        try:
-            with open(path, "w", encoding="utf-8") as f:
-                jsonlib.dump({}, f)
-        except Exception:
-            pass
-
-# Creación de slug a partir de un string.
-def create_slug(text: str) -> str:
-
-    text = text.lower()                                                                                     # Letra minúscula
-    text = ''.join(c for c in unicodedata.normalize('NFD', text) if unicodedata.category(c) != 'Mn')        # Eliminación de acentos
-    text = re.sub(r"\s+", "_", text)                                                                        # Substitución de espacios por '_'
-    text = re.sub(r"[^a-z0-9_]", "", text)                                                                  # Eliminación de carácteres no alfanuméricos
-    text = re.sub(r"_+", "_", text).strip("_")
-    
-    return text
-
-# Comprueva la antiguidad del archivo, si supera unos días, devuelve True conforme se tiene que actualizar.
-def need_to_upload(path: str, total_days: int = 5) -> bool:
-
-    creation_time = os.path.getctime(path)          # Día de creación
-    return datetime.now() - datetime.fromtimestamp(creation_time) > timedelta(days = total_days)
 
 # Convertir un URL de Sofascore a JSON
 def page_scraper(url: str, sleep_time: int = 3, timeout: int = 10) -> dict:
@@ -244,9 +211,8 @@ def season_information(seasons_dict: dict, season_key: str, league_code: int, ou
     return list_information
 
 # Ejecución de un proceso en R para la descarga de la imagen de un jugador, equipo, manager, o estadio
-def image_downloader(type: str, id: int, out_path: str, sleep_time: int = 3, rscript_path: str = r"C:\Program Files\R\R-4.4.1\bin\x64\Rscript.exe", rfile: str = 'ss_pict.R') -> None:
+def image_downloader(type: str, id: int, out_path: str, sleep_time: int = 3, rscript_path: str = r"C:\Program Files\R\R-4.4.1\bin\x64\Rscript.exe", r_script: str = 'ss_pict.R') -> None:
 
-    r_script = os.path.join(os.getcwd(), 'ext', rfile)                    # Output de imagenes y script
     out_season_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(out_path))), 'images')
     os.makedirs(out_season_path, exist_ok=True)
                                   

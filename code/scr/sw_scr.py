@@ -1,37 +1,12 @@
 import requests
 import re
-import pandas as pd
-import numpy as np
 import os
 import json as jsonlib
 import time
 from datetime import datetime, timedelta
-import unicodedata
 
-from config import comps, desired_seasons, act_season
-
-# A partir de un diccionario en formato JSON, lo guarda.
-def safe_json_dump(data: dict, path: str) -> None:
-    try:
-        with open(path, "w", encoding="utf-8") as f:
-            jsonlib.dump(data, f, ensure_ascii=False)
-    except Exception:
-        try:
-            with open(path, "w", encoding="utf-8") as f:
-                jsonlib.dump({}, f)
-        except Exception:
-            pass
-
-# Creación de slug a partir de un string.
-def create_slug(text: str) -> str:
-
-    text = text.lower()                                                                                     # Letra minúscula
-    text = ''.join(c for c in unicodedata.normalize('NFD', text) if unicodedata.category(c) != 'Mn')        # Eliminación de acentos
-    text = re.sub(r"\s+", "_", text)                                                                        # Substitución de espacios por '_'
-    text = re.sub(r"[^a-z0-9_]", "", text)                                                                  # Eliminación de carácteres no alfanuméricos
-    text = re.sub(r"_+", "_", text).strip("_")
-    
-    return text
+from use.config import comps, desired_seasons, act_season
+from use.functions import safe_json_dump, create_slug, need_to_upload
 
 # Descargar datos de url de Scoresway en formato JSON
 def scrape_json(url: str, referer: str = 'https://www.scoresway.com/', sleep_time: int = 3) -> dict:
@@ -60,12 +35,6 @@ def scrape_json(url: str, referer: str = 'https://www.scoresway.com/', sleep_tim
         json_str = match.group(1)
         time.sleep(sleep_time)                                                      # Tiempo de espera para evitar errores
         return jsonlib.loads(json_str)
-    
-# Comprueva la antiguidad del archivo, si supera unos días, devuelve True conforme se tiene que actualizar.
-def need_to_upload(path: str, total_days: int = 5) -> bool:
-
-    creation_time = os.path.getctime(path)          # Día de creación
-    return datetime.now() - datetime.fromtimestamp(creation_time) > timedelta(days = total_days)
 
 # Obtenemos los partidos de una temporada en una liga.
 def season_matches(season: str, league_code: int, out_path: str) -> dict:

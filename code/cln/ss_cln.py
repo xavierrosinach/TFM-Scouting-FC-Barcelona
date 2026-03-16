@@ -1,30 +1,11 @@
 import os
 import pandas as pd
 import time
-import json as jsonlib
-import unicodedata
-import re
 import numpy as np
 from typing import Tuple
 
-from config import comps, desired_seasons, act_season
-
-# Lector de JSON
-def json_to_dict(json_path: str) -> dict:
-    with open(json_path, "r", encoding="utf-8") as f:
-        dict = jsonlib.load(f)
-    return dict
-
-# Creación de slug a partir de un string.
-def create_slug(text: str) -> str:
-
-    text = text.lower()                                                                                     # Letra minúscula
-    text = ''.join(c for c in unicodedata.normalize('NFD', text) if unicodedata.category(c) != 'Mn')        # Eliminación de acentos
-    text = re.sub(r"\s+", "_", text)                                                                        # Substitución de espacios por '_'
-    text = re.sub(r"[^a-z0-9_]", "", text)                                                                  # Eliminación de carácteres no alfanuméricos
-    text = re.sub(r"_+", "_", text).strip("_")
-    
-    return text
+from use.config import comps
+from use.functions import json_to_dict, create_slug
 
 # Procesado de las tablas de clasificación
 def standings_tables_proc(standings_path: str, standings_output_path: str) -> list:
