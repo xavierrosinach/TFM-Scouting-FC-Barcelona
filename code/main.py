@@ -3,6 +3,7 @@ import pandas as pd
 import time
 
 from use.config import comps, comps_path
+from use.functions import elapsed_time_str
 
 # Función principal que procesa todos los datos de una liga
 def main_league_data(league_id: int, data_path: str, act_time_scr: float, act_time_cln: float, act_time_uni:float=None, max_age_days:int=7, print_info: bool = True, matches_to_proc: int = None, scrape_images: bool = True, do_scr: bool = True, do_cln: bool = True, do_uni: bool = True, do_fm: bool = True, do_sw: bool = True, do_ss: bool = True) -> None:
@@ -90,15 +91,8 @@ def main():
             comps.loc[idx, 'time_uni'] = time_uni
 
         comps.to_csv(comps_path, index=False, sep=';', encoding='latin1')       # Guardado una vez actualizado
-
-        elapsed_time = time.time() - start_time
-        if elapsed_time >= 60:
-            minutes = int(elapsed_time // 60)
-            seconds = int(elapsed_time % 60)
-            time_str = f"{minutes} minutes {seconds} seconds"
-        else:
-            time_str = f"{elapsed_time:.2f} seconds"     
-        print(f'Finished the full data pipeline ({row['tournament']}) in {time_str}')
+  
+        print(f'Finished the full data pipeline ({row['tournament']}) in {elapsed_time_str(start_time=start_time)}')
         print('================================================================================')
 
 # Ejecución

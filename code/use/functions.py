@@ -55,3 +55,21 @@ def need_to_upload(path: str, total_days: int = 5) -> bool:
 
     creation_time = os.path.getctime(path)          # Día de creación
     return datetime.now() - datetime.fromtimestamp(creation_time) > timedelta(days = total_days)
+
+# Devuelve el time string del tiempo que se ha tardado
+def elapsed_time_str(start_time: float) -> str:
+
+    elapsed_time = time.time() - start_time
+
+    hours = int(elapsed_time // 3600)
+    minutes = int((elapsed_time % 3600) // 60)
+    seconds = int(elapsed_time % 60)
+
+    if hours > 0:
+        time_str = f"{hours} hours {minutes} minutes {seconds} seconds"
+    elif minutes > 0:
+        time_str = f"{minutes} minutes {seconds} seconds"
+    else:
+        time_str = f"{elapsed_time:.2f} seconds"
+
+    return time_str

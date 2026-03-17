@@ -13,7 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from contextlib import contextmanager
 
 from use.config import comps, desired_seasons, act_season
-from use.functions import safe_json_dump, create_slug, need_to_upload
+from use.functions import safe_json_dump, create_slug, need_to_upload, elapsed_time_str
 
 # Función para suprimir stderr (logs internos de Chrome)
 @contextmanager
@@ -231,22 +231,17 @@ def image_downloader(type: str, id: int, out_path: str, sleep_time: int = 3, rsc
         time.sleep(sleep_time)
 
 # Obtener información sobre un jugador, equipo, manager o estadio
-def obtain_information(type: str, id: int, out_season_path: str) -> dict:
+def obtain_information(type: str, id: int, out_season_path: str) -> None:
 
     info_path = f'https://api.sofascore.com/api/v1/{type}/{id}'         # Diferenciación de variables según el tipo
     out_dir = os.path.join(out_season_path, 'info', type)
     os.makedirs(out_dir, exist_ok=True)
     out_json = os.path.join(out_dir, f'{id}.json')
 
-    if os.path.exists(out_json) and not need_to_upload(path=out_json, total_days=30):           # Cada mes actualizamos información
-        with open(out_json, "r", encoding="utf-8") as f:
-            return jsonlib.load(f)
-    else:
+    if not os.path.exists(out_json) and need_to_upload(path=out_json, total_days=30):           # Cada mes actualizamos información
         info_json = page_scraper(url=info_path)
         if info_json.get(type):
             safe_json_dump(data=info_json, path=out_json)
-
-        return info_json
     
 # Scraping de un simple partido
 def match_scraping(matches_dict: dict, match_id: int, out_path: str) -> dict:
@@ -288,7 +283,6 @@ def main_sofascore_league_scraping(league_id:int, out_path:str, scrape_images:bo
     ss_code = int(comps[comps['id'] == league_id]['sofascore'].iloc[0])   # Codigo de Sofascore
 
     if print_info:
-        print('================================================================================')
         print(f'Starting Sofascore scraping ({league_name})')
 
     out_league_path = os.path.join(out_path, 'sofascore', league_slug)    # Creación de la carpeta de la liga
@@ -321,11 +315,11 @@ def main_sofascore_league_scraping(league_id:int, out_path:str, scrape_images:bo
         venues_ids = list(dict_venues.keys())[:matches_to_proc] if matches_to_proc is not None else list(dict_venues.keys())
     
         for player in players_ids:
-            player_info = obtain_information(type='player', id=player, out_season_path=out_season_path)
+            obtain_information(type='player', id=player, out_season_path=out_season_path)
             if scrape_images:
                 image_downloader(type='player', id=player, out_path=out_season_path)
         for team in teams_ids:
-            team_info = obtain_information(type='team', id=team, out_season_path=out_season_path)
+            obtain_information(type='team', id=team, out_season_path=out_season_path)
             if scrape_images:
                 image_downloader(type='team', id=team, out_path=out_season_path)
         for venue in venues_ids:        # No hace falta extraer información de los estadios porque ya la tenemos
@@ -350,17 +344,9 @@ def main_sofascore_league_scraping(league_id:int, out_path:str, scrape_images:bo
             away_manager = {match_info.get('match', {}).get('event', {}).get('awayTeam', {}).get('manager', {}).get('id', 0): match_info.get('match', {}).get('event', {}).get('awayTeam', {}).get('manager', {}).get('slug', '')}
             managers_ids = home_manager | away_manager          # Diccionario con informaicón de los managers
             for manager in managers_ids.keys():
-                manager_info = obtain_information(type='manager', id=manager, out_season_path=out_season_path)
+                obtain_information(type='manager', id=manager, out_season_path=out_season_path)
                 if scrape_images:
                     image_downloader(type='manager', id=manager, out_path=out_season_path)
 
-    elapsed_time = time.time() - start_time                 # Suele tardar más en Sofascore por eso añadimos la posibilidad de mostrarlo en minutos
-    if elapsed_time >= 60:
-        minutes = int(elapsed_time // 60)
-        seconds = int(elapsed_time % 60)
-        time_str = f"{minutes} minutes {seconds} seconds"
-    else:
-        time_str = f"{elapsed_time:.2f} seconds"
     if print_info:
-        print(f'Finished Sofascore scraping ({league_name}) in {time_str}')
-        print('================================================================================')
+        print(f'Finished Sofascore scraping ({league_name}) in {elapsed_time_str(start_time=start_time)}')

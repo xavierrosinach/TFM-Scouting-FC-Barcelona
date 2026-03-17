@@ -1,23 +1,20 @@
 import os
 import pandas as pd
 import time
-import json as jsonlib
-import unicodedata
-import re
 import numpy as np
 from typing import Tuple
 
 from use.config import comps
-from use.functions import json_to_dict, create_slug
+from use.functions import json_to_dict, create_slug, elapsed_time_str
 
 # Procesado de datos de partidos a partir de su path
-def proc_matches(json_path: str, out_path: str) -> pd.DataFrame:
+def proc_matches(json_path: str, out_path: str) -> None:
 
     if os.path.exists(json_path):
         matches = json_to_dict(json_path=json_path).get('match')           # Obtenemos los partidos
 
         if not matches:     # Si no hay info, return
-            return None
+            return
 
         match_info_list = []
         for match in matches:
@@ -47,18 +44,15 @@ def proc_matches(json_path: str, out_path: str) -> pd.DataFrame:
         
         matches_df = pd.DataFrame(match_info_list)
         matches_df.to_csv(os.path.join(out_path, 'matches.csv'), index=False, sep=';')
-        return matches_df
-    
-    return None
 
 # Procesado de datos de plantillas a partir de su path
-def proc_squads(json_path: str, out_path: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def proc_squads(json_path: str, out_path: str) -> None:
 
     if os.path.exists(json_path):
         squads = json_to_dict(json_path=json_path).get('squad')           # Obtenemos las plantillas
 
         if not squads:     # Si no hay info, return
-            return None
+            return
 
         info_teams = []         # Información que iremos concatenando - de jugadores, equipos y entrenadores
         info_players = []
@@ -104,12 +98,8 @@ def proc_squads(json_path: str, out_path: str) -> Tuple[pd.DataFrame, pd.DataFra
             managers_df = pd.DataFrame(info_managers)                                           # Dataframe entero de entrenadores y staff
             managers_df.to_csv(os.path.join(out_path, 'managers.csv'), index=False, sep=';')
 
-        return teams_df, players_df, managers_df
-    
-    return None, None, None
-
 # Procesado de las tablas de clasificación
-def proc_standings(json_path: str, out_path_standings: str) -> dict:
+def proc_standings(json_path: str, out_path_standings: str) -> None:
 
     os.makedirs(out_path_standings, exist_ok=True)      # Creamos la carpeta con standings si no existe
     dict_output = {}                                    # Diccionario de output con todos los dataframes
@@ -125,9 +115,6 @@ def proc_standings(json_path: str, out_path_standings: str) -> dict:
                     table_df = pd.DataFrame([t for t in st_table])                                                  # Convertimos a dataframe
                     table_df.to_csv(os.path.join(out_path_standings, f'{st_type}.csv'), index=False, sep=';')       # Guardado
                     dict_output[st_type] = table_df                                                                 # Añadimos dataframe al diccionario
-            
-            return dict_output      # Lista con la información
-    return {}                       # Lista vacía si no hay información
 
 # Obtención del df de estadísticas de jugadores en un partido - a partir de las alineaciones locales y visitantes
 def match_player_stats(home_lineup: dict, away_lineup: dict) -> pd.DataFrame:
@@ -250,7 +237,7 @@ def single_match_stats(match_id: str, match_raw_path: str) -> Tuple[pd.DataFrame
     return match_info_df, teams_stats_df, players_stats_df, refs_df
 
 # Procesado de todos los partidos scrapeados de la liga
-def proc_all_league_matches(matches_raw_path: str, matches_clean_path: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def proc_all_league_matches(matches_raw_path: str, matches_clean_path: str) -> None:
 
     list_match_info = []        # Listas para inr concatenando la información extraída
     list_team_stats = []    
@@ -280,50 +267,38 @@ def proc_all_league_matches(matches_raw_path: str, matches_clean_path: str) -> T
     all_refs_df = pd.concat(list_refs, ignore_index=True)                                           # Concatenamos y guardamos
     all_refs_df.to_csv(os.path.join(matches_clean_path, 'referees.csv'), index=False, sep=';')
 
-    return all_match_info_df, all_team_stats_df, all_player_stats_df, all_refs_df
-
 # Función principal para la limpieza de datos de Scoresway de una liga
 def main_scoresway_league_cleaning(league_id: int, out_path: str, print_info: bool = True) -> None:
 
-    start_time = time.time()   # Inicio del contador
+    start_time = time.time()                                                # Inicio del contador
 
     league_name = comps[comps['id'] == league_id]['tournament'].iloc[0]     # Nombre de la liga
     league_slug = create_slug(text=league_name)                             # Slug de la liga
 
     league_raw_path = os.path.join(out_path, 'scoresway', league_slug)      # Path de los datos raw
-    league_clean_path = league_raw_path.replace('raw', 'clean')             # Path de los datos clean                                                               # Obtención de la nueva carpeta
-    os.makedirs(league_clean_path, exist_ok=True)                                                                                                                 # Creación de la carpeta con datos limpios en caso de que no se haya hecho
+    league_clean_path = league_raw_path.replace('raw', 'clean')             # Path de los datos clean                           
+    os.makedirs(league_clean_path, exist_ok=True)                           
 
     if print_info:
-        print('================================================================================')
         print(f'Starting Scoresway cleaning ({league_name})')
 
     seasons_to_proc = [f for f in os.listdir(league_raw_path) if os.path.isdir(os.path.join(league_raw_path, f))]        # Lista con temporadas a procesar
     for s in seasons_to_proc:
-        season_info_path = os.path.join(league_raw_path, s, 'info')             # Path con la información de la liga
-        season_matches_path = os.path.join(league_raw_path, s, 'matches')       # Path con los partidos
+        season_info_path = os.path.join(league_raw_path, s, 'info')                 # Path con la información de la liga
+        season_matches_path = os.path.join(league_raw_path, s, 'matches')           # Path con los partidos
 
-        league_clean_info_path = os.path.join(league_clean_path, s, 'info')        # Creación carpeta de output de información
+        league_clean_info_path = os.path.join(league_clean_path, s, 'info')         # Creación carpeta de output de información
         os.makedirs(league_clean_info_path, exist_ok=True)
-        league_clean_matches_path = os.path.join(league_clean_path, s, 'matches')  # Creación carpeta de output de partidos
+        league_clean_matches_path = os.path.join(league_clean_path, s, 'matches')   # Creación carpeta de output de partidos
         os.makedirs(league_clean_matches_path, exist_ok=True)
 
-        matches_df = proc_matches(json_path=os.path.join(season_info_path, 'matches.json'), out_path=league_clean_info_path)                                                        # Procesado de partidos
-        teams_df, players_df, managers_df = proc_squads(json_path=os.path.join(season_info_path, 'squads.json'), out_path=league_clean_info_path)                                   # Procesado de plantillas
-        dict_standings_dfs = proc_standings(json_path=os.path.join(season_info_path, 'standings.json'), out_path_standings=os.path.join(league_clean_info_path, 'standings'))       # Procesado de tablas de clasificación
-
-        all_match_info_df, all_team_stats_df, all_player_stats_df, all_refs_df = proc_all_league_matches(matches_raw_path=season_matches_path, matches_clean_path=league_clean_matches_path)         # Procesado de todos los partidos de la liga
+        proc_matches(json_path=os.path.join(season_info_path, 'matches.json'), out_path=league_clean_info_path)                                                 # Procesado de partidos
+        proc_squads(json_path=os.path.join(season_info_path, 'squads.json'), out_path=league_clean_info_path)                                                   # Procesado de plantillas
+        proc_standings(json_path=os.path.join(season_info_path, 'standings.json'), out_path_standings=os.path.join(league_clean_info_path, 'standings'))        # Procesado de tablas de clasificación
+        proc_all_league_matches(matches_raw_path=season_matches_path, matches_clean_path=league_clean_matches_path)                                             # Procesado de todos los partidos de la liga
 
         if print_info:
             print(f'     - Information cleaned for season {s}')
 
-    elapsed_time = time.time() - start_time                 # Suele tardar más en Sofascore por eso añadimos la posibilidad de mostrarlo en minutos
-    if elapsed_time >= 60:
-        minutes = int(elapsed_time // 60)
-        seconds = int(elapsed_time % 60)
-        time_str = f"{minutes} minutes {seconds} seconds"
-    else:
-        time_str = f"{elapsed_time:.2f} seconds"
     if print_info:
-        print(f'Finished Scoresway cleaning ({league_name}) in {elapsed_time:.2f} seconds')
-        print('================================================================================')
+        print(f'Finished Scoresway cleaning ({league_name}) in {elapsed_time_str(start_time=start_time)}')

@@ -4,7 +4,7 @@ import time
 from datetime import datetime, timedelta
 
 from use.config import comps, desired_seasons, act_season
-from use.functions import safe_json_dump, url_to_json, need_to_upload, create_slug
+from use.functions import safe_json_dump, url_to_json, need_to_upload, create_slug, elapsed_time_str
 
 # Obtenemos un diccionario JSON con las temporadas disponibles en una liga.
 def league_available_seasons(league_code: int, out_path: str) -> dict:
@@ -38,7 +38,7 @@ def league_available_seasons(league_code: int, out_path: str) -> dict:
     return available_seasons_json
 
 # Datos de una temporada
-def season_data(seasons_dict: dict, season_key: str, out_path: str) -> dict:
+def season_data(seasons_dict: dict, season_key: str, out_path: str) -> None:
 
     out_seasons_path = os.path.join(out_path, season_key)               # Carpeta con el output
     os.makedirs(out_seasons_path, exist_ok=True)
@@ -48,23 +48,17 @@ def season_data(seasons_dict: dict, season_key: str, out_path: str) -> dict:
         if os.path.exists(json_path):                                       # En caso que exista, devolvemos el JSON
             with open(json_path, "r", encoding="utf-8") as f:
                 season_json = jsonlib.load(f)
-            return season_json
-    elif season_key == act_season:                                          # Temporada actual
+    else:                                          # Temporada actual
         if os.path.exists(json_path) and not need_to_upload(json_path):     # En caso que exista, devolvemos el JSON
             with open(json_path, "r", encoding="utf-8") as f:
                 season_json = jsonlib.load(f)
-            return season_json
     
-    if season_key not in seasons_dict.keys():       # Comprovamos que existe en la temporada
-        return {}
-   
-    season_link = seasons_dict[season_key]          # Link y obtenemos información
-    season_json = url_to_json(season_link)
-    if season_json.get('fixtures'):
-        safe_json_dump(data=season_json, path=json_path)
+    if season_key in seasons_dict.keys():       # Comprovamos que existe en la temporada
+        season_link = seasons_dict[season_key]          # Link y obtenemos información
+        season_json = url_to_json(season_link)
+        if season_json.get('fixtures'):
+            safe_json_dump(data=season_json, path=json_path)
     
-    return season_json
-
 # Función principal para la extracción de datos de Fotmob de una liga
 def main_fotmob_league_scraping(league_id: int, out_path: str, print_info: bool = True) -> None:
    
@@ -75,7 +69,6 @@ def main_fotmob_league_scraping(league_id: int, out_path: str, print_info: bool 
     league_slug = create_slug(text=league_name)                             # Slug de la liga
 
     if print_info:
-        print('================================================================================')
         print(f'Starting Fotmob scraping ({league_name})')
 
     out_league_path = os.path.join(out_path, 'fotmob', league_slug)         # Creación de la carpeta de la liga
@@ -86,11 +79,9 @@ def main_fotmob_league_scraping(league_id: int, out_path: str, print_info: bool 
     seasons_dict = {k: v for k, v in seasons_dict.items() if k in desired_seasons}
 
     for season in seasons_dict.keys():              # Obtención de datos para cada temporada
-        season_json = season_data(seasons_dict=seasons_dict, season_key=str(season), out_path=out_league_path)
+        season_data(seasons_dict=seasons_dict, season_key=str(season), out_path=out_league_path)
         if print_info:
             print(f'     - Scraping information for season {season}')
     
-    elapsed_time = time.time() - start_time         # Tiempo transcurrido
     if print_info:
-        print(f'Finished Fotmob scraping ({league_name}) in {elapsed_time:.2f} seconds')
-        print('================================================================================')
+        print(f'Finished Fotmob scraping ({league_name}) in {elapsed_time_str(start_time=start_time)}')

@@ -5,13 +5,13 @@ import numpy as np
 from typing import Tuple
 
 from use.config import comps
-from use.functions import json_to_dict, create_slug
+from use.functions import json_to_dict, create_slug, elapsed_time_str
 
 # Procesado de las tablas de clasificación
-def standings_tables_proc(standings_path: str, standings_output_path: str) -> list:
+def standings_tables_proc(standings_path: str, standings_output_path: str) -> None:
 
     if not os.path.exists(standings_path):
-        return []
+        return
     
     os.makedirs(standings_output_path, exist_ok=True)           # Creación del directorio de output
     standings_data = json_to_dict(json_path=standings_path)     # Lectura archivo
@@ -38,14 +38,12 @@ def standings_tables_proc(standings_path: str, standings_output_path: str) -> li
             list_return.append(standings_df)        # Append a la lista a devolver
             standings_df.to_csv(os.path.join(standings_output_path, f'{type}.csv'), index=False, sep=';')
 
-    return list_return
-
 # Procesado de información de los jugadores
-def players_proc(players_json_path: str, players_dir_path: str, df_output_path: str) -> pd.DataFrame:
+def players_proc(players_json_path: str, players_dir_path: str, df_output_path: str) -> None:
 
     if not os.path.exists(players_json_path):
-        return pd.DataFrame()
-
+        return
+    
     all_players_data = json_to_dict(json_path=players_json_path).get('players')         # Lectura archivo
 
     if all_players_data:                                # Dataframe con jugadores
@@ -77,13 +75,12 @@ def players_proc(players_json_path: str, players_dir_path: str, df_output_path: 
         players_more_info_df = pd.DataFrame(players_info)       # Dataframe con información extra
         players_df = players_df.merge(players_more_info_df, how='left', on='playerId')
         players_df.to_csv(df_output_path, index=False, sep=';') # Guardado
-        return players_df
 
 # Procesado de equipos
-def teams_proc(teams_dir_path: str, df_output_path: str) -> pd.DataFrame:
+def teams_proc(teams_dir_path: str, df_output_path: str) -> None:
 
     if not os.path.exists(teams_dir_path):
-        return pd.DataFrame()
+        return
     
     teams_info = []                             # Lista para ir añadiendo información
 
@@ -104,13 +101,12 @@ def teams_proc(teams_dir_path: str, df_output_path: str) -> pd.DataFrame:
 
     teams_df = pd.DataFrame(teams_info)     # Dataframe
     teams_df.to_csv(df_output_path, index=False, sep=';')
-    return teams_df
 
 # Procesado de estadios
-def venues_proc(venues_json_path: str, df_output_path: str) -> pd.DataFrame:
+def venues_proc(venues_json_path: str, df_output_path: str) -> None:
 
     if not os.path.exists(venues_json_path):
-        return pd.DataFrame()
+        return
     
     venues_data = json_to_dict(json_path=venues_json_path).get('venues')
     if venues_data:
@@ -126,13 +122,12 @@ def venues_proc(venues_json_path: str, df_output_path: str) -> pd.DataFrame:
         
         venues_df = pd.DataFrame(venues_info)       # Conversion a dataframe
         venues_df.to_csv(df_output_path, index=False, sep=';')
-        return venues_df
 
 # Procesado de entrenadores
-def managers_proc(managers_dir_path: str, df_output_path: str) -> pd.DataFrame:
+def managers_proc(managers_dir_path: str, df_output_path: str) -> None:
 
     if not os.path.exists(managers_dir_path):
-        return pd.DataFrame()
+        return
     
     managers_info = []
     for manager in os.listdir(managers_dir_path):
@@ -154,7 +149,6 @@ def managers_proc(managers_dir_path: str, df_output_path: str) -> pd.DataFrame:
 
     managers_df = pd.DataFrame(managers_info)
     managers_df.to_csv(df_output_path, index=False, sep=';')
-    return managers_df
 
 # Procesado de la información del partido
 def match_info_proc(match_data: dict) -> pd.DataFrame:
@@ -175,12 +169,11 @@ def match_info_proc(match_data: dict) -> pd.DataFrame:
                           'date_time': match_info.get('startTimestamp', np.nan)}])
 
 # Alineación única de un equipo
-def single_team_lineups(team_lineups: dict) -> Tuple[str, pd.DataFrame]:
+def single_team_lineups(team_lineups: dict) -> pd.DataFrame:
 
     if not team_lineups:
         return np.nan, None
     
-    formation = team_lineups.get('formation', np.nan)       # Formación a devolver
     players = team_lineups.get('players')
     players_list = []
 
@@ -199,7 +192,7 @@ def single_team_lineups(team_lineups: dict) -> Tuple[str, pd.DataFrame]:
 
         lineups_df = pd.DataFrame(players_list)
         lineups_df = lineups_df[lineups_df['minutesPlayed'].notna()]
-        return formation, lineups_df
+        return lineups_df
 
 # Procesado de las estadísticas del partido
 def match_stats_proc(match_data: dict) -> pd.DataFrame:
@@ -219,7 +212,7 @@ def match_stats_proc(match_data: dict) -> pd.DataFrame:
     return statistics_df
 
 # Procesado de todos los partidos de la liga
-def all_matches_proc(league_raw_matches_path: str, league_clean_matches_path: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def all_matches_proc(league_raw_matches_path: str, league_clean_matches_path: str) -> None:
     
     list_matches_dfs = []       # Listas para ir añadiendo información
     list_lineups_dfs = []
@@ -230,13 +223,13 @@ def all_matches_proc(league_raw_matches_path: str, league_clean_matches_path: st
         match_info_df = match_info_proc(match_data=match_data)                                  # Información básica del partido
         list_matches_dfs.append(match_info_df)
 
-        match_id = match_info_df['match_id'].iloc[0]            # ID del partido
-        home_team = match_info_df['home_team'].iloc[0]          # Equipo local
-        away_team = match_info_df['away_team'].iloc[0]          # Equipo visitante
+        match_id = match_info_df['match_id'].iloc[0]                # ID del partido
+        home_team = match_info_df['home_team'].iloc[0]              # Equipo local
+        away_team = match_info_df['away_team'].iloc[0]              # Equipo visitante
         
-        match_lineups = match_data.get('lineups')                                       # Alineaciones
-        home_formation, home_df = single_team_lineups(match_lineups.get('home'))        # Alineación local
-        away_formation, away_df = single_team_lineups(match_lineups.get('away'))        # Alineación visitante
+        match_lineups = match_data.get('lineups')                   # Alineaciones
+        home_df = single_team_lineups(match_lineups.get('home'))    # Alineación local
+        away_df = single_team_lineups(match_lineups.get('away'))    # Alineación visitante
 
         home_df.insert(0, 'match_id', match_id)         # ID del partido
         away_df.insert(0, 'match_id', match_id)
@@ -264,8 +257,6 @@ def all_matches_proc(league_raw_matches_path: str, league_clean_matches_path: st
     all_lineups_df.to_csv(os.path.join(league_clean_matches_path, 'lineups.csv'), index=False, sep=';')
     all_stats_df.to_csv(os.path.join(league_clean_matches_path, 'statistics.csv'), index=False, sep=';')
 
-    return all_matches_df, all_lineups_df, all_stats_df
-
 # Función principal para la limpieza de datos de Sofascore de una liga
 def main_sofascore_league_cleaning(league_id: int, out_path: str, print_info: bool = True) -> None:
 
@@ -279,7 +270,6 @@ def main_sofascore_league_cleaning(league_id: int, out_path: str, print_info: bo
     os.makedirs(league_clean_path, exist_ok=True)                                                                                # Creación de la carpeta con datos limpios en caso de que no se haya hecho
 
     if print_info:
-        print('================================================================================')
         print(f'Starting Sofascore cleaning ({league_name})')
 
     for season in (d for d in os.listdir(league_raw_path) if os.path.isdir(os.path.join(league_raw_path, d))):
@@ -293,19 +283,17 @@ def main_sofascore_league_cleaning(league_id: int, out_path: str, print_info: bo
         os.makedirs(league_clean_matches_path, exist_ok=True)
 
         # A añadir a información
-        list_standings_tables = standings_tables_proc(standings_path=os.path.join(league_raw_info_path, 'standings.json'), standings_output_path=os.path.join(league_clean_info_path, 'standings'))
-        players_df = players_proc(players_json_path=os.path.join(league_raw_info_path, 'player.json'), players_dir_path=os.path.join(league_raw_info_path, 'player'), df_output_path=os.path.join(league_clean_info_path, 'players.csv'))
-        teams_df = teams_proc(teams_dir_path=os.path.join(league_raw_info_path, 'team'), df_output_path=os.path.join(league_clean_info_path, 'teams.csv'))
-        venues_df = venues_proc(venues_json_path=os.path.join(league_raw_info_path, 'venue.json'), df_output_path=os.path.join(league_clean_info_path, 'venues.csv'))
-        managers_df = managers_proc(managers_dir_path=os.path.join(league_raw_info_path, 'manager'), df_output_path=os.path.join(league_clean_info_path, 'managers.csv'))
+        standings_tables_proc(standings_path=os.path.join(league_raw_info_path, 'standings.json'), standings_output_path=os.path.join(league_clean_info_path, 'standings'))
+        players_proc(players_json_path=os.path.join(league_raw_info_path, 'player.json'), players_dir_path=os.path.join(league_raw_info_path, 'player'), df_output_path=os.path.join(league_clean_info_path, 'players.csv'))
+        teams_proc(teams_dir_path=os.path.join(league_raw_info_path, 'team'), df_output_path=os.path.join(league_clean_info_path, 'teams.csv'))
+        venues_proc(venues_json_path=os.path.join(league_raw_info_path, 'venue.json'), df_output_path=os.path.join(league_clean_info_path, 'venues.csv'))
+        managers_proc(managers_dir_path=os.path.join(league_raw_info_path, 'manager'), df_output_path=os.path.join(league_clean_info_path, 'managers.csv'))
 
         # Procesado de todos los partidos
-        matches_df, lineups_df, stats_df = all_matches_proc(league_raw_matches_path=league_raw_matches_path, league_clean_matches_path=league_clean_matches_path)
+        all_matches_proc(league_raw_matches_path=league_raw_matches_path, league_clean_matches_path=league_clean_matches_path)
 
         if print_info:
             print(f'     - Information cleaned for season {season}')
 
-    elapsed_time = time.time() - start_time         # Tiempo transcurrido
     if print_info:
-        print(f'Finished Scoresway cleaning ({league_name}) in {elapsed_time:.2f} seconds')
-        print('================================================================================')
+        print(f'Finished Scoresway cleaning ({league_name}) in {elapsed_time_str(start_time=start_time)}')

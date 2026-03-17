@@ -4,7 +4,7 @@ import time
 import numpy as np
 
 from use.config import comps
-from use.functions import json_to_dict, create_slug
+from use.functions import json_to_dict, create_slug, elapsed_time_str
 
 # Obtenemos dataframes de información a partir del JSON de información de una temporada
 def clean_season_information(season_info: dict, season_key: str, league_slug: str, league_name: str, season_out_path: str) -> None:
@@ -64,7 +64,6 @@ def main_fotmob_league_cleaning(league_id: int, out_path: str, print_info: bool 
     os.makedirs(league_clean_path, exist_ok=True)                           # Creación de la carpeta con datos limpios en caso de que no se haya hecho
 
     if print_info:
-        print('================================================================================')
         print(f'Starting Fotmob cleaning ({league_name})')
 
     seasons_to_proc = [f for f in os.listdir(league_raw_path) if os.path.isdir(os.path.join(league_raw_path, f))]        # Lista con temporadas a procesar
@@ -78,7 +77,5 @@ def main_fotmob_league_cleaning(league_id: int, out_path: str, print_info: bool 
         else:
             continue
 
-    elapsed_time = time.time() - start_time         # Tiempo transcurrido
     if print_info:
-        print(f'Finished Fotmob cleaning ({league_name}) in {elapsed_time:.2f} seconds')
-        print('================================================================================')
+        print(f'Finished Fotmob cleaning ({league_name}) in {elapsed_time_str(start_time=start_time)}')
