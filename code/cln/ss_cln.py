@@ -2,7 +2,6 @@ import os
 import pandas as pd
 import time
 import numpy as np
-from typing import Tuple
 
 from use.config import comps
 from use.functions import json_to_dict, create_slug, elapsed_time_str
