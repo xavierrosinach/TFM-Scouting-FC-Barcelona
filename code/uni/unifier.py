@@ -12,18 +12,14 @@ from PIL import Image
 from rapidfuzz import process, fuzz
 
 from use.config import comps, desired_seasons, utils
-from use.functions import create_slug, safe_div
+from use.functions import create_slug, safe_div, elapsed_time_str
 
 warnings.filterwarnings("ignore", category=pd.errors.PerformanceWarning)
-
 
 # --------------------------------------------------------------------------------------
 # LECTURA DE DATOS DE FOTMOB
 # --------------------------------------------------------------------------------------
-
-def read_fotmob_data(
-    fotmob_clean_path: str
-) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def read_fotmob_data(fotmob_clean_path: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
 
     if not os.path.exists(fotmob_clean_path):
         return None, None, None, None, None, None, None
@@ -48,19 +44,10 @@ def read_fotmob_data(
 
     return info_df, matches_df, all_st_df, home_st_df, away_st_df, form_st_df, xg_st_df
 
-
 # --------------------------------------------------------------------------------------
 # OBTENCIÓN DE EQUIPOS DE FOTMOB
 # --------------------------------------------------------------------------------------
-
-def obtain_fotmob_teams(
-    matches_df: pd.DataFrame,
-    all_st_df: pd.DataFrame,
-    home_st_df: pd.DataFrame,
-    away_st_df: pd.DataFrame,
-    form_st_df: pd.DataFrame,
-    xg_st_df: pd.DataFrame
-) -> list:
+def obtain_fotmob_teams(matches_df: pd.DataFrame, all_st_df: pd.DataFrame, home_st_df: pd.DataFrame, away_st_df: pd.DataFrame, form_st_df: pd.DataFrame, xg_st_df: pd.DataFrame) -> list:
 
     teams_list = []
 
@@ -76,20 +63,11 @@ def obtain_fotmob_teams(
 
     return sorted(set(teams_list))
 
-
 # --------------------------------------------------------------------------------------
 # LECTURA DE DATOS DE SCORESWAY
 # --------------------------------------------------------------------------------------
-
-def read_scoresway_data(
-    scoresway_clean_path: str
-) -> Tuple[
-    pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame,
-    pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame,
-    pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame,
-    pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame,
-    pd.DataFrame, pd.DataFrame
-]:
+def read_scoresway_data(scoresway_clean_path: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    
     if not os.path.exists(scoresway_clean_path):
         return (None,) * 18
 
@@ -137,22 +115,14 @@ def read_scoresway_data(
     matches_team_stats_df = pd.read_csv(matches_team_stats_path, sep=";") if os.path.exists(matches_team_stats_path) else None
     matches_referees_df = pd.read_csv(matches_referees_path, sep=";") if os.path.exists(matches_referees_path) else None
 
-    return (
-        managers_df, matches_df, players_df, teams_df,
-        total_st_df, home_st_df, away_st_df, httotal_st_df,
-        hthome_st_df, htaway_st_df, formhome_st_df, formaway_st_df,
-        overunder_st_df, attendance_st_df, matches_info_df,
-        matches_player_stats_df, matches_team_stats_df, matches_referees_df
-    )
-
+    return (managers_df, matches_df, players_df, teams_df, total_st_df, home_st_df, away_st_df, httotal_st_df, hthome_st_df, htaway_st_df, formhome_st_df, formaway_st_df,
+            overunder_st_df, attendance_st_df, matches_info_df, matches_player_stats_df, matches_team_stats_df, matches_referees_df)
 
 # --------------------------------------------------------------------------------------
 # LECTURA DE DATOS DE SOFASCORE
 # --------------------------------------------------------------------------------------
+def read_sofascore_data(sofascore_clean_path: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
 
-def read_sofascore_data(
-    sofascore_clean_path: str
-) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     if not os.path.exists(sofascore_clean_path):
         return (None,) * 10
 
@@ -184,17 +154,11 @@ def read_sofascore_data(
     matches_lineups_df = pd.read_csv(matches_lineups_path, sep=";") if os.path.exists(matches_lineups_path) else None
     matches_statistics_df = pd.read_csv(matches_statistics_path, sep=";") if os.path.exists(matches_statistics_path) else None
 
-    return (
-        managers_df, players_df, teams_df, venues_df,
-        total_st_df, home_st_df, away_st_df,
-        matches_info_df, matches_lineups_df, matches_statistics_df
-    )
-
+    return (managers_df, players_df, teams_df, venues_df, total_st_df, home_st_df, away_st_df, matches_info_df, matches_lineups_df, matches_statistics_df)
 
 # --------------------------------------------------------------------------------------
 # MATCH FUZZY DE EQUIPOS
 # --------------------------------------------------------------------------------------
-
 def match_teams(fm_list: list, sw_list: list, ss_list: list, threshold: int = 30) -> pd.DataFrame:
 
     rows = []
@@ -202,11 +166,7 @@ def match_teams(fm_list: list, sw_list: list, ss_list: list, threshold: int = 30
         match_sw, score_sw, _ = process.extractOne(team, sw_list, scorer=fuzz.token_sort_ratio) if sw_list else ("", 0, "")
         match_ss, score_ss, _ = process.extractOne(team, ss_list, scorer=fuzz.token_sort_ratio) if ss_list else ("", 0, "")
 
-        rows.append({
-            "fotmob": team,
-            "scoresway": match_sw if score_sw >= threshold else None,
-            "sofascore": match_ss if score_ss >= threshold else None
-        })
+        rows.append({"fotmob": team, "scoresway": match_sw if score_sw >= threshold else None, "sofascore": match_ss if score_ss >= threshold else None})
 
     df = pd.DataFrame(rows)
     if df.empty:
@@ -215,11 +175,9 @@ def match_teams(fm_list: list, sw_list: list, ss_list: list, threshold: int = 30
     df.insert(0, "team", df["fotmob"].combine_first(df["sofascore"]).combine_first(df["scoresway"]))
     return df
 
-
 # --------------------------------------------------------------------------------------
 # MATCH FUZZY DE JUGADORES / MANAGERS
 # --------------------------------------------------------------------------------------
-
 def match_players(sw_list: list, ss_list: list, threshold: int = 10) -> pd.DataFrame:
 
     sw_list = sw_list if sw_list is not None else []
@@ -237,20 +195,15 @@ def match_players(sw_list: list, ss_list: list, threshold: int = 10) -> pd.DataF
     rows = []
     for player in ss_list:
         match_sw, score_sw, _ = process.extractOne(player, sw_list, scorer=fuzz.token_sort_ratio) if sw_list else ("", 0, "")
-        rows.append({
-            "sofascore": player,
-            "scoresway": match_sw if score_sw >= threshold else np.nan
-        })
+        rows.append({"sofascore": player, "scoresway": match_sw if score_sw >= threshold else np.nan})
 
     df = pd.DataFrame(rows)
     df.insert(0, "player", df["sofascore"].combine_first(df["scoresway"]))
     return df
 
-
 # --------------------------------------------------------------------------------------
-# UNIFICACIÓN DE EQUIPOS
+# UNIFICACIÓN DE EQUIPOS - Información.
 # --------------------------------------------------------------------------------------
-
 def unify_teams_info(matched_teams: pd.DataFrame, sw_teams_df: pd.DataFrame = None, ss_teams_df: pd.DataFrame = None) -> pd.DataFrame:
 
     sw_to_team = matched_teams.set_index("scoresway")["team"].dropna().to_dict() if "scoresway" in matched_teams.columns else {}
@@ -278,16 +231,12 @@ def unify_teams_info(matched_teams: pd.DataFrame, sw_teams_df: pd.DataFrame = No
     else:
         teams_df = pd.merge(dfs[0], dfs[1], on="TeamName", how="outer")
 
-    teams_df = (
-        matched_teams[["team"]]
-        .rename(columns={"team": "TeamName"})
-        .drop_duplicates()
-        .merge(teams_df, how="left", on="TeamName")
-    )
-
+    teams_df = (matched_teams[["team"]].rename(columns={"team": "TeamName"}).drop_duplicates().merge(teams_df, how="left", on="TeamName"))
     return teams_df
 
-
+# --------------------------------------------------------------------------------------
+# UNIFICACIÓN DE EQUIPOS - Limpieza.
+# --------------------------------------------------------------------------------------
 def clean_unified_teams(df: pd.DataFrame) -> pd.DataFrame:
 
     list_columns = df.columns
@@ -317,17 +266,17 @@ def clean_unified_teams(df: pd.DataFrame) -> pd.DataFrame:
     df_cleaned.insert(0, "Slug", df_cleaned["Name"].apply(create_slug))
     return df_cleaned
 
-
+# --------------------------------------------------------------------------------------
+# UNIFICACIÓN DE EQUIPOS - Creación del Dataframe.
+# --------------------------------------------------------------------------------------
 def create_teams_info_df(matched_teams: pd.DataFrame, sw_teams_df: pd.DataFrame = None, ss_teams_df: pd.DataFrame = None) -> pd.DataFrame:
     raw_unified_teams_df = unify_teams_info(matched_teams=matched_teams, sw_teams_df=sw_teams_df, ss_teams_df=ss_teams_df)
     teams_df = clean_unified_teams(df=raw_unified_teams_df)
     return teams_df
 
-
 # --------------------------------------------------------------------------------------
-# UNIFICACIÓN DE JUGADORES
+# UNIFICACIÓN DE JUGADORES - Información.
 # --------------------------------------------------------------------------------------
-
 def unify_players_info(team: str, matched_players: pd.DataFrame, ss_df: pd.DataFrame = None, sw_df: pd.DataFrame = None) -> pd.DataFrame:
 
     sw_to_player = matched_players.set_index("scoresway")["player"].dropna().to_dict() if "scoresway" in matched_players.columns else {}
@@ -352,17 +301,14 @@ def unify_players_info(team: str, matched_players: pd.DataFrame, ss_df: pd.DataF
     else:
         players_df = pd.merge(dfs[0], dfs[1], on="PlayerName", how="outer")
 
-    players_df = (
-        matched_players[["player"]]
-        .rename(columns={"player": "PlayerName"})
-        .drop_duplicates()
-        .merge(players_df, how="left", on="PlayerName")
-    )
+    players_df = (matched_players[["player"]].rename(columns={"player": "PlayerName"}).drop_duplicates().merge(players_df, how="left", on="PlayerName"))
     players_df.insert(0, "Team", create_slug(text=team))
 
     return players_df
 
-
+# --------------------------------------------------------------------------------------
+# UNIFICACIÓN DE JUGADORES - Limpieza.
+# --------------------------------------------------------------------------------------
 def clean_unified_players(df: pd.DataFrame) -> pd.DataFrame:
 
     list_columns = df.columns
@@ -400,7 +346,9 @@ def clean_unified_players(df: pd.DataFrame) -> pd.DataFrame:
     df_cleaned.insert(0, "Slug", df_cleaned["Name"].apply(create_slug))
     return df_cleaned.sort_values(by="ShirtNumber", na_position="last").reset_index(drop=True)
 
-
+# --------------------------------------------------------------------------------------
+# UNIFICACIÓN DE JUGADORES - Creación del Dataframe.
+# --------------------------------------------------------------------------------------
 def create_players_info_df(matched_teams: pd.DataFrame, sw_players_df: pd.DataFrame, ss_players_df: pd.DataFrame) -> pd.DataFrame:
 
     sw_to_team = matched_teams.set_index("longname_scoresway")["team"].dropna().to_dict() if "longname_scoresway" in matched_teams.columns else {}
@@ -437,11 +385,9 @@ def create_players_info_df(matched_teams: pd.DataFrame, sw_players_df: pd.DataFr
 
     return pd.concat(list_teams, ignore_index=True) if list_teams else pd.DataFrame()
 
-
 # --------------------------------------------------------------------------------------
-# UNIFICACIÓN DE MANAGERS
+# UNIFICACIÓN DE MANAGERS - Información.
 # --------------------------------------------------------------------------------------
-
 def unify_managers_info(matched_managers: pd.DataFrame, ss_df: pd.DataFrame = None, sw_df: pd.DataFrame = None) -> pd.DataFrame:
 
     sw_to_player = matched_managers.set_index("scoresway")["player"].dropna().to_dict() if "scoresway" in matched_managers.columns else {}
@@ -468,16 +414,12 @@ def unify_managers_info(matched_managers: pd.DataFrame, ss_df: pd.DataFrame = No
     else:
         managers_df = pd.merge(dfs[0], dfs[1], on="ManagerName", how="outer")
 
-    managers_df = (
-        matched_managers[["player"]]
-        .rename(columns={"player": "ManagerName"})
-        .drop_duplicates()
-        .merge(managers_df, how="left", on="ManagerName")
-    )
-
+    managers_df = (matched_managers[["player"]].rename(columns={"player": "ManagerName"}).drop_duplicates().merge(managers_df, how="left", on="ManagerName"))
     return managers_df
 
-
+# --------------------------------------------------------------------------------------
+# UNIFICACIÓN DE MANAGERS - Limpieza.
+# --------------------------------------------------------------------------------------
 def clean_unified_managers(df: pd.DataFrame) -> pd.DataFrame:
 
     list_columns = df.columns
@@ -510,14 +452,14 @@ def clean_unified_managers(df: pd.DataFrame) -> pd.DataFrame:
     df_cleaned.insert(0, "Slug", df_cleaned["Name"].apply(create_slug))
     return df_cleaned
 
-
+# --------------------------------------------------------------------------------------
+# UNIFICACIÓN DE MANAGERS - Creación del Dataframe.
+# --------------------------------------------------------------------------------------
 def create_managers_info_df(teams_df: pd.DataFrame, sw_managers_df: pd.DataFrame, ss_managers_df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
 
     if sw_managers_df is not None and not sw_managers_df.empty:
         sw_managers_df = sw_managers_df.copy()
-        sw_managers_df["manager_name"] = (
-            sw_managers_df["short_first_name"].fillna("") + " " + sw_managers_df["short_last_name"].fillna("")
-        ).str.strip()
+        sw_managers_df["manager_name"] = (sw_managers_df["short_first_name"].fillna("") + " " + sw_managers_df["short_last_name"].fillna("")).str.strip()
         list_sw = sw_managers_df["manager_name"].dropna().tolist()
     else:
         list_sw = []
@@ -535,11 +477,9 @@ def create_managers_info_df(teams_df: pd.DataFrame, sw_managers_df: pd.DataFrame
 
     return teams_df, managers_df
 
-
 # --------------------------------------------------------------------------------------
 # ESTADIOS
 # --------------------------------------------------------------------------------------
-
 def create_venues_info_df(teams_df: pd.DataFrame, ss_venues_df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
 
     if ss_venues_df is None or ss_venues_df.empty:
@@ -558,11 +498,9 @@ def create_venues_info_df(teams_df: pd.DataFrame, ss_venues_df: pd.DataFrame) ->
 
     return teams_df, venues_df
 
-
 # --------------------------------------------------------------------------------------
-# PARTIDOS
+# PARTIDOS - Limpieza del Dataframe.
 # --------------------------------------------------------------------------------------
-
 def clean_unified_matches(df: pd.DataFrame) -> pd.DataFrame:
 
     list_columns = df.columns
@@ -591,15 +529,12 @@ def clean_unified_matches(df: pd.DataFrame) -> pd.DataFrame:
     for col in ["IdSS", "IdSW", "Round", "HomeScore", "AwayScore", "HomeScoreHT", "AwayScoreHT", "Attendance"]:
         df_cleaned[col] = pd.to_numeric(df_cleaned[col], errors="coerce").astype("Int64")
 
-    df_cleaned["Winner"] = np.select(
-        [df_cleaned["Winner"] == 1, df_cleaned["Winner"] == 2, df_cleaned["Winner"] == 3],
-        [df_cleaned["HomeTeam"], df_cleaned["AwayTeam"], "x"],
-        default=np.nan
-    )
-
+    df_cleaned["Winner"] = np.select([df_cleaned["Winner"] == 1, df_cleaned["Winner"] == 2, df_cleaned["Winner"] == 3], [df_cleaned["HomeTeam"], df_cleaned["AwayTeam"], "x"], default=np.nan)
     return df_cleaned
 
-
+# --------------------------------------------------------------------------------------
+# PARTIDOS - Creación del Dataframe de todos los partidos.
+# --------------------------------------------------------------------------------------
 def create_matches_info_df(teams_df: pd.DataFrame, ss_matches_info_df: pd.DataFrame, sw_matches_info_df: pd.DataFrame) -> pd.DataFrame:
 
     if ss_matches_info_df is None or ss_matches_info_df.empty:
@@ -626,26 +561,17 @@ def create_matches_info_df(teams_df: pd.DataFrame, ss_matches_info_df: pd.DataFr
 
     return clean_unified_matches(df=unified_matches_df)
 
-
 # --------------------------------------------------------------------------------------
-# CLASIFICACIONES
+# CLASIFICACIONES - Limpieza.
 # --------------------------------------------------------------------------------------
-
 def clean_standing(df: pd.DataFrame, rank_status: bool = True) -> pd.DataFrame:
 
     df_cleaned = pd.DataFrame()
     df_cleaned["Team"] = df["Team"]
 
-    cols_map = {
-        "Rank": ["rank_sw", "position_ss", "idx_fm"],
-        "Matches": ["played_fm", "matches_ss", "matchesPlayed_sw"],
-        "Wins": ["wins_fm", "wins_ss", "matchesWon_sw"],
-        "Losses": ["losses_fm", "losses_ss", "matchesLost_sw"],
-        "Draws": ["draws_fm", "draws_ss", "matchesDrawn_sw"],
-        "Points": ["pts_fm", "points_ss", "points_sw"],
-        "GoalsFor": ["scores_for_ss", "goalsFor_sw"],
-        "GoalsAgainst": ["scores_against_ss", "goalsAgainst_sw"],
-    }
+    cols_map = {"Rank": ["rank_sw", "position_ss", "idx_fm"], "Matches": ["played_fm", "matches_ss", "matchesPlayed_sw"], "Wins": ["wins_fm", "wins_ss", "matchesWon_sw"],
+                "Losses": ["losses_fm", "losses_ss", "matchesLost_sw"], "Draws": ["draws_fm", "draws_ss", "matchesDrawn_sw"], "Points": ["pts_fm", "points_ss", "points_sw"],
+                "GoalsFor": ["scores_for_ss", "goalsFor_sw"], "GoalsAgainst": ["scores_against_ss", "goalsAgainst_sw"]}
 
     for new_col, possible_cols in cols_map.items():
         existing_cols = [c for c in possible_cols if c in df.columns]
@@ -666,7 +592,9 @@ def clean_standing(df: pd.DataFrame, rank_status: bool = True) -> pd.DataFrame:
 
     return df_cleaned.sort_values(by="Rank", na_position="last").reset_index(drop=True)
 
-
+# --------------------------------------------------------------------------------------
+# CLASIFICACIONES - Unificación de las tablas.
+# --------------------------------------------------------------------------------------
 def unified_standings_tables(matched_teams: pd.DataFrame, fm: pd.DataFrame, ss: pd.DataFrame, sw: pd.DataFrame, rank_status: bool = True) -> pd.DataFrame:
 
     dfs = []
@@ -703,7 +631,9 @@ def unified_standings_tables(matched_teams: pd.DataFrame, fm: pd.DataFrame, ss: 
 
     return clean_standing(unified_standing, rank_status=rank_status)
 
-
+# --------------------------------------------------------------------------------------
+# CLASIFICACIONES - Clasificación esperada.
+# --------------------------------------------------------------------------------------
 def create_expected_standing_table(matched_teams: pd.DataFrame, df: pd.DataFrame) -> pd.DataFrame:
 
     if df is None or df.empty:
@@ -716,24 +646,15 @@ def create_expected_standing_table(matched_teams: pd.DataFrame, df: pd.DataFrame
     fm_dict = matched_teams.set_index("fotmob")["team"].dropna().to_dict()
     df_clean["Team"] = df_clean["name"].map(fm_dict)
 
-    df_clean.columns = [
-        "name", "ExpectedGoalsFor", "ExpectedGoalsAgainst", "ExpectedPoints", "Rank",
-        "ExpectedGoalsForDiff", "ExpectedGoalsAgainstDiff", "ExpectedPointsDiff",
-        "ExpectedRank", "ExpectedRankDiff", "Team"
-    ]
-    df_clean = df_clean[
-        ["Team", "Rank", "ExpectedRank", "ExpectedRankDiff", "ExpectedPoints", "ExpectedPointsDiff",
-         "ExpectedGoalsFor", "ExpectedGoalsAgainst", "ExpectedGoalsAgainstDiff", "ExpectedPointsDiff"]
-    ]
+    df_clean.columns = ["name", "ExpectedGoalsFor", "ExpectedGoalsAgainst", "ExpectedPoints", "Rank", "ExpectedGoalsForDiff", "ExpectedGoalsAgainstDiff", "ExpectedPointsDiff", "ExpectedRank", "ExpectedRankDiff", "Team"]
+    df_clean = df_clean[["Team", "Rank", "ExpectedRank", "ExpectedRankDiff", "ExpectedPoints", "ExpectedPointsDiff", "ExpectedGoalsFor", "ExpectedGoalsAgainst", "ExpectedGoalsAgainstDiff", "ExpectedPointsDiff"]]
     df_clean["Team"] = df_clean["Team"].apply(create_slug)
 
     return df_clean.sort_values(by="ExpectedRank", na_position="last").reset_index(drop=True)
 
-
 # --------------------------------------------------------------------------------------
-# GOLES
+# GOLES - Añadimos los goles en caso de que no se hayan añadido en el Dataframe.
 # --------------------------------------------------------------------------------------
-
 def add_goals(matches_df: pd.DataFrame, team_stats_df: pd.DataFrame) -> pd.DataFrame:
 
     if matches_df is None or matches_df.empty or team_stats_df is None or team_stats_df.empty:
@@ -742,27 +663,17 @@ def add_goals(matches_df: pd.DataFrame, team_stats_df: pd.DataFrame) -> pd.DataF
     goals_df = matches_df[["Slug", "HomeScore", "AwayScore"]]
     team_stats_df = team_stats_df.merge(goals_df, left_on="Match", right_on="Slug", how="left")
 
-    team_stats_df["Goals"] = np.where(
-        team_stats_df["HomeAway"] == "h",
-        team_stats_df["HomeScore"],
-        np.where(team_stats_df["HomeAway"] == "a", team_stats_df["AwayScore"], np.nan)
-    )
-    team_stats_df["GoalsConceded"] = np.where(
-        team_stats_df["HomeAway"] == "h",
-        team_stats_df["AwayScore"],
-        np.where(team_stats_df["HomeAway"] == "a", team_stats_df["HomeScore"], np.nan)
-    )
+    team_stats_df["Goals"] = np.where(team_stats_df["HomeAway"] == "h", team_stats_df["HomeScore"], np.where(team_stats_df["HomeAway"] == "a", team_stats_df["AwayScore"], np.nan))
+    team_stats_df["GoalsConceded"] = np.where(team_stats_df["HomeAway"] == "h", team_stats_df["AwayScore"], np.where(team_stats_df["HomeAway"] == "a", team_stats_df["HomeScore"], np.nan))
 
     team_stats_df["Goals"] = pd.to_numeric(team_stats_df["Goals"], errors="coerce").astype("Int64")
     team_stats_df["GoalsConceded"] = pd.to_numeric(team_stats_df["GoalsConceded"], errors="coerce").astype("Int64")
 
     return team_stats_df.drop(columns=["HomeScore", "AwayScore", "Slug"])
 
-
 # --------------------------------------------------------------------------------------
 # ESTADÍSTICAS DE EQUIPO
 # --------------------------------------------------------------------------------------
-
 def team_stats_proc(df: pd.DataFrame, managers_dict: dict, cols_map: dict, cols_order: list) -> pd.DataFrame:
 
     if df is None or df.empty:
@@ -797,11 +708,7 @@ def team_stats_proc(df: pd.DataFrame, managers_dict: dict, cols_map: dict, cols_
     fill_na_cols = [c for c in df_cleaned.columns if c not in not_fill_na_cols]
     df_cleaned[fill_na_cols] = df_cleaned[fill_na_cols].fillna(0)
 
-    df_cleaned["Formation"] = df_cleaned["Formation"].apply(
-        lambda x: "-".join(re.sub(r"[^0-9]", "", str(x).replace(".0", "")))
-        if pd.notna(x) and re.sub(r"[^0-9]", "", str(x).replace(".0", "")) != ""
-        else np.nan
-    )
+    df_cleaned["Formation"] = df_cleaned["Formation"].apply(lambda x: "-".join(re.sub(r"[^0-9]", "", str(x).replace(".0", ""))) if pd.notna(x) and re.sub(r"[^0-9]", "", str(x).replace(".0", "")) != "" else np.nan)
 
     for col in cols_order:
         if col not in df_cleaned.columns:
@@ -809,11 +716,9 @@ def team_stats_proc(df: pd.DataFrame, managers_dict: dict, cols_map: dict, cols_
 
     return df_cleaned[cols_order]
 
-
 # --------------------------------------------------------------------------------------
 # ESTADÍSTICAS DE JUGADOR
 # --------------------------------------------------------------------------------------
-
 def player_stats_proc(df: pd.DataFrame, cols_map: dict, cols_order: list, positions_dict: dict) -> pd.DataFrame:
 
     if df is None or df.empty:
@@ -834,11 +739,7 @@ def player_stats_proc(df: pd.DataFrame, cols_map: dict, cols_order: list, positi
     df_cleaned["PositionSide"] = df["positionSide_sw"] if "positionSide_sw" in list_columns else ""
     df_cleaned["SubPosition"] = df["subPosition_sw"] if "subPosition_sw" in list_columns else ""
 
-    df_cleaned["Position"] = np.where(
-        df_cleaned["Position"] == "Substitute",
-        df_cleaned["SubPosition"],
-        df_cleaned["Position"].fillna("") + " " + df_cleaned["PositionSide"].fillna("")
-    )
+    df_cleaned["Position"] = np.where(df_cleaned["Position"] == "Substitute", df_cleaned["SubPosition"], df_cleaned["Position"].fillna("") + " " + df_cleaned["PositionSide"].fillna(""))
     df_cleaned["Position"] = df_cleaned["Position"].replace("", "Undefined")
     df_cleaned["Position"] = df_cleaned["Position"].map(positions_dict).fillna("Undefined")
 
@@ -849,12 +750,9 @@ def player_stats_proc(df: pd.DataFrame, cols_map: dict, cols_order: list, positi
         else:
             df_cleaned[col] = np.nan
 
-    not_integer_cols = [
-        "Match", "Team", "Opponent", "Player", "HomeAway", "Starter", "Position", "PositionSide", "SubPosition",
-        "Rating", "ExpectedAssists", "TotalBallCarriesDistance", "TotalProgression", "BestBallCarryProgression",
-        "TotalProgressiveBallCarriesDistance", "PassValue", "DribbleValue", "DefensiveValue", "ExpectedGoals",
-        "ShotValue", "ExpectedGoalsOnTarget", "KeeperSaveValue", "GoalkeeperValue", "GoalsPrevented"
-    ]
+    not_integer_cols = ["Match", "Team", "Opponent", "Player", "HomeAway", "Starter", "Position", "PositionSide", "SubPosition", "Rating", "ExpectedAssists", "TotalBallCarriesDistance", "TotalProgression", 
+                        "BestBallCarryProgression", "TotalProgressiveBallCarriesDistance", "PassValue", "DribbleValue", "DefensiveValue", "ExpectedGoals", "ShotValue", "ExpectedGoalsOnTarget", 
+                        "KeeperSaveValue", "GoalkeeperValue", "GoalsPrevented"]
     for c in df_cleaned.columns:
         if c not in not_integer_cols:
             df_cleaned[c] = pd.to_numeric(df_cleaned[c], errors="coerce").astype("Int64")
@@ -869,22 +767,10 @@ def player_stats_proc(df: pd.DataFrame, cols_map: dict, cols_order: list, positi
 
     return df_cleaned[cols_order]
 
-
 # --------------------------------------------------------------------------------------
 # UNIFICACIÓN DE ESTADÍSTICAS DE PARTIDO
 # --------------------------------------------------------------------------------------
-
-def matches_proc(
-    matches_df: pd.DataFrame,
-    players_df: pd.DataFrame,
-    teams_df: pd.DataFrame,
-    managers_df: pd.DataFrame,
-    venues_df: pd.DataFrame,
-    sw_team: pd.DataFrame,
-    ss_team: pd.DataFrame,
-    sw_player: pd.DataFrame,
-    ss_player: pd.DataFrame
-) -> Tuple[pd.DataFrame, pd.DataFrame]:
+def matches_proc(matches_df: pd.DataFrame, players_df: pd.DataFrame, teams_df: pd.DataFrame, managers_df: pd.DataFrame, sw_team: pd.DataFrame, ss_team: pd.DataFrame, sw_player: pd.DataFrame, ss_player: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
 
     ss_team_dict = teams_df.set_index("IdSS")["Slug"].dropna().to_dict() if not teams_df.empty else {}
     sw_team_dict = teams_df.set_index("IdSW")["Slug"].dropna().to_dict() if not teams_df.empty else {}
@@ -982,11 +868,9 @@ def matches_proc(
 
     return team_stats_df, player_stats_df
 
-
 # --------------------------------------------------------------------------------------
 # ESTADÍSTICAS DE TEMPORADA POR EQUIPO
 # --------------------------------------------------------------------------------------
-
 def season_stats_team(teams_df: pd.DataFrame, team_stats_df: pd.DataFrame) -> pd.DataFrame:
 
     if teams_df is None or teams_df.empty or team_stats_df is None or team_stats_df.empty:
@@ -1006,18 +890,12 @@ def season_stats_team(teams_df: pd.DataFrame, team_stats_df: pd.DataFrame) -> pd
         formations = single_team_stats["Formation"].mode()
         df["Formation"] = formations.iloc[0] if len(formations) > 0 else np.nan
 
-        cols_to_sum = [
-            "Goals", "GoalsConceded", "ExpectedGoals", "GoalsPrevented", "OwnGoals", "GoalAssist", "CleanSheet",
-            "TotalShots", "ShotsOnTarget", "ShotsOffTarget", "BlockedShots", "ShotsInsideBox", "ShotsOutsideBox",
-            "HitWoodwork", "BigChances", "TouchesInPenaltyArea", "ThroughBalls", "Crosses", "Dribbles",
-            "BallPossession", "Passes", "AccuratePasses", "LongBalls", "FinalThirdEntries", "FinalThirdPhase",
-            "CornerKicks", "LostCorners", "ThrowIns", "Offsides", "Fouls", "FoulsWon", "FoulsLost",
-            "YellowCards", "RedCards", "SecondYellow", "Tackles", "TacklesWon", "TotalTackles", "Interceptions",
-            "Recoveries", "Clearances", "Duels", "GroundDuels", "AerialDuels", "Dispossessed", "FouledFinalThird",
-            "ErrorsLeadToShot", "ErrorsLeadToGoal", "GoalkeeperSaves", "TotalSaves", "BigSaves", "Punches",
-            "HighClaims", "GoalKicks", "PenaltySaves", "PenaltyWon", "PenaltyConceded", "PenaltyFaced",
-            "PenGoalsConceded", "SubsMade", "SubsGoals"
-        ]
+        cols_to_sum = ["Goals", "GoalsConceded", "ExpectedGoals", "GoalsPrevented", "OwnGoals", "GoalAssist", "CleanSheet", "TotalShots", "ShotsOnTarget", "ShotsOffTarget", "BlockedShots", 
+                       "ShotsInsideBox", "ShotsOutsideBox", "HitWoodwork", "BigChances", "TouchesInPenaltyArea", "ThroughBalls", "Crosses", "Dribbles", "BallPossession", "Passes", 
+                       "AccuratePasses", "LongBalls", "FinalThirdEntries", "FinalThirdPhase", "CornerKicks", "LostCorners", "ThrowIns", "Offsides", "Fouls", "FoulsWon", "FoulsLost",
+                       "YellowCards", "RedCards", "SecondYellow", "Tackles", "TacklesWon", "TotalTackles", "Interceptions", "Recoveries", "Clearances", "Duels", "GroundDuels", "AerialDuels", 
+                       "Dispossessed", "FouledFinalThird", "ErrorsLeadToShot", "ErrorsLeadToGoal", "GoalkeeperSaves", "TotalSaves", "BigSaves", "Punches", "HighClaims", "GoalKicks", 
+                       "PenaltySaves", "PenaltyWon", "PenaltyConceded", "PenaltyFaced", "PenGoalsConceded", "SubsMade", "SubsGoals"]
 
         for col in cols_to_sum:
             df[col] = single_team_stats[col].sum() if col in single_team_stats.columns else 0
@@ -1075,11 +953,9 @@ def season_stats_team(teams_df: pd.DataFrame, team_stats_df: pd.DataFrame) -> pd
 
     return pd.concat(teams_season_df_list, ignore_index=True) if teams_season_df_list else pd.DataFrame()
 
-
 # --------------------------------------------------------------------------------------
 # ESTADÍSTICAS DE TEMPORADA POR JUGADOR
 # --------------------------------------------------------------------------------------
-
 def season_stats_player(players_df: pd.DataFrame, player_stats_df: pd.DataFrame) -> pd.DataFrame:
 
     if players_df is None or players_df.empty or player_stats_df is None or player_stats_df.empty:
@@ -1112,21 +988,14 @@ def season_stats_player(players_df: pd.DataFrame, player_stats_df: pd.DataFrame)
         df["MinutesPerMatch"] = avg_minutes
         df["AvgRating"] = round(single_player_stats["Rating"].mean(), 4) if "Rating" in single_player_stats.columns else np.nan
 
-        cols_to_sum = [
-            "Touches", "Rating", "PossessionLost", "Passes", "AccuratePasses", "LongBalls", "AccurateLongBalls",
-            "AccurateOwnHalfPasses", "TotalOwnHalfPasses", "TotalOppositionHalfPasses", "AccurateOppositionHalfPasses",
-            "Crosses", "AccurateCrosses", "KeyPasses", "GoalAssist", "ExpectedAssists", "BallCarriesCount",
-            "TotalBallCarriesDistance", "TotalProgression", "BestBallCarryProgression", "ProgressiveBallCarriesCount",
-            "TotalProgressiveBallCarriesDistance", "TotalShots", "ShotsOnTarget", "ShotsOffTarget", "BlockedShots",
-            "ExpectedGoals", "ExpectedGoalsOnTarget", "BigChanceCreated", "BigChanceMissed", "Goals", "HitWoodwork",
-            "ShotValue", "DuelsWon", "DuelsLost", "AerialWon", "AerialLost", "Tackles", "TacklesWon", "Interceptions",
-            "Recoveries", "Clearances", "LastManTackle", "OutfielderBlocks", "ErrorsLeadToShot", "ErrorsLeadToGoal",
-            "Saves", "SavedShotsFromInsideTheBox", "GoalsPrevented", "KeeperSaveValue", "GoalkeeperValue", "Punches",
-            "HighClaims", "ClearanceOffLine", "KeeperSweeperActions", "AccurateKeeperSweeperActions", "GoalKicks",
-            "GoalsConceded", "CleanSheet", "Fouls", "WasFouled", "Offsides", "YellowCards", "RedCards", "SecondYellow",
-            "PenaltyWon", "PenaltyConceded", "PenaltyFaced", "PenaltySave", "PenaltyMiss", "PenGoalsConceded", "OwnGoals",
-            "CrossNotClaimed", "ThrowIns", "CornerKicks", "LostCorners"
-        ]
+        cols_to_sum = ["Touches", "Rating", "PossessionLost", "Passes", "AccuratePasses", "LongBalls", "AccurateLongBalls", "AccurateOwnHalfPasses", "TotalOwnHalfPasses", "TotalOppositionHalfPasses", 
+                       "AccurateOppositionHalfPasses", "Crosses", "AccurateCrosses", "KeyPasses", "GoalAssist", "ExpectedAssists", "BallCarriesCount", "TotalBallCarriesDistance", "TotalProgression", 
+                       "BestBallCarryProgression", "ProgressiveBallCarriesCount", "TotalProgressiveBallCarriesDistance", "TotalShots", "ShotsOnTarget", "ShotsOffTarget", "BlockedShots",
+                       "ExpectedGoals", "ExpectedGoalsOnTarget", "BigChanceCreated", "BigChanceMissed", "Goals", "HitWoodwork", "ShotValue", "DuelsWon", "DuelsLost", "AerialWon", "AerialLost", 
+                       "Tackles", "TacklesWon", "Interceptions", "Recoveries", "Clearances", "LastManTackle", "OutfielderBlocks", "ErrorsLeadToShot", "ErrorsLeadToGoal", "Saves", "SavedShotsFromInsideTheBox", 
+                       "GoalsPrevented", "KeeperSaveValue", "GoalkeeperValue", "Punches", "HighClaims", "ClearanceOffLine", "KeeperSweeperActions", "AccurateKeeperSweeperActions", "GoalKicks",
+                       "GoalsConceded", "CleanSheet", "Fouls", "WasFouled", "Offsides", "YellowCards", "RedCards", "SecondYellow", "PenaltyWon", "PenaltyConceded", "PenaltyFaced", "PenaltySave", 
+                       "PenaltyMiss", "PenGoalsConceded", "OwnGoals", "CrossNotClaimed", "ThrowIns", "CornerKicks", "LostCorners"]
 
         for c in cols_to_sum:
             total_value = single_player_stats[c].sum() if c in single_player_stats.columns else 0
@@ -1178,11 +1047,9 @@ def season_stats_player(players_df: pd.DataFrame, player_stats_df: pd.DataFrame)
 
     return pd.concat(players_season_df_list, ignore_index=True) if players_season_df_list else pd.DataFrame()
 
-
 # --------------------------------------------------------------------------------------
 # IMÁGENES
 # --------------------------------------------------------------------------------------
-
 def images_proc(players_df: pd.DataFrame, teams_df: pd.DataFrame, managers_df: pd.DataFrame, venues_df: pd.DataFrame, images_path: str, processed_data_path: str) -> None:
 
     default_images_path = os.path.join(utils, "default_images")
@@ -1243,33 +1110,22 @@ def images_proc(players_df: pd.DataFrame, teams_df: pd.DataFrame, managers_df: p
             output_image_path = os.path.join(out_venues_images, f"{row['Slug']}.png")
             copy_valid_or_default(input_image_path, output_image_path, default_venue)
 
-
 # --------------------------------------------------------------------------------------
 # UNIFICACIÓN DE UNA TEMPORADA
 # --------------------------------------------------------------------------------------
-
-def season_data_unification(
-    fotmob_clean_path: str,
-    scoresway_clean_path: str,
-    sofascore_clean_path: str,
-    print_info: bool = True
-) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def season_data_unification(fotmob_clean_path: str, scoresway_clean_path: str, sofascore_clean_path: str, print_info: bool = True) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
 
     fm_info_df, fm_matches_df, fm_all_st_df, fm_home_st_df, fm_away_st_df, fm_form_st_df, fm_xg_st_df = read_fotmob_data(fotmob_clean_path=fotmob_clean_path)
     fotmob_teams = obtain_fotmob_teams(matches_df=fm_matches_df, all_st_df=fm_all_st_df, home_st_df=fm_home_st_df, away_st_df=fm_away_st_df, form_st_df=fm_form_st_df, xg_st_df=fm_xg_st_df)
 
-    (
-        sw_managers_df, sw_matches_df, sw_players_df, sw_teams_df, sw_total_st_df, sw_home_st_df, sw_away_st_df,
-        sw_httotal_st_df, sw_hthome_st_df, sw_htaway_st_df, sw_formhome_st_df, sw_formaway_st_df, sw_overunder_st_df,
-        sw_attendance_st_df, sw_matches_info_df, sw_matches_player_stats_df, sw_matches_team_stats_df, sw_matches_referees_df
-    ) = read_scoresway_data(scoresway_clean_path=scoresway_clean_path)
+    (sw_managers_df, sw_matches_df, sw_players_df, sw_teams_df, sw_total_st_df, sw_home_st_df, sw_away_st_df,
+     sw_httotal_st_df, sw_hthome_st_df, sw_htaway_st_df, sw_formhome_st_df, sw_formaway_st_df, sw_overunder_st_df,
+     sw_attendance_st_df, sw_matches_info_df, sw_matches_player_stats_df, sw_matches_team_stats_df, sw_matches_referees_df) = read_scoresway_data(scoresway_clean_path=scoresway_clean_path)
 
     scoresway_teams = sorted(sw_teams_df["club_name"].dropna().unique().tolist()) if sw_teams_df is not None and not sw_teams_df.empty else []
 
-    (
-        ss_managers_df, ss_players_df, ss_teams_df, ss_venues_df, ss_total_st_df, ss_home_st_df, ss_away_st_df,
-        ss_matches_info_df, ss_matches_lineups_df, ss_matches_statistics_df
-    ) = read_sofascore_data(sofascore_clean_path=sofascore_clean_path)
+    (ss_managers_df, ss_players_df, ss_teams_df, ss_venues_df, ss_total_st_df, ss_home_st_df, ss_away_st_df,
+     ss_matches_info_df, ss_matches_lineups_df, ss_matches_statistics_df) = read_sofascore_data(sofascore_clean_path=sofascore_clean_path)
 
     sofascore_teams = sorted(ss_teams_df["name"].dropna().unique().tolist()) if ss_teams_df is not None and not ss_teams_df.empty else []
 
@@ -1298,17 +1154,8 @@ def season_data_unification(
     if print_info:
         print("        - Standings tables unified")
 
-    team_stats_df, player_stats_df = matches_proc(
-        matches_df=matches_df,
-        players_df=players_df,
-        teams_df=teams_df,
-        managers_df=managers_df,
-        venues_df=venues_df,
-        sw_team=sw_matches_team_stats_df,
-        ss_team=ss_matches_statistics_df,
-        sw_player=sw_matches_player_stats_df,
-        ss_player=ss_matches_lineups_df
-    )
+    team_stats_df, player_stats_df = matches_proc(matches_df=matches_df, players_df=players_df, teams_df=teams_df, managers_df=managers_df, sw_team=sw_matches_team_stats_df, ss_team=ss_matches_statistics_df,
+                                                  sw_player=sw_matches_player_stats_df, ss_player=ss_matches_lineups_df)
 
     if not team_stats_df.empty and "Goals" in team_stats_df.columns and (team_stats_df["Goals"] == 0).all():
         team_stats_df = add_goals(matches_df=matches_df, team_stats_df=team_stats_df)
@@ -1322,17 +1169,11 @@ def season_data_unification(
     if print_info:
         print("        - Full season teams and players stats")
 
-    return (
-        teams_df, players_df, managers_df, venues_df,
-        all_standings, home_standings, away_standings, half_time_standings, expected_standings,
-        team_stats_df, player_stats_df, team_stats_season_df, player_stats_season_df
-    )
-
+    return (teams_df, players_df, managers_df, venues_df, all_standings, home_standings, away_standings, half_time_standings, expected_standings, team_stats_df, player_stats_df, team_stats_season_df, player_stats_season_df)
 
 # --------------------------------------------------------------------------------------
-# UNIFICADOR COMPLETO DE LIGA
+# UNIFICADOR COMPLETO DE LIGA - Función principal.
 # --------------------------------------------------------------------------------------
-
 def league_data_unification(league_id: int, raw_data_path: str, clean_data_path: str, processed_data_path: str, print_info: bool = True) -> None:
     comp_row = comps.loc[comps["id"] == league_id]
     if comp_row.empty:
@@ -1344,7 +1185,6 @@ def league_data_unification(league_id: int, raw_data_path: str, clean_data_path:
     start_time = time.time()
 
     if print_info:
-        print("================================================================================")
         print(f"Starting data unification ({league_name})")
 
     images_path = os.path.join(raw_data_path, "images")
@@ -1369,33 +1209,16 @@ def league_data_unification(league_id: int, raw_data_path: str, clean_data_path:
         scoresway_clean_path = os.path.join(clean_data_path, "scoresway", league_slug, season_key)
         sofascore_clean_path = os.path.join(clean_data_path, "sofascore", league_slug, season_key)
 
-        (
-            teams_df, players_df, managers_df, venues_df,
-            all_standings, home_standings, away_standings, half_time_standings, expected_standings,
-            team_stats_df, player_stats_df, team_stats_season_df, player_stats_season_df
-        ) = season_data_unification(
-            fotmob_clean_path=fotmob_clean_path,
-            scoresway_clean_path=scoresway_clean_path,
-            sofascore_clean_path=sofascore_clean_path,
-            print_info=print_info
-        )
+        (teams_df, players_df, managers_df, venues_df, all_standings, 
+         home_standings, away_standings, half_time_standings, expected_standings, 
+         team_stats_df, player_stats_df, team_stats_season_df, player_stats_season_df) = season_data_unification(fotmob_clean_path=fotmob_clean_path, scoresway_clean_path=scoresway_clean_path,
+                                                                                                                 sofascore_clean_path=sofascore_clean_path, print_info=print_info)
 
-        images_proc(
-            players_df=players_df,
-            managers_df=managers_df,
-            teams_df=teams_df,
-            venues_df=venues_df,
-            images_path=images_path,
-            processed_data_path=processed_data_path
-        )
+        images_proc(players_df=players_df, managers_df=managers_df, teams_df=teams_df, venues_df=venues_df, images_path=images_path, processed_data_path=processed_data_path)
         if print_info:
             print("        - Images processed")
 
-        dfs = [
-            teams_df, players_df, managers_df, venues_df,
-            all_standings, home_standings, away_standings, half_time_standings, expected_standings,
-            team_stats_df, player_stats_df, team_stats_season_df, player_stats_season_df
-        ]
+        dfs = [teams_df, players_df, managers_df, venues_df, all_standings, home_standings, away_standings, half_time_standings, expected_standings, team_stats_df, player_stats_df, team_stats_season_df, player_stats_season_df]
         for df in dfs:
             if df is not None and not df.empty:
                 df.drop(columns=["IdSS", "IdFM", "IdSW"], errors="ignore", inplace=True)
@@ -1476,14 +1299,5 @@ def league_data_unification(league_id: int, raw_data_path: str, clean_data_path:
     player_stats_season_df = pd.concat(player_stats_season_df_list, ignore_index=True) if player_stats_season_df_list else pd.DataFrame()
     player_stats_season_df.to_csv(os.path.join(stats_path, "player_season.csv"), index=False, sep=";")
 
-    elapsed_time = time.time() - start_time
-    if elapsed_time >= 60:
-        minutes = int(elapsed_time // 60)
-        seconds = int(elapsed_time % 60)
-        time_str = f"{minutes} minutes {seconds} seconds"
-    else:
-        time_str = f"{elapsed_time:.2f} seconds"
-
     if print_info:
-        print(f"Finished data unification ({league_name}) in {time_str}")
-        print("================================================================================")
+        print(f"Finished data unification ({league_name}) in {elapsed_time_str(start_time=start_time)}")

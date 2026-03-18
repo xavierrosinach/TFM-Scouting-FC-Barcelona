@@ -4,57 +4,30 @@ import pandas as pd
 import numpy as np
 
 from use.config import comps
-from use.functions import json_to_dict, create_slug
-
+from use.functions import json_to_dict, create_slug, elapsed_time_str
 
 # --------------------------------------------------------------------------------------
-# LIMPIEZA DE INFORMACIÓN DE TEMPORADA
+# LIMPIEZA DE INFORMACIÓN DE TEMPORADA - Procesa el JSON de una temporada de Fotmob y genera los CSVs correspondientes.
 # --------------------------------------------------------------------------------------
-
-def clean_season_information(
-    season_info: dict,
-    season_key: str,
-    league_slug: str,
-    league_name: str,
-    season_out_path: str
-) -> None:
-    """
-    Procesa el JSON de una temporada de Fotmob y genera los CSVs correspondientes.
-    """
+def clean_season_information(season_info: dict, season_key: str, league_slug: str, league_name: str, season_out_path: str) -> None:
 
     os.makedirs(season_out_path, exist_ok=True)
 
     # ----------------------------------------------------------------------------------
     # INFO GENERAL DE LA LIGA
     # ----------------------------------------------------------------------------------
-
     details = season_info.get("details")
-
     if details:
-        info_df = pd.DataFrame([{
-            "fm_id": details.get("id", np.nan),
-            "type": details.get("type", np.nan),
-            "season": season_key,
-            "slug": league_slug,
-            "name": league_name,
-            "short_name": details.get("shortName", np.nan),
-            "country": details.get("country", np.nan),
-            "gender": details.get("gender", np.nan),
-            "league_color": details.get("leagueColor", np.nan),
-        }])
-
-        info_df.to_csv(
-            os.path.join(season_out_path, "info.csv"),
-            index=False,
-            sep=";"
-        )
+        info_df = pd.DataFrame([{"fm_id": details.get("id", np.nan), "type": details.get("type", np.nan), "season": season_key,
+                                 "slug": league_slug, "name": league_name, "short_name": details.get("shortName", np.nan),
+                                 "country": details.get("country", np.nan), "gender": details.get("gender", np.nan),
+                                 "league_color": details.get("leagueColor", np.nan)}])
+        info_df.to_csv(os.path.join(season_out_path, "info.csv"), index=False, sep=";")
 
     # ----------------------------------------------------------------------------------
     # CLASIFICACIONES
     # ----------------------------------------------------------------------------------
-
     table_data = season_info.get("table")
-
     if isinstance(table_data, list) and len(table_data) > 0:
         table = table_data[0].get("data", {}).get("table", {})
 
@@ -70,52 +43,24 @@ def clean_season_information(
                 if part_table:
                     table_df = pd.DataFrame(part_table)
 
-                    table_df.to_csv(
-                        os.path.join(standings_path, f"{f}.csv"),
-                        index=False,
-                        sep=";"
-                    )
+                    table_df.to_csv(os.path.join(standings_path, f"{f}.csv"), index=False, sep=";")
 
     # ----------------------------------------------------------------------------------
     # PARTIDOS
     # ----------------------------------------------------------------------------------
-
     matches = season_info.get("fixtures", {}).get("allMatches")
-
     if matches:
-        matches_list = [{
-            "round": match.get("round", np.nan),
-            "round_name": match.get("roundName", np.nan),
-            "match_id": match.get("id", np.nan),
-            "home_team": match.get("home", {}).get("name", np.nan),
-            "home_team_id": match.get("home", {}).get("id", np.nan),
-            "away_team": match.get("away", {}).get("name", np.nan),
-            "away_team_id": match.get("away", {}).get("id", np.nan),
-            "time": match.get("status", {}).get("utcTime", np.nan),
-            "score_str": match.get("status", {}).get("scoreStr", np.nan),
-        } for match in matches]
-
+        matches_list = [{"round": match.get("round", np.nan), "round_name": match.get("roundName", np.nan), "match_id": match.get("id", np.nan),
+                         "home_team": match.get("home", {}).get("name", np.nan), "home_team_id": match.get("home", {}).get("id", np.nan),
+                         "away_team": match.get("away", {}).get("name", np.nan), "away_team_id": match.get("away", {}).get("id", np.nan),
+                         "time": match.get("status", {}).get("utcTime", np.nan), "score_str": match.get("status", {}).get("scoreStr", np.nan)} for match in matches]
         matches_df = pd.DataFrame(matches_list)
-
-        matches_df.to_csv(
-            os.path.join(season_out_path, "matches.csv"),
-            index=False,
-            sep=";"
-        )
-
+        matches_df.to_csv(os.path.join(season_out_path, "matches.csv"), index=False, sep=";")
 
 # --------------------------------------------------------------------------------------
-# CLEANING PRINCIPAL DE LIGA
+# CLEANING PRINCIPAL DE LIGA - Ejecuta el proceso de limpieza de datos de Fotmob para una liga.
 # --------------------------------------------------------------------------------------
-
-def main_fotmob_league_cleaning(
-    league_id: int,
-    out_path: str,
-    print_info: bool = True
-) -> None:
-    """
-    Ejecuta el proceso de limpieza de datos de Fotmob para una liga.
-    """
+def main_fotmob_league_cleaning(league_id: int, out_path: str, print_info: bool = True) -> None:
 
     start_time = time.time()
 
@@ -132,13 +77,9 @@ def main_fotmob_league_cleaning(
     os.makedirs(league_clean_path, exist_ok=True)
 
     if print_info:
-        print("================================================================================")
         print(f"Starting Fotmob cleaning ({league_name})")
 
-    seasons_to_proc = [
-        s for s in os.listdir(league_raw_path)
-        if os.path.isdir(os.path.join(league_raw_path, s))
-    ]
+    seasons_to_proc = [s for s in os.listdir(league_raw_path) if os.path.isdir(os.path.join(league_raw_path, s))]
 
     for season in seasons_to_proc:
         season_info_path = os.path.join(league_raw_path, season, "info.json")
@@ -147,20 +88,10 @@ def main_fotmob_league_cleaning(
             continue
 
         season_info = json_to_dict(json_path=season_info_path)
-
-        clean_season_information(
-            season_info=season_info,
-            season_key=season,
-            league_slug=league_slug,
-            league_name=league_name,
-            season_out_path=os.path.join(league_clean_path, season),
-        )
+        clean_season_information(season_info=season_info, season_key=season, league_slug=league_slug, league_name=league_name, season_out_path=os.path.join(league_clean_path, season))
 
         if print_info:
             print(f"     - Information cleaned for season {season}")
 
-    elapsed_time = time.time() - start_time
-
     if print_info:
-        print(f"Finished Fotmob cleaning ({league_name}) in {elapsed_time:.2f} seconds")
-        print("================================================================================")
+        print(f"Finished Fotmob cleaning ({league_name}) in {elapsed_time_str(start_time=start_time)}")

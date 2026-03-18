@@ -6,29 +6,13 @@ import numpy as np
 import pandas as pd
 
 from use.config import comps
-from use.functions import json_to_dict, create_slug
-
+from use.functions import json_to_dict, create_slug, elapsed_time_str
 
 # --------------------------------------------------------------------------------------
-# PROCESADO DE TABLAS DE CLASIFICACIÓN
+# PROCESADO DE TABLAS DE CLASIFICACIÓN - Procesa el JSON de clasificaciones de Sofascore y guarda las tablas disponibles.
 # --------------------------------------------------------------------------------------
-
 def standings_tables_proc(standings_path: str, standings_output_path: str) -> list:
-    """
-    Procesa el JSON de clasificaciones de Sofascore y guarda las tablas disponibles.
-
-    Parameters
-    ----------
-    standings_path : str
-        Ruta del JSON de standings.
-    standings_output_path : str
-        Carpeta donde se guardarán los CSVs.
-
-    Returns
-    -------
-    list
-        Lista de dataframes generados.
-    """
+    
     if not os.path.exists(standings_path):
         return []
 
@@ -47,53 +31,21 @@ def standings_tables_proc(standings_path: str, standings_output_path: str) -> li
         if not standings_part:
             continue
 
-        list_info = [{
-            "team_id": team.get("team", {}).get("id", np.nan),
-            "team": team.get("team", {}).get("name", np.nan),
-            "position": team.get("position", np.nan),
-            "promotion": team.get("promotion", {}).get("text", np.nan),
-            "matches": team.get("matches", np.nan),
-            "wins": team.get("wins", np.nan),
-            "losses": team.get("losses", np.nan),
-            "draws": team.get("draws", np.nan),
-            "scores_for": team.get("scoresFor", np.nan),
-            "scores_against": team.get("scoresAgainst", np.nan),
-            "points": team.get("points", np.nan),
-        } for team in standings_part]
-
+        list_info = [{"team_id": team.get("team", {}).get("id", np.nan), "team": team.get("team", {}).get("name", np.nan), "position": team.get("position", np.nan),
+                      "promotion": team.get("promotion", {}).get("text", np.nan), "matches": team.get("matches", np.nan), "wins": team.get("wins", np.nan),
+                      "losses": team.get("losses", np.nan), "draws": team.get("draws", np.nan), "scores_for": team.get("scoresFor", np.nan), 
+                      "scores_against": team.get("scoresAgainst", np.nan), "points": team.get("points", np.nan)} for team in standings_part]
         standings_df = pd.DataFrame(list_info)
         list_return.append(standings_df)
-        standings_df.to_csv(
-            os.path.join(standings_output_path, f"{standing_type}.csv"),
-            index=False,
-            sep=";",
-        )
+        standings_df.to_csv(os.path.join(standings_output_path, f"{standing_type}.csv"), index=False, sep=";")
 
     return list_return
 
-
 # --------------------------------------------------------------------------------------
-# PROCESADO DE JUGADORES
+# PROCESADO DE JUGADORES - Procesa el listado general de jugadores y lo enriquece con la información individual.
 # --------------------------------------------------------------------------------------
-
 def players_proc(players_json_path: str, players_dir_path: str, df_output_path: str) -> pd.DataFrame:
-    """
-    Procesa el listado general de jugadores y lo enriquece con la información individual.
-
-    Parameters
-    ----------
-    players_json_path : str
-        Ruta del JSON general de jugadores.
-    players_dir_path : str
-        Carpeta con JSONs individuales de jugadores.
-    df_output_path : str
-        Ruta de salida del CSV.
-
-    Returns
-    -------
-    pd.DataFrame
-        Dataframe de jugadores procesado.
-    """
+    
     if not os.path.exists(players_json_path):
         return pd.DataFrame()
 
@@ -106,10 +58,7 @@ def players_proc(players_json_path: str, players_dir_path: str, df_output_path: 
     players_info = []
     if os.path.exists(players_dir_path):
         for player_file in os.listdir(players_dir_path):
-            single_player_data = (
-                json_to_dict(json_path=os.path.join(players_dir_path, player_file))
-                .get("player")
-            )
+            single_player_data = (json_to_dict(json_path=os.path.join(players_dir_path, player_file)).get("player"))
 
             if not single_player_data:
                 continue
@@ -119,20 +68,11 @@ def players_proc(players_json_path: str, players_dir_path: str, df_output_path: 
             second_position = positions_detailed[1] if len(positions_detailed) > 1 else np.nan
             third_position = positions_detailed[2] if len(positions_detailed) > 2 else np.nan
 
-            players_info.append({
-                "playerId": single_player_data.get("id", np.nan),
-                "shortName": single_player_data.get("shortName", np.nan),
-                "first_position": first_position,
-                "second_position": second_position,
-                "third_position": third_position,
-                "shirt_num": single_player_data.get("shirtNumber", np.nan),
-                "height": single_player_data.get("height", np.nan),
-                "pref_foot": single_player_data.get("preferredFoot", np.nan),
-                "date_birth": single_player_data.get("dateOfBirthTimestamp", np.nan),
-                "country": single_player_data.get("country", {}).get("name", np.nan),
-                "contract_until": single_player_data.get("contractUntilTimestamp", np.nan),
-                "market_value": single_player_data.get("proposedMarketValue", np.nan),
-            })
+            players_info.append({"playerId": single_player_data.get("id", np.nan), "shortName": single_player_data.get("shortName", np.nan), "first_position": first_position,
+                                 "second_position": second_position, "third_position": third_position, "shirt_num": single_player_data.get("shirtNumber", np.nan),
+                                 "height": single_player_data.get("height", np.nan), "pref_foot": single_player_data.get("preferredFoot", np.nan),
+                                 "date_birth": single_player_data.get("dateOfBirthTimestamp", np.nan), "country": single_player_data.get("country", {}).get("name", np.nan),
+                                 "contract_until": single_player_data.get("contractUntilTimestamp", np.nan), "market_value": single_player_data.get("proposedMarketValue", np.nan)})
 
     if players_info:
         players_more_info_df = pd.DataFrame(players_info)
@@ -141,27 +81,11 @@ def players_proc(players_json_path: str, players_dir_path: str, df_output_path: 
     players_df.to_csv(df_output_path, index=False, sep=";")
     return players_df
 
-
 # --------------------------------------------------------------------------------------
-# PROCESADO DE EQUIPOS
+# PROCESADO DE EQUIPOS - Procesa la información individual de equipos.
 # --------------------------------------------------------------------------------------
-
 def teams_proc(teams_dir_path: str, df_output_path: str) -> pd.DataFrame:
-    """
-    Procesa la información individual de equipos.
-
-    Parameters
-    ----------
-    teams_dir_path : str
-        Carpeta con JSONs individuales de equipos.
-    df_output_path : str
-        Ruta de salida del CSV.
-
-    Returns
-    -------
-    pd.DataFrame
-        Dataframe de equipos procesado.
-    """
+    
     if not os.path.exists(teams_dir_path):
         return pd.DataFrame()
 
@@ -173,45 +97,21 @@ def teams_proc(teams_dir_path: str, df_output_path: str) -> pd.DataFrame:
         if not single_team_data:
             continue
 
-        teams_info.append({
-            "team_id": single_team_data.get("id", np.nan),
-            "name": single_team_data.get("name", np.nan),
-            "short_name": single_team_data.get("shortName", np.nan),
-            "full_name": single_team_data.get("fullName", np.nan),
-            "manager": single_team_data.get("manager", {}).get("id", np.nan),
-            "venue": single_team_data.get("venue", {}).get("id", np.nan),
-            "country": single_team_data.get("country", {}).get("name", np.nan),
-            "foundation_date": single_team_data.get("foundationDateTimestamp", np.nan),
-            "primary_colour": single_team_data.get("teamColors", {}).get("primary", np.nan),
-            "secondary_colour": single_team_data.get("teamColors", {}).get("secondary", np.nan),
-            "text_colour": single_team_data.get("teamColors", {}).get("text", np.nan),
-        })
+        teams_info.append({"team_id": single_team_data.get("id", np.nan), "name": single_team_data.get("name", np.nan), "short_name": single_team_data.get("shortName", np.nan),
+                           "full_name": single_team_data.get("fullName", np.nan), "manager": single_team_data.get("manager", {}).get("id", np.nan),
+                           "venue": single_team_data.get("venue", {}).get("id", np.nan), "country": single_team_data.get("country", {}).get("name", np.nan),
+                           "foundation_date": single_team_data.get("foundationDateTimestamp", np.nan), "primary_colour": single_team_data.get("teamColors", {}).get("primary", np.nan),
+                           "secondary_colour": single_team_data.get("teamColors", {}).get("secondary", np.nan), "text_colour": single_team_data.get("teamColors", {}).get("text", np.nan)})
 
     teams_df = pd.DataFrame(teams_info)
     teams_df.to_csv(df_output_path, index=False, sep=";")
     return teams_df
 
-
 # --------------------------------------------------------------------------------------
-# PROCESADO DE ESTADIOS
+# PROCESADO DE ESTADIOS - Procesa el JSON general de estadios.
 # --------------------------------------------------------------------------------------
-
 def venues_proc(venues_json_path: str, df_output_path: str) -> pd.DataFrame:
-    """
-    Procesa el JSON general de estadios.
-
-    Parameters
-    ----------
-    venues_json_path : str
-        Ruta del JSON de estadios.
-    df_output_path : str
-        Ruta de salida del CSV.
-
-    Returns
-    -------
-    pd.DataFrame
-        Dataframe de estadios procesado.
-    """
+    
     if not os.path.exists(venues_json_path):
         return pd.DataFrame()
 
@@ -219,128 +119,58 @@ def venues_proc(venues_json_path: str, df_output_path: str) -> pd.DataFrame:
     if not venues_data:
         return pd.DataFrame()
 
-    venues_info = [{
-        "venue_id": venue.get("id", np.nan),
-        "name": venue.get("name", np.nan),
-        "capacity": venue.get("capacity", np.nan),
-        "city": venue.get("city", {}).get("name", np.nan),
-        "latitude": venue.get("venueCoordinates", {}).get("latitude", np.nan),
-        "longitude": venue.get("venueCoordinates", {}).get("longitude", np.nan),
-    } for venue in venues_data]
-
+    venues_info = [{"venue_id": venue.get("id", np.nan), "name": venue.get("name", np.nan), "capacity": venue.get("capacity", np.nan), "city": venue.get("city", {}).get("name", np.nan),
+                    "latitude": venue.get("venueCoordinates", {}).get("latitude", np.nan), "longitude": venue.get("venueCoordinates", {}).get("longitude", np.nan)} for venue in venues_data]
     venues_df = pd.DataFrame(venues_info)
     venues_df.to_csv(df_output_path, index=False, sep=";")
     return venues_df
 
-
 # --------------------------------------------------------------------------------------
-# PROCESADO DE MANAGERS
+# PROCESADO DE MANAGERS - Procesa la información individual de managers.
 # --------------------------------------------------------------------------------------
-
 def managers_proc(managers_dir_path: str, df_output_path: str) -> pd.DataFrame:
-    """
-    Procesa la información individual de managers.
-
-    Parameters
-    ----------
-    managers_dir_path : str
-        Carpeta con JSONs de managers.
-    df_output_path : str
-        Ruta de salida del CSV.
-
-    Returns
-    -------
-    pd.DataFrame
-        Dataframe de managers procesado.
-    """
+    
     if not os.path.exists(managers_dir_path):
         return pd.DataFrame()
 
     managers_info = []
 
     for manager_file in os.listdir(managers_dir_path):
-        manager_data = json_to_dict(
-            json_path=os.path.join(managers_dir_path, manager_file)
-        ).get("manager")
+        manager_data = json_to_dict(json_path=os.path.join(managers_dir_path, manager_file)).get("manager")
 
         if not manager_data:
             continue
 
-        managers_info.append({
-            "id": manager_data.get("id", np.nan),
-            "name": manager_data.get("name", np.nan),
-            "short_name": manager_data.get("shortName", np.nan),
-            "country": manager_data.get("country", {}).get("name", np.nan),
-            "date_birth": manager_data.get("dateOfBirthTimestamp", np.nan),
-            "matches": manager_data.get("performance", {}).get("total", np.nan),
-            "wins": manager_data.get("performance", {}).get("wins", np.nan),
-            "draws": manager_data.get("performance", {}).get("draws", np.nan),
-            "losses": manager_data.get("performance", {}).get("losses", np.nan),
-            "goals_scored": manager_data.get("performance", {}).get("goalsScored", np.nan),
-            "goals_conceded": manager_data.get("performance", {}).get("goalsConceded", np.nan),
-            "points": manager_data.get("performance", {}).get("totalPoints", np.nan),
-        })
+        managers_info.append({"id": manager_data.get("id", np.nan), "name": manager_data.get("name", np.nan), "short_name": manager_data.get("shortName", np.nan),
+                              "country": manager_data.get("country", {}).get("name", np.nan), "date_birth": manager_data.get("dateOfBirthTimestamp", np.nan),
+                              "matches": manager_data.get("performance", {}).get("total", np.nan), "wins": manager_data.get("performance", {}).get("wins", np.nan),
+                              "draws": manager_data.get("performance", {}).get("draws", np.nan), "losses": manager_data.get("performance", {}).get("losses", np.nan),
+                              "goals_scored": manager_data.get("performance", {}).get("goalsScored", np.nan), "goals_conceded": manager_data.get("performance", {}).get("goalsConceded", np.nan),
+                              "points": manager_data.get("performance", {}).get("totalPoints", np.nan)})
 
     managers_df = pd.DataFrame(managers_info)
     managers_df.to_csv(df_output_path, index=False, sep=";")
     return managers_df
 
-
 # --------------------------------------------------------------------------------------
-# INFORMACIÓN BÁSICA DE PARTIDO
+# INFORMACIÓN BÁSICA DE PARTIDO - Extrae la información principal de un partido.
 # --------------------------------------------------------------------------------------
-
 def match_info_proc(match_data: dict) -> pd.DataFrame:
-    """
-    Extrae la información principal de un partido.
-
-    Parameters
-    ----------
-    match_data : dict
-        JSON completo del partido.
-
-    Returns
-    -------
-    pd.DataFrame
-        Dataframe de una fila con la información del partido.
-    """
+    
     match_info = match_data.get("match", {}).get("event")
     if not match_info:
         return pd.DataFrame()
 
-    return pd.DataFrame([{
-        "match_id": match_info.get("id", np.nan),
-        "round": match_info.get("roundInfo", {}).get("round", np.nan),
-        "winner": match_info.get("winnerCode", np.nan),
-        "attendance": match_info.get("attendance", np.nan),
-        "venue": match_info.get("venue", {}).get("id", np.nan),
-        "referee": match_info.get("referee", {}).get("name", np.nan),
-        "home_team": match_info.get("homeTeam", {}).get("id", np.nan),
-        "away_team": match_info.get("awayTeam", {}).get("id", np.nan),
-        "home_score": match_info.get("homeScore", {}).get("display", np.nan),
-        "away_score": match_info.get("awayScore", {}).get("display", np.nan),
-        "date_time": match_info.get("startTimestamp", np.nan),
-    }])
-
+    return pd.DataFrame([{"match_id": match_info.get("id", np.nan), "round": match_info.get("roundInfo", {}).get("round", np.nan), "winner": match_info.get("winnerCode", np.nan),
+                          "attendance": match_info.get("attendance", np.nan), "venue": match_info.get("venue", {}).get("id", np.nan), "referee": match_info.get("referee", {}).get("name", np.nan),
+                          "home_team": match_info.get("homeTeam", {}).get("id", np.nan), "away_team": match_info.get("awayTeam", {}).get("id", np.nan), "home_score": match_info.get("homeScore", {}).get("display", np.nan),
+                          "away_score": match_info.get("awayScore", {}).get("display", np.nan), "date_time": match_info.get("startTimestamp", np.nan)}])
 
 # --------------------------------------------------------------------------------------
-# ALINEACIÓN DE UN EQUIPO
+# ALINEACIÓN DE UN EQUIPO - Procesa la alineación y estadísticas de los jugadores de un equipo.
 # --------------------------------------------------------------------------------------
-
 def single_team_lineups(team_lineups: dict) -> Tuple[str, pd.DataFrame]:
-    """
-    Procesa la alineación y estadísticas de los jugadores de un equipo.
-
-    Parameters
-    ----------
-    team_lineups : dict
-        Bloque de alineación de home o away.
-
-    Returns
-    -------
-    Tuple[str, pd.DataFrame]
-        Formación y dataframe de jugadores.
-    """
+    
     if not team_lineups:
         return np.nan, pd.DataFrame()
 
@@ -360,11 +190,7 @@ def single_team_lineups(team_lineups: dict) -> Tuple[str, pd.DataFrame]:
             player_statistics.pop("ratingVersions", None)
             player_statistics.pop("statisticsType", None)
 
-            players_list.append({
-                "player_id": player_id,
-                "starter": starter,
-                **player_statistics,
-            })
+            players_list.append({"player_id": player_id, "starter": starter, **player_statistics})
 
     if not players_list:
         return formation, pd.DataFrame()
@@ -376,25 +202,11 @@ def single_team_lineups(team_lineups: dict) -> Tuple[str, pd.DataFrame]:
 
     return formation, lineups_df
 
-
 # --------------------------------------------------------------------------------------
-# ESTADÍSTICAS DE EQUIPO EN PARTIDO
+# ESTADÍSTICAS DE EQUIPO EN PARTIDO - Procesa las estadísticas de equipo de un partido.
 # --------------------------------------------------------------------------------------
-
 def match_stats_proc(match_data: dict) -> pd.DataFrame:
-    """
-    Procesa las estadísticas de equipo de un partido.
 
-    Parameters
-    ----------
-    match_data : dict
-        JSON completo del partido.
-
-    Returns
-    -------
-    pd.DataFrame
-        Dataframe con estadísticas de home y away.
-    """
     teams_stats = match_data.get("statistics", {}).get("statistics")
     if not teams_stats:
         return pd.DataFrame()
@@ -408,37 +220,15 @@ def match_stats_proc(match_data: dict) -> pd.DataFrame:
         for stat in group_stats:
             stat_name = stat.get("name")
             if stat_name:
-                statistics_df[stat_name] = [
-                    stat.get("homeValue"),
-                    stat.get("awayValue"),
-                ]
+                statistics_df[stat_name] = [stat.get("homeValue"), stat.get("awayValue")]
 
     return statistics_df
 
-
 # --------------------------------------------------------------------------------------
-# PROCESADO DE TODOS LOS PARTIDOS
+# PROCESADO DE TODOS LOS PARTIDOS - Procesa todos los partidos scrapeados de una temporada.
 # --------------------------------------------------------------------------------------
-
-def all_matches_proc(
-    league_raw_matches_path: str,
-    league_clean_matches_path: str
-) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """
-    Procesa todos los partidos scrapeados de una temporada.
-
-    Parameters
-    ----------
-    league_raw_matches_path : str
-        Carpeta con JSONs raw de partidos.
-    league_clean_matches_path : str
-        Carpeta de salida clean de partidos.
-
-    Returns
-    -------
-    Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]
-        Dataframes de info de partidos, alineaciones y estadísticas.
-    """
+def all_matches_proc(league_raw_matches_path: str, league_clean_matches_path: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    
     list_matches_dfs = []
     list_lineups_dfs = []
     list_stats_dfs = []
@@ -491,46 +281,17 @@ def all_matches_proc(
     all_lineups_df = pd.concat(list_lineups_dfs, ignore_index=True) if list_lineups_dfs else pd.DataFrame()
     all_stats_df = pd.concat(list_stats_dfs, ignore_index=True) if list_stats_dfs else pd.DataFrame()
 
-    all_matches_df.to_csv(
-        os.path.join(league_clean_matches_path, "matches.csv"),
-        index=False,
-        sep=";",
-    )
-    all_lineups_df.to_csv(
-        os.path.join(league_clean_matches_path, "lineups.csv"),
-        index=False,
-        sep=";",
-    )
-    all_stats_df.to_csv(
-        os.path.join(league_clean_matches_path, "statistics.csv"),
-        index=False,
-        sep=";",
-    )
+    all_matches_df.to_csv(os.path.join(league_clean_matches_path, "matches.csv"), index=False, sep=";")
+    all_lineups_df.to_csv(os.path.join(league_clean_matches_path, "lineups.csv"), index=False, sep=";")
+    all_stats_df.to_csv(os.path.join(league_clean_matches_path, "statistics.csv"), index=False, sep=";")
 
     return all_matches_df, all_lineups_df, all_stats_df
 
-
 # --------------------------------------------------------------------------------------
-# CLEANING PRINCIPAL DE LIGA
+# CLEANING PRINCIPAL DE LIGA - Ejecuta el proceso de limpieza de datos de Sofascore para una liga.
 # --------------------------------------------------------------------------------------
-
-def main_sofascore_league_cleaning(
-    league_id: int,
-    out_path: str,
-    print_info: bool = True
-) -> None:
-    """
-    Ejecuta el proceso de limpieza de datos de Sofascore para una liga.
-
-    Parameters
-    ----------
-    league_id : int
-        Identificador interno de la liga.
-    out_path : str
-        Ruta base de datos raw.
-    print_info : bool, default=True
-        Indica si se muestran mensajes de progreso.
-    """
+def main_sofascore_league_cleaning(league_id: int, out_path: str, print_info: bool = True) -> None:
+    
     start_time = time.time()
 
     comp_row = comps.loc[comps["id"] == league_id]
@@ -545,16 +306,12 @@ def main_sofascore_league_cleaning(
     os.makedirs(league_clean_path, exist_ok=True)
 
     if print_info:
-        print("================================================================================")
         print(f"Starting Sofascore cleaning ({league_name})")
 
     if not os.path.exists(league_raw_path):
         raise FileNotFoundError(f"No existe la ruta raw de Sofascore: {league_raw_path}")
 
-    seasons_to_proc = [
-        season for season in os.listdir(league_raw_path)
-        if os.path.isdir(os.path.join(league_raw_path, season))
-    ]
+    seasons_to_proc = [season for season in os.listdir(league_raw_path) if os.path.isdir(os.path.join(league_raw_path, season))]
 
     for season in seasons_to_proc:
         league_raw_info_path = os.path.join(league_raw_path, season, "info")
@@ -566,38 +323,15 @@ def main_sofascore_league_cleaning(
         league_clean_matches_path = os.path.join(league_clean_path, season, "matches")
         os.makedirs(league_clean_matches_path, exist_ok=True)
 
-        standings_tables_proc(
-            standings_path=os.path.join(league_raw_info_path, "standings.json"),
-            standings_output_path=os.path.join(league_clean_info_path, "standings"),
-        )
-        players_proc(
-            players_json_path=os.path.join(league_raw_info_path, "player.json"),
-            players_dir_path=os.path.join(league_raw_info_path, "player"),
-            df_output_path=os.path.join(league_clean_info_path, "players.csv"),
-        )
-        teams_proc(
-            teams_dir_path=os.path.join(league_raw_info_path, "team"),
-            df_output_path=os.path.join(league_clean_info_path, "teams.csv"),
-        )
-        venues_proc(
-            venues_json_path=os.path.join(league_raw_info_path, "venue.json"),
-            df_output_path=os.path.join(league_clean_info_path, "venues.csv"),
-        )
-        managers_proc(
-            managers_dir_path=os.path.join(league_raw_info_path, "manager"),
-            df_output_path=os.path.join(league_clean_info_path, "managers.csv"),
-        )
-
-        all_matches_proc(
-            league_raw_matches_path=league_raw_matches_path,
-            league_clean_matches_path=league_clean_matches_path,
-        )
+        standings_tables_proc(standings_path=os.path.join(league_raw_info_path, "standings.json"), standings_output_path=os.path.join(league_clean_info_path, "standings"))
+        players_proc(players_json_path=os.path.join(league_raw_info_path, "player.json"), players_dir_path=os.path.join(league_raw_info_path, "player"), df_output_path=os.path.join(league_clean_info_path, "players.csv"))
+        teams_proc(teams_dir_path=os.path.join(league_raw_info_path, "team"), df_output_path=os.path.join(league_clean_info_path, "teams.csv"))
+        venues_proc(venues_json_path=os.path.join(league_raw_info_path, "venue.json"), df_output_path=os.path.join(league_clean_info_path, "venues.csv"))
+        managers_proc(managers_dir_path=os.path.join(league_raw_info_path, "manager"), df_output_path=os.path.join(league_clean_info_path, "managers.csv"))
+        all_matches_proc(league_raw_matches_path=league_raw_matches_path, league_clean_matches_path=league_clean_matches_path)
 
         if print_info:
             print(f"     - Information cleaned for season {season}")
 
-    elapsed_time = time.time() - start_time
-
     if print_info:
-        print(f"Finished Sofascore cleaning ({league_name}) in {elapsed_time:.2f} seconds")
-        print("================================================================================")
+        print(f"Finished Sofascore cleaning ({league_name}) in {elapsed_time_str(start_time=start_time)}")

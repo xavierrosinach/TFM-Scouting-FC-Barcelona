@@ -3,29 +3,13 @@ import json as jsonlib
 import time
 
 from use.config import comps, desired_seasons, act_season
-from use.functions import safe_json_dump, url_to_json, need_to_upload, create_slug
-
+from use.functions import safe_json_dump, url_to_json, need_to_upload, create_slug, elapsed_time_str
 
 # --------------------------------------------------------------------------------------
-# TEMPORADAS DISPONIBLES DE UNA LIGA
+# TEMPORADAS DISPONIBLES DE UNA LIGA - Obtiene las temporadas disponibles de una liga en Fotmob y las guarda en disco.
 # --------------------------------------------------------------------------------------
-
 def league_available_seasons(league_code: int, out_path: str) -> dict:
-    """
-    Obtiene las temporadas disponibles de una liga en Fotmob y las guarda en disco.
-
-    Parameters
-    ----------
-    league_code : int
-        Identificador de la liga en Fotmob.
-    out_path : str
-        Carpeta de salida de la liga.
-
-    Returns
-    -------
-    dict
-        JSON con la información de temporadas disponibles.
-    """
+    
     json_path = os.path.join(out_path, "available_seasons.json")
 
     if os.path.exists(json_path) and not need_to_upload(json_path, total_days=200):
@@ -46,10 +30,7 @@ def league_available_seasons(league_code: int, out_path: str) -> dict:
             key_candidate = f"{int(season_year) % 100:02d}{(int(season_year) + 1) % 100:02d}"
 
         season_link = f"{fotmob_url}&season={season}"
-        seasons_dict[season] = {
-            "key": key_candidate,
-            "link": season_link
-        }
+        seasons_dict[season] = {"key": key_candidate, "link": season_link}
 
     available_seasons_json["allAvailableSeasons"] = seasons_dict
 
@@ -58,29 +39,11 @@ def league_available_seasons(league_code: int, out_path: str) -> dict:
 
     return available_seasons_json
 
-
 # --------------------------------------------------------------------------------------
-# DATOS DE UNA TEMPORADA
+# DATOS DE UNA TEMPORADA - Obtiene los datos de una temporada concreta de Fotmob.
 # --------------------------------------------------------------------------------------
-
 def season_data(seasons_dict: dict, season_key: str, out_path: str) -> dict:
-    """
-    Obtiene los datos de una temporada concreta de Fotmob.
-
-    Parameters
-    ----------
-    seasons_dict : dict
-        Diccionario con claves de temporada y URL asociada.
-    season_key : str
-        Clave de temporada a procesar.
-    out_path : str
-        Carpeta de salida de la liga.
-
-    Returns
-    -------
-    dict
-        JSON con la información de la temporada.
-    """
+    
     if season_key not in seasons_dict:
         return {}
 
@@ -103,28 +66,11 @@ def season_data(seasons_dict: dict, season_key: str, out_path: str) -> dict:
 
     return season_json
 
-
 # --------------------------------------------------------------------------------------
-# SCRAPING PRINCIPAL DE UNA LIGA EN FOTMOB
+# SCRAPING PRINCIPAL DE UNA LIGA EN FOTMOB - Ejecuta el scraping de Fotmob para una liga concreta.
 # --------------------------------------------------------------------------------------
-
 def main_fotmob_league_scraping(league_id: int, out_path: str, print_info: bool = True) -> None:
-    """
-    Ejecuta el scraping de Fotmob para una liga concreta.
-
-    Parameters
-    ----------
-    league_id : int
-        Identificador interno de la liga.
-    out_path : str
-        Carpeta raíz de salida de datos raw.
-    print_info : bool, default=True
-        Indica si se muestran mensajes de progreso.
-
-    Returns
-    -------
-    None
-    """
+    
     start_time = time.time()
 
     comp_row = comps.loc[comps["id"] == league_id]
@@ -136,7 +82,6 @@ def main_fotmob_league_scraping(league_id: int, out_path: str, print_info: bool 
     league_slug = create_slug(text=league_name)
 
     if print_info:
-        print("================================================================================")
         print(f"Starting Fotmob scraping ({league_name})")
 
     out_league_path = os.path.join(out_path, "fotmob", league_slug)
@@ -155,8 +100,5 @@ def main_fotmob_league_scraping(league_id: int, out_path: str, print_info: bool 
         if print_info:
             print(f"     - Scraping information for season {season_key}")
 
-    elapsed_time = time.time() - start_time
-
     if print_info:
-        print(f"Finished Fotmob scraping ({league_name}) in {elapsed_time:.2f} seconds")
-        print("================================================================================")
+        print(f"Finished Fotmob scraping ({league_name}) in {elapsed_time_str(start_time=start_time)}")

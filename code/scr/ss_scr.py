@@ -12,13 +12,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from use.config import comps, desired_seasons, act_season
-from use.functions import safe_json_dump, create_slug, need_to_upload
-
+from use.functions import safe_json_dump, create_slug, need_to_upload, elapsed_time_str
 
 # --------------------------------------------------------------------------------------
 # CONFIGURACIÓN GLOBAL DE CHROME / SELENIUM
 # --------------------------------------------------------------------------------------
-
 @contextmanager
 def suppress_stderr():
     old_stderr_fd = os.dup(2)
@@ -30,7 +28,6 @@ def suppress_stderr():
     finally:
         os.dup2(old_stderr_fd, 2)
         os.close(old_stderr_fd)
-
 
 os.environ["CHROME_LOG_FILE"] = os.devnull
 
@@ -55,60 +52,24 @@ with suppress_stderr():
     driver = webdriver.Chrome(service=service, options=options)
 driver.get("https://www.google.com")
 
-
 # --------------------------------------------------------------------------------------
-# SCRAPER BASE DE PÁGINAS JSON DE SOFASCORE
+# SCRAPER BASE DE PÁGINAS JSON DE SOFASCORE - Accede a una URL con Selenium y devuelve el contenido JSON renderizado.
 # --------------------------------------------------------------------------------------
-
 def page_scraper(url: str, sleep_time: int = 3, timeout: int = 10) -> dict:
-    """
-    Accede a una URL con Selenium y devuelve el contenido JSON renderizado.
-
-    Parameters
-    ----------
-    url : str
-        URL a scrapear.
-    sleep_time : int, default=3
-        Tiempo de espera tras la lectura.
-    timeout : int, default=10
-        Tiempo máximo de espera para encontrar el bloque <pre>.
-
-    Returns
-    -------
-    dict
-        Contenido JSON parseado.
-    """
+   
     driver.get(url)
-    pre = WebDriverWait(driver, timeout).until(
-        EC.presence_of_element_located((By.TAG_NAME, "pre"))
-    )
+    pre = WebDriverWait(driver, timeout).until(EC.presence_of_element_located((By.TAG_NAME, "pre")))
 
     data_json = jsonlib.loads(pre.text)
     time.sleep(sleep_time)
 
     return data_json
 
-
 # --------------------------------------------------------------------------------------
-# TEMPORADAS DISPONIBLES
+# TEMPORADAS DISPONIBLES - Obtiene las temporadas disponibles de una liga en Sofascore.
 # --------------------------------------------------------------------------------------
-
 def league_available_seasons(league_code: int, out_path: str) -> dict:
-    """
-    Obtiene las temporadas disponibles de una liga en Sofascore.
-
-    Parameters
-    ----------
-    league_code : int
-        Identificador de la liga en Sofascore.
-    out_path : str
-        Carpeta de salida de la liga.
-
-    Returns
-    -------
-    dict
-        JSON con las temporadas disponibles.
-    """
+    
     json_path = os.path.join(out_path, "available_seasons.json")
 
     if os.path.exists(json_path) and not need_to_upload(json_path, total_days=200):
@@ -124,31 +85,11 @@ def league_available_seasons(league_code: int, out_path: str) -> dict:
 
     return {}
 
-
 # --------------------------------------------------------------------------------------
-# DATOS DE TEMPORADA: PARTIDOS
+# DATOS DE TEMPORADA: PARTIDOS - Obtiene los partidos de una temporada de Sofascore, almacenados por bloques.
 # --------------------------------------------------------------------------------------
-
 def season_data(seasons_dict: dict, season_key: str, league_code: int, out_path: str) -> dict:
-    """
-    Obtiene los partidos de una temporada de Sofascore, almacenados por bloques.
-
-    Parameters
-    ----------
-    seasons_dict : dict
-        Diccionario temporada -> season_id.
-    season_key : str
-        Clave de temporada.
-    league_code : int
-        Identificador de la liga en Sofascore.
-    out_path : str
-        Carpeta de salida de la temporada.
-
-    Returns
-    -------
-    dict
-        Diccionario indexado por bloque con los JSON de partidos.
-    """
+    
     if season_key not in seasons_dict:
         return {}
 
@@ -171,10 +112,7 @@ def season_data(seasons_dict: dict, season_key: str, league_code: int, out_path:
                 block_idx += 1
                 continue
 
-        matches_url = (
-            f"https://api.sofascore.com/api/v1/unique-tournament/"
-            f"{league_code}/season/{season_id}/events/last/{block_idx}"
-        )
+        matches_url = (f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/events/last/{block_idx}")
         matches_json = page_scraper(url=matches_url)
 
         if not matches_json.get("events", []):
@@ -186,31 +124,11 @@ def season_data(seasons_dict: dict, season_key: str, league_code: int, out_path:
 
     return blocks_dict
 
-
 # --------------------------------------------------------------------------------------
-# TABLAS DE CLASIFICACIÓN
+# TABLAS DE CLASIFICACIÓN - Obtiene las clasificaciones total/home/away de una temporada.
 # --------------------------------------------------------------------------------------
-
 def season_standings(seasons_dict: dict, season_key: str, league_code: int, out_path: str) -> dict:
-    """
-    Obtiene las clasificaciones total/home/away de una temporada.
-
-    Parameters
-    ----------
-    seasons_dict : dict
-        Diccionario temporada -> season_id.
-    season_key : str
-        Clave de temporada.
-    league_code : int
-        Identificador de la liga en Sofascore.
-    out_path : str
-        Carpeta de salida de la temporada.
-
-    Returns
-    -------
-    dict
-        Diccionario con clasificaciones.
-    """
+    
     if season_key not in seasons_dict:
         return {}
 
@@ -226,11 +144,9 @@ def season_standings(seasons_dict: dict, season_key: str, league_code: int, out_
                 return jsonlib.load(f)
 
     season_id = seasons_dict[season_key]
-    urls = {
-        "total": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/standings/total",
-        "home": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/standings/home",
-        "away": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/standings/away",
-    }
+    urls = {"total": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/standings/total",
+            "home": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/standings/home",
+            "away": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/standings/away"}
 
     standings = {}
     for key, url_to_scrape in urls.items():
@@ -240,31 +156,11 @@ def season_standings(seasons_dict: dict, season_key: str, league_code: int, out_
     safe_json_dump(data=standings, path=standings_path)
     return standings
 
-
 # --------------------------------------------------------------------------------------
-# INFORMACIÓN DE JUGADORES, EQUIPOS Y ESTADIOS
+# INFORMACIÓN DE JUGADORES, EQUIPOS Y ESTADIOS - Obtiene información general de jugadores, equipos y estadios de una temporada.
 # --------------------------------------------------------------------------------------
-
 def season_information(seasons_dict: dict, season_key: str, league_code: int, out_path: str) -> dict:
-    """
-    Obtiene información general de jugadores, equipos y estadios de una temporada.
-
-    Parameters
-    ----------
-    seasons_dict : dict
-        Diccionario temporada -> season_id.
-    season_key : str
-        Clave de temporada.
-    league_code : int
-        Identificador de la liga en Sofascore.
-    out_path : str
-        Carpeta de salida de la temporada.
-
-    Returns
-    -------
-    dict
-        Diccionario con player, team y venue.
-    """
+    
     if season_key not in seasons_dict:
         return {}
 
@@ -272,11 +168,9 @@ def season_information(seasons_dict: dict, season_key: str, league_code: int, ou
     os.makedirs(out_info_path, exist_ok=True)
 
     season_id = seasons_dict[season_key]
-    info_urls = {
-        "player": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/players",
-        "team": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/teams",
-        "venue": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/venues",
-    }
+    info_urls = {"player": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/players",
+                 "team": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/teams",
+                 "venue": f"https://api.sofascore.com/api/v1/unique-tournament/{league_code}/season/{season_id}/venues"}
 
     is_current_season = season_key == act_season
     info_dict = {}
@@ -296,37 +190,11 @@ def season_information(seasons_dict: dict, season_key: str, league_code: int, ou
 
     return info_dict
 
-
 # --------------------------------------------------------------------------------------
-# DESCARGA DE IMÁGENES MEDIANTE SCRIPT EN R
+# DESCARGA DE IMÁGENES MEDIANTE SCRIPT EN R - Descarga la imagen de una entidad de Sofascore usando un script de R.
 # --------------------------------------------------------------------------------------
+def image_downloader(type: str, id: int, out_path: str, sleep_time: int = 3, rscript_path: str = r"C:\Program Files\R\R-4.4.1\bin\x64\Rscript.exe", r_script: str = "ss_pict.R",) -> None:
 
-def image_downloader(
-    type: str,
-    id: int,
-    out_path: str,
-    sleep_time: int = 3,
-    rscript_path: str = r"C:\Program Files\R\R-4.4.1\bin\x64\Rscript.exe",
-    r_script: str = "ss_pict.R",
-) -> None:
-    """
-    Descarga la imagen de una entidad de Sofascore usando un script de R.
-
-    Parameters
-    ----------
-    type : str
-        Tipo de entidad: player, team, manager o venue.
-    id : int
-        Identificador de la entidad.
-    out_path : str
-        Carpeta base de temporada.
-    sleep_time : int, default=3
-        Tiempo de espera tras la ejecución.
-    rscript_path : str
-        Ruta al ejecutable Rscript.
-    r_script : str
-        Script R que realiza la descarga.
-    """
     out_images_path = os.path.join(
         os.path.dirname(os.path.dirname(os.path.dirname(out_path))),
         "images"
@@ -349,29 +217,11 @@ def image_downloader(
         subprocess.run(cmd, text=True, capture_output=True)
         time.sleep(sleep_time)
 
-
 # --------------------------------------------------------------------------------------
-# INFORMACIÓN INDIVIDUAL DE ENTIDADES
+# INFORMACIÓN INDIVIDUAL DE ENTIDADES - Obtiene información individual de player, team, manager o venue.
 # --------------------------------------------------------------------------------------
-
 def obtain_information(type: str, id: int, out_season_path: str) -> dict:
-    """
-    Obtiene información individual de player, team, manager o venue.
 
-    Parameters
-    ----------
-    type : str
-        Tipo de entidad.
-    id : int
-        Identificador de la entidad.
-    out_season_path : str
-        Carpeta de salida de la temporada.
-
-    Returns
-    -------
-    dict
-        JSON con la información obtenida.
-    """
     info_url = f"https://api.sofascore.com/api/v1/{type}/{id}"
     out_dir = os.path.join(out_season_path, "info", type)
     os.makedirs(out_dir, exist_ok=True)
@@ -389,29 +239,11 @@ def obtain_information(type: str, id: int, out_season_path: str) -> dict:
 
     return info_json
 
-
 # --------------------------------------------------------------------------------------
-# SCRAPING DE UN PARTIDO
+# SCRAPING DE UN PARTIDO - Obtiene la información completa de un partido.
 # --------------------------------------------------------------------------------------
-
 def match_scraping(matches_dict: dict, match_id: int, out_path: str) -> dict:
-    """
-    Obtiene la información completa de un partido.
-
-    Parameters
-    ----------
-    matches_dict : dict
-        Diccionario de partidos válidos de la temporada.
-    match_id : int
-        Identificador del partido.
-    out_path : str
-        Carpeta de salida de la temporada.
-
-    Returns
-    -------
-    dict
-        JSON con información completa del partido.
-    """
+    
     if match_id not in matches_dict:
         return {}
 
@@ -435,49 +267,18 @@ def match_scraping(matches_dict: dict, match_id: int, out_path: str) -> dict:
     match_lineups_json = page_scraper(url=match_lineups_url)
     match_stats_json = page_scraper(url=match_stats_url)
 
-    if (
-        match_info_json.get("event")
-        and match_lineups_json.get("confirmed")
-        and match_stats_json.get("statistics")
-    ):
-        full_match_info = {
-            "match": match_info_json,
-            "lineups": match_lineups_json,
-            "statistics": match_stats_json,
-        }
+    if (match_info_json.get("event") and match_lineups_json.get("confirmed") and match_stats_json.get("statistics")):
+        full_match_info = {"match": match_info_json, "lineups": match_lineups_json, "statistics": match_stats_json}
         safe_json_dump(data=full_match_info, path=final_path)
         return full_match_info
 
     return {}
 
-
 # --------------------------------------------------------------------------------------
-# SCRAPING PRINCIPAL DE LIGA EN SOFASCORE
+# SCRAPING PRINCIPAL DE LIGA EN SOFASCORE - Ejecuta el scraping completo de una liga en Sofascore.
 # --------------------------------------------------------------------------------------
-
-def main_sofascore_league_scraping(
-    league_id: int,
-    out_path: str,
-    scrape_images: bool = True,
-    matches_to_proc: int = None,
-    print_info: bool = True,
-) -> None:
-    """
-    Ejecuta el scraping completo de una liga en Sofascore.
-
-    Parameters
-    ----------
-    league_id : int
-        Identificador interno de la liga.
-    out_path : str
-        Carpeta raíz de salida raw.
-    scrape_images : bool, default=True
-        Indica si se descargan imágenes.
-    matches_to_proc : int, optional
-        Número máximo de entidades/partidos a procesar.
-    print_info : bool, default=True
-        Indica si se muestran mensajes de progreso.
-    """
+def main_sofascore_league_scraping(league_id: int, out_path: str, scrape_images: bool = True, matches_to_proc: int = None, print_info: bool = True) -> None:
+    
     start_time = time.time()
 
     comp_row = comps.loc[comps["id"] == league_id]
@@ -489,18 +290,13 @@ def main_sofascore_league_scraping(
     ss_code = int(comp_row["sofascore"].iloc[0])
 
     if print_info:
-        print("================================================================================")
         print(f"Starting Sofascore scraping ({league_name})")
 
     out_league_path = os.path.join(out_path, "sofascore", league_slug)
     os.makedirs(out_league_path, exist_ok=True)
 
     available_seasons = league_available_seasons(league_code=ss_code, out_path=out_league_path)
-    seasons_dict = {
-        season_data["year"].replace("/", ""): season_data["id"]
-        for season_data in available_seasons.get("seasons", [])
-        if season_data.get("year", "").replace("/", "") in desired_seasons
-    }
+    seasons_dict = {season_data["year"].replace("/", ""): season_data["id"] for season_data in available_seasons.get("seasons", []) if season_data.get("year", "").replace("/", "") in desired_seasons}
 
     for season_key in seasons_dict:
         if print_info:
@@ -509,43 +305,14 @@ def main_sofascore_league_scraping(
         out_season_path = os.path.join(out_league_path, season_key)
         os.makedirs(out_season_path, exist_ok=True)
 
-        season_data_dict = season_data(
-            seasons_dict=seasons_dict,
-            season_key=season_key,
-            league_code=ss_code,
-            out_path=out_season_path,
-        )
-        season_standings(
-            seasons_dict=seasons_dict,
-            season_key=season_key,
-            league_code=ss_code,
-            out_path=out_season_path,
-        )
-        season_info = season_information(
-            seasons_dict=seasons_dict,
-            season_key=season_key,
-            league_code=ss_code,
-            out_path=out_season_path,
-        )
+        season_data_dict = season_data(seasons_dict=seasons_dict, season_key=season_key, league_code=ss_code, out_path=out_season_path)
+        season_standings(seasons_dict=seasons_dict, season_key=season_key, league_code=ss_code, out_path=out_season_path)
+        season_info = season_information(seasons_dict=seasons_dict, season_key=season_key, league_code=ss_code, out_path=out_season_path)
 
-        dict_matches = {
-            match["id"]: match["slug"]
-            for events in season_data_dict.values()
-            for match in events.get("events", [])
-            if match.get("status", {}).get("description") == "Ended"
-        }
-        dict_players = {
-            player["playerId"]: player["playerName"].lower().replace(" ", "-")
-            for player in season_info.get("player", {}).get("players", [])
-        }
-        dict_teams = {
-            team["id"]: team["slug"]
-            for team in season_info.get("team", {}).get("teams", [])
-        }
-        dict_venues = {
-            venue["id"]: venue["slug"]
-            for venue in season_info.get("venue", {}).get("venues", [])
-        }
+        dict_matches = {match["id"]: match["slug"] for events in season_data_dict.values() for match in events.get("events", []) if match.get("status", {}).get("description") == "Ended"}
+        dict_players = {player["playerId"]: player["playerName"].lower().replace(" ", "-") for player in season_info.get("player", {}).get("players", [])}
+        dict_teams = {team["id"]: team["slug"] for team in season_info.get("team", {}).get("teams", [])}
+        dict_venues = {venue["id"]: venue["slug"] for venue in season_info.get("venue", {}).get("venues", [])}
 
         player_ids = list(dict_players.keys())
         team_ids = list(dict_teams.keys())
@@ -577,27 +344,10 @@ def main_sofascore_league_scraping(
             if print_info:
                 print(f"          - Scraping information for match {match_id} ({idx}/{total_matches})")
 
-            match_info = match_scraping(
-                matches_dict=dict_matches,
-                match_id=match_id,
-                out_path=out_season_path,
-            )
+            match_info = match_scraping(matches_dict=dict_matches, match_id=match_id, out_path=out_season_path)
 
-            home_manager_id = (
-                match_info.get("match", {})
-                .get("event", {})
-                .get("homeTeam", {})
-                .get("manager", {})
-                .get("id")
-            )
-            away_manager_id = (
-                match_info.get("match", {})
-                .get("event", {})
-                .get("awayTeam", {})
-                .get("manager", {})
-                .get("id")
-            )
-
+            home_manager_id = (match_info.get("match", {}).get("event", {}).get("homeTeam", {}).get("manager", {}).get("id"))
+            away_manager_id = (match_info.get("match", {}).get("event", {}).get("awayTeam", {}).get("manager", {}).get("id"))
             manager_ids = [manager_id for manager_id in [home_manager_id, away_manager_id] if manager_id is not None]
 
             for manager_id in manager_ids:
@@ -605,14 +355,5 @@ def main_sofascore_league_scraping(
                 if scrape_images:
                     image_downloader(type="manager", id=manager_id, out_path=out_season_path)
 
-    elapsed_time = time.time() - start_time
-    if elapsed_time >= 60:
-        minutes = int(elapsed_time // 60)
-        seconds = int(elapsed_time % 60)
-        time_str = f"{minutes} minutes {seconds} seconds"
-    else:
-        time_str = f"{elapsed_time:.2f} seconds"
-
     if print_info:
-        print(f"Finished Sofascore scraping ({league_name}) in {time_str}")
-        print("================================================================================")
+        print(f"Finished Sofascore scraping ({league_name}) in {elapsed_time_str(start_time=start_time)}")

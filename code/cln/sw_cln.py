@@ -4,29 +4,13 @@ import pandas as pd
 import numpy as np
 
 from use.config import comps
-from use.functions import json_to_dict, create_slug
-
+from use.functions import json_to_dict, create_slug, elapsed_time_str
 
 # --------------------------------------------------------------------------------------
-# PROCESADO DE PARTIDOS
+# PROCESADO DE PARTIDOS - Procesa el JSON de partidos de Scoresway
 # --------------------------------------------------------------------------------------
-
 def matches_proc(matches_json_path: str, df_output_path: str) -> pd.DataFrame:
-    """
-    Procesa el JSON de partidos de Scoresway.
-
-    Parameters
-    ----------
-    matches_json_path : str
-        Ruta del JSON de partidos.
-    df_output_path : str
-        Ruta de salida del CSV.
-
-    Returns
-    -------
-    pd.DataFrame
-        Dataframe de partidos.
-    """
+    
     if not os.path.exists(matches_json_path):
         return pd.DataFrame()
 
@@ -34,42 +18,19 @@ def matches_proc(matches_json_path: str, df_output_path: str) -> pd.DataFrame:
     if not matches_data:
         return pd.DataFrame()
 
-    matches_list = [{
-        "match_id": match.get("id", np.nan),
-        "home_team": match.get("home_team", {}).get("name", np.nan),
-        "away_team": match.get("away_team", {}).get("name", np.nan),
-        "home_score": match.get("scores", {}).get("home_score", np.nan),
-        "away_score": match.get("scores", {}).get("away_score", np.nan),
-        "status": match.get("status", np.nan),
-        "date": match.get("date", np.nan),
-        "venue": match.get("venue", {}).get("name", np.nan),
-        "competition": match.get("competition", {}).get("name", np.nan),
-    } for match in matches_data]
-
+    matches_list = [{"match_id": match.get("id", np.nan), "home_team": match.get("home_team", {}).get("name", np.nan), "away_team": match.get("away_team", {}).get("name", np.nan),
+                     "home_score": match.get("scores", {}).get("home_score", np.nan), "away_score": match.get("scores", {}).get("away_score", np.nan), "status": match.get("status", np.nan),
+                     "date": match.get("date", np.nan), "venue": match.get("venue", {}).get("name", np.nan), "competition": match.get("competition", {}).get("name", np.nan)} for match in matches_data]
     matches_df = pd.DataFrame(matches_list)
     matches_df.to_csv(df_output_path, index=False, sep=";")
 
     return matches_df
 
-
 # --------------------------------------------------------------------------------------
-# PROCESADO DE ESTADÍSTICAS DE PARTIDO
+# PROCESADO DE ESTADÍSTICAS DE PARTIDO - Procesa estadísticas de un partido individual.
 # --------------------------------------------------------------------------------------
-
 def match_stats_proc(match_json_path: str) -> pd.DataFrame:
-    """
-    Procesa estadísticas de un partido individual.
 
-    Parameters
-    ----------
-    match_json_path : str
-        Ruta del JSON del partido.
-
-    Returns
-    -------
-    pd.DataFrame
-        Dataframe con estadísticas del partido.
-    """
     if not os.path.exists(match_json_path):
         return pd.DataFrame()
 
@@ -90,33 +51,11 @@ def match_stats_proc(match_json_path: str) -> pd.DataFrame:
 
     return stats_df
 
-
 # --------------------------------------------------------------------------------------
-# PROCESADO DE TODOS LOS PARTIDOS
+# PROCESADO DE TODOS LOS PARTIDOS - Procesa todos los partidos individuales.
 # --------------------------------------------------------------------------------------
-
-def all_matches_proc(
-    matches_dir_path: str,
-    df_output_path: str,
-    stats_output_path: str
-) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """
-    Procesa todos los partidos individuales.
-
-    Parameters
-    ----------
-    matches_dir_path : str
-        Carpeta con JSONs de partidos.
-    df_output_path : str
-        Ruta de salida de partidos.
-    stats_output_path : str
-        Ruta de salida de estadísticas.
-
-    Returns
-    -------
-    tuple[pd.DataFrame, pd.DataFrame]
-        Dataframes de partidos y estadísticas.
-    """
+def all_matches_proc(matches_dir_path: str, df_output_path: str, stats_output_path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+    
     matches_list = []
     stats_list = []
 
@@ -133,15 +72,9 @@ def all_matches_proc(
 
         match_id = match_info.get("id")
 
-        matches_list.append({
-            "match_id": match_id,
-            "home_team": match_info.get("home_team", {}).get("name", np.nan),
-            "away_team": match_info.get("away_team", {}).get("name", np.nan),
-            "home_score": match_info.get("scores", {}).get("home_score", np.nan),
-            "away_score": match_info.get("scores", {}).get("away_score", np.nan),
-            "date": match_info.get("date", np.nan),
-            "status": match_info.get("status", np.nan),
-        })
+        matches_list.append({"match_id": match_id, "home_team": match_info.get("home_team", {}).get("name", np.nan), "away_team": match_info.get("away_team", {}).get("name", np.nan),
+                             "home_score": match_info.get("scores", {}).get("home_score", np.nan), "away_score": match_info.get("scores", {}).get("away_score", np.nan),
+                             "date": match_info.get("date", np.nan), "status": match_info.get("status", np.nan)})
 
         stats_df = match_stats_proc(match_json_path=match_path)
         if not stats_df.empty:
@@ -156,28 +89,11 @@ def all_matches_proc(
 
     return matches_df, stats_df
 
-
 # --------------------------------------------------------------------------------------
-# CLEANING PRINCIPAL
+# CLEANING PRINCIPAL - Ejecuta el proceso de limpieza de Scoresway.
 # --------------------------------------------------------------------------------------
-
-def main_scoresway_league_cleaning(
-    league_id: int,
-    out_path: str,
-    print_info: bool = True
-) -> None:
-    """
-    Ejecuta el proceso de limpieza de Scoresway.
-
-    Parameters
-    ----------
-    league_id : int
-        ID de la liga.
-    out_path : str
-        Ruta base raw.
-    print_info : bool
-        Mostrar logs.
-    """
+def main_scoresway_league_cleaning(league_id: int, out_path: str, print_info: bool = True) -> None:
+    
     start_time = time.time()
 
     comp_row = comps.loc[comps["id"] == league_id]
@@ -192,16 +108,12 @@ def main_scoresway_league_cleaning(
     os.makedirs(league_clean_path, exist_ok=True)
 
     if print_info:
-        print("================================================================================")
         print(f"Starting Scoresway cleaning ({league_name})")
 
     if not os.path.exists(league_raw_path):
         raise FileNotFoundError(f"No existe la ruta raw: {league_raw_path}")
 
-    seasons_to_proc = [
-        season for season in os.listdir(league_raw_path)
-        if os.path.isdir(os.path.join(league_raw_path, season))
-    ]
+    seasons_to_proc = [season for season in os.listdir(league_raw_path) if os.path.isdir(os.path.join(league_raw_path, season))]
 
     for season in seasons_to_proc:
         season_raw_path = os.path.join(league_raw_path, season)
@@ -209,22 +121,11 @@ def main_scoresway_league_cleaning(
 
         os.makedirs(season_clean_path, exist_ok=True)
 
-        matches_proc(
-            matches_json_path=os.path.join(season_raw_path, "matches.json"),
-            df_output_path=os.path.join(season_clean_path, "matches.csv"),
-        )
-
-        all_matches_proc(
-            matches_dir_path=os.path.join(season_raw_path, "matches"),
-            df_output_path=os.path.join(season_clean_path, "matches_detailed.csv"),
-            stats_output_path=os.path.join(season_clean_path, "stats.csv"),
-        )
+        matches_proc(matches_json_path=os.path.join(season_raw_path, "matches.json"), df_output_path=os.path.join(season_clean_path, "matches.csv"))
+        all_matches_proc(matches_dir_path=os.path.join(season_raw_path, "matches"), df_output_path=os.path.join(season_clean_path, "matches_detailed.csv"), stats_output_path=os.path.join(season_clean_path, "stats.csv"))
 
         if print_info:
             print(f"     - Season processed: {season}")
 
-    elapsed_time = time.time() - start_time
-
     if print_info:
-        print(f"Finished Scoresway cleaning ({league_name}) in {elapsed_time:.2f} seconds")
-        print("================================================================================")
+        print(f"Finished Scoresway cleaning ({league_name}) in {elapsed_time_str(start_time=start_time)}")
