@@ -1,13 +1,38 @@
-import os
-import pandas as pd
+from pathlib import Path
 import json
+import pandas as pd
 
-cdir = os.getcwd()                                                                  # Directorio actual de ejecución                                                                            
-utils = os.path.join(os.path.abspath(os.path.join(cdir, '..')), 'utils')            # Carpeta con utils
+# --------------------------------------------------------------------------------------
+# RUTAS BASE DEL PROYECTO
+# --------------------------------------------------------------------------------------
 
-comps_path = os.path.join(utils, 'comps.csv')                                       # Path del archivo CSV con competiciones
-comps = pd.read_csv(comps_path, sep=';', encoding='latin1')                         # Lectura del CSV de competiciones
+BASE_DIR = Path(__file__).resolve().parents[2]
+UTILS_DIR = BASE_DIR / "utils"
 
-with open(os.path.join(utils, 'des_seasons.json'), 'r', encoding='utf-8') as f:     # Temporadas deseadas
+# --------------------------------------------------------------------------------------
+# ARCHIVOS DE CONFIGURACIÓN
+# --------------------------------------------------------------------------------------
+
+COMPS_PATH = UTILS_DIR / "comps.csv"
+DES_SEASONS_PATH = UTILS_DIR / "des_seasons.json"
+
+# --------------------------------------------------------------------------------------
+# CARGA DE DATOS DE CONFIGURACIÓN
+# --------------------------------------------------------------------------------------
+
+comps = pd.read_csv(COMPS_PATH, sep=";", encoding="latin1")
+
+with open(DES_SEASONS_PATH, "r", encoding="utf-8") as f:
     desired_seasons = json.load(f)
-act_season = desired_seasons[0]                                                     # Temporada actual (última temporada)
+
+if not isinstance(desired_seasons, list) or len(desired_seasons) == 0:
+    raise ValueError("El archivo 'des_seasons.json' debe contener una lista con al menos una temporada.")
+
+act_season = desired_seasons[0]
+
+# --------------------------------------------------------------------------------------
+# ALIAS PARA MANTENER COMPATIBILIDAD CON EL RESTO DEL PROYECTO
+# --------------------------------------------------------------------------------------
+
+utils = str(UTILS_DIR)
+comps_path = str(COMPS_PATH)
