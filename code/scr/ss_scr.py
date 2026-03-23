@@ -88,7 +88,7 @@ def league_available_seasons(league_code: int, out_path: str) -> dict:
 # --------------------------------------------------------------------------------------
 # DATOS DE TEMPORADA: PARTIDOS - Obtiene los partidos de una temporada de Sofascore, almacenados por bloques.
 # --------------------------------------------------------------------------------------
-def season_data(seasons_dict: dict, season_key: str, league_code: int, out_path: str) -> dict:
+def season_data_scraper(seasons_dict: dict, season_key: str, league_code: int, out_path: str) -> dict:
     
     if season_key not in seasons_dict:
         return {}
@@ -207,10 +207,7 @@ def image_downloader(type: str, id: int, out_path: str, sleep_time: int = 3, rsc
     image_url = f"https://img.sofascore.com/api/v1/{type}/{id}/image"
     out_file = os.path.join(out_type_path, f"{id}.png")
 
-    must_download = (
-        not os.path.exists(out_file)
-        or need_to_upload(path=out_file, total_days=90)
-    )
+    must_download = (not os.path.exists(out_file) or need_to_upload(path=out_file, total_days=90))
 
     if must_download:
         cmd = [rscript_path, r_script, image_url, out_file]
@@ -253,12 +250,9 @@ def match_scraping(matches_dict: dict, match_id: int, out_path: str) -> dict:
     final_path = os.path.join(out_matches_path, f"{match_id}.json")
 
     if os.path.exists(final_path):
-        try:
-            with open(final_path, "r", encoding="utf-8") as f:
-                return jsonlib.load(f)
-        except (jsonlib.JSONDecodeError, OSError):
-            return {}
-
+        with open(final_path, "r", encoding="utf-8") as f:
+            return jsonlib.load(f)
+  
     match_info_url = f"https://api.sofascore.com/api/v1/event/{match_id}"
     match_lineups_url = f"https://api.sofascore.com/api/v1/event/{match_id}/lineups"
     match_stats_url = f"https://api.sofascore.com/api/v1/event/{match_id}/statistics"
@@ -305,9 +299,12 @@ def main_sofascore_league_scraping(league_id: int, out_path: str, scrape_images:
         out_season_path = os.path.join(out_league_path, season_key)
         os.makedirs(out_season_path, exist_ok=True)
 
-        season_data_dict = season_data(seasons_dict=seasons_dict, season_key=season_key, league_code=ss_code, out_path=out_season_path)
+        season_data_dict = season_data_scraper(seasons_dict=seasons_dict, season_key=season_key, league_code=ss_code, out_path=out_season_path)
+        print("season data")
         season_standings(seasons_dict=seasons_dict, season_key=season_key, league_code=ss_code, out_path=out_season_path)
+        print("season standings")
         season_info = season_information(seasons_dict=seasons_dict, season_key=season_key, league_code=ss_code, out_path=out_season_path)
+        print("season information")
 
         dict_matches = {match["id"]: match["slug"] for events in season_data_dict.values() for match in events.get("events", []) if match.get("status", {}).get("description") == "Ended"}
         dict_players = {player["playerId"]: player["playerName"].lower().replace(" ", "-") for player in season_info.get("player", {}).get("players", [])}

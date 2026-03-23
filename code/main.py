@@ -88,7 +88,7 @@ def main() -> None:
 
         start_time = time.time()
 
-        time_scr, time_cln, time_uni = main_league_data(league_id=row["id"], data_path=data_path, print_info=True, act_time_scr=row["time_scr"], act_time_cln=row["time_cln"], act_time_uni=row["time_uni"])
+        time_scr, time_cln, time_uni = main_league_data(league_id=row["id"], data_path=data_path, print_info=True, act_time_scr=row["time_scr"], act_time_cln=row["time_cln"], act_time_uni=row["time_uni"], scrape_images=False)
 
         if time_scr is not None:
             comps.loc[idx, "time_scr"] = time_scr
