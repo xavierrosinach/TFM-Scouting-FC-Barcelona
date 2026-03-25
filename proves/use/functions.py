@@ -5,10 +5,33 @@ import time
 import unicodedata
 from datetime import datetime, timedelta
 from typing import Any
+import random
+import string
 
 import numpy as np
 import pandas as pd
 import requests
+
+# Caràcteres diferentes
+REPLACEMENTS = {"À": "A", "Á": "A", "Â": "A", "Ã": "A", "Ä": "A", "Å": "A", "Æ": "AE", "Ç": "C", "È": "E", "É": "E", "Ê": "E", "Ë": "E", "Ė": "E", "Ę": "E", "Ě": "E", "Ì": "I", 
+                "Í": "I", "Î": "I", "Ï": "I", "Ñ": "N", "Ń": "N", "Ň": "N", "Ò": "O", "Ó": "O", "Ô": "O", "Õ": "O", "Ö": "O", "Ø": "O", "Œ": "OE", "Š": "S", "Ş": "S", "Ș": "S", 
+                "Ț": "T", "Ţ": "T", "Ù": "U", "Ú": "U", "Û": "U", "Ü": "U", "Ý": "Y", "Ÿ": "Y", "Ž": "Z", "Ć": "C", "Č": "C", "Ğ": "G", "Ħ": "H", "Ł": "L", "Đ": "D", "Þ": "TH",
+                "à": "a", "á": "a", "â": "a", "ã": "a", "ä": "a", "å": "a", "æ": "ae", "ç": "c", "è": "e", "é": "e", "ê": "e", "ë": "e", "ė": "e", "ę": "e", "ě": "e", "ì": "i", 
+                "í": "i", "î": "i", "ï": "i", "ñ": "n", "ń": "n", "ň": "n", "ò": "o", "ó": "o", "ô": "o", "õ": "o", "ö": "o", "ø": "o", "œ": "oe", "š": "s", "ş": "s", "ș": "s",
+                "ț": "t", "ţ": "t", "ù": "u", "ú": "u", "û": "u", "ü": "u", "ý": "y", "ÿ": "y", "ž": "z", "ć": "c", "č": "c", "ğ": "g", "ħ": "h", "ł": "l", "đ": "d", "þ": "th",
+                "ß": "ss", "Ə": "E", "ə": "a"}
+
+# --------------------------------------------------------------------------------------
+# GENERACIÓN DE IDENTIFICADORES - Genera identificadores únicos (n)
+# --------------------------------------------------------------------------------------
+def generate_unique_ids(n: int, length: int = 5) -> list:
+    chars = string.ascii_uppercase + string.digits
+    ids = set()
+
+    while len(ids) < n:
+        ids.add(''.join(random.choices(chars, k=length)))
+
+    return list(ids)
 
 # --------------------------------------------------------------------------------------
 # LECTURA DE JSON - Lee un archivo JSON y devuelve su contenido.
@@ -31,16 +54,7 @@ def create_slug(text: str) -> str:
 
     text = str(text)
 
-    # Caràcteres diferentes
-    replacements = {"À": "A", "Á": "A", "Â": "A", "Ã": "A", "Ä": "A", "Å": "A", "Æ": "AE", "Ç": "C", "È": "E", "É": "E", "Ê": "E", "Ë": "E", "Ė": "E", "Ę": "E", "Ě": "E", "Ì": "I", 
-                    "Í": "I", "Î": "I", "Ï": "I", "Ñ": "N", "Ń": "N", "Ň": "N", "Ò": "O", "Ó": "O", "Ô": "O", "Õ": "O", "Ö": "O", "Ø": "O", "Œ": "OE", "Š": "S", "Ş": "S", "Ș": "S", 
-                    "Ț": "T", "Ţ": "T", "Ù": "U", "Ú": "U", "Û": "U", "Ü": "U", "Ý": "Y", "Ÿ": "Y", "Ž": "Z", "Ć": "C", "Č": "C", "Ğ": "G", "Ħ": "H", "Ł": "L", "Đ": "D", "Þ": "TH",
-                    "à": "a", "á": "a", "â": "a", "ã": "a", "ä": "a", "å": "a", "æ": "ae", "ç": "c", "è": "e", "é": "e", "ê": "e", "ë": "e", "ė": "e", "ę": "e", "ě": "e", "ì": "i", 
-                    "í": "i", "î": "i", "ï": "i", "ñ": "n", "ń": "n", "ň": "n", "ò": "o", "ó": "o", "ô": "o", "õ": "o", "ö": "o", "ø": "o", "œ": "oe", "š": "s", "ş": "s", "ș": "s",
-                    "ț": "t", "ţ": "t", "ù": "u", "ú": "u", "û": "u", "ü": "u", "ý": "y", "ÿ": "y", "ž": "z", "ć": "c", "č": "c", "ğ": "g", "ħ": "h", "ł": "l", "đ": "d", "þ": "th",
-                    "ß": "ss", "Ə": "E", "ə": "e"}
-
-    for old, new in replacements.items():
+    for old, new in REPLACEMENTS.items():
         text = text.replace(old, new)
 
     # Normalización adicional por si queda algún acento combinable

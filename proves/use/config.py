@@ -6,7 +6,8 @@ import pandas as pd
 # RUTA DE LOS DATOS
 # --------------------------------------------------------------------------------------
 
-DATA_PATH = r"C:\Users\ASUS\Desktop\data"
+# DATA_PATH = r"C:\Users\ASUS\Desktop\data"
+DATA_PATH = r"c:\Users\xrosinach\Desktop\TFM\data"
 
 # --------------------------------------------------------------------------------------
 # RUTAS BASE DEL PROYECTO

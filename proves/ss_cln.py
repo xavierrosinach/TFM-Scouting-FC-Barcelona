@@ -45,7 +45,8 @@ def ss_managers_clean() -> pd.DataFrame:
 
     # Limpieza básica del Dataframe
     man_df = pd.DataFrame(managers_info)
-    man_df.columns = ["IdSS", "Name", "ShortName", "Country", "DateBirth", "Matches", "Wins", "Draws", "Losses", "GoalsFor", "GoalsAgainst", "Points"]
+    man_df = man_df.rename(columns={"id": "IdSS", "name": "Name", "short_name": "ShortName", "country": "Country", "date_birth": "DateBirth", "matches": "Matches", "wins": "Wins",
+                                    "draws": "Draws", "losses": "Losses", "goals_scored": "GoalsFor", "goals_conceded": "GoalsAgainst", "points": "Points"})
     man_df.insert(1, "Slug", man_df["Name"].apply(create_slug))
 
     # Fecha de nacimiento y columnas integer
@@ -83,7 +84,7 @@ def ss_venues_clean() -> pd.DataFrame:
                 
     # Limpieza del dataframe
     venue_df = pd.DataFrame(venues_info)
-    venue_df.columns = ["IdSS", "Name", "Capacity", "City", "Latitude", "Longitude"]
+    venue_df = venue_df.rename(columns={"venue_id": "IdSS", "name": "Name", "capacity": "Capacity", "city": "City", "latitude": "Latitude", "longitude": "Longitude"})
     venue_df.insert(1, "Slug", venue_df["Name"].apply(create_slug))
     venue_df["Capacity"] = venue_df["Capacity"].astype("Int64")
 
@@ -119,7 +120,8 @@ def ss_teams_clean() -> pd.DataFrame:
 
     # Limpieza del dataframe
     teams_df = pd.DataFrame(teams_info)
-    teams_df.columns = ["IdSS", "Name", "ShortName", "LongName", "Manager", "Venue", "Country", "FoundationDate", "PrimaryColour", "SecondaryColour", "TextColour"]
+    teams_df = teams_df.rename(columns={"team_id": "IdSS", "name": "Name", "short_name": "ShortName", "full_name": "LongName", "manager": "Manager", "venue": "Venue", "country": "Country",
+                                        "foundation_date": "FoundationDate", "primary_colour": "PrimaryColour", "secondary_colour": "SecondaryColour", "text_colour": "TextColour"})
     teams_df.insert(1, "Slug", teams_df["Name"].apply(create_slug))
     teams_df["FoundationDate"] = pd.to_datetime(teams_df["FoundationDate"], unit="s", errors="coerce").dt.strftime("%d/%m/%Y")
 
@@ -164,8 +166,9 @@ def ss_matches_clean() -> pd.DataFrame:
 
     # Limpieza del dataframe
     matches_df = pd.DataFrame(all_matches_info)
-    matches_df.columns = ["IdSS", "League", "Season", "Round", "Winner", "Attendance", "Venue", "Referee", "HomeTeam", "AwayTeam", 
-                          "HomeScore", "AwayScore", "HomeManager", "AwayManager", "DateTime"]
+    matches_df = matches_df.rename(columns={"match_id": "IdSS", "league": "League", "season": "Season", "round": "Round", "winner": "Winner", "attendance": "Attendance", "venue": "Venue",
+                                            "referee": "Referee", "home_team": "HomeTeam", "away_team": "AwayTeam", "home_score": "HomeScore", "away_score": "AwayScore", "home_manager": "HomeManager",
+                                            "away_manager": "AwayManager", "date_time": "DateTime"})
 
     # Otras transformaciones
     matches_df["Winner"] = np.where(matches_df["Winner"] == 1, "Home", np.where(matches_df["Winner"] == 2, "Away", "X"))
@@ -244,9 +247,11 @@ def ss_players_clean() -> pd.DataFrame:
 
     # Transformado a Df y merge con el otro dataframe
     players_more_info_df = pd.DataFrame(players_more_info)
+    players_more_info_df = players_more_info_df.rename(columns={"shortName": "ShortName", "first_position": "FirstPosition", "second_position": "SecondPosition", "third_position": "ThirdPosition",
+                                                                "shirt_num": "ShirtNum", "height": "Height", "pref_foot": "PrefFoot", "date_birth": "DateBirth", "country": "Country", 
+                                                                "contract_until": "ContractUntil", "market_value": "MarketValue"})
     players_df = players_df.merge(players_more_info_df, how="left", on="IdSS")
-    players_df.columns = ["IdSS", "Name", "Team", "ShortName", "FirstPosition", "SecondPosition", "ThirdPosition", "ShirtNum", "Height", "PrefFoot", "DateBirth", "Country", "ContractUntil", "MarketValue"]
-
+    
     # Tratado de columnas
     players_df.insert(1, "Slug", players_df["Name"].apply(create_slug))
     players_df["ShirtNum"] = players_df["ShirtNum"].astype("Int64")
@@ -258,3 +263,95 @@ def ss_players_clean() -> pd.DataFrame:
     players_df["ContractUntil"] = pd.to_datetime(players_df["ContractUntil"], unit="s", errors="coerce").dt.strftime("%d/%m/%Y")
 
     return players_df.drop_duplicates().sort_values(by="Slug")
+
+# --------------------------------------------------------------------------------------
+# LIMPIEZA DE DATAFRAME DE ESTADÍSTICAS DE EQUIPOS - en un partido
+# --------------------------------------------------------------------------------------
+def ss_stats_single_match(path_stats_ss: str, match_id: str, home_team_id: str, away_team_id: str):
+
+    # Lectura del JSON en formato diccionario
+    dict_data = json_to_dict(json_path=path_stats_ss).get("statistics")[0].get("groups")            # Solo usamos información de TODO el partido
+
+    # Lista de datos
+    list_data = []
+    if dict_data:
+        for group in dict_data:
+            group_stats = group.get("statisticsItems")
+            if group_stats:
+                for statistic_item in group_stats:
+                    stat_key = statistic_item.get("key")
+                    if stat_key:
+                        list_data.append(pd.DataFrame({stat_key: [statistic_item.get("homeValue", np.nan), statistic_item.get("awayValue", np.nan)]}))
+
+    # Convertimos a dataframe
+    df_stats = pd.concat(list_data, axis=1)
+    df_stats.insert(0, "Match", match_id)
+    df_stats.insert(1, "Team", [home_team_id, away_team_id])
+
+    return df_stats
+
+# --------------------------------------------------------------------------------------
+# LIMPIEZA DE DATAFRAME DE ESTADÍSTICAS DE JUGADORES - en un partido
+# --------------------------------------------------------------------------------------
+def ss_lineups_single_match(path_lineups_ss: str, match_id: str, home_team_id: str, away_team_id: str):
+
+    # Lectura del JSON en formato diccionario
+    dict_data = json_to_dict(json_path=path_lineups_ss)
+
+    list_data = []
+
+    # Si se cumple la información obtenemos las alineaciones
+    if dict_data:
+        home_lineups = dict_data.get("home")
+        away_lineups = dict_data.get("away")
+
+        if home_lineups:
+            home_formation = home_lineups.get("formation", np.nan)
+            players = home_lineups.get("players")
+            if players:
+                for player in players:
+                    player_dict = {"team": home_team_id,
+                                "player": player.get("player", {}).get("id", np.nan),
+                                "shirt_num": player.get("shirtNumber", np.nan),
+                                "position": player.get("position", np.nan)}
+                    
+                    # Estadísticas del jugador
+                    player_statistics = player.get("statistics")
+                    if player_statistics:
+                        player_statistics = {k: v for k, v in player_statistics.items() if isinstance(v, (int, float))}        # Solo estadísticas numericas
+                        player_dict.update(player_statistics)
+
+                    list_data.append(player_dict)
+
+        if away_lineups:
+            away_formation = away_lineups.get("formation", np.nan)
+            players = away_lineups.get("players")
+            if players:
+                for player in players:
+                    player_dict = {"team": away_team_id,
+                                "player": player.get("player", {}).get("id", np.nan),
+                                "shirt_num": player.get("shirtNumber", np.nan),
+                                "position": player.get("position", np.nan)}
+                    
+                    # Estadísticas del jugador
+                    player_statistics = player.get("statistics")
+                    if player_statistics:
+                        player_statistics = {k: v for k, v in player_statistics.items() if isinstance(v, (int, float))}        # Solo estadísticas numericas
+                        player_dict.update(player_statistics)
+
+                    list_data.append(player_dict)
+
+    # Transformación a dataframe
+    df_lineups = pd.DataFrame(list_data)
+
+    # Quitar los jugadores sin estadisticas
+    cols_base = ["team", "player", "shirt_num", "position"]
+    cols_stats = [col for col in df_lineups.columns if col not in cols_base]
+    df_lineups[cols_stats] = df_lineups[cols_stats].replace(0, np.nan)              # Valores nulos primero si hay 0
+    df_lineups = df_lineups.dropna(subset=cols_stats, how="all")
+    df_lineups = df_lineups.fillna(0).reset_index(drop=True)
+
+    # Añadimos match ID y equipos
+    df_lineups.insert(0, "Match", match_id)
+
+    return df_lineups, home_formation, away_formation
